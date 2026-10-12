@@ -3,15 +3,15 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s)
+Base `storage` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s) · estructura real sin consultar (`python herramientas/bd.py estructura`)
 
 Consultas listas: [sql/03-tablas/storage/com_act/WCED001.sql](../../../../sql/03-tablas/storage/com_act/WCED001.sql)
 
 ### Columnas usadas
 
-| Columna | Confianza | Usada por | Descripción |
-|---|---|---|---|
-| `HFCRES` | ≈ inferida | [GSELREP001](../../../procedimientos/mod_rep/com/GSELREP001.md) | — |
+| Columna | Tipo | Confianza | Usada por | Descripción |
+|---|---|---|---|---|
+| `HFCRES` | — | ≈ inferida | [GSELREP001](../../../procedimientos/mod_rep/com/GSELREP001.md) | — |
 
 ### Procedimientos que la usan
 

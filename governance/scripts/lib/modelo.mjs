@@ -4,12 +4,14 @@
 //   procedimientos/**.sql        el cuerpo de cada SP → analizador estático
 //   fuente/dependencias/*.csv    lo que SQL Server registra (autoritativo, misma base)
 //   fuente/consumo-front.json    qué códigos usa el frontend MIS
+//   fuente/estructura/*.csv      tipos y columnas reales de cada tabla (herramientas/bd.py estructura)
 //
 // Y deriva los hallazgos de calidad. Lo usan generar-diccionario y validar.
 
 import { readFileSync } from 'node:fs';
 import { cargarCatalogo, esCuerpoReal, leerJsonOpcional, listarArchivos, partesNombre, rel, RUTAS } from './catalogo.mjs';
 import { cargarDependenciasMotor } from './dependencias.mjs';
+import { cargarEstructura } from './estructura.mjs';
 import { analizarProcedimiento } from './tsql.mjs';
 
 export const NIVELES = { error: 'error', aviso: 'aviso', info: 'info' };
@@ -27,6 +29,7 @@ export function construirModelo() {
   const { reportes, sps } = cargarCatalogo();
   const motor = cargarDependenciasMotor();
   const consumo = leerJsonOpcional(RUTAS.consumoFront, { codigos: {} });
+  const estructura = cargarEstructura();
   const hallazgos = [];
   const hallazgo = (nivel, regla, objeto, detalle) => hallazgos.push({ nivel, regla, objeto, detalle });
 
@@ -178,6 +181,27 @@ export function construirModelo() {
     }
   }
 
+  // ── Contra la estructura real (solo en bases con fuente/estructura/<base>.csv)
+  for (const t of tablas.values()) {
+    const real = estructura.tablas.get(t.completo.toLowerCase());
+    t.real = real ?? null;
+    if (!real) {
+      if (t.base && estructura.bases.has(t.base.toLowerCase())) {
+        hallazgo(NIVELES.error, 'tabla-inexistente', t.completo, `no existe en la base: la usan ${[...t.sps.values()].map(({ sp }) => sp.completo).join(', ')}`);
+      }
+      continue;
+    }
+    for (const c of t.columnas.values()) {
+      const rc = real.columnas.get(c.nombre.toLowerCase());
+      c.real = rc ?? null;
+      if (!rc && c.nombre !== '*') {
+        const nivel = [...c.fuentes].some((f) => f === 'exacta' || f === 'motor') ? NIVELES.error : NIVELES.aviso;
+        hallazgo(nivel, 'columna-inexistente', `${t.completo}.${c.nombre}`,
+          nivel === NIVELES.error ? `no existe en la tabla y la usa ${[...c.sps].join(', ')}` : 'inferida pero no existe en la tabla: el analizador la atribuyó mal o es un alias');
+      }
+    }
+  }
+
   const orden = { error: 0, aviso: 1, info: 2 };
   hallazgos.sort((a, b) => orden[a.nivel] - orden[b.nivel] || a.regla.localeCompare(b.regla) || a.objeto.localeCompare(b.objeto));
 
@@ -187,6 +211,7 @@ export function construirModelo() {
     tablas: new Map([...tablas].sort(([a], [b]) => a.localeCompare(b))),
     hallazgos,
     consumo,
+    estructura,
   };
 }
 

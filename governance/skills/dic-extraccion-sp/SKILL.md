@@ -16,7 +16,17 @@ El diccionario solo puede describir lo que tiene: un SP sin cuerpo en `procedimi
 | Dónde pegar el resultado | `procedimientos/<base>/<esquema>/<SP>.sql` (lo dice la cabecera del SQL) |
 | Qué falta | `diccionario/procedimientos.md` (⏳) o `sql/01-extraccion/manifiesto.json` (`"extraido": false`) |
 
-## 2. Tres formas, de menor a mayor volumen
+## 2. Cuatro formas
+
+**Python, con conexión (recomendada)** — skill `dic-conexiones-bd`:
+
+```bash
+python herramientas/bd.py extraer                       # todos los pendientes, una consulta por base
+python herramientas/bd.py extraer --reporte SEL_JEFE_01
+python herramientas/bd.py extraer --base strategos --sobrescribir   # rebaja y reescribe solo los que cambiaron
+```
+
+Las otras tres, sin Python:
 
 **Uno, en SSMS** — el patrón original del repositorio:
 

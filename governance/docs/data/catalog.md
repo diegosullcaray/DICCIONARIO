@@ -8,9 +8,10 @@ navegable vive en [`diccionario/`](../../../diccionario/README.md).
 | Activo | Archivo | Quién lo produce | Cada cuánto |
 |---|---|---|---|
 | Catálogo de reportes (RCODREP → SP) | `fuente/reportes.json` | export de la tabla de reportes del backend Ant | cuando se agrega o cambia un reporte |
-| Cuerpo de cada SP | `procedimientos/<base>/<esquema>/<SP>.sql` | `sp_helptext` / `extraer-definiciones.ps1` | cuando el SP cambia en la base |
+| Cuerpo de cada SP | `procedimientos/<base>/<esquema>/<SP>.sql` | `python herramientas/bd.py extraer` / `sp_helptext` | cuando el SP cambia en la base |
 | Dependencias según el motor | `fuente/dependencias/<base>.csv` | `sql/02-dependencias/<base>.sql` | al validar un lote de SP |
 | Consumo del front | `fuente/consumo-front.json` | `npm run trazar:front` | cuando cambia MIS-angular-front |
+| Estructura real de tablas | `fuente/estructura/<base>.csv` | `python herramientas/bd.py estructura` | después de descubrir tablas nuevas |
 
 `reportes.json` es la **fuente de verdad del inventario**: un SP que no figura ahí no se documenta,
 y un archivo de `procedimientos/` sin entrada en el catálogo se reporta como huérfano.

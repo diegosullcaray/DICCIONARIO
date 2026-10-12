@@ -4,3 +4,8 @@ node_modules/
 Thumbs.db
 # Exports crudos de SSMS que no siguen la convención fuente/dependencias/<base>.csv
 fuente/dependencias/*.rpt
+# Python y secretos
+.env
+.venv/
+__pycache__/
+*.pyc

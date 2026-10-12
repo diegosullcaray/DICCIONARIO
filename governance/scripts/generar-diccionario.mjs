@@ -9,6 +9,7 @@
 //   diccionario/tablas/<b>/<e>/<tabla>.md          ficha de la tabla: columnas y quién las usa
 //   diccionario/diccionario.json                   todo lo anterior, para herramientas y agentes
 //   sql/03-tablas/<b>/<e>/<tabla>.sql              consultas listas para cada tabla descubierta
+//   sql/05-por-procedimiento/<b>/<e>/<SP>.sql      las tablas de un SP con las columnas que usa
 //   governance/docs/data/catalog.md                bloque de resumen
 //   governance/docs/evidence/quality/hallazgos.md  bloque de hallazgos
 //
@@ -30,6 +31,7 @@ const enlace = (desde, hacia) => relative(dirname(desde), hacia).split(sep).join
 const archivoFicha = (sp) => join(D, 'procedimientos', sp.base ?? '_sin_base', sp.esquema ?? 'dbo', `${sp.nombre}.md`);
 const archivoTabla = (t) => join(D, 'tablas', t.base ?? '_sin_base', t.esquema ?? 'dbo', `${t.nombre}.md`);
 const archivoSqlTabla = (t) => join(RUTAS.sql, '03-tablas', t.base ?? '_sin_base', t.esquema ?? 'dbo', `${t.nombre}.sql`);
+const archivoSqlSp = (sp) => join(RUTAS.sql, '05-por-procedimiento', sp.base ?? '_sin_base', sp.esquema ?? 'dbo', `${sp.nombre}.sql`);
 const archivoExtraccion = (sp) => join(RUTAS.sql, '01-extraccion', sp.base ?? '_sin_base', sp.esquema ?? 'dbo', `${sp.nombre}.sql`);
 const tieneFicha = (sp) => sp.estado !== 'pendiente';
 const ESTADO = { pendiente: '⏳ pendiente', extraido: '🔎 extraído', validado: '✅ validado' };
@@ -51,6 +53,7 @@ for (const sp of sps.filter(tieneFicha)) {
   l.push(`| Estado | ${ESTADO[sp.estado]} |`);
   l.push(`| Cuerpo | [${rel(sp.archivoCuerpo)}](${enlace(ruta, sp.archivoCuerpo)}) |`);
   l.push(`| Extracción | [${rel(archivoExtraccion(sp))}](${enlace(ruta, archivoExtraccion(sp))}) |`);
+  if (sp.dependencias.length) l.push(`| Consultar sus tablas | [${rel(archivoSqlSp(sp))}](${enlace(ruta, archivoSqlSp(sp))}) |`);
   l.push(`| Consumido por el front MIS | ${sp.front ? 'sí' : 'no (según la última traza)'} |`);
   l.push('');
 
@@ -139,18 +142,20 @@ for (const t of tablas) {
   const desc = leerDescripciones(leerManual(ruta));
   const cols = [...t.columnas.values()].sort((a, b) => a.nombre.localeCompare(b.nombre));
   const l = [cabeceraGenerado(SCRIPT), ''];
-  l.push(`Base \`${t.base}\` · esquema \`${t.esquema}\` · ${cols.length} columna(s) usadas · ${t.sps.size} procedimiento(s)`, '');
+  const real = t.real ? `${t.real.tipoObjeto === 'VIEW' ? 'vista' : 'tabla'} con ${t.real.columnas.size} columna(s) en la base` : 'estructura real sin consultar (`python herramientas/bd.py estructura`)';
+  l.push(`Base \`${t.base}\` · esquema \`${t.esquema}\` · ${cols.length} columna(s) usadas · ${t.sps.size} procedimiento(s) · ${real}`, '');
   l.push(`Consultas listas: [${rel(archivoSqlTabla(t))}](${enlace(ruta, archivoSqlTabla(t))})`, '');
   l.push('### Columnas usadas', '');
   if (!cols.length) l.push('Ningún procedimiento nombra columnas de esta tabla (o solo usa `*`).');
   else {
-    l.push('| Columna | Confianza | Usada por | Descripción |', '|---|---|---|---|');
+    l.push('| Columna | Tipo | Confianza | Usada por | Descripción |', '|---|---|---|---|---|');
     for (const c of cols) {
       const usadas = [...c.sps].sort().map((n) => {
         const sp = m.sps.get(n.toLowerCase());
         return sp && tieneFicha(sp) ? `[${sp.nombre}](${enlace(ruta, archivoFicha(sp))})` : n;
       }).join(', ');
-      l.push(`| \`${c.nombre}\` | ${ICONO_CONF[confianza(c.fuentes)]} | ${usadas} | ${celda(desc.get(c.nombre.toLowerCase()) ?? '—')} |`);
+      const tipo = c.real ? `${c.real.tipo}${c.real.nulos ? '' : ' not null'}` : t.real ? '⚠️ no existe' : '—';
+      l.push(`| \`${c.nombre}\` | ${tipo} | ${ICONO_CONF[confianza(c.fuentes)]} | ${usadas} | ${celda(desc.get(c.nombre.toLowerCase()) ?? '—')} |`);
     }
   }
   l.push('', '### Procedimientos que la usan', '');
@@ -215,6 +220,36 @@ for (const t of tablas) {
   ].join('\n'));
 }
 salida.podar(join(RUTAS.sql, '03-tablas'), (r) => r.endsWith('.sql'));
+
+// ─── SQL por procedimiento: sus tablas, con las columnas que usa ─────────────
+for (const sp of sps.filter((x) => x.dependencias.length)) {
+  const lit = (x) => `N'${String(x).replace(/'/g, "''")}'`;
+  const l = [
+    `-- ${sp.completo}: tablas y columnas que usa`,
+    `-- Generado por governance/scripts/${SCRIPT}. No editar: se regenera.`,
+    `-- Reportes: ${sp.reportes.map((r) => r.codigo).join(', ')}`,
+    `-- Ficha: ${rel(archivoFicha(sp))}`,
+    '',
+    `USE ${sp.base};`,
+    'GO',
+    '',
+    '-- 1. Columnas que devuelve el SP, sin ejecutarlo (falla con SQL dinámico o #temporales).',
+    'SELECT column_ordinal AS orden, name AS columna, system_type_name AS tipo, source_database AS base_origen,',
+    '       source_schema AS esquema_origen, source_table AS tabla_origen, source_column AS columna_origen',
+    `FROM sys.dm_exec_describe_first_result_set_for_object(OBJECT_ID(${lit(`${sp.esquema}.${sp.nombre}`)}), 1)`,
+    'ORDER BY column_ordinal;',
+    '',
+    '-- 2. Muestra de cada tabla con las columnas que usa este SP.',
+  ];
+  for (const d of sp.dependencias) {
+    const cols = [...d.columnas.values()].map((c) => c.nombre).filter((c) => c !== '*').sort();
+    const qn = d.completo.split('.').map((x) => `[${x}]`).join('.');
+    l.push('', `-- ${d.completo} · ${[...d.usos].join(', ') || '—'} · ${cols.length} columna(s)`);
+    l.push(`SELECT TOP (100) ${cols.length ? cols.map((c) => `[${c}]`).join(', ') : '*'}`, `FROM ${qn} WITH (NOLOCK);`);
+  }
+  salida.escribir(archivoSqlSp(sp), `${l.join('\n')}\n`);
+}
+salida.podar(join(RUTAS.sql, '05-por-procedimiento'), (r) => r.endsWith('.sql'));
 
 // ─── Índices ──────────────────────────────────────────────────────────────────
 const cuenta = (f) => sps.filter(f).length;

@@ -21,7 +21,8 @@ git diff --cached --stat
 ```
 
 1. **Credenciales y servidores**: ninguna cadena de conexión, usuario, contraseña ni nombre de host.
-   Los scripts reciben el servidor por parámetro.
+   Viven solo en `.env` (ignorado por git); `.env.example` va con valores vacíos. Las cabeceras de los cuerpos
+   extraídos nombran la conexión (`mish`), nunca el host.
 2. **Datos**: ningún resultado de `sql/03-tablas` (muestras) pegado en fichas o CSV. Los CSV de
    `fuente/dependencias/` solo contienen metadatos (nombres de objetos y columnas).
 3. **SQL que escribe**: los archivos de `sql/` solo leen (`SELECT`, metadatos, `sp_helptext`). Ninguno

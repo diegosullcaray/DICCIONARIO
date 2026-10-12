@@ -22,7 +22,9 @@ y después `fuente/reportes.json`). El documento se corrige; la discrepancia se 
 | Cuerpo de cada SP | `procedimientos/<base>/<esquema>/<SP>.sql` | se pega tal cual sale de la base, sin "arreglarlo" |
 | Dependencias según el motor | `fuente/dependencias/<base>.csv` | no: es el resultado de `sql/02-dependencias/<base>.sql` |
 | Consumo del front | `fuente/consumo-front.json` | no: `npm run trazar:front` |
-| SQL de extracción, dependencias y tablas | `sql/01-*`, `sql/02-*`, `sql/03-*` | **no**: se generan |
+| Estructura real de tablas | `fuente/estructura/<base>.csv` | no: `python herramientas/bd.py estructura` |
+| Conexión a SQL Server | `herramientas/` (Python) | sí; `pyodbc.connect` solo en `db.py` |
+| SQL de extracción, dependencias, tablas y por SP | `sql/01-*`, `02-*`, `03-*`, `05-*` | **no**: se generan |
 | Consultas utilitarias | `sql/04-consultas/` | sí |
 | Fichas, índices y JSON del diccionario | `diccionario/` | solo la prosa **debajo** de `<!-- generado:fin -->` |
 
@@ -39,12 +41,13 @@ reportes.json ─► npm run generar ─► sql/01-extraccion/…/<SP>.sql ─�
                                          npm run generar ─► diccionario/ + hallazgos
 ```
 
+Con acceso a la base, `python herramientas/bd.py todo` hace los pasos de SSMS sin intervención manual.
 Detalle: [flujo de trabajo](governance/docs/development/workflow.md).
 
 ## 3. Reglas que no se negocian
 
-- **Nada de credenciales**: ni servidor, ni usuario, ni contraseña en archivos versionados. Los scripts
-  piden el servidor por parámetro y usan autenticación integrada.
+- **Nada de credenciales**: ni servidor, ni usuario, ni contraseña en archivos versionados. Viven solo en
+  `.env` (no versionado; mismas variables que REPORTES-AUTOMATIZADOS). Ver la skill `dic-conexiones-bd`.
 - **No se inventa semántica**: una columna sin descripción confirmada queda `_por documentar_`.
   El nombre de una columna no es su significado.
 - **El analizador estático es una heurística**: `inferida` no es `confirmada`. Ver
@@ -67,4 +70,5 @@ Detalle: [flujo de trabajo](governance/docs/development/workflow.md).
 npm run generar     # regenera SQL, diccionario y copias de agentes
 npm run verificar   # hallazgos + generados al día + enlaces + índice de skills
 npm test            # pruebas del analizador T-SQL
+npm run test:py     # pruebas de las herramientas Python
 ```

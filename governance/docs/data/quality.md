@@ -31,6 +31,8 @@ Reglas que `npm run verificar` aplica y cómo se resuelve cada hallazgo. El esta
 | `columna-sin-resolver` | aviso | columna sin calificar con varias tablas posibles | validar con el motor o leer el SP y anotarlo en la ficha |
 | `discrepancia-motor` | aviso | tabla de la misma base que ve el analizador y no el motor | revisar: suele ser un alias mal leído o un objeto que ya no existe |
 | `motor-con-error` | aviso | `dm_sql_referenced_entities` falló para el SP | el SP no compila contra el esquema actual: hallazgo para el dueño del SP |
+| `tabla-inexistente` | error | la tabla no está en `fuente/estructura/<base>.csv` aunque esa base se consultó | SP roto o tabla renombrada: avisar al dueño del SP |
+| `columna-inexistente` | error / aviso | la columna no existe en la tabla real; error si era exacta o del motor, aviso si era inferida | si era inferida, el analizador la atribuyó mal: anotarlo o agregar un caso de prueba |
 | `analisis-aproximado` | info | MERGE o PIVOT | revisar columnas a mano |
 | `varios-resultados` | info | el SP devuelve más de un conjunto de filas | confirmar cuál consume el reporte |
 

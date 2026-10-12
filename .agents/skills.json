@@ -7,6 +7,11 @@
       "description": "Cómo se determina qué tablas y columnas usa cada SP, combinando el analizador estático de T-SQL con las dependencias del motor de SQL Server. Usar al revisar una ficha generada, resolver columnas inferidas o sin resolver, validar un lote con sys.dm_sql_referenced_entities o corregir un error del analizador."
     },
     {
+      "name": "dic-conexiones-bd",
+      "path": "governance/skills/dic-conexiones-bd/SKILL.md",
+      "description": "Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y los comandos de herramientas/bd.py para extraer cuerpos, dependencias y estructura. Usar al configurar el entorno, al bajar SP de la base o al diagnosticar un error de conexión."
+    },
+    {
       "name": "dic-extraccion-sp",
       "path": "governance/skills/dic-extraccion-sp/SKILL.md",
       "description": "Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server y dejarlo donde el diccionario lo lee. Usar al extraer uno o muchos SP del catálogo, al pegar un resultado de sp_helptext, o cuando un SP aparece como pendiente, huérfano o incompleto."

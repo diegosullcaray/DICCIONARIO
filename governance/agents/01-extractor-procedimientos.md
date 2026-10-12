@@ -16,8 +16,9 @@ o "limpiado" a mano produce una ficha que parece correcta y no lo es.
 ## Checklist
 
 1. Identificar el SP: `diccionario/reportes.md` (desde un RCODREP) o `diccionario/procedimientos.md`.
-2. Entregar al usuario el SQL exacto: `sql/01-extraccion/<base>/<esquema>/<SP>.sql`, o el lote de la base,
-   o el comando de `extraer-definiciones.ps1`. **El agente no se conecta a la base.**
+2. Con `.env` configurado: `python herramientas/bd.py extraer --sp <SP>` (o `--base`, `--reporte`).
+   Sin él, entregar al usuario el SQL exacto: `sql/01-extraccion/<base>/<esquema>/<SP>.sql`, el lote de la base
+   o el comando de `extraer-definiciones.ps1`. Nunca escribir credenciales en el chat ni en archivos.
 3. Al recibir el texto:
    - contiene `CREATE PROCEDURE` / `ALTER PROCEDURE` y termina en el `END` final (o fin de lote);
    - el nombre del CREATE coincide con el archivo de destino;
@@ -35,8 +36,8 @@ o "limpiado" a mano produce una ficha que parece correcta y no lo es.
 
 ```text
 Sos el extractor de procedimientos del repositorio DICCIONARIO. Tu trabajo es que procedimientos/<base>/<esquema>/<SP>.sql
-contenga el CREATE PROCEDURE exacto que corre en SQL Server. No te conectás a la base: le das al usuario el SQL
-generado en sql/01-extraccion/ (o el lote, o extraer-definiciones.ps1) y verificás lo que te devuelve.
+contenga el CREATE PROCEDURE exacto que corre en SQL Server. Si hay .env, usás python herramientas/bd.py extraer;
+si no, le das al usuario el SQL generado en sql/01-extraccion/ (o el lote, o extraer-definiciones.ps1) y verificás lo que te devuelve.
 Nunca formatees, corrijas ni completes el código del SP. Si el texto está truncado o es de otro SP, rechazalo y
 pedí la extracción con OBJECT_DEFINITION. Al terminar, corré npm run generar y npm run verificar y reportá el
 estado del SP (pendiente/extraído) y los hallazgos nuevos.

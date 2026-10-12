@@ -37,6 +37,7 @@ Qué verifica cada compuerta y qué bloquea: [compuertas de calidad](./docs/deve
 | [`trazar-front.mjs`](./scripts/trazar-front.mjs) | qué RCODREP consume MIS-angular-front |
 | [`sincronizar-agentes.mjs`](./scripts/sincronizar-agentes.mjs) | copia agentes y skills a `.claude/` |
 | [`extraer-definiciones.ps1`](./scripts/extraer-definiciones.ps1) | baja en lote los cuerpos de SP con `sqlcmd` (Windows) |
+| [`herramientas/bd.py`](../herramientas/README.md) | Python: conexión a SQL Server para extraer cuerpos, dependencias y estructura, y consultar el mapa |
 
 Manual completo: [`scripts/README.md`](./scripts/README.md).
 
@@ -44,6 +45,7 @@ Manual completo: [`scripts/README.md`](./scripts/README.md).
 
 | Skill | Qué resuelve |
 |---|---|
+| [`dic-conexiones-bd`](./skills/dic-conexiones-bd/SKILL.md) | los 3 servidores del `.env` y los comandos de `herramientas/bd.py` |
 | [`dic-extraccion-sp`](./skills/dic-extraccion-sp/SKILL.md) | sacar el cuerpo de un SP de la base y dejarlo donde el diccionario lo lee |
 | [`dic-analisis-dependencias`](./skills/dic-analisis-dependencias/SKILL.md) | qué tablas y columnas usa un SP: analizador, motor y sus límites |
 | [`dic-lectura-tsql`](./skills/dic-lectura-tsql/SKILL.md) | patrones de los SP de reportes y cómo leerlos sin equivocarse |

@@ -9,6 +9,17 @@ npm run generar     # aparecen/desaparecen los SQL de extracción de los SP nuev
 npm run verificar   # hallazgos de la fuente: duplicados, nombres, parámetros
 ```
 
+## Atajo: todo desde Python
+
+Con el `.env` configurado (ver skill [dic-conexiones-bd](../../skills/dic-conexiones-bd/SKILL.md)), los pasos 1, 2 y 4
+se hacen solos:
+
+```bash
+python herramientas/bd.py --env <ruta al .env> todo [--base mod_rep]
+```
+
+Los pasos de abajo son lo mismo, a mano desde SSMS, para quien no tenga Python o el driver ODBC.
+
 ## 1. Extraer el cuerpo del SP → 🔎 extraído
 
 **Uno por uno (SSMS):**
@@ -50,7 +61,14 @@ En la ficha del SP, debajo de `<!-- generado:fin -->`: propósito, reglas de neg
 En la ficha de cada tabla: descripción y una línea por columna `` - `COLUMNA`: descripción ``.
 Ver la skill [dic-fichas](../../skills/dic-fichas/SKILL.md).
 
-## 4. Perfilar las tablas
+## 4. Estructura y perfil de las tablas
+
+`python herramientas/bd.py estructura` guarda tipos y columnas reales en `fuente/estructura/<base>.csv`:
+la ficha de tabla muestra el tipo de cada columna y el validador marca `tabla-inexistente` y
+`columna-inexistente`.
+
+`sql/05-por-procedimiento/<base>/<esquema>/<SP>.sql` trae, para un SP, una muestra de cada tabla que usa
+con solo sus columnas, y las columnas que devuelve sin ejecutarlo.
 
 `sql/03-tablas/<base>/<esquema>/<tabla>.sql` trae, para cada tabla descubierta: estructura real, tamaño,
 muestra de 100 filas y nulos/distintos de cada columna usada. Útil para escribir descripciones con datos,

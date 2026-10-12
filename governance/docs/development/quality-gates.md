@@ -3,6 +3,7 @@
 | Comando | Qué verifica | Bloquea |
 |---|---|---|
 | `npm test` | el analizador T-SQL contra casos fijos y el SP real `GSELREP001` | cualquier prueba roja |
+| `npm run test:py` | herramientas Python con conexión simulada; `pyodbc.connect` solo en `db.py` | cualquier prueba roja |
 | `npm run verificar` | hallazgos de nivel error · generados al día · enlaces internos · índice de skills | sí |
 | `npm run verificar:estricto` | lo anterior + hallazgos de nivel aviso | sí, para cerrar una base completa |
 | `npm run hallazgos` | lista completa, con los informativos | no (informe) |
