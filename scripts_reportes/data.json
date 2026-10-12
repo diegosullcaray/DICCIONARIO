@@ -1,0 +1,7229 @@
+[
+    {
+        "RCODREP": "SEL_EFEC_01",
+        "RDESREP": "Filtro Detalle Efectividad",
+        "RTPREP": {
+            "name": "mod_rep.com.GSELREP001"
+        }
+    },
+    {
+        "RCODREP": "SEL_JEFE_01",
+        "RDESREP": "Filtro de Jefes",
+        "RTPREP": {
+            "name": "mod_rep.com.GSELREP002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "codmod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GSREVA01",
+        "RDESREP": "Reporte Reva",
+        "RTPREP": {
+            "name": "mod_rep.[rep].GSREVA01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "Fecha"
+                },
+                {
+                    "order": 2,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 3,
+                    "name": "codrel"
+                },
+                {
+                    "order": 4,
+                    "name": "codmod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GSREVA101",
+        "RDESREP": "Reporte Reva",
+        "RTPREP": {
+            "name": "mod_rep.[rep].GSREVA01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "Fecha"
+                },
+                {
+                    "order": 2,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 3,
+                    "name": "codrel"
+                },
+                {
+                    "order": 4,
+                    "name": "codmod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "VAC_RES_EJE_01",
+        "RDESREP": "Resumen ejecutivo",
+        "RTPREP": {
+            "name": "mod_gpa.vac.GRESEJE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RSRTOP01",
+        "RDESREP": "Monitor de Efectividades TOP",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOP001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "level"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GSREVA201",
+        "RDESREP": "Reporte Reva",
+        "RTPREP": {
+            "name": "mod_rep.[rep].GSREVA01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "Fecha"
+                },
+                {
+                    "order": 2,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 3,
+                    "name": "codrel"
+                },
+                {
+                    "order": 4,
+                    "name": "codmod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "VAC_RES_EJE_02",
+        "RDESREP": "Resumen Ejecutivo por Meses",
+        "RTPREP": {
+            "name": "mod_gpa.vac.GRESEJE02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "rma/administracion/Mora/monitor_efectividad_rma_03",
+        "RDESREP": "Gestión de Monitor Efectividades",
+        "RTPREP": {
+            "name": "mod_rep.com.RSGESMOEF001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tram"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFEC_03",
+        "RDESREP": "Gestión de Monitor Efectividades",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tram"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GSCAMP_01",
+        "RDESREP": "Campaña Agil",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GSCAMP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "ind"
+                },
+                {
+                    "order": 4,
+                    "name": "sem"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RES_SEC_REP_01",
+        "RDESREP": "Lista Clientes Reprogramados",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESCLIREP01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GSCASEG_01",
+        "RDESREP": "Campaña de Seguros",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GSCASEG01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GSMODAGEN_01",
+        "RDESREP": "Modulo de Agendamiento",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GSMODAGEN01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRESCAMIMP_01",
+        "RDESREP": "Campaña Imparables",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRESCAMIMP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DET_CLI_01",
+        "RDESREP": "Lista Clientes Reprogramados ",
+        "RTPREP": {
+            "name": "mod_rep.com.GLISDETCLI01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEL_CIU_01",
+        "RDESREP": "Filtro CIIU",
+        "RTPREP": {
+            "name": "mod_rep.com.GSELCIUT001"
+        }
+    },
+    {
+        "RCODREP": "GRESCONDO_02",
+        "RDESREP": "Modulo de Condonaciones Mes Día ",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESCAMCOND01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tdcrMonto"
+                },
+                {
+                    "order": 4,
+                    "name": "tdcrMoti"
+                },
+                {
+                    "order": 5,
+                    "name": "diariomes"
+                },
+                {
+                    "order": 6,
+                    "name": "niveles"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "REACT_PDM_01",
+        "RDESREP": "Lista Clientes PDM Reprogramados",
+        "RTPREP": {
+            "name": "mod_rep.com.GLISDETCLIPDM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "base"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRSCMIS_01",
+        "RDESREP": "Modulo de Detalle Seguro",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRSCMIS_02",
+        "RDESREP": "Modulo de Detalle Asesor",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRSCMIS_03",
+        "RDESREP": "Modulo de Resumen Pasivos",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CAP_SEGUI_BP_01",
+        "RDESREP": "Captaciones Seguimiento BP",
+        "RTPREP": {
+            "name": "mod_rep.com.GSEGCAPBP01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PANEL_SUP_03",
+        "RDESREP": "Panel de Supervisión 2",
+        "RTPREP": {
+            "name": "mod_rep.com.RSPANSUP003",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "carg"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PANEL_SUP_02",
+        "RDESREP": "Panel de Supervisión Detalle",
+        "RTPREP": {
+            "name": "mod_rep.com.RSPANSUP002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "carg"
+                },
+                {
+                    "order": 4,
+                    "name": "state"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "LIS_CAPRET_01",
+        "RDESREP": "List Capacity Retailer",
+        "RTPREP": {
+            "name": "mod_rep.com.GLISCAPRET01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFEC_01",
+        "RDESREP": "Monitor de Efectividades",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPORCORRE_06",
+        "RDESREP": "Corresponsales Metas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RCORRES06]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SAL_CAR_01",
+        "RDESREP": "Saldo Puntual de Cartera",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSALCAR01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SAL_CAR_02",
+        "RDESREP": "Cartera por Producto",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSALCAR02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SAL_CAR_03",
+        "RDESREP": "Productividad",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSALCAR03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "actividadtasas_01",
+        "RDESREP": "Actividad y Tasas",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDACTITASA01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DesemDiario_01",
+        "RDESREP": "Desembolsos Diarios",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDDESEMDIA  ",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_DAT_PRO_01",
+        "RDESREP": "Datos por Producto 1",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDATPRO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_DAT_PRO_02",
+        "RDESREP": "Datos por Producto 2",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDATPRO02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_DAT_PRO_03",
+        "RDESREP": "Datos por Producto 3",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDATPRO03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_DAT_PRO_04",
+        "RDESREP": "Datos por Producto 4",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDATPRO04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PortafolioAgro_01",
+        "RDESREP": "Portafolio Agro",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDPORTAGRO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PORTSUPE_01",
+        "RDESREP": "Portafolio y Supervision",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDPSUPERV01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PORTSUPE_02",
+        "RDESREP": "Portafolio y Supervision",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDPSUPERV02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROYCUOTA_02",
+        "RDESREP": "CERO Y UNA CUOTA",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRCEROCUOTAO02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GCMGCAP_01",
+        "RDESREP": "CMG Pasivas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GCMGCAP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "fec"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CaptaBP_01",
+        "RDESREP": "CMG CAPTACIONES BP",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDCCAP_BP01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AVA_POR_01",
+        "RDESREP": "Avance de Portafolio",
+        "RTPREP": {
+            "name": "mod_rep.com.RSAVAPOR01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "mode"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_01",
+        "RDESREP": "Agendamiento Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RSAGECOM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                },
+                {
+                    "order": 4,
+                    "name": "mode"
+                },
+                {
+                    "order": 5,
+                    "name": "fuga"
+                },
+                {
+                    "order": 6,
+                    "name": "prop"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "APP_USO_01",
+        "RDESREP": "Usabilidad APP",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSAPPUSO001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PANEL_SUP_01",
+        "RDESREP": "Panel de Supervisión",
+        "RTPREP": {
+            "name": "mod_rep.com.RSPANSUP001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "carg"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PANEL_SUP_02",
+        "RDESREP": "Panel de Supervisión Detalle",
+        "RTPREP": {
+            "name": "mod_rep.com.RSPANSUP002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "carg"
+                },
+                {
+                    "order": 4,
+                    "name": "state"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEL_CIU_02",
+        "RDESREP": "Filtro CIIU Sector Eco",
+        "RTPREP": {
+            "name": "mod_rep.com.GSELCIUT002"
+        }
+    },
+    {
+        "RCODREP": "EfecRecTramos_01",
+        "RDESREP": "Portafolio Agro",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.GDEFECTMORA01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_CAL_CAR_01",
+        "RDESREP": "Calidad de Cartera 1",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCALCAR01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_CAL_CAR_02",
+        "RDESREP": "Calidad de Cartera 2",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCALCAR02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROYCUOTA_01",
+        "RDESREP": "CERO Y UNA CUOTA",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRCEROCUOTAO01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "HTTPTRACE_01",
+        "RDESREP": "Servicio Reporte de Uso",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.HTTPTRACE",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "AGRO_01",
+        "RDESREP": "AGRO",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREAGRO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Clientes_01",
+        "RDESREP": "Clientes",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRDFCA007",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DESEMBOLSOS_01",
+        "RDESREP": "Desembolsos SIN FAE NI REACTIVA",
+        "RTPREP": {
+            "name": "mod_rep.com.GDACDESEM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEG_AGRO_01",
+        "RDESREP": "SEGURO AGRO",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECM_03",
+        "RDESREP": "Gestión de Monitor Efectividades Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tram"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECM_01",
+        "RDESREP": "Monitor de Efectividades Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOV_02",
+        "RDESREP": "Planilla Movilidad",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVO02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "COSELISTADO_02",
+        "RDESREP": "Listado Cosechas",
+        "RTPREP": {
+            "name": "mod_rep.com.GCOSELIS001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "subpro"
+                },
+                {
+                    "order": 6,
+                    "name": "madu"
+                },
+                {
+                    "order": 7,
+                    "name": "pagen"
+                },
+                {
+                    "order": 8,
+                    "name": "nom"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "COSESEMAFORO_01",
+        "RDESREP": "SEMAFORO DE COSECHAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GCOSEMAF002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "prod"
+                },
+                {
+                    "order": 4,
+                    "name": "subpro"
+                },
+                {
+                    "order": 5,
+                    "name": "madu"
+                },
+                {
+                    "order": 6,
+                    "name": "op"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PRECOSELISTADO_02",
+        "RDESREP": "Listado Pre Cosechas",
+        "RTPREP": {
+            "name": "mod_rep.com.GPRECOSELIS001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "subpro"
+                },
+                {
+                    "order": 6,
+                    "name": "pagen"
+                },
+                {
+                    "order": 7,
+                    "name": "nom"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PRECOSECUADRO_03",
+        "RDESREP": "Cuadro Pre Cosechas",
+        "RTPREP": {
+            "name": "mod_rep.com.GPRECOSCUAD001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "subpro"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOV_01",
+        "RDESREP": "Planilla Movilidad",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "resultado_unidad_negocio_rma_01",
+        "RDESREP": "RESULTADO GUN",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.CABGMRESULUNINEGB01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "canal"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "cuadro_Variable_Riesgo_01",
+        "RDESREP": "Cuadro Variable Riesgo",
+        "RTPREP": {
+            "name": "[mod_rep].[com].[GCMGMORA001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECREPRO_01",
+        "RDESREP": "Monitor de Efectividades Reprogramados",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFEREPRO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_REP_01",
+        "RDESREP": "Monitor de reprogramados",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDMREP001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 4,
+                    "name": "car"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "enrolamiento_colaboradores_01",
+        "RDESREP": "Enrolamiento Colaboradores",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RENRCOLAB01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_REP_SEC_01",
+        "RDESREP": "Monitor de reprogramados",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDMREP001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 4,
+                    "name": "car"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "enrolamiento_pasivo_01",
+        "RDESREP": "Enrolamiento Pasivo",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RENRPAS01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "enrolamiento_Ope_01",
+        "RDESREP": "Enrolamiento Operaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RENROPE01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "enrolamiento_desembolso_01",
+        "RDESREP": "Enrolamiento Desembolso",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RENRDESEM01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "enrolamiento_pasivo_pas_02",
+        "RDESREP": "Enrolamiento Pasivo",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RENRPAS02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "cuadro_Variable_M_01",
+        "RDESREP": "Cuadro Variable Riesgo Mensual",
+        "RTPREP": {
+            "name": "[mod_rep].[com].[GCMGMORA001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "cuadro_Variable_Riesgo_F_01",
+        "RDESREP": "Cuadro Variable Riesgo Finanzas",
+        "RTPREP": {
+            "name": "[mod_rep].[com].[GCMGMORA003]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RMESA_01",
+        "RDESREP": "Efectividades Sin Asignar",
+        "RTPREP": {
+            "name": "mod_rep.com.RMESA01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "pagen"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFEC_SEC_01",
+        "RDESREP": "Detalle de Efectividades Asesor",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE05",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tramof"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "comp_r"
+                },
+                {
+                    "order": 6,
+                    "name": "zcuo"
+                },
+                {
+                    "order": 7,
+                    "name": "ucuo"
+                },
+                {
+                    "order": 8,
+                    "name": "tdcr"
+                },
+                {
+                    "order": 9,
+                    "name": "pagen"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_CAR_01",
+        "RDESREP": "Control Cargas Prod",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRPD001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "opt"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PANEL_SUP_04",
+        "RDESREP": "Supervision desembolsos",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPANSUP004]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "cant"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PANEL_SUP_05",
+        "RDESREP": "Detalle Supervision desembolsos",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPANSUP005]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "cant"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_PASIVA_01",
+        "RDESREP": "GESTION TASAS PASIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_PASIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "agr"
+                },
+                {
+                    "order": 5,
+                    "name": "calc"
+                },
+                {
+                    "order": 6,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DesemDiario_04",
+        "RDESREP": "Operaciones Diario CE 03",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA023]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RMENTORIN_01",
+        "RDESREP": "Reporte Mentoring 01",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRMENTOR001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "resp"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "LSRC_DATA_REACT_01",
+        "RDESREP": "Data de Reactivados",
+        "RTPREP": {
+            "name": "mod_rep.com.RCDATREACT01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Pasivo_01",
+        "RDESREP": "Pasivos",
+        "RTPREP": {
+            "name": "mod_rep.com.GPASP001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PDM_01",
+        "RDESREP": "PDM",
+        "RTPREP": {
+            "name": "mod_rep.com.GPDM001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Clientes_Ope_01",
+        "RDESREP": "Clientes y Operaciones",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCLIOPE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Clientes_nuevoRec_01",
+        "RDESREP": "Clientes nuevos y recurrentes",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRDFCA011",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPORCORRE_01",
+        "RDESREP": "Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RCORRES01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPORCORRE_05",
+        "RDESREP": "Grafico Mapa Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RCORRES05]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Sec_ciiu_01",
+        "RDESREP": "Seguimiento de Sectores",
+        "RTPREP": {
+            "name": "mod_rep.com.RSEGSECTOR001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "grup"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_PASIVA_02",
+        "RDESREP": "GESTION TASAS PASIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_PASIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "agr"
+                },
+                {
+                    "order": 5,
+                    "name": "calc"
+                },
+                {
+                    "order": 6,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_PASIVA_03",
+        "RDESREP": "GESTION TASAS PASIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_PASIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "agr"
+                },
+                {
+                    "order": 5,
+                    "name": "calc"
+                },
+                {
+                    "order": 6,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_PASIVA_M_01",
+        "RDESREP": "GESTION TASAS PASIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_PASIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "agr"
+                },
+                {
+                    "order": 5,
+                    "name": "calc"
+                },
+                {
+                    "order": 6,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_PASIVA_M_02",
+        "RDESREP": "GESTION TASAS PASIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_PASIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "agr"
+                },
+                {
+                    "order": 5,
+                    "name": "calc"
+                },
+                {
+                    "order": 6,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_PASIVA_M_03",
+        "RDESREP": "GESTION TASAS PASIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_PASIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "agr"
+                },
+                {
+                    "order": 5,
+                    "name": "calc"
+                },
+                {
+                    "order": 6,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_COLREC_01",
+        "RDESREP": "proyeccion de colocaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_COLREC_02",
+        "RDESREP": "proyeccion de recuperaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_DIACOLREC_01",
+        "RDESREP": "proyeccion diaria colocaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES003]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_DIACOLREC_02",
+        "RDESREP": "proyeccion diaria monto",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES004]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_DIACOLREC_03",
+        "RDESREP": "proyeccion diaria efectividades",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES005]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_DIACOLREC_AS_01",
+        "RDESREP": "proyeccion diaria colocaciones asesor",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES006]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_DIACOLREC_AS_02",
+        "RDESREP": "proyeccion diaria monto asesor",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES007]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_DIACOLREC_AS_03",
+        "RDESREP": "proyeccion diaria efectividades asesor",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES008]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_01",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_02",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_03",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_04",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_05",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_06",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_M_01",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_M_02",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_M_03",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_M_04",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_M_05",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_M_06",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RSRTOPV01",
+        "RDESREP": "Monitor de Efectividades TOP",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRTOPV001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "level"
+                },
+                {
+                    "order": 4,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_01",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_M_01",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_01",
+        "RDESREP": "Top 10 Cero Cuotas Nuevas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRESCAMIMP_02",
+        "RDESREP": "Top Imparables",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESTOPIMP01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "resultado_unidad_negocio_rma_ope_01",
+        "RDESREP": "RESULTADO GUN",
+        "RTPREP": {
+            "name": "strategos.mod_rep_com_act.CABGMRESULUNINEGB01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "canal"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRESCONDO_01",
+        "RDESREP": "Modulo de Condonaciones",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESCAMCOND01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tdcrMonto"
+                },
+                {
+                    "order": 4,
+                    "name": "tdcrMoti"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CAP_SEGUI_RED_01",
+        "RDESREP": "Captaciones Seguimiento Red",
+        "RTPREP": {
+            "name": "mod_rep.com.GSEGCAPRED01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DesemDiario_02",
+        "RDESREP": "Operaciones Diario CE 01",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA021]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DesemDiario_03",
+        "RDESREP": "Operaciones Diario CE 02",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA022]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RMENTORIN_02",
+        "RDESREP": "Reporte Mentoring 02",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRMENTOR002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RESNMOVR_01",
+        "RDESREP": "Mov. Resumen Detalle Recuperaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RESDMOV02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_02",
+        "RDESREP": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_03",
+        "RDESREP": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO003]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_04",
+        "RDESREP": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO004]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_05",
+        "RDESREP": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO005]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRESCONDO_03",
+        "RDESREP": "Modulo de Condonaciones Mes Día ",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESCAMCOND03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "tdcrMonto"
+                },
+                {
+                    "order": 5,
+                    "name": "tdcrMoti"
+                },
+                {
+                    "order": 6,
+                    "name": "niveles"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_03",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_M_03",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_04",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_M_04",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TABDIG_02",
+        "RDESREP": "Tablero digital Corresponsal",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRTABCORRO01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TABDIG_01",
+        "RDESREP": "APP CLIENTES",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRTABAPPO01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DESCRED_01",
+        "RDESREP": "Reporte de Destino de Crédito",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESDESCRE02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPROSPCORRE_01",
+        "RDESREP": "TAB_MENU_PROSPECTO_Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RPROSCORR002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_COLREC_03",
+        "RDESREP": "proyeccion diaria colocacion detalle",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES009]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "pagen"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PROYEC_COLREC_04",
+        "RDESREP": "proyeccion diaria recuperacion detalle",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSPROYCOLDES010]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRSCMIS_04",
+        "RDESREP": "Meta por Producto",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG05",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "P_Datos_01",
+        "RDESREP": "Plan de Datos",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRESPDATOS01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "P_Datos_02",
+        "RDESREP": "Plan de Datos",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRESPDATOS02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRSCMIS_05",
+        "RDESREP": "Reporte Detalle",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG06",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DESEMP_SOC_01",
+        "RDESREP": "Desempeño Social",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDESEMP01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Monitor_Dese_01",
+        "RDESREP": "Monitor desembolsos Operación",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA027]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Monitor_Dese_02",
+        "RDESREP": "Monitor desembolsos Monto",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA030]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Monitor_Dese_03",
+        "RDESREP": "Monitor desembolsos Cumplimiento",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA028]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Monitor_Dese_04",
+        "RDESREP": "Monitor desembolsos Promedio",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA029]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DESE_SOC_AS_01",
+        "RDESREP": "Desempeno Social",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSDESEMP02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RACTGP_01",
+        "RDESREP": "Activas PDM",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RACTGP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "reporte_autonomia_newdiaria_01",
+        "RDESREP": "Lista...",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDCGEST_ACTIVAST02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEL_JER_MENTORING_01",
+        "RDESREP": "FILTRO ASESORES",
+        "RTPREP": {
+            "name": "mod_rep.com.GSELJERAR002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "R_APADRINA_01",
+        "RDESREP": "Apadrinamiento",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDMA023]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOV_03",
+        "RDESREP": "Detalle",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVO05",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOVR_01",
+        "RDESREP": "Planilla Movilidad Recuperador",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVRO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOVR_03",
+        "RDESREP": "Planilla Movilidad Recuperador",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVRO05",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "LST_AUT_01",
+        "RDESREP": "Lista Autonomias",
+        "RTPREP": {
+            "name": "mod_rep.com.GLISAUTO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "c_aut"
+                },
+                {
+                    "order": 4,
+                    "name": "aut"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_02",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RPROGOB_M_02",
+        "RDESREP": "Reporte de cartera de progamas del gobierno",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESPROGOB01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "var"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_M_01",
+        "RDESREP": "Top 10 Cero Cuotas Nuevas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_M_02",
+        "RDESREP": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_M_03",
+        "RDESREP": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO003]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_M_04",
+        "RDESREP": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO004]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CEROCUOTA_TOPCNUEVA_M_05",
+        "RDESREP": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GTOPCERCUO005]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod2"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPROSPCORRE_06",
+        "RDESREP": "Meta_PROSPECTO_Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RPROSCORR005]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DESE_SOC_01",
+        "RDESREP": "Desempeno Social",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDESEMP01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "uni_cfg"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPROSPCORRE_02",
+        "RDESREP": "Graf_Pie_PROSTO_Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RPROSCORR004]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "reporte_autonomia_new_01",
+        "RDESREP": "Lista...",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDCGEST_ACTIVAST02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RESINCGRUP_01",
+        "RDESREP": "Incentivos Meta Grupos PDM",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RINCEGP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOV_04",
+        "RDESREP": "Detalle Dep",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVO06",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CLI_VULNERABLE_01",
+        "RDESREP": "Filtro Clientes Vulnerables",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSCLIVULNER01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOVR_04",
+        "RDESREP": "Detalle Dep Recuperador",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVRO06",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DESEMP_SOC_PAS_01",
+        "RDESREP": "Desempeno Social Pasivos",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDESEMPAS01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_08",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_07",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "rankKay_01",
+        "RDESREP": "Ranking Kaypacha",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDASHKAY03]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "Ter"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "rankKayOpe_01",
+        "RDESREP": "Ranking Kaypacha Operaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDASHKAY05]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "Ter"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "rankKayrecu_01",
+        "RDESREP": "Ranking Kaypacha Recuperaciones",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GDASHKAY06]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "Ter"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "INCEN_PDM_01",
+        "RDESREP": "INCENTIVOS PDM",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RINCEPDM01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DET_INCEN_PDM_01",
+        "RDESREP": "DETALLE INCENTIVO PDM",
+        "RTPREP": {
+            "name": "mod_rep.[com].[DINCEPDM01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                },
+                {
+                    "order": 4,
+                    "name": "pagen"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CARACT_CARTERA_01",
+        "RDESREP": "CARACT.CARTERA",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA035]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "HCARBONO_01",
+        "RDESREP": "Huella de carbono",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSHHCARB001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "cargambiental"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CARACT_CARTERA_M_01",
+        "RDESREP": "CARACT.CARTERA.Mensual",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA035]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CARACT_pas_M_01",
+        "RDESREP": "CARACT.pas,Mensual",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA036]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "segmento"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GCTABDIG_VR2_COM_03",
+        "RDESREP": "GC TABLERO DIGITAL - Comercial",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRGCTABDIGO03]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GCTABDIG_VR2_OPE_02",
+        "RDESREP": "GC TABLERO DIGITAL - Operacional",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRGCTABDIGO02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEGUI_COMITE_01",
+        "RDESREP": "SEGUIMIENTO COMITE",
+        "RTPREP": {
+            "name": "mod_rep.com.GCOMCRE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECREASIG_01",
+        "RDESREP": "Monitor de Efectividades Reasignados",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFER01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECREASIGM_01",
+        "RDESREP": "Monitor de Efectividades Reasignados Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFER01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RECSERV_PAS_01",
+        "RDESREP": "Recaudos Pasivos",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRSRV001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CR_01",
+        "RDESREP": "Agendamiento Comercial Reasignado",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "ver"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEG_PDM_01",
+        "RDESREP": "Seguimiento PDM",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSSEGPDM01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RVIUWGCOR_01",
+        "RDESREP": "Reporte Vista General Corresponsal",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRVGENCORO01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "tip_age"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GLISAUTRO_04",
+        "RDESREP": "Listado Autonomias",
+        "RTPREP": {
+            "name": "mod_rep.com.GLISAUTRO05",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "cargo"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "MOVIMIENTO_CLIENTES_01",
+        "RDESREP": "Movimiento Clientes",
+        "RTPREP": {
+            "name": "mod_rep.com.GMOVCLI01",
+            "params": []
+        }
+    },
+    {
+        "RCODREP": "RESMORAGP_01",
+        "RDESREP": "Mora Grupos PDM",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RMORAGP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CARACT_pas_01",
+        "RDESREP": "CARACT.pas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA036]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "segmento"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECREASIG_02",
+        "RDESREP": "Detalle de Efectividades",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFER02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tramof"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "comp_r"
+                },
+                {
+                    "order": 6,
+                    "name": "zcuo"
+                },
+                {
+                    "order": 7,
+                    "name": "ucuo"
+                },
+                {
+                    "order": 8,
+                    "name": "nom"
+                },
+                {
+                    "order": 9,
+                    "name": "resp"
+                },
+                {
+                    "order": 10,
+                    "name": "tdcr"
+                },
+                {
+                    "order": 11,
+                    "name": "pagen"
+                },
+                {
+                    "order": 12,
+                    "name": "fcompro"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECTRAMOSC_01",
+        "RDESREP": "Seguimiento PDM",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFETRC01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RVIUWGCORE_02",
+        "RDESREP": "Reporte Vista Gestión Corresponsal",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRVGENCORO02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "tip_age"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GCOMCRE_02",
+        "RDESREP": "Comite de Créditos Diario",
+        "RTPREP": {
+            "name": "mod_rep.com.GCOMCRE02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CLI_PAS_01",
+        "RDESREP": "CMG Clientes Pasivos",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCMGCLIPAS01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "agru"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CLI_PAS_DETA_01",
+        "RDESREP": "CMG Clientes Pasivos Detalle",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCMGCLIPAS03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "agru"
+                },
+                {
+                    "order": 5,
+                    "name": "grupo"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "cmg_mora_simp_01",
+        "RDESREP": "Cmg Mora Sin Impulso",
+        "RTPREP": {
+            "name": "[mod_rep].[com].[GCMGMORA001_SIMP]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAFSEGPAS_01",
+        "RDESREP": "GRAFICO SEGURO PASIVOS ONCOLOGICO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RGRAFSEGPAS01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAFSEGPAS_02",
+        "RDESREP": "GRAFICO SEGURO PASIVOS MULTIPLE AHORRO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RGRAFSEGPAS02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_03",
+        "RDESREP": "Detalle Agendamiento Automatico y Express",
+        "RTPREP": {
+            "name": "mod_rep.com.RSAGECOM03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                },
+                {
+                    "order": 4,
+                    "name": "mode"
+                },
+                {
+                    "order": 5,
+                    "name": "fuga"
+                },
+                {
+                    "order": 6,
+                    "name": "prop"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "prod_misi_04",
+        "RDESREP": "Productos Top Territorio",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPMIS004",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Monitor_Dese_misi_01",
+        "RDESREP": "Monitor desembolsos Operación",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA050]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CRM_01",
+        "RDESREP": "Agendamiento Comercial Reasignado Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "ver"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CR_03",
+        "RDESREP": "Detalle Agendamiento Comercial Reasignado",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "pagen"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CRM_03",
+        "RDESREP": "Detalle Agendamiento Comercial Reasignado Mesual",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "pagen"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_RANK_MUJ_01",
+        "RDESREP": "RANKING MUJER",
+        "RTPREP": {
+            "name": "mod_rep.com.RRANKM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_RANK_MUJ_02",
+        "RDESREP": "RANKING MUJER CARTERA",
+        "RTPREP": {
+            "name": "mod_rep.com.RRANKM02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "cmg_mora_simp_m_01",
+        "RDESREP": "Cmg Mora Sin Impulso Mensual",
+        "RTPREP": {
+            "name": "[mod_rep].[com].[GCMGMORA001_SIMP]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "fec"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TABDIGITAL_COMERCIAL_01",
+        "RDESREP": "TABLERO DIGITAL COMERCIAL",
+        "RTPREP": {
+            "name": "mod_rep.com.RTABDIGCOM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_RETE_01",
+        "RDESREP": "Modulo Retención",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONRENT01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TB_PANEL_OPE_01",
+        "RDESREP": "PANEL OPERACIONES PASIVO",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSROPERA001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Monitor_Dese_misi_02",
+        "RDESREP": "Monitor desembolsos Operación ",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA050_3]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CRM_F_01",
+        "RDESREP": "Agendamiento Comercial Reasignado Flujo",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_M_01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "ver"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "prod_misi_05",
+        "RDESREP": "Monitor desembolsos Operación ",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA050_4]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_TAB_COM_01",
+        "RDESREP": "TABLERO DIGITAL COMERCIAL",
+        "RTPREP": {
+            "name": "mod_rep.com.RSTABCOMER",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RSIMR_01",
+        "RDESREP": "IMR",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSIMR01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CAP_SEGUI_BP_FC_01",
+        "RDESREP": "Gestión Red de Agencias",
+        "RTPREP": {
+            "name": "mod_rep.com.GSEGCAPBP02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CARTERA_03",
+        "RDESREP": "CMG CARTERA",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRDFCA038",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_DESEMB_01",
+        "RDESREP": "Estructura de Desembolsos",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDESEMB",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGROMIX_01",
+        "RDESREP": "REPORTE AGROMIX",
+        "RTPREP": {
+            "name": "mod_rep.com.RAGROMIX",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECREASIG_03",
+        "RDESREP": "Efectividades Reasignados fechas",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFER03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "imp"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "Tab_Dig_Com_A_01",
+        "RDESREP": "Tablero Digital Comercial Asesor",
+        "RTPREP": {
+            "name": "mod_rep.com.RSTABCOMER02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "usuariobt"
+                },
+                {
+                    "order": 2,
+                    "name": "Fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEGUROS_ASESOR_01",
+        "RDESREP": "Tablero Seguros Asesor",
+        "RTPREP": {
+            "name": "mod_rep.com.RSEGASE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "Fecha"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_BASE_NEG_01",
+        "RDESREP": "Base Negativa Riesgos",
+        "RTPREP": {
+            "name": "mod_rep.com.RSBASENEG01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "nom"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RESNMOV_01",
+        "RDESREP": "Mov. Resumen Detalle Comercial",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RESDMOV01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMCUONUEV_02",
+        "RDESREP": "Tipo Cero Cuotas Nuevas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GCMCNUE002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "tipcuota"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RDETCORR_01",
+        "RDESREP": "Detalle Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RDETCORR01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "pagen"
+                },
+                {
+                    "order": 5,
+                    "name": "tipo"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SAL_CAR_04",
+        "RDESREP": "Saldo Puntual de Cartera Vigente",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSALCARVIGE01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_TAB_COM_02",
+        "RDESREP": "TABLERO DIGITAL COMERCIAL DETALLE",
+        "RTPREP": {
+            "name": "mod_rep.com.RSTABCOMER02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "usuariobt"
+                },
+                {
+                    "order": 2,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CAP_SEGUI_FC_BP_01",
+        "RDESREP": "Gestión Red de Agencias",
+        "RTPREP": {
+            "name": "mod_rep.com.GSEGCAPBP02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CARTERA_02",
+        "RDESREP": "CMG CARTERA",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRDFCA037",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tipmet"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CARTERA_ASESOR_01",
+        "RDESREP": "Cartera Asesor",
+        "RTPREP": {
+            "name": "mod_rep.com.GCMGCARTAS001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 2,
+                    "name": "Fecha"
+                },
+                {
+                    "order": 3,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 4,
+                    "name": "met"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "REP_CATEGO_ASE_01",
+        "RDESREP": "Reporte Categorización Asesor",
+        "RTPREP": {
+            "name": "mod_sec.dbo.GCATSEC01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_bt"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_01",
+        "RDESREP": "GRAF Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_02",
+        "RDESREP": "GRAF Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_03",
+        "RDESREP": "Graf Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRBSOLI_01",
+        "RDESREP": "Reporte Grupo Solidario",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDEPGSOLID01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_05",
+        "RDESREP": "Graf Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM05",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_06",
+        "RDESREP": "Graf Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM06",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_RANK_COM_01",
+        "RDESREP": "Ranking Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRANKCOM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "territorio"
+                },
+                {
+                    "order": 2,
+                    "name": "corredor"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_GEST_COM_02",
+        "RDESREP": "Reporte Evolutivo Var Vigente",
+        "RTPREP": {
+            "name": "mod_rep.com.RREPGESTCOM02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_INT_COM_01",
+        "RDESREP": "Reporte Monitor Inteligencia Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RMONINTCOM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_CARTEPAS_01",
+        "RDESREP": "Reporte Carterización Pasivo",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCOMPAS01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 2,
+                    "name": "codrel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_SALCAP_COM_01",
+        "RDESREP": "Reporte Saldo Captacion Cartera",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCAPCOME01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "codrel"
+                },
+                {
+                    "order": 2,
+                    "name": "fecha"
+                },
+                {
+                    "order": 3,
+                    "name": "tipcod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_FECH02",
+        "RDESREP": "Fecha Reporte Hoy Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RFECREPMEN02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRSCMISREP_01",
+        "RDESREP": "Seguro Optativo",
+        "RTPREP": {
+            "name": "mod_rep.com.GRESREPSEG_01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "REP_CERCUOT_01",
+        "RDESREP": "Reporte cero cuota",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCEROCN003",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "REP_CERCUOT_02",
+        "RDESREP": "Reporte cero cuota",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCEROCN004",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_07_",
+        "RDESREP": "DEV Graf Gestión Comercial",
+        "RTPREP": {
+            "name": "storage.com.RGRAFGESTCOM07_",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_ZCUO_02",
+        "RDESREP": "Graf Zero Cuotas",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFZCUO02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_ZCUO_01",
+        "RDESREP": "Graf Zero Cuotas",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFZCUO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_ZCUO_03",
+        "RDESREP": "Graf Zero Cuotas",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFZCUO03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CON_AGRO_FEN",
+        "RDESREP": "Consulta FEN CENEPRED",
+        "RTPREP": {
+            "name": "mod_rep.com.REXPAGRO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "col"
+                },
+                {
+                    "order": 2,
+                    "name": "val"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFEC_02",
+        "RDESREP": "Detalle de Efectividades",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tramof"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "comp_r"
+                },
+                {
+                    "order": 6,
+                    "name": "zcuo"
+                },
+                {
+                    "order": 7,
+                    "name": "ucuo"
+                },
+                {
+                    "order": 8,
+                    "name": "nom"
+                },
+                {
+                    "order": 9,
+                    "name": "resp"
+                },
+                {
+                    "order": 10,
+                    "name": "tdcr"
+                },
+                {
+                    "order": 11,
+                    "name": "pagen"
+                },
+                {
+                    "order": 12,
+                    "name": "fcompro"
+                },
+                {
+                    "order": 13,
+                    "name": "precosechaf"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_MON_EFECM_02",
+        "RDESREP": "Detalle de Efectividades Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RSMONEFE02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "tramof"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "comp_r"
+                },
+                {
+                    "order": 6,
+                    "name": "zcuo"
+                },
+                {
+                    "order": 7,
+                    "name": "ucuo"
+                },
+                {
+                    "order": 8,
+                    "name": "nom"
+                },
+                {
+                    "order": 9,
+                    "name": "resp"
+                },
+                {
+                    "order": 10,
+                    "name": "tdcr"
+                },
+                {
+                    "order": 11,
+                    "name": "pagen"
+                },
+                {
+                    "order": 12,
+                    "name": "fcompro"
+                },
+                {
+                    "order": 13,
+                    "name": "precosechaf"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEGUI_INC_SEC_01",
+        "RDESREP": "Seguimiento Incentivos Asesores",
+        "RTPREP": {
+            "name": "mod_rep.com.GSEGUIINC001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TABDIG_VR2_COM_02",
+        "RDESREP": "TABLERO DIGITAL - COMERCIAL",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRTABDIGO02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SEG_PAS_01",
+        "RDESREP": "Seguros Pasivos Oncologico",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSEGPAS01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SEG_PAS_02",
+        "RDESREP": "Seguros Pasivos Multiple Ahorro",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSEGPAS02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SEG_PAS_03",
+        "RDESREP": "Seguros Pasivos Resumen",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSEGPAS03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "prod_misi_01",
+        "RDESREP": "Productos Top corredor",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPMIS001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "prod_misi_02",
+        "RDESREP": "Productos Top Unidad",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPMIS002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "prod_misi_03",
+        "RDESREP": "Productos Top Asesores",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPMIS003",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SAL_CAR_05",
+        "RDESREP": "Cartera por Producto Vigente",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSALCARVIGE02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CRM_F_03",
+        "RDESREP": "DetalleAgendamiento Comercial Reasignado Flujo",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_M_02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "pagen"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RESNMOV_02",
+        "RDESREP": "Mov. Resumen Detalle Analista",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RESDMOV02]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGROMIX_02",
+        "RDESREP": "Graf Vencido AGROMIX",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGROMIX_CHART",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGROMIX_03",
+        "RDESREP": "Graf Capital AGROMIX",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGROMIX_CHART2",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGROMIX_04",
+        "RDESREP": "Graf Clientes AGROMIX",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGROMIX_CHART3",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_07",
+        "RDESREP": "Graf Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM07",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMCUONUEV_01",
+        "RDESREP": "Cuadro de Mando Cero Cuotas Nuevas",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GCMCNUE001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                },
+                {
+                    "order": 5,
+                    "name": "tipcuota"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "LCCUOTANUEVA_01",
+        "RDESREP": "BASE DE GESTION CERO CUOTAS NUEVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.RSLISTCCN01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "pagen"
+                },
+                {
+                    "order": 4,
+                    "name": "tipcuota"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOVPERFIL_01",
+        "RDESREP": "Planilla Movilidad Perfil",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "PLANMOVPERFIL_02",
+        "RDESREP": "Planilla Movilidad Perfil",
+        "RTPREP": {
+            "name": "mod_rep.com.GLIMOVO02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "LIS_PROSPE_01",
+        "RDESREP": "Lista de Prospectos",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GLISPROSP01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "SEL_JER_01",
+        "RDESREP": "Filtro Territorio,Corred,agencia",
+        "RTPREP": {
+            "name": "mod_rep.com.GSELJERAR001"
+        }
+    },
+    {
+        "RCODREP": "DesemDiario_05",
+        "RDESREP": "Operaciones Diario CE 05",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA031]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CONT_ELECT_M_04",
+        "RDESREP": "Contraración Electrónica",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA032]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGROMIX_05",
+        "RDESREP": "Graf Resumen AGROMIX",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGROMIX_CHART4",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_CARD_ZCUO_01",
+        "RDESREP": "Card reporte cero cuotas",
+        "RTPREP": {
+            "name": "mod_rep.com.RCARDZCUO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "DASHBOARD_CLIENTES_01",
+        "RDESREP": "Dashboard Clientes",
+        "RTPREP": {
+            "name": "mod_rep.com.GDASHCLI01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "uni_cfg"
+                },
+                {
+                    "order": 2,
+                    "name": "sel_cfg"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GREPROSPCORRE_03",
+        "RDESREP": "Graf_Pie_PROSTO_Inst_Corresponsales",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RPROSCORR006]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CLIF_01",
+        "RDESREP": "CMG Clientes Flujo",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSCMGCF001]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CLI_VULNERABLE_01",
+        "RDESREP": "Filtro Clientes Vulnerables",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSCLIVULNER01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CRM_S_01",
+        "RDESREP": "Agendamiento Comercial Reasignado Stock",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_M_03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "ver"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                },
+                {
+                    "order": 5,
+                    "name": "tipo_ase"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_CRM_S_03",
+        "RDESREP": "DetalleAgendamiento Comercial Reasignado Stock",
+        "RTPREP": {
+            "name": "mod_rep.com.RS_AGE_COM_CR_M_04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "ver"
+                },
+                {
+                    "order": 4,
+                    "name": "fecha"
+                },
+                {
+                    "order": 5,
+                    "name": "tipo_ase"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_GEST_COM_03",
+        "RDESREP": "Reporte Evolutivo Var Cliente Stock",
+        "RTPREP": {
+            "name": "mod_rep.com.RREPGESTCOM03",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CONT_ELECT_M_01",
+        "RDESREP": "Contraración Electrónica",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA024]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CONT_ELECT_M_02",
+        "RDESREP": "Contraración Electrónica",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA025]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CONT_ELECT_M_03",
+        "RDESREP": "Contraración Electrónica",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSRDFCA026]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "reporte-demo",
+        "RDESREP": "Reporte Demo",
+        "RTPREP": {
+            "name": "mod_rep.dbo.REPORTE_DEMO",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "fecha"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_user_bt"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CARTERA_01",
+        "RDESREP": "CMG CARTERA",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCMGFCA002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "codrel"
+                },
+                {
+                    "order": 2,
+                    "name": "Fecha"
+                },
+                {
+                    "order": 3,
+                    "name": "tipcod"
+                },
+                {
+                    "order": 4,
+                    "name": "met"
+                },
+                {
+                    "order": 5,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TAB_CUE_RES_01",
+        "RDESREP": "Cuenta de Resultados",
+        "RTPREP": {
+            "name": "mod_rep.rep.RTABCUERES01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "fecha"
+                },
+                {
+                    "order": 2,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 3,
+                    "name": "cod_rel"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_09",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GST_ACTIVAS_10",
+        "RDESREP": "GESTION TASAS ACTIVAS",
+        "RTPREP": {
+            "name": "mod_rep.com.GDCGEST_ACTIVAST04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "var"
+                },
+                {
+                    "order": 4,
+                    "name": "fec"
+                },
+                {
+                    "order": 5,
+                    "name": "diario"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TABDIG_VR2_01",
+        "RDESREP": "TABLERO DIGITAL",
+        "RTPREP": {
+            "name": "mod_rep.[com].[GRTABDIGO01]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_AGE_COM_02",
+        "RDESREP": "Detalle Agendamiento Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RSAGECOM02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                },
+                {
+                    "order": 4,
+                    "name": "mode"
+                },
+                {
+                    "order": 5,
+                    "name": "fuga"
+                },
+                {
+                    "order": 6,
+                    "name": "prop"
+                },
+                {
+                    "order": 7,
+                    "name": "nom"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_SEG_PAS_04",
+        "RDESREP": "Seguros Pasivos Protección Total",
+        "RTPREP": {
+            "name": "mod_rep.com.RSSEGPAS04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_DESEMB_02",
+        "RDESREP": "Estructura de Desembolsos Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RSDESEMB02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_FECH",
+        "RDESREP": "Fechas Reporte Mensual",
+        "RTPREP": {
+            "name": "mod_rep.com.RFECREPMEN",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "TB_PANEL_OPE_02",
+        "RDESREP": "PANEL OPERACIONES PASIVO REGULA",
+        "RTPREP": {
+            "name": "mod_rep.[com].[RSROPERA002]",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_ZCUO_04",
+        "RDESREP": "Graf Zero Cuotas",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFZCUO04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "CMG_CLI_PAS_STOCK_02",
+        "RDESREP": "CMG Clientes Pasivos Stock",
+        "RTPREP": {
+            "name": "mod_rep.com.RSCMGCLIPAS02",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "pob_misi_01",
+        "RDESREP": "Productos Top Territorio",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPPOMIS001",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "pob_misi_02",
+        "RDESREP": "Productos Top corredor",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPPOMIS002",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "pob_misi_03",
+        "RDESREP": "Productos Top Unidad",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPPOMIS003",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "pob_misi_04",
+        "RDESREP": "Productos Top Asesores",
+        "RTPREP": {
+            "name": "mod_rep.com.RSRTOPPOMIS004",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fec"
+                },
+                {
+                    "order": 4,
+                    "name": "prod"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_GEST_COM_01",
+        "RDESREP": "Reporte Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RSGETCOM01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "GRAF_GEST_COM_04",
+        "RDESREP": "Graf Gestión Comercial",
+        "RTPREP": {
+            "name": "mod_rep.com.RGRAFGESTCOM04",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    },
+    {
+        "RCODREP": "RS_TOP_ZCUO_01",
+        "RDESREP": "top 10 asesores Zcuo",
+        "RTPREP": {
+            "name": "mod_rep.com.RTOPZCUO01",
+            "params": [
+                {
+                    "order": 1,
+                    "name": "tip_cod"
+                },
+                {
+                    "order": 2,
+                    "name": "cod_rel"
+                },
+                {
+                    "order": 3,
+                    "name": "fecha"
+                }
+            ]
+        }
+    }
+]
