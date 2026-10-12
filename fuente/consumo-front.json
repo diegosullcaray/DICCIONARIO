@@ -1,0 +1,1970 @@
+{
+  "nota": "Foto generada por governance/scripts/trazar-front.mjs. No editar: volver a trazar cuando cambie el front.",
+  "front": "MIS-angular-front",
+  "commit": "d67bf84",
+  "totalCodigos": 322,
+  "consumidos": 176,
+  "codigos": {
+    "AGRO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/comercial-ejecutivo.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/constantes/comercial-ejecutivo.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    "APP_USO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Aplicativo Movil/aplicativo-movil.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Aplicativo Movil/constantes/aplicativo-movil.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Aplicativo Movil/items/app-uso/app-uso.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Aplicativo Movil/services/aplicativo-movil.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Aplicativo Movil/services/aplicativo-movil.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Aplicativo Movil"
+      ]
+    },
+    "CAP_SEGUI_BP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/captaciones-migradas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "CAP_SEGUI_FC_BP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/captaciones-migradas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "CARACT_CARTERA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/captaciones-migradas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "CARACT_CARTERA_M_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CARACT_pas_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/captaciones-migradas.service.spec.ts",
+        "src/app/shared/ui/tablas/tabla-reporte/tabla-reporte.component.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones",
+        "shared / ui"
+      ]
+    },
+    "CARACT_pas_M_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CEROCUOTA_TOPCNUEVA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CEROCUOTA_TOPCNUEVA_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CEROCUOTA_TOPCNUEVA_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CEROCUOTA_TOPCNUEVA_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CEROCUOTA_TOPCNUEVA_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CEROYCUOTA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CEROYCUOTA_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CMCUONUEV_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CMCUONUEV_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "CMG_CARTERA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/cartera.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CMG_CARTERA_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CMG_CLIF_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/constantes/clientes.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/services/clientes.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Clientes",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CMG_CLI_PAS_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/captaciones-migradas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "CONT_ELECT_M_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CONT_ELECT_M_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CONT_ELECT_M_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CONT_ELECT_M_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "CON_AGRO_FEN": {
+      "archivos": [
+        "src/app/pages/modules/consulta-fen/constantes/consulta-fen.constantes.ts",
+        "src/app/pages/modules/consulta-fen/models/consulta-fen.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/consulta-fen/services/consulta-fen.service.spec.ts"
+      ],
+      "dominios": [
+        "consulta-fen"
+      ]
+    },
+    "COSESEMAFORO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "Clientes_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/comercial-ejecutivo.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/constantes/comercial-ejecutivo.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    "Clientes_Ope_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/constantes/clientes.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/services/clientes.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Clientes"
+      ]
+    },
+    "Clientes_nuevoRec_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/constantes/clientes.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/services/clientes.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Clientes"
+      ]
+    },
+    "DESCRED_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "DESEMBOLSOS_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/comercial-ejecutivo.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/constantes/comercial-ejecutivo.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    "DESEMP_SOC_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/constantes/desarrollo-sostenible.constantes.ts",
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "DET_INCEN_PDM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "DesemDiario_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "DesemDiario_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/items/desembolsos-diarios/desembolsos-diarios.component.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "DesemDiario_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "DesemDiario_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "DesemDiario_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GCMGCAP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/cmg-captaciones-agencias.service.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/cmg-captaciones-agencias.service.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "GCOMCRE_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_03": {
+      "archivos": [],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_06": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_GEST_COM_07": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "GRAF_ZCUO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/utils/cero-cuotas-mapeo.util.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "GRAF_ZCUO_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/utils/cero-cuotas-mapeo.util.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "GRAF_ZCUO_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "GRAF_ZCUO_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "GRBSOLI_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/constantes/reportes-pdm.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/items/banca-solidaria/banca-solidaria.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/models/banca-solidaria.model.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/reportes-pdm.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/services/reportes-pdm.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/models/banca-solidaria.model.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Reportes PDM"
+      ]
+    },
+    "GRSCMISREP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/items/seguros-optativos/seguros-optativos.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/seguros.routes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "GRSCMIS_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "GRSCMIS_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "GRSCMIS_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "GRSCMIS_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "GST_PASIVA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "GST_PASIVA_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "HCARBONO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "LCCUOTANUEVA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "MOVIMIENTO_CLIENTES_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/constantes/clientes.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/models/movimiento-clientes.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Clientes/services/clientes.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Clientes"
+      ]
+    },
+    "Monitor_Dese_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/avance-comercial/constantes/avance-comercial.constantes.ts",
+        "src/app/pages/modules/reportes/components/avance-comercial/models/avance-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/core/winder/instances/mod-reportes.service.spec.ts"
+      ],
+      "dominios": [
+        "core / winder",
+        "reportes / avance-comercial"
+      ]
+    },
+    "Monitor_Dese_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/avance-comercial/constantes/avance-comercial.constantes.ts",
+        "src/app/pages/modules/reportes/components/avance-comercial/models/avance-comercial.model.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / avance-comercial"
+      ]
+    },
+    "Monitor_Dese_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/avance-comercial/constantes/avance-comercial.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / avance-comercial"
+      ]
+    },
+    "Monitor_Dese_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/avance-comercial/constantes/avance-comercial.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / avance-comercial"
+      ]
+    },
+    "Monitor_Dese_misi_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/constantes/desarrollo-sostenible.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "Monitor_Dese_misi_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/constantes/desarrollo-sostenible.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "PDM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/comercial-ejecutivo.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Comercial Ejecutivo/constantes/comercial-ejecutivo.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    "PORTSUPE_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "PORTSUPE_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "PROYEC_COLREC_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/constantes/proyecciones.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/services/proyecciones.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/services/proyecciones.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    "PROYEC_COLREC_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/constantes/proyecciones.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/services/proyecciones.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/services/proyecciones.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    "PROYEC_DIACOLREC_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/constantes/proyecciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/services/proyecciones.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    "PROYEC_DIACOLREC_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/constantes/proyecciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Proyecciones/services/proyecciones.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    "P_Datos_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "PortafolioAgro_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RACTGP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RECSERV_PAS_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/captaciones-migradas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "REP_CERCUOT_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "REP_CERCUOT_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RESINCGRUP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RESMORAGP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RESNMOVR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/actividad-diaria.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/constantes/resumen-movilidad.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/items/resumen-movilidad-recuperaciones/resumen-movilidad-recuperaciones.component.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/services/resumen-movilidad.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria"
+      ]
+    },
+    "RESNMOV_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/actividad-diaria.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/constantes/resumen-movilidad.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/items/resumen-movilidad-comercial/resumen-movilidad-comercial.component.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/services/resumen-movilidad.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria"
+      ]
+    },
+    "RMENTORIN_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/campanas.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/constantes/campanas.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/services/campanas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    "RMESA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RPROGOB_M_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RPROGOB_M_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RPROGOB_M_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RPROGOB_M_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RSRTOPV01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_AGE_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/campanas.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/constantes/campanas.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    "RS_AGE_COM_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/constantes/campanas.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    "RS_AGE_COM_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/constantes/campanas.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    "RS_AGE_COM_CRM_03": {
+      "archivos": [],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_AGE_COM_CRM_F_01": {
+      "archivos": [],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_AGE_COM_CR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/constantes/portafolio-reasignado.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/services/portafolio-reasignado.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    "RS_AGE_COM_CR_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/constantes/portafolio-reasignado.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/services/portafolio-reasignado.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/services/portafolio-reasignado.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    "RS_AGROMIX_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/cartera.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_AGROMIX_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.spec.ts"
+      ],
+      "dominios": [
+        "reportes"
+      ]
+    },
+    "RS_AGROMIX_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.spec.ts"
+      ],
+      "dominios": [
+        "reportes"
+      ]
+    },
+    "RS_AGROMIX_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.spec.ts"
+      ],
+      "dominios": [
+        "reportes"
+      ]
+    },
+    "RS_AGROMIX_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/models/cartera-agricola.model.spec.ts"
+      ],
+      "dominios": [
+        "reportes"
+      ]
+    },
+    "RS_AVA_POR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_BASE_NEG_01": {
+      "archivos": [
+        "src/app/pages/modules/herramientas/constantes/herramientas.constantes.ts",
+        "src/app/pages/modules/herramientas/models/base-negativa-api.model.ts",
+        "src/app/pages/modules/herramientas/models/base-negativa.model.ts"
+      ],
+      "specs": [
+        "src/app/core/winder/instances/mod-reportes.service.spec.ts",
+        "src/app/pages/modules/herramientas/services/base-negativa.service.spec.ts"
+      ],
+      "dominios": [
+        "core / winder",
+        "herramientas"
+      ]
+    },
+    "RS_CAL_CAR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_CAL_CAR_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_CARD_ZCUO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/models/cartera-en-mora.model.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/utils/cero-cuotas-mapeo.util.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_CARTEPAS_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/captaciones.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/items/gestion-pasivo-comercial/gestion-pasivo-comercial.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/models/gestion-pasivo-comercial.columnas.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/vinculacion-cartera.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "RS_DAT_PRO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_DAT_PRO_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_DAT_PRO_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_DAT_PRO_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_DESEMB_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/cartera.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/components/Cartera/items/estructura-desembolsos/estructura-desembolsos.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts",
+        "src/app/shared/ui/tablas/tabla-dinamica/tabla-dinamica.component.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Cartera",
+        "shared / ui"
+      ]
+    },
+    "RS_DESEMB_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/components/Cartera/items/estructura-desembolsos/estructura-desembolsos.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Cartera"
+      ]
+    },
+    "RS_FECH": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/items/cartera-agricola-cultivos/cartera-agricola-cultivos.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/items/seguros-optativos/seguros-optativos.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/components/Cartera/items/cmg-cartera/cmg-cartera.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/components/Cartera/items/estructura-desembolsos/estructura-desembolsos.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/components/Tablero Digital/items/tablero-digital-comercial/tablero-digital-comercial.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.ts",
+        "src/app/pages/modules/reportes/utils/reportes-mapeo.util.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/items/cartera-agricola-cultivos/cartera-agricola-cultivos.component.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts",
+        "src/app/pages/modules/reportes/services/bloque-reporte.periodos.spec.ts"
+      ],
+      "dominios": [
+        "reportes",
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-diaria / Cartera en Mora",
+        "reportes / actividad-diaria / Seguros",
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Cartera",
+        "reportes / actividad-mensual / Tablero Digital"
+      ]
+    },
+    "RS_FECH02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/items/gestion-comercial/gestion-comercial.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts",
+        "src/app/pages/modules/reportes/utils/reportes-mapeo.util.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts",
+        "src/app/pages/modules/reportes/services/bloque-reporte.periodos.spec.ts"
+      ],
+      "dominios": [
+        "reportes",
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "RS_GEST_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_GEST_COM_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_GEST_COM_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/gestion-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_MON_CAR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/control-cargas/constantes/control-cargas.constantes.ts",
+        "src/app/pages/modules/reportes/components/control-cargas/control-cargas.component.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / control-cargas"
+      ]
+    },
+    "RS_MON_EFECM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_MON_EFECM_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_MON_EFECM_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_MON_EFECREASIGM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_MON_EFECREASIG_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/constantes/portafolio-reasignado.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/services/portafolio-reasignado.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    "RS_MON_EFECREASIG_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/constantes/portafolio-reasignado.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/services/portafolio-reasignado.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    "RS_MON_EFECREPRO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_MON_EFECTRAMOSC_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_MON_EFEC_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_MON_EFEC_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_MON_EFEC_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RS_MON_INT_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/cartera.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_MON_REP_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/avance-comercial/constantes/avance-comercial.constantes.ts",
+        "src/app/pages/modules/reportes/components/avance-comercial/models/avance-comercial.model.ts",
+        "src/app/pages/modules/reportes/components/avance-comercial/services/avance-comercial.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / avance-comercial"
+      ]
+    },
+    "RS_MON_SALCAP_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/captaciones.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/items/vinculacion-cartera/vinculacion-cartera.component.ts",
+        "src/app/pages/modules/reportes/models/tabla-dinamica.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/services/vinculacion-cartera.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes",
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "RS_RANK_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/cartera.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/models/ranking-comercial.columnas.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-repositorio.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_SAL_CAR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_SAL_CAR_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_SAL_CAR_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_SAL_CAR_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts",
+        "src/app/shared/ui/tablas/tabla-reporte/tabla-reporte.component.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera",
+        "shared / ui"
+      ]
+    },
+    "RS_SAL_CAR_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "RS_SEG_PAS_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/seguros.routes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "RS_SEG_PAS_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "RS_SEG_PAS_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "RS_SEG_PAS_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/constantes/seguros.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Seguros/services/seguros.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    "RS_TAB_COM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/constantes/tablero-digital.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/items/tablero-digital-comercial/tablero-digital-comercial.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/tablero-digital.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.ts",
+        "src/app/pages/modules/reportes/models/tablero-comercial.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes",
+        "reportes / actividad-diaria / Tablero Digital",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "RS_TOP_ZCUO_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cero-cuotas-nuevas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "RVIUWGCORE_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/components/Corresponsal/corresponsal.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/constantes/tablero-digital.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    "RVIUWGCOR_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/components/Corresponsal/corresponsal.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/components/Corresponsal/items/vista-general-corresponsal/vista-general-corresponsal.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/constantes/tablero-digital.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    "R_APADRINA_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/campanas.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/constantes/campanas.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    "SEG_PDM_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/constantes/reportes-pdm.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/reportes-pdm.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Reportes PDM/services/reportes-pdm.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Reportes PDM"
+      ]
+    },
+    "SEL_EFEC_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/constantes/portafolio-reasignado.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Portafolio Reasignado/services/portafolio-reasignado.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora",
+        "reportes / actividad-diaria / Portafolio Reasignado",
+        "reportes / actividad-mensual"
+      ]
+    },
+    "SEL_JER_MENTORING_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/constantes/campanas.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/items/mentoring/mentoring.component.spec.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Campañas/services/campanas.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    "TABDIG_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/constantes/tablero-digital.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/tablero-digital.routes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    "TABDIG_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/constantes/tablero-digital.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    "TABDIG_VR2_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/components/Operaciones/items/vista-general-canal/vista-general-canal.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/components/Operaciones/operaciones.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/constantes/tablero-digital.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Tablero Digital/services/tablero-digital.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    "TAB_CUE_RES_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/components/Rentabilidad/items/cuenta-resultados/cuenta-resultados.component.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts",
+        "src/app/pages/modules/reportes/components/actividad-mensual/models/cuenta-resultados.model.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-repo.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Rentabilidad"
+      ]
+    },
+    "TB_PANEL_OPE_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "TB_PANEL_OPE_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Captaciones/constantes/captaciones.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    "cmg_mora_simp_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "cmg_mora_simp_m_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "cuadro_Variable_M_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "cuadro_Variable_Riesgo_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/cartera-en-mora.routes.ts",
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/constantes/cartera-mora.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera en Mora/services/cartera-mora-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    "prod_misi_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "prod_misi_02": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "prod_misi_03": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "prod_misi_04": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "prod_misi_05": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/desarrollo-sostenible/services/desarrollo-sostenible.service.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    "rankKayOpe_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "rankKay_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "rankKayrecu_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "reporte_autonomia_new_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    "reporte_autonomia_newdiaria_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/constantes/cartera.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-diaria/components/Cartera/services/cartera-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    "resultado_unidad_negocio_rma_01": {
+      "archivos": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/constantes/actividad-mensual.constantes.ts"
+      ],
+      "specs": [
+        "src/app/pages/modules/reportes/components/actividad-mensual/services/actividad-mensual-cra.service.spec.ts"
+      ],
+      "dominios": [
+        "reportes / actividad-mensual"
+      ]
+    }
+  }
+}

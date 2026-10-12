@@ -1,0 +1,17 @@
+{
+  "name": "diccionario-reportes",
+  "private": true,
+  "description": "Diccionario de datos de los reportes MIS: qué SP ejecuta cada RCODREP, qué tablas usa y qué columnas de cada una.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generar": "node governance/scripts/generar-extraccion.mjs && node governance/scripts/generar-diccionario.mjs && node governance/scripts/sincronizar-agentes.mjs",
+    "verificar": "node governance/scripts/validar.mjs --check",
+    "verificar:estricto": "node governance/scripts/validar.mjs --check --estricto",
+    "hallazgos": "node governance/scripts/validar.mjs --detalle",
+    "test": "node --test governance/scripts/tests/*.test.mjs",
+    "trazar:front": "node governance/scripts/trazar-front.mjs --front=../MIS-angular-front"
+  }
+}

@@ -1,0 +1,7718 @@
+{
+  "nota": "Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.",
+  "resumen": {
+    "reportes": 324,
+    "procedimientos": 271,
+    "extraidos": 1,
+    "validados": 0,
+    "tablas": 1
+  },
+  "reportes": [
+    {
+      "codigo": "SEL_EFEC_01",
+      "descripcion": "Filtro Detalle Efectividad",
+      "procedimiento": "mod_rep.com.GSELREP001",
+      "parametros": [],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora",
+        "reportes / actividad-diaria / Portafolio Reasignado",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "SEL_JEFE_01",
+      "descripcion": "Filtro de Jefes",
+      "procedimiento": "mod_rep.com.GSELREP002",
+      "parametros": [
+        "codmod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GSREVA01",
+      "descripcion": "Reporte Reva",
+      "procedimiento": "mod_rep.rep.GSREVA01",
+      "parametros": [
+        "Fecha",
+        "tipcod",
+        "codrel",
+        "codmod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GSREVA101",
+      "descripcion": "Reporte Reva",
+      "procedimiento": "mod_rep.rep.GSREVA01",
+      "parametros": [
+        "Fecha",
+        "tipcod",
+        "codrel",
+        "codmod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "VAC_RES_EJE_01",
+      "descripcion": "Resumen ejecutivo",
+      "procedimiento": "mod_gpa.vac.GRESEJE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RSRTOP01",
+      "descripcion": "Monitor de Efectividades TOP",
+      "procedimiento": "mod_rep.com.RSRTOP001",
+      "parametros": [
+        "tip_cod",
+        "level"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GSREVA201",
+      "descripcion": "Reporte Reva",
+      "procedimiento": "mod_rep.rep.GSREVA01",
+      "parametros": [
+        "Fecha",
+        "tipcod",
+        "codrel",
+        "codmod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "VAC_RES_EJE_02",
+      "descripcion": "Resumen Ejecutivo por Meses",
+      "procedimiento": "mod_gpa.vac.GRESEJE02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "rma/administracion/Mora/monitor_efectividad_rma_03",
+      "descripcion": "Gestión de Monitor Efectividades",
+      "procedimiento": "mod_rep.com.RSGESMOEF001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tram"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_MON_EFEC_03",
+      "descripcion": "Gestión de Monitor Efectividades",
+      "procedimiento": "mod_rep.com.RSMONEFE03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tram"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GSCAMP_01",
+      "descripcion": "Campaña Agil",
+      "procedimiento": "mod_rep.com.GSCAMP01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "ind",
+        "sem"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RES_SEC_REP_01",
+      "descripcion": "Lista Clientes Reprogramados",
+      "procedimiento": "mod_rep.com.GRESCLIREP01",
+      "parametros": [
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GSCASEG_01",
+      "descripcion": "Campaña de Seguros",
+      "procedimiento": "mod_rep.com.GSCASEG01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GSMODAGEN_01",
+      "descripcion": "Modulo de Agendamiento",
+      "procedimiento": "mod_rep.com.GSMODAGEN01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRESCAMIMP_01",
+      "descripcion": "Campaña Imparables",
+      "procedimiento": "mod_rep.com.GRESCAMIMP01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "DET_CLI_01",
+      "descripcion": "Lista Clientes Reprogramados ",
+      "procedimiento": "mod_rep.com.GLISDETCLI01",
+      "parametros": [
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "SEL_CIU_01",
+      "descripcion": "Filtro CIIU",
+      "procedimiento": "mod_rep.com.GSELCIUT001",
+      "parametros": [],
+      "front": []
+    },
+    {
+      "codigo": "GRESCONDO_02",
+      "descripcion": "Modulo de Condonaciones Mes Día ",
+      "procedimiento": "mod_rep.com.GRESCAMCOND01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tdcrMonto",
+        "tdcrMoti",
+        "diariomes",
+        "niveles"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "REACT_PDM_01",
+      "descripcion": "Lista Clientes PDM Reprogramados",
+      "procedimiento": "mod_rep.com.GLISDETCLIPDM01",
+      "parametros": [
+        "cod_rel",
+        "base"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRSCMIS_01",
+      "descripcion": "Modulo de Detalle Seguro",
+      "procedimiento": "mod_rep.com.GRESREPSEG01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "GRSCMIS_02",
+      "descripcion": "Modulo de Detalle Asesor",
+      "procedimiento": "mod_rep.com.GRESREPSEG02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "GRSCMIS_03",
+      "descripcion": "Modulo de Resumen Pasivos",
+      "procedimiento": "mod_rep.com.GRESREPSEG03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CAP_SEGUI_BP_01",
+      "descripcion": "Captaciones Seguimiento BP",
+      "procedimiento": "mod_rep.com.GSEGCAPBP01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "PANEL_SUP_03",
+      "descripcion": "Panel de Supervisión 2",
+      "procedimiento": "mod_rep.com.RSPANSUP003",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "carg"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PANEL_SUP_02",
+      "descripcion": "Panel de Supervisión Detalle",
+      "procedimiento": "mod_rep.com.RSPANSUP002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "carg",
+        "state"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "LIS_CAPRET_01",
+      "descripcion": "List Capacity Retailer",
+      "procedimiento": "mod_rep.com.GLISCAPRET01",
+      "parametros": [
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_MON_EFEC_01",
+      "descripcion": "Monitor de Efectividades",
+      "procedimiento": "mod_rep.com.RSMONEFE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GREPORCORRE_06",
+      "descripcion": "Corresponsales Metas",
+      "procedimiento": "mod_rep.com.RCORRES06",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_SAL_CAR_01",
+      "descripcion": "Saldo Puntual de Cartera",
+      "procedimiento": "mod_rep.com.RSSALCAR01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_SAL_CAR_02",
+      "descripcion": "Cartera por Producto",
+      "procedimiento": "mod_rep.com.RSSALCAR02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_SAL_CAR_03",
+      "descripcion": "Productividad",
+      "procedimiento": "mod_rep.com.RSSALCAR03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "actividadtasas_01",
+      "descripcion": "Actividad y Tasas",
+      "procedimiento": "strategos.mod_rep_com_act.GDACTITASA01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "DesemDiario_01",
+      "descripcion": "Desembolsos Diarios",
+      "procedimiento": "strategos.mod_rep_com_act.GDDESEMDIA",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_DAT_PRO_01",
+      "descripcion": "Datos por Producto 1",
+      "procedimiento": "mod_rep.com.RSDATPRO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_DAT_PRO_02",
+      "descripcion": "Datos por Producto 2",
+      "procedimiento": "mod_rep.com.RSDATPRO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_DAT_PRO_03",
+      "descripcion": "Datos por Producto 3",
+      "procedimiento": "mod_rep.com.RSDATPRO03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_DAT_PRO_04",
+      "descripcion": "Datos por Producto 4",
+      "procedimiento": "mod_rep.com.RSDATPRO04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "PortafolioAgro_01",
+      "descripcion": "Portafolio Agro",
+      "procedimiento": "strategos.mod_rep_com_act.GDPORTAGRO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "PORTSUPE_01",
+      "descripcion": "Portafolio y Supervision",
+      "procedimiento": "strategos.mod_rep_com_act.GDPSUPERV01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "PORTSUPE_02",
+      "descripcion": "Portafolio y Supervision",
+      "procedimiento": "strategos.mod_rep_com_act.GDPSUPERV02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CEROYCUOTA_02",
+      "descripcion": "CERO Y UNA CUOTA",
+      "procedimiento": "mod_rep.com.GRCEROCUOTAO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GCMGCAP_01",
+      "descripcion": "CMG Pasivas",
+      "procedimiento": "mod_rep.com.GCMGCAP01",
+      "parametros": [
+        "fec",
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CaptaBP_01",
+      "descripcion": "CMG CAPTACIONES BP",
+      "procedimiento": "strategos.mod_rep_com_act.GDCCAP_BP01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_AVA_POR_01",
+      "descripcion": "Avance de Portafolio",
+      "procedimiento": "mod_rep.com.RSAVAPOR01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "mode",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_01",
+      "descripcion": "Agendamiento Comercial",
+      "procedimiento": "mod_rep.com.RSAGECOM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha",
+        "mode",
+        "fuga",
+        "prop"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    {
+      "codigo": "APP_USO_01",
+      "descripcion": "Usabilidad APP",
+      "procedimiento": "mod_rep.com.RSAPPUSO001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Aplicativo Movil"
+      ]
+    },
+    {
+      "codigo": "PANEL_SUP_01",
+      "descripcion": "Panel de Supervisión",
+      "procedimiento": "mod_rep.com.RSPANSUP001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "carg"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PANEL_SUP_02",
+      "descripcion": "Panel de Supervisión Detalle",
+      "procedimiento": "mod_rep.com.RSPANSUP002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "carg",
+        "state"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "SEL_CIU_02",
+      "descripcion": "Filtro CIIU Sector Eco",
+      "procedimiento": "mod_rep.com.GSELCIUT002",
+      "parametros": [],
+      "front": []
+    },
+    {
+      "codigo": "EfecRecTramos_01",
+      "descripcion": "Portafolio Agro",
+      "procedimiento": "strategos.mod_rep_com_act.GDEFECTMORA01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_CAL_CAR_01",
+      "descripcion": "Calidad de Cartera 1",
+      "procedimiento": "mod_rep.com.RSCALCAR01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RS_CAL_CAR_02",
+      "descripcion": "Calidad de Cartera 2",
+      "procedimiento": "mod_rep.com.RSCALCAR02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CEROYCUOTA_01",
+      "descripcion": "CERO Y UNA CUOTA",
+      "procedimiento": "mod_rep.com.GRCEROCUOTAO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "HTTPTRACE_01",
+      "descripcion": "Servicio Reporte de Uso",
+      "procedimiento": "strategos.mod_rep_com_act.HTTPTRACE",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "AGRO_01",
+      "descripcion": "AGRO",
+      "procedimiento": "mod_rep.com.GRESREAGRO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    {
+      "codigo": "Clientes_01",
+      "descripcion": "Clientes",
+      "procedimiento": "mod_rep.com.RSRDFCA007",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    {
+      "codigo": "DESEMBOLSOS_01",
+      "descripcion": "Desembolsos SIN FAE NI REACTIVA",
+      "procedimiento": "mod_rep.com.GDACDESEM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    {
+      "codigo": "SEG_AGRO_01",
+      "descripcion": "SEGURO AGRO",
+      "procedimiento": "mod_rep.com.GRESREPSEG04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_MON_EFECM_03",
+      "descripcion": "Gestión de Monitor Efectividades Mensual",
+      "procedimiento": "mod_rep.com.RSMONEFE03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tram"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECM_01",
+      "descripcion": "Monitor de Efectividades Mensual",
+      "procedimiento": "mod_rep.com.RSMONEFE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "PLANMOV_02",
+      "descripcion": "Planilla Movilidad",
+      "procedimiento": "mod_rep.com.GLIMOVO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "COSELISTADO_02",
+      "descripcion": "Listado Cosechas",
+      "procedimiento": "mod_rep.com.GCOSELIS001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "subpro",
+        "madu",
+        "pagen",
+        "nom"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "COSESEMAFORO_01",
+      "descripcion": "SEMAFORO DE COSECHAS",
+      "procedimiento": "mod_rep.com.GCOSEMAF002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "prod",
+        "subpro",
+        "madu",
+        "op"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "PRECOSELISTADO_02",
+      "descripcion": "Listado Pre Cosechas",
+      "procedimiento": "mod_rep.com.GPRECOSELIS001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "subpro",
+        "pagen",
+        "nom"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PRECOSECUADRO_03",
+      "descripcion": "Cuadro Pre Cosechas",
+      "procedimiento": "mod_rep.com.GPRECOSCUAD001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "subpro"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PLANMOV_01",
+      "descripcion": "Planilla Movilidad",
+      "procedimiento": "mod_rep.com.GLIMOVO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "resultado_unidad_negocio_rma_01",
+      "descripcion": "RESULTADO GUN",
+      "procedimiento": "strategos.mod_rep_com_act.CABGMRESULUNINEGB01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "canal"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "cuadro_Variable_Riesgo_01",
+      "descripcion": "Cuadro Variable Riesgo",
+      "procedimiento": "mod_rep.com.GCMGMORA001",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECREPRO_01",
+      "descripcion": "Monitor de Efectividades Reprogramados",
+      "procedimiento": "mod_rep.com.RSMONEFEREPRO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RS_MON_REP_01",
+      "descripcion": "Monitor de reprogramados",
+      "procedimiento": "mod_rep.com.GDMREP001",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod",
+        "car"
+      ],
+      "front": [
+        "reportes / avance-comercial"
+      ]
+    },
+    {
+      "codigo": "enrolamiento_colaboradores_01",
+      "descripcion": "Enrolamiento Colaboradores",
+      "procedimiento": "mod_rep.com.RENRCOLAB01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_MON_REP_SEC_01",
+      "descripcion": "Monitor de reprogramados",
+      "procedimiento": "mod_rep.com.GDMREP001",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod",
+        "car"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "enrolamiento_pasivo_01",
+      "descripcion": "Enrolamiento Pasivo",
+      "procedimiento": "mod_rep.com.RENRPAS01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "enrolamiento_Ope_01",
+      "descripcion": "Enrolamiento Operaciones",
+      "procedimiento": "mod_rep.com.RENROPE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "enrolamiento_desembolso_01",
+      "descripcion": "Enrolamiento Desembolso",
+      "procedimiento": "mod_rep.com.RENRDESEM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "enrolamiento_pasivo_pas_02",
+      "descripcion": "Enrolamiento Pasivo",
+      "procedimiento": "mod_rep.com.RENRPAS02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "cuadro_Variable_M_01",
+      "descripcion": "Cuadro Variable Riesgo Mensual",
+      "procedimiento": "mod_rep.com.GCMGMORA001",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "cuadro_Variable_Riesgo_F_01",
+      "descripcion": "Cuadro Variable Riesgo Finanzas",
+      "procedimiento": "mod_rep.com.GCMGMORA003",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RMESA_01",
+      "descripcion": "Efectividades Sin Asignar",
+      "procedimiento": "mod_rep.com.RMESA01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "pagen"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFEC_SEC_01",
+      "descripcion": "Detalle de Efectividades Asesor",
+      "procedimiento": "mod_rep.com.RSMONEFE05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tramof",
+        "prod",
+        "comp_r",
+        "zcuo",
+        "ucuo",
+        "tdcr",
+        "pagen"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_MON_CAR_01",
+      "descripcion": "Control Cargas Prod",
+      "procedimiento": "mod_rep.com.RSRPD001",
+      "parametros": [
+        "opt"
+      ],
+      "front": [
+        "reportes / control-cargas"
+      ]
+    },
+    {
+      "codigo": "PANEL_SUP_04",
+      "descripcion": "Supervision desembolsos",
+      "procedimiento": "mod_rep.com.RSPANSUP004",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "cant"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PANEL_SUP_05",
+      "descripcion": "Detalle Supervision desembolsos",
+      "procedimiento": "mod_rep.com.RSPANSUP005",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "cant"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_PASIVA_01",
+      "descripcion": "GESTION TASAS PASIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_PASIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "agr",
+        "calc",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "DesemDiario_04",
+      "descripcion": "Operaciones Diario CE 03",
+      "procedimiento": "mod_rep.com.RSRDFCA023",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RMENTORIN_01",
+      "descripcion": "Reporte Mentoring 01",
+      "procedimiento": "mod_rep.com.GRMENTOR001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "resp"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    {
+      "codigo": "LSRC_DATA_REACT_01",
+      "descripcion": "Data de Reactivados",
+      "procedimiento": "mod_rep.com.RCDATREACT01",
+      "parametros": [
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "Pasivo_01",
+      "descripcion": "Pasivos",
+      "procedimiento": "mod_rep.com.GPASP001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PDM_01",
+      "descripcion": "PDM",
+      "procedimiento": "mod_rep.com.GPDM001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Comercial Ejecutivo"
+      ]
+    },
+    {
+      "codigo": "Clientes_Ope_01",
+      "descripcion": "Clientes y Operaciones",
+      "procedimiento": "mod_rep.com.GDCLIOPE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Clientes"
+      ]
+    },
+    {
+      "codigo": "Clientes_nuevoRec_01",
+      "descripcion": "Clientes nuevos y recurrentes",
+      "procedimiento": "mod_rep.com.RSRDFCA011",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Clientes"
+      ]
+    },
+    {
+      "codigo": "GREPORCORRE_01",
+      "descripcion": "Corresponsales",
+      "procedimiento": "mod_rep.com.RCORRES01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GREPORCORRE_05",
+      "descripcion": "Grafico Mapa Corresponsales",
+      "procedimiento": "mod_rep.com.RCORRES05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "Sec_ciiu_01",
+      "descripcion": "Seguimiento de Sectores",
+      "procedimiento": "mod_rep.com.RSEGSECTOR001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "grup"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_PASIVA_02",
+      "descripcion": "GESTION TASAS PASIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_PASIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "agr",
+        "calc",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "GST_PASIVA_03",
+      "descripcion": "GESTION TASAS PASIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_PASIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "agr",
+        "calc",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_PASIVA_M_01",
+      "descripcion": "GESTION TASAS PASIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_PASIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "agr",
+        "calc",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_PASIVA_M_02",
+      "descripcion": "GESTION TASAS PASIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_PASIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "agr",
+        "calc",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_PASIVA_M_03",
+      "descripcion": "GESTION TASAS PASIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_PASIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "agr",
+        "calc",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PROYEC_COLREC_01",
+      "descripcion": "proyeccion de colocaciones",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    {
+      "codigo": "PROYEC_COLREC_02",
+      "descripcion": "proyeccion de recuperaciones",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PROYEC_DIACOLREC_01",
+      "descripcion": "proyeccion diaria colocaciones",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES003",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    {
+      "codigo": "PROYEC_DIACOLREC_02",
+      "descripcion": "proyeccion diaria monto",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES004",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    {
+      "codigo": "PROYEC_DIACOLREC_03",
+      "descripcion": "proyeccion diaria efectividades",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES005",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PROYEC_DIACOLREC_AS_01",
+      "descripcion": "proyeccion diaria colocaciones asesor",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES006",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PROYEC_DIACOLREC_AS_02",
+      "descripcion": "proyeccion diaria monto asesor",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES007",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PROYEC_DIACOLREC_AS_03",
+      "descripcion": "proyeccion diaria efectividades asesor",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES008",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_01",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_02",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_03",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_04",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_05",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_06",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_M_01",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_M_02",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_M_03",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_M_04",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_M_05",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_M_06",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RSRTOPV01",
+      "descripcion": "Monitor de Efectividades TOP",
+      "procedimiento": "mod_rep.com.RSRTOPV001",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "level",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RPROGOB_01",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RPROGOB_M_01",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_01",
+      "descripcion": "Top 10 Cero Cuotas Nuevas",
+      "procedimiento": "mod_rep.com.GTOPCERCUO001",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GRESCAMIMP_02",
+      "descripcion": "Top Imparables",
+      "procedimiento": "mod_rep.com.GRESTOPIMP01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "resultado_unidad_negocio_rma_ope_01",
+      "descripcion": "RESULTADO GUN",
+      "procedimiento": "strategos.mod_rep_com_act.CABGMRESULUNINEGB01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "canal"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRESCONDO_01",
+      "descripcion": "Modulo de Condonaciones",
+      "procedimiento": "mod_rep.com.GRESCAMCOND01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tdcrMonto",
+        "tdcrMoti"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CAP_SEGUI_RED_01",
+      "descripcion": "Captaciones Seguimiento Red",
+      "procedimiento": "mod_rep.com.GSEGCAPRED01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "DesemDiario_02",
+      "descripcion": "Operaciones Diario CE 01",
+      "procedimiento": "mod_rep.com.RSRDFCA021",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "DesemDiario_03",
+      "descripcion": "Operaciones Diario CE 02",
+      "procedimiento": "mod_rep.com.RSRDFCA022",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RMENTORIN_02",
+      "descripcion": "Reporte Mentoring 02",
+      "procedimiento": "mod_rep.com.GRMENTOR002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RESNMOVR_01",
+      "descripcion": "Mov. Resumen Detalle Recuperaciones",
+      "procedimiento": "mod_rep.com.RESDMOV02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria"
+      ]
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_02",
+      "descripcion": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO002",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_03",
+      "descripcion": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO003",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_04",
+      "descripcion": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO004",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_05",
+      "descripcion": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO005",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GRESCONDO_03",
+      "descripcion": "Modulo de Condonaciones Mes Día ",
+      "procedimiento": "mod_rep.com.GRESCAMCOND03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "tdcrMonto",
+        "tdcrMoti",
+        "niveles"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RPROGOB_03",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB02",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RPROGOB_M_03",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB02",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RPROGOB_04",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB02",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RPROGOB_M_04",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB02",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "TABDIG_02",
+      "descripcion": "Tablero digital Corresponsal",
+      "procedimiento": "mod_rep.com.GRTABCORRO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    {
+      "codigo": "TABDIG_01",
+      "descripcion": "APP CLIENTES",
+      "procedimiento": "mod_rep.com.GRTABAPPO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    {
+      "codigo": "DESCRED_01",
+      "descripcion": "Reporte de Destino de Crédito",
+      "procedimiento": "mod_rep.com.GRESDESCRE02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "GREPROSPCORRE_01",
+      "descripcion": "TAB_MENU_PROSPECTO_Corresponsales",
+      "procedimiento": "mod_rep.com.RPROSCORR002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PROYEC_COLREC_03",
+      "descripcion": "proyeccion diaria colocacion detalle",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES009",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "pagen"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Proyecciones"
+      ]
+    },
+    {
+      "codigo": "PROYEC_COLREC_04",
+      "descripcion": "proyeccion diaria recuperacion detalle",
+      "procedimiento": "mod_rep.com.RSPROYCOLDES010",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRSCMIS_04",
+      "descripcion": "Meta por Producto",
+      "procedimiento": "mod_rep.com.GRESREPSEG05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "P_Datos_01",
+      "descripcion": "Plan de Datos",
+      "procedimiento": "mod_rep.com.GRESPDATOS01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "P_Datos_02",
+      "descripcion": "Plan de Datos",
+      "procedimiento": "mod_rep.com.GRESPDATOS02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRSCMIS_05",
+      "descripcion": "Reporte Detalle",
+      "procedimiento": "mod_rep.com.GRESREPSEG06",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "DESEMP_SOC_01",
+      "descripcion": "Desempeño Social",
+      "procedimiento": "mod_rep.com.RSDESEMP01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "Monitor_Dese_01",
+      "descripcion": "Monitor desembolsos Operación",
+      "procedimiento": "mod_rep.com.RSRDFCA027",
+      "parametros": [
+        "tipmet",
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "core / winder",
+        "reportes / avance-comercial"
+      ]
+    },
+    {
+      "codigo": "Monitor_Dese_02",
+      "descripcion": "Monitor desembolsos Monto",
+      "procedimiento": "mod_rep.com.RSRDFCA030",
+      "parametros": [
+        "tipmet",
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / avance-comercial"
+      ]
+    },
+    {
+      "codigo": "Monitor_Dese_03",
+      "descripcion": "Monitor desembolsos Cumplimiento",
+      "procedimiento": "mod_rep.com.RSRDFCA028",
+      "parametros": [
+        "tipmet",
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / avance-comercial"
+      ]
+    },
+    {
+      "codigo": "Monitor_Dese_04",
+      "descripcion": "Monitor desembolsos Promedio",
+      "procedimiento": "mod_rep.com.RSRDFCA029",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / avance-comercial"
+      ]
+    },
+    {
+      "codigo": "DESE_SOC_AS_01",
+      "descripcion": "Desempeno Social",
+      "procedimiento": "mod_rep.com.RSDESEMP02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RACTGP_01",
+      "descripcion": "Activas PDM",
+      "procedimiento": "mod_rep.com.RACTGP01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "reporte_autonomia_newdiaria_01",
+      "descripcion": "Lista...",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "SEL_JER_MENTORING_01",
+      "descripcion": "FILTRO ASESORES",
+      "procedimiento": "mod_rep.com.GSELJERAR002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    {
+      "codigo": "R_APADRINA_01",
+      "descripcion": "Apadrinamiento",
+      "procedimiento": "mod_rep.com.RSRDMA023",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    {
+      "codigo": "PLANMOV_03",
+      "descripcion": "Detalle",
+      "procedimiento": "mod_rep.com.GLIMOVO05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PLANMOVR_01",
+      "descripcion": "Planilla Movilidad Recuperador",
+      "procedimiento": "mod_rep.com.GLIMOVRO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PLANMOVR_03",
+      "descripcion": "Planilla Movilidad Recuperador",
+      "procedimiento": "mod_rep.com.GLIMOVRO05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "LST_AUT_01",
+      "descripcion": "Lista Autonomias",
+      "procedimiento": "mod_rep.com.GLISAUTO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "c_aut",
+        "aut"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RPROGOB_02",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RPROGOB_M_02",
+      "descripcion": "Reporte de cartera de progamas del gobierno",
+      "procedimiento": "mod_rep.com.GRESPROGOB01",
+      "parametros": [
+        "cod_rel",
+        "tip_cod",
+        "fec",
+        "var"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_M_01",
+      "descripcion": "Top 10 Cero Cuotas Nuevas",
+      "procedimiento": "mod_rep.com.GTOPCERCUO001",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_M_02",
+      "descripcion": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO002",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_M_03",
+      "descripcion": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO003",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_M_04",
+      "descripcion": "Top 5 TOP 5  CORREDOR NRO CERO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO004",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CEROCUOTA_TOPCNUEVA_M_05",
+      "descripcion": "Top 5 TOP 5  CORREDOR SALDO CUOTAS NUEVO INGRESO - TIPO PRODUCTO",
+      "procedimiento": "mod_rep.com.GTOPCERCUO005",
+      "parametros": [
+        "tip_cod",
+        "tip_cod2",
+        "cod_rel",
+        "tipcuota",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GREPROSPCORRE_06",
+      "descripcion": "Meta_PROSPECTO_Corresponsales",
+      "procedimiento": "mod_rep.com.RPROSCORR005",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "DESE_SOC_01",
+      "descripcion": "Desempeno Social",
+      "procedimiento": "mod_rep.com.RSDESEMP01",
+      "parametros": [
+        "uni_cfg"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GREPROSPCORRE_02",
+      "descripcion": "Graf_Pie_PROSTO_Corresponsales",
+      "procedimiento": "mod_rep.com.RPROSCORR004",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "reporte_autonomia_new_01",
+      "descripcion": "Lista...",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RESINCGRUP_01",
+      "descripcion": "Incentivos Meta Grupos PDM",
+      "procedimiento": "mod_rep.com.RINCEGP01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "PLANMOV_04",
+      "descripcion": "Detalle Dep",
+      "procedimiento": "mod_rep.com.GLIMOVO06",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CLI_VULNERABLE_01",
+      "descripcion": "Filtro Clientes Vulnerables",
+      "procedimiento": "mod_rep.com.RSCLIVULNER01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PLANMOVR_04",
+      "descripcion": "Detalle Dep Recuperador",
+      "procedimiento": "mod_rep.com.GLIMOVRO06",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "DESEMP_SOC_PAS_01",
+      "descripcion": "Desempeno Social Pasivos",
+      "procedimiento": "mod_rep.com.RSDESEMPAS01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_08",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_07",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "rankKay_01",
+      "descripcion": "Ranking Kaypacha",
+      "procedimiento": "mod_rep.com.GDASHKAY03",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "Ter"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "rankKayOpe_01",
+      "descripcion": "Ranking Kaypacha Operaciones",
+      "procedimiento": "mod_rep.com.GDASHKAY05",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "Ter"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "rankKayrecu_01",
+      "descripcion": "Ranking Kaypacha Recuperaciones",
+      "procedimiento": "mod_rep.com.GDASHKAY06",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "Ter"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "INCEN_PDM_01",
+      "descripcion": "INCENTIVOS PDM",
+      "procedimiento": "mod_rep.com.RINCEPDM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "DET_INCEN_PDM_01",
+      "descripcion": "DETALLE INCENTIVO PDM",
+      "procedimiento": "mod_rep.com.DINCEPDM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha",
+        "pagen"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "CARACT_CARTERA_01",
+      "descripcion": "CARACT.CARTERA",
+      "procedimiento": "mod_rep.com.RSRDFCA035",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "HCARBONO_01",
+      "descripcion": "Huella de carbono",
+      "procedimiento": "mod_rep.com.RSHHCARB001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "cargambiental"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CARACT_CARTERA_M_01",
+      "descripcion": "CARACT.CARTERA.Mensual",
+      "procedimiento": "mod_rep.com.RSRDFCA035",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CARACT_pas_M_01",
+      "descripcion": "CARACT.pas,Mensual",
+      "procedimiento": "mod_rep.com.RSRDFCA036",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "segmento"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "GCTABDIG_VR2_COM_03",
+      "descripcion": "GC TABLERO DIGITAL - Comercial",
+      "procedimiento": "mod_rep.com.GRGCTABDIGO03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GCTABDIG_VR2_OPE_02",
+      "descripcion": "GC TABLERO DIGITAL - Operacional",
+      "procedimiento": "mod_rep.com.GRGCTABDIGO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "SEGUI_COMITE_01",
+      "descripcion": "SEGUIMIENTO COMITE",
+      "procedimiento": "mod_rep.com.GCOMCRE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_MON_EFECREASIG_01",
+      "descripcion": "Monitor de Efectividades Reasignados",
+      "procedimiento": "mod_rep.com.RSMONEFER01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECREASIGM_01",
+      "descripcion": "Monitor de Efectividades Reasignados Mensual",
+      "procedimiento": "mod_rep.com.RSMONEFER01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RECSERV_PAS_01",
+      "descripcion": "Recaudos Pasivos",
+      "procedimiento": "mod_rep.com.RSRSRV001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_CR_01",
+      "descripcion": "Agendamiento Comercial Reasignado",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "ver",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    {
+      "codigo": "SEG_PDM_01",
+      "descripcion": "Seguimiento PDM",
+      "procedimiento": "mod_rep.com.RSSEGPDM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Reportes PDM"
+      ]
+    },
+    {
+      "codigo": "RVIUWGCOR_01",
+      "descripcion": "Reporte Vista General Corresponsal",
+      "procedimiento": "mod_rep.com.GRVGENCORO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "tip_age"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    {
+      "codigo": "GLISAUTRO_04",
+      "descripcion": "Listado Autonomias",
+      "procedimiento": "mod_rep.com.GLISAUTRO05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "cargo"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "MOVIMIENTO_CLIENTES_01",
+      "descripcion": "Movimiento Clientes",
+      "procedimiento": "mod_rep.com.GMOVCLI01",
+      "parametros": [],
+      "front": [
+        "reportes / actividad-diaria / Clientes"
+      ]
+    },
+    {
+      "codigo": "RESMORAGP_01",
+      "descripcion": "Mora Grupos PDM",
+      "procedimiento": "mod_rep.com.RMORAGP01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "CARACT_pas_01",
+      "descripcion": "CARACT.pas",
+      "procedimiento": "mod_rep.com.RSRDFCA036",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "segmento"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones",
+        "shared / ui"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECREASIG_02",
+      "descripcion": "Detalle de Efectividades",
+      "procedimiento": "mod_rep.com.RSMONEFER02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tramof",
+        "prod",
+        "comp_r",
+        "zcuo",
+        "ucuo",
+        "nom",
+        "resp",
+        "tdcr",
+        "pagen",
+        "fcompro"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECTRAMOSC_01",
+      "descripcion": "Seguimiento PDM",
+      "procedimiento": "mod_rep.com.RSMONEFETRC01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RVIUWGCORE_02",
+      "descripcion": "Reporte Vista Gestión Corresponsal",
+      "procedimiento": "mod_rep.com.GRVGENCORO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "tip_age"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    {
+      "codigo": "GCOMCRE_02",
+      "descripcion": "Comite de Créditos Diario",
+      "procedimiento": "mod_rep.com.GCOMCRE02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "CMG_CLI_PAS_01",
+      "descripcion": "CMG Clientes Pasivos",
+      "procedimiento": "mod_rep.com.RSCMGCLIPAS01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "agru"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "CMG_CLI_PAS_DETA_01",
+      "descripcion": "CMG Clientes Pasivos Detalle",
+      "procedimiento": "mod_rep.com.RSCMGCLIPAS03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "agru",
+        "grupo"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "cmg_mora_simp_01",
+      "descripcion": "Cmg Mora Sin Impulso",
+      "procedimiento": "mod_rep.com.GCMGMORA001_SIMP",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GRAFSEGPAS_01",
+      "descripcion": "GRAFICO SEGURO PASIVOS ONCOLOGICO",
+      "procedimiento": "mod_rep.com.RGRAFSEGPAS01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRAFSEGPAS_02",
+      "descripcion": "GRAFICO SEGURO PASIVOS MULTIPLE AHORRO",
+      "procedimiento": "mod_rep.com.RGRAFSEGPAS02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_AGE_COM_03",
+      "descripcion": "Detalle Agendamiento Automatico y Express",
+      "procedimiento": "mod_rep.com.RSAGECOM03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha",
+        "mode",
+        "fuga",
+        "prop"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    {
+      "codigo": "prod_misi_04",
+      "descripcion": "Productos Top Territorio",
+      "procedimiento": "mod_rep.com.RSRTOPMIS004",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "Monitor_Dese_misi_01",
+      "descripcion": "Monitor desembolsos Operación",
+      "procedimiento": "mod_rep.com.RSRDFCA050",
+      "parametros": [
+        "tipmet",
+        "tip_cod",
+        "cod_rel",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_CRM_01",
+      "descripcion": "Agendamiento Comercial Reasignado Mensual",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "ver",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_AGE_COM_CR_03",
+      "descripcion": "Detalle Agendamiento Comercial Reasignado",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "pagen",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Portafolio Reasignado"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_CRM_03",
+      "descripcion": "Detalle Agendamiento Comercial Reasignado Mesual",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "pagen",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_RANK_MUJ_01",
+      "descripcion": "RANKING MUJER",
+      "procedimiento": "mod_rep.com.RRANKM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_RANK_MUJ_02",
+      "descripcion": "RANKING MUJER CARTERA",
+      "procedimiento": "mod_rep.com.RRANKM02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "cmg_mora_simp_m_01",
+      "descripcion": "Cmg Mora Sin Impulso Mensual",
+      "procedimiento": "mod_rep.com.GCMGMORA001_SIMP",
+      "parametros": [
+        "cod_rel",
+        "fec",
+        "tip_cod"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "TABDIGITAL_COMERCIAL_01",
+      "descripcion": "TABLERO DIGITAL COMERCIAL",
+      "procedimiento": "mod_rep.com.RTABDIGCOM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_RETE_01",
+      "descripcion": "Modulo Retención",
+      "procedimiento": "mod_rep.com.RSMONRENT01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "TB_PANEL_OPE_01",
+      "descripcion": "PANEL OPERACIONES PASIVO",
+      "procedimiento": "mod_rep.com.RSROPERA001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "Monitor_Dese_misi_02",
+      "descripcion": "Monitor desembolsos Operación ",
+      "procedimiento": "mod_rep.com.RSRDFCA050_3",
+      "parametros": [
+        "tipmet",
+        "tip_cod",
+        "cod_rel",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_CRM_F_01",
+      "descripcion": "Agendamiento Comercial Reasignado Flujo",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_M_01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "ver",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "prod_misi_05",
+      "descripcion": "Monitor desembolsos Operación ",
+      "procedimiento": "mod_rep.com.RSRDFCA050_4",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "RS_TAB_COM_01",
+      "descripcion": "TABLERO DIGITAL COMERCIAL",
+      "procedimiento": "mod_rep.com.RSTABCOMER",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes",
+        "reportes / actividad-diaria / Tablero Digital",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RSIMR_01",
+      "descripcion": "IMR",
+      "procedimiento": "mod_rep.com.RSIMR01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CAP_SEGUI_BP_FC_01",
+      "descripcion": "Gestión Red de Agencias",
+      "procedimiento": "mod_rep.com.GSEGCAPBP02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CMG_CARTERA_03",
+      "descripcion": "CMG CARTERA",
+      "procedimiento": "mod_rep.com.RSRDFCA038",
+      "parametros": [
+        "tipcod",
+        "cod_rel",
+        "tipmet",
+        "prod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_DESEMB_01",
+      "descripcion": "Estructura de Desembolsos",
+      "procedimiento": "mod_rep.com.RSDESEMB",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Cartera",
+        "shared / ui"
+      ]
+    },
+    {
+      "codigo": "RS_AGROMIX_01",
+      "descripcion": "REPORTE AGROMIX",
+      "procedimiento": "mod_rep.com.RAGROMIX",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECREASIG_03",
+      "descripcion": "Efectividades Reasignados fechas",
+      "procedimiento": "mod_rep.com.RSMONEFER03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "imp"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "Tab_Dig_Com_A_01",
+      "descripcion": "Tablero Digital Comercial Asesor",
+      "procedimiento": "mod_rep.com.RSTABCOMER02",
+      "parametros": [
+        "usuariobt",
+        "Fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "SEGUROS_ASESOR_01",
+      "descripcion": "Tablero Seguros Asesor",
+      "procedimiento": "mod_rep.com.RSEGASE01",
+      "parametros": [
+        "cod_rel",
+        "Fecha",
+        "tip_cod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_BASE_NEG_01",
+      "descripcion": "Base Negativa Riesgos",
+      "procedimiento": "mod_rep.com.RSBASENEG01",
+      "parametros": [
+        "nom"
+      ],
+      "front": [
+        "core / winder",
+        "herramientas"
+      ]
+    },
+    {
+      "codigo": "RESNMOV_01",
+      "descripcion": "Mov. Resumen Detalle Comercial",
+      "procedimiento": "mod_rep.com.RESDMOV01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria"
+      ]
+    },
+    {
+      "codigo": "CMCUONUEV_02",
+      "descripcion": "Tipo Cero Cuotas Nuevas",
+      "procedimiento": "mod_rep.com.GCMCNUE002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "tipcuota"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RDETCORR_01",
+      "descripcion": "Detalle Corresponsales",
+      "procedimiento": "mod_rep.com.RDETCORR01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "pagen",
+        "tipo"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_SAL_CAR_04",
+      "descripcion": "Saldo Puntual de Cartera Vigente",
+      "procedimiento": "mod_rep.com.RSSALCARVIGE01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "shared / ui"
+      ]
+    },
+    {
+      "codigo": "RS_TAB_COM_02",
+      "descripcion": "TABLERO DIGITAL COMERCIAL DETALLE",
+      "procedimiento": "mod_rep.com.RSTABCOMER02",
+      "parametros": [
+        "usuariobt",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CAP_SEGUI_FC_BP_01",
+      "descripcion": "Gestión Red de Agencias",
+      "procedimiento": "mod_rep.com.GSEGCAPBP02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "CMG_CARTERA_02",
+      "descripcion": "CMG CARTERA",
+      "procedimiento": "mod_rep.com.RSRDFCA037",
+      "parametros": [
+        "tipcod",
+        "cod_rel",
+        "tipmet",
+        "prod",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CMG_CARTERA_ASESOR_01",
+      "descripcion": "Cartera Asesor",
+      "procedimiento": "mod_rep.com.GCMGCARTAS001",
+      "parametros": [
+        "cod_rel",
+        "Fecha",
+        "tip_cod",
+        "met"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "REP_CATEGO_ASE_01",
+      "descripcion": "Reporte Categorización Asesor",
+      "procedimiento": "mod_sec.dbo.GCATSEC01",
+      "parametros": [
+        "cod_bt"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRAF_GEST_COM_01",
+      "descripcion": "GRAF Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_02",
+      "descripcion": "GRAF Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_03",
+      "descripcion": "Graf Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "GRBSOLI_01",
+      "descripcion": "Reporte Grupo Solidario",
+      "procedimiento": "mod_rep.com.RSDEPGSOLID01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Reportes PDM"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_05",
+      "descripcion": "Graf Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM05",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_06",
+      "descripcion": "Graf Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM06",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_RANK_COM_01",
+      "descripcion": "Ranking Comercial",
+      "procedimiento": "mod_rep.com.RSRANKCOM01",
+      "parametros": [
+        "territorio",
+        "corredor",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_GEST_COM_02",
+      "descripcion": "Reporte Evolutivo Var Vigente",
+      "procedimiento": "mod_rep.com.RREPGESTCOM02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_MON_INT_COM_01",
+      "descripcion": "Reporte Monitor Inteligencia Comercial",
+      "procedimiento": "mod_rep.com.RMONINTCOM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_CARTEPAS_01",
+      "descripcion": "Reporte Carterización Pasivo",
+      "procedimiento": "mod_rep.com.RSCOMPAS01",
+      "parametros": [
+        "tipcod",
+        "codrel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "RS_MON_SALCAP_COM_01",
+      "descripcion": "Reporte Saldo Captacion Cartera",
+      "procedimiento": "mod_rep.com.RSCAPCOME01",
+      "parametros": [
+        "codrel",
+        "fecha",
+        "tipcod"
+      ],
+      "front": [
+        "reportes",
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "RS_FECH02",
+      "descripcion": "Fecha Reporte Hoy Mensual",
+      "procedimiento": "mod_rep.com.RFECREPMEN02",
+      "parametros": [
+        "fec"
+      ],
+      "front": [
+        "reportes",
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "GRSCMISREP_01",
+      "descripcion": "Seguro Optativo",
+      "procedimiento": "mod_rep.com.GRESREPSEG_01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "REP_CERCUOT_01",
+      "descripcion": "Reporte cero cuota",
+      "procedimiento": "mod_rep.com.GDCEROCN003",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "REP_CERCUOT_02",
+      "descripcion": "Reporte cero cuota",
+      "procedimiento": "mod_rep.com.GDCEROCN004",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_07_",
+      "descripcion": "DEV Graf Gestión Comercial",
+      "procedimiento": "storage.com.RGRAFGESTCOM07_",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GRAF_ZCUO_02",
+      "descripcion": "Graf Zero Cuotas",
+      "procedimiento": "mod_rep.com.RGRAFZCUO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GRAF_ZCUO_01",
+      "descripcion": "Graf Zero Cuotas",
+      "procedimiento": "mod_rep.com.RGRAFZCUO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "GRAF_ZCUO_03",
+      "descripcion": "Graf Zero Cuotas",
+      "procedimiento": "mod_rep.com.RGRAFZCUO03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CON_AGRO_FEN",
+      "descripcion": "Consulta FEN CENEPRED",
+      "procedimiento": "mod_rep.com.REXPAGRO01",
+      "parametros": [
+        "col",
+        "val"
+      ],
+      "front": [
+        "consulta-fen"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFEC_02",
+      "descripcion": "Detalle de Efectividades",
+      "procedimiento": "mod_rep.com.RSMONEFE02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tramof",
+        "prod",
+        "comp_r",
+        "zcuo",
+        "ucuo",
+        "nom",
+        "resp",
+        "tdcr",
+        "pagen",
+        "fcompro",
+        "precosechaf"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "RS_MON_EFECM_02",
+      "descripcion": "Detalle de Efectividades Mensual",
+      "procedimiento": "mod_rep.com.RSMONEFE02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "tramof",
+        "prod",
+        "comp_r",
+        "zcuo",
+        "ucuo",
+        "nom",
+        "resp",
+        "tdcr",
+        "pagen",
+        "fcompro",
+        "precosechaf"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "SEGUI_INC_SEC_01",
+      "descripcion": "Seguimiento Incentivos Asesores",
+      "procedimiento": "mod_rep.com.GSEGUIINC001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "TABDIG_VR2_COM_02",
+      "descripcion": "TABLERO DIGITAL - COMERCIAL",
+      "procedimiento": "mod_rep.com.GRTABDIGO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_SEG_PAS_01",
+      "descripcion": "Seguros Pasivos Oncologico",
+      "procedimiento": "mod_rep.com.RSSEGPAS01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "RS_SEG_PAS_02",
+      "descripcion": "Seguros Pasivos Multiple Ahorro",
+      "procedimiento": "mod_rep.com.RSSEGPAS02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "RS_SEG_PAS_03",
+      "descripcion": "Seguros Pasivos Resumen",
+      "procedimiento": "mod_rep.com.RSSEGPAS03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "prod_misi_01",
+      "descripcion": "Productos Top corredor",
+      "procedimiento": "mod_rep.com.RSRTOPMIS001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "prod_misi_02",
+      "descripcion": "Productos Top Unidad",
+      "procedimiento": "mod_rep.com.RSRTOPMIS002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "prod_misi_03",
+      "descripcion": "Productos Top Asesores",
+      "procedimiento": "mod_rep.com.RSRTOPMIS003",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / desarrollo-sostenible"
+      ]
+    },
+    {
+      "codigo": "RS_SAL_CAR_05",
+      "descripcion": "Cartera por Producto Vigente",
+      "procedimiento": "mod_rep.com.RSSALCARVIGE02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_CRM_F_03",
+      "descripcion": "DetalleAgendamiento Comercial Reasignado Flujo",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_M_02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "pagen",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RESNMOV_02",
+      "descripcion": "Mov. Resumen Detalle Analista",
+      "procedimiento": "mod_rep.com.RESDMOV02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_AGROMIX_02",
+      "descripcion": "Graf Vencido AGROMIX",
+      "procedimiento": "mod_rep.com.RS_AGROMIX_CHART",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes"
+      ]
+    },
+    {
+      "codigo": "RS_AGROMIX_03",
+      "descripcion": "Graf Capital AGROMIX",
+      "procedimiento": "mod_rep.com.RS_AGROMIX_CHART2",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes"
+      ]
+    },
+    {
+      "codigo": "RS_AGROMIX_04",
+      "descripcion": "Graf Clientes AGROMIX",
+      "procedimiento": "mod_rep.com.RS_AGROMIX_CHART3",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_07",
+      "descripcion": "Graf Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM07",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "CMCUONUEV_01",
+      "descripcion": "Cuadro de Mando Cero Cuotas Nuevas",
+      "procedimiento": "mod_rep.com.GCMCNUE001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod",
+        "tipcuota"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "LCCUOTANUEVA_01",
+      "descripcion": "BASE DE GESTION CERO CUOTAS NUEVAS",
+      "procedimiento": "mod_rep.com.RSLISTCCN01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "pagen",
+        "tipcuota"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "PLANMOVPERFIL_01",
+      "descripcion": "Planilla Movilidad Perfil",
+      "procedimiento": "mod_rep.com.GLIMOVO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "PLANMOVPERFIL_02",
+      "descripcion": "Planilla Movilidad Perfil",
+      "procedimiento": "mod_rep.com.GLIMOVO02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "LIS_PROSPE_01",
+      "descripcion": "Lista de Prospectos",
+      "procedimiento": "mod_rep.com.GLISPROSP01",
+      "parametros": [
+        "cod_rel"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "SEL_JER_01",
+      "descripcion": "Filtro Territorio,Corred,agencia",
+      "procedimiento": "mod_rep.com.GSELJERAR001",
+      "parametros": [],
+      "front": []
+    },
+    {
+      "codigo": "DesemDiario_05",
+      "descripcion": "Operaciones Diario CE 05",
+      "procedimiento": "mod_rep.com.RSRDFCA031",
+      "parametros": [
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "CONT_ELECT_M_04",
+      "descripcion": "Contraración Electrónica",
+      "procedimiento": "mod_rep.com.RSRDFCA032",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "RS_AGROMIX_05",
+      "descripcion": "Graf Resumen AGROMIX",
+      "procedimiento": "mod_rep.com.RS_AGROMIX_CHART4",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes"
+      ]
+    },
+    {
+      "codigo": "RS_CARD_ZCUO_01",
+      "descripcion": "Card reporte cero cuotas",
+      "procedimiento": "mod_rep.com.RCARDZCUO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "DASHBOARD_CLIENTES_01",
+      "descripcion": "Dashboard Clientes",
+      "procedimiento": "mod_rep.com.GDASHCLI01",
+      "parametros": [
+        "uni_cfg",
+        "sel_cfg"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GREPROSPCORRE_03",
+      "descripcion": "Graf_Pie_PROSTO_Inst_Corresponsales",
+      "procedimiento": "mod_rep.com.RPROSCORR006",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CMG_CLIF_01",
+      "descripcion": "CMG Clientes Flujo",
+      "procedimiento": "mod_rep.com.RSCMGCF001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Clientes",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CLI_VULNERABLE_01",
+      "descripcion": "Filtro Clientes Vulnerables",
+      "procedimiento": "mod_rep.com.RSCLIVULNER01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_AGE_COM_CRM_S_01",
+      "descripcion": "Agendamiento Comercial Reasignado Stock",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_M_03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "ver",
+        "fecha",
+        "tipo_ase"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_AGE_COM_CRM_S_03",
+      "descripcion": "DetalleAgendamiento Comercial Reasignado Stock",
+      "procedimiento": "mod_rep.com.RS_AGE_COM_CR_M_04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "ver",
+        "fecha",
+        "tipo_ase"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_GEST_COM_03",
+      "descripcion": "Reporte Evolutivo Var Cliente Stock",
+      "procedimiento": "mod_rep.com.RREPGESTCOM03",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "CONT_ELECT_M_01",
+      "descripcion": "Contraración Electrónica",
+      "procedimiento": "mod_rep.com.RSRDFCA024",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CONT_ELECT_M_02",
+      "descripcion": "Contraración Electrónica",
+      "procedimiento": "mod_rep.com.RSRDFCA025",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "CONT_ELECT_M_03",
+      "descripcion": "Contraración Electrónica",
+      "procedimiento": "mod_rep.com.RSRDFCA026",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "reporte-demo",
+      "descripcion": "Reporte Demo",
+      "procedimiento": "mod_rep.dbo.REPORTE_DEMO",
+      "parametros": [
+        "fecha",
+        "cod_user_bt"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "CMG_CARTERA_01",
+      "descripcion": "CMG CARTERA",
+      "procedimiento": "mod_rep.com.RSCMGFCA002",
+      "parametros": [
+        "codrel",
+        "Fecha",
+        "tipcod",
+        "met",
+        "prod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-mensual"
+      ]
+    },
+    {
+      "codigo": "TAB_CUE_RES_01",
+      "descripcion": "Cuenta de Resultados",
+      "procedimiento": "mod_rep.rep.RTABCUERES01",
+      "parametros": [
+        "fecha",
+        "tip_cod",
+        "cod_rel"
+      ],
+      "front": [
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Rentabilidad"
+      ]
+    },
+    {
+      "codigo": "GST_ACTIVAS_09",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "GST_ACTIVAS_10",
+      "descripcion": "GESTION TASAS ACTIVAS",
+      "procedimiento": "mod_rep.com.GDCGEST_ACTIVAST04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "var",
+        "fec",
+        "diario"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "TABDIG_VR2_01",
+      "descripcion": "TABLERO DIGITAL",
+      "procedimiento": "mod_rep.com.GRTABDIGO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Tablero Digital"
+      ]
+    },
+    {
+      "codigo": "RS_AGE_COM_02",
+      "descripcion": "Detalle Agendamiento Comercial",
+      "procedimiento": "mod_rep.com.RSAGECOM02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha",
+        "mode",
+        "fuga",
+        "prop",
+        "nom"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Campañas"
+      ]
+    },
+    {
+      "codigo": "RS_SEG_PAS_04",
+      "descripcion": "Seguros Pasivos Protección Total",
+      "procedimiento": "mod_rep.com.RSSEGPAS04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Seguros"
+      ]
+    },
+    {
+      "codigo": "RS_DESEMB_02",
+      "descripcion": "Estructura de Desembolsos Mensual",
+      "procedimiento": "mod_rep.com.RSDESEMB02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": [
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_FECH",
+      "descripcion": "Fechas Reporte Mensual",
+      "procedimiento": "mod_rep.com.RFECREPMEN",
+      "parametros": [
+        "fec"
+      ],
+      "front": [
+        "reportes",
+        "reportes / actividad-diaria / Cartera",
+        "reportes / actividad-diaria / Cartera en Mora",
+        "reportes / actividad-diaria / Seguros",
+        "reportes / actividad-mensual",
+        "reportes / actividad-mensual / Cartera",
+        "reportes / actividad-mensual / Tablero Digital"
+      ]
+    },
+    {
+      "codigo": "TB_PANEL_OPE_02",
+      "descripcion": "PANEL OPERACIONES PASIVO REGULA",
+      "procedimiento": "mod_rep.com.RSROPERA002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Captaciones"
+      ]
+    },
+    {
+      "codigo": "GRAF_ZCUO_04",
+      "descripcion": "Graf Zero Cuotas",
+      "procedimiento": "mod_rep.com.RGRAFZCUO04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    },
+    {
+      "codigo": "CMG_CLI_PAS_STOCK_02",
+      "descripcion": "CMG Clientes Pasivos Stock",
+      "procedimiento": "mod_rep.com.RSCMGCLIPAS02",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "pob_misi_01",
+      "descripcion": "Productos Top Territorio",
+      "procedimiento": "mod_rep.com.RSRTOPPOMIS001",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "pob_misi_02",
+      "descripcion": "Productos Top corredor",
+      "procedimiento": "mod_rep.com.RSRTOPPOMIS002",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "pob_misi_03",
+      "descripcion": "Productos Top Unidad",
+      "procedimiento": "mod_rep.com.RSRTOPPOMIS003",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "pob_misi_04",
+      "descripcion": "Productos Top Asesores",
+      "procedimiento": "mod_rep.com.RSRTOPPOMIS004",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fec",
+        "prod"
+      ],
+      "front": []
+    },
+    {
+      "codigo": "RS_GEST_COM_01",
+      "descripcion": "Reporte Gestión Comercial",
+      "procedimiento": "mod_rep.com.RSGETCOM01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "GRAF_GEST_COM_04",
+      "descripcion": "Graf Gestión Comercial",
+      "procedimiento": "mod_rep.com.RGRAFGESTCOM04",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera"
+      ]
+    },
+    {
+      "codigo": "RS_TOP_ZCUO_01",
+      "descripcion": "top 10 asesores Zcuo",
+      "procedimiento": "mod_rep.com.RTOPZCUO01",
+      "parametros": [
+        "tip_cod",
+        "cod_rel",
+        "fecha"
+      ],
+      "front": [
+        "reportes / actividad-diaria / Cartera en Mora"
+      ]
+    }
+  ],
+  "procedimientos": [
+    {
+      "nombre": "mod_gpa.vac.GRESEJE01",
+      "base": "mod_gpa",
+      "esquema": "vac",
+      "estado": "pendiente",
+      "reportes": [
+        "VAC_RES_EJE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_gpa.vac.GRESEJE02",
+      "base": "mod_gpa",
+      "esquema": "vac",
+      "estado": "pendiente",
+      "reportes": [
+        "VAC_RES_EJE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.DINCEPDM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DET_INCEN_PDM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMCNUE001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMCUONUEV_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMCNUE002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMCUONUEV_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMGCAP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GCMGCAP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMGCARTAS001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CARTERA_ASESOR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMGMORA001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "cuadro_Variable_Riesgo_01",
+        "cuadro_Variable_M_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMGMORA001_SIMP",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "cmg_mora_simp_01",
+        "cmg_mora_simp_m_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCMGMORA003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "cuadro_Variable_Riesgo_F_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCOMCRE01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEGUI_COMITE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCOMCRE02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GCOMCRE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCOSELIS001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "COSELISTADO_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GCOSEMAF002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "COSESEMAFORO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDACDESEM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DESEMBOLSOS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDASHCLI01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DASHBOARD_CLIENTES_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDASHKAY03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "rankKay_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDASHKAY05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "rankKayOpe_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDASHKAY06",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "rankKayrecu_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCEROCN003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "REP_CERCUOT_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCEROCN004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "REP_CERCUOT_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCGEST_ACTIVAST01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GST_ACTIVAS_01",
+        "GST_ACTIVAS_02",
+        "GST_ACTIVAS_03",
+        "GST_ACTIVAS_04",
+        "GST_ACTIVAS_05",
+        "GST_ACTIVAS_06",
+        "GST_ACTIVAS_M_01",
+        "GST_ACTIVAS_M_02",
+        "GST_ACTIVAS_M_03",
+        "GST_ACTIVAS_M_04",
+        "GST_ACTIVAS_M_05",
+        "GST_ACTIVAS_M_06"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCGEST_ACTIVAST02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "reporte_autonomia_newdiaria_01",
+        "reporte_autonomia_new_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCGEST_ACTIVAST03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GST_ACTIVAS_08",
+        "GST_ACTIVAS_07"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCGEST_ACTIVAST04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GST_ACTIVAS_09",
+        "GST_ACTIVAS_10"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCGEST_PASIVAST01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GST_PASIVA_01",
+        "GST_PASIVA_02",
+        "GST_PASIVA_03",
+        "GST_PASIVA_M_01",
+        "GST_PASIVA_M_02",
+        "GST_PASIVA_M_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDCLIOPE01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Clientes_Ope_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GDMREP001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_REP_01",
+        "RS_MON_REP_SEC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOV_01",
+        "PLANMOVPERFIL_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOV_02",
+        "PLANMOVPERFIL_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVO05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOV_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVO06",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOV_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVRO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOVR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVRO05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOVR_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLIMOVRO06",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PLANMOVR_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLISAUTO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "LST_AUT_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLISAUTRO05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GLISAUTRO_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLISCAPRET01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "LIS_CAPRET_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLISDETCLI01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DET_CLI_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLISDETCLIPDM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "REACT_PDM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GLISPROSP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "LIS_PROSPE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GMOVCLI01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "MOVIMIENTO_CLIENTES_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GPASP001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Pasivo_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GPDM001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PDM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GPRECOSCUAD001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PRECOSECUADRO_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GPRECOSELIS001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PRECOSELISTADO_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRCEROCUOTAO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROYCUOTA_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRCEROCUOTAO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROYCUOTA_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESCAMCOND01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRESCONDO_02",
+        "GRESCONDO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESCAMCOND03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRESCONDO_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESCAMIMP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRESCAMIMP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESCLIREP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RES_SEC_REP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESDESCRE02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DESCRED_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESPDATOS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "P_Datos_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESPDATOS02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "P_Datos_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESPROGOB01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RPROGOB_01",
+        "RPROGOB_M_01",
+        "RPROGOB_02",
+        "RPROGOB_M_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESPROGOB02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RPROGOB_03",
+        "RPROGOB_M_03",
+        "RPROGOB_04",
+        "RPROGOB_M_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREAGRO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "AGRO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG_01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRSCMISREP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRSCMIS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRSCMIS_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRSCMIS_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEG_AGRO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRSCMIS_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESREPSEG06",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRSCMIS_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRESTOPIMP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRESCAMIMP_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRGCTABDIGO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GCTABDIG_VR2_OPE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRGCTABDIGO03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GCTABDIG_VR2_COM_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRMENTOR001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RMENTORIN_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRMENTOR002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RMENTORIN_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRTABAPPO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TABDIG_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRTABCORRO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TABDIG_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRTABDIGO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TABDIG_VR2_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRTABDIGO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TABDIG_VR2_COM_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRVGENCORO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RVIUWGCOR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GRVGENCORO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RVIUWGCORE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSCAMP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GSCAMP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSCASEG01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GSCASEG_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSEGCAPBP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CAP_SEGUI_BP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSEGCAPBP02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CAP_SEGUI_BP_FC_01",
+        "CAP_SEGUI_FC_BP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSEGCAPRED01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CAP_SEGUI_RED_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSEGUIINC001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEGUI_INC_SEC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSELCIUT001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEL_CIU_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSELCIUT002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEL_CIU_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSELJERAR001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEL_JER_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSELJERAR002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEL_JER_MENTORING_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSELREP001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "extraido",
+      "reportes": [
+        "SEL_EFEC_01"
+      ],
+      "parametros": [],
+      "resultados": [
+        [
+          "id",
+          "desc"
+        ]
+      ],
+      "invoca": [
+        "mod_rep.rep.FTHEACOLS01"
+      ],
+      "tablas": [
+        {
+          "nombre": "storage.com_act.WCED001",
+          "usos": [
+            "lee"
+          ],
+          "fuentes": [
+            "estatico"
+          ],
+          "columnas": [
+            {
+              "nombre": "HFCRES",
+              "confianza": "inferida"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "mod_rep.com.GSELREP002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEL_JEFE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GSMODAGEN01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GSMODAGEN_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GTOPCERCUO001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROCUOTA_TOPCNUEVA_01",
+        "CEROCUOTA_TOPCNUEVA_M_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GTOPCERCUO002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROCUOTA_TOPCNUEVA_02",
+        "CEROCUOTA_TOPCNUEVA_M_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GTOPCERCUO003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROCUOTA_TOPCNUEVA_03",
+        "CEROCUOTA_TOPCNUEVA_M_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GTOPCERCUO004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROCUOTA_TOPCNUEVA_04",
+        "CEROCUOTA_TOPCNUEVA_M_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.GTOPCERCUO005",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CEROCUOTA_TOPCNUEVA_05",
+        "CEROCUOTA_TOPCNUEVA_M_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RACTGP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RACTGP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RAGROMIX",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGROMIX_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RCARDZCUO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_CARD_ZCUO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RCDATREACT01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "LSRC_DATA_REACT_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RCORRES01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPORCORRE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RCORRES05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPORCORRE_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RCORRES06",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPORCORRE_06"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RDETCORR01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RDETCORR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RENRCOLAB01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "enrolamiento_colaboradores_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RENRDESEM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "enrolamiento_desembolso_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RENROPE01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "enrolamiento_Ope_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RENRPAS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "enrolamiento_pasivo_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RENRPAS02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "enrolamiento_pasivo_pas_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RESDMOV01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RESNMOV_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RESDMOV02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RESNMOVR_01",
+        "RESNMOV_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.REXPAGRO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CON_AGRO_FEN"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RFECREPMEN",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_FECH"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RFECREPMEN02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_FECH02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM06",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_06"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFGESTCOM07",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_07"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFSEGPAS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAFSEGPAS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFSEGPAS02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAFSEGPAS_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFZCUO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_ZCUO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFZCUO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_ZCUO_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFZCUO03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_ZCUO_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RGRAFZCUO04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_ZCUO_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RINCEGP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RESINCGRUP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RINCEPDM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "INCEN_PDM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RMESA01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RMESA_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RMONINTCOM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_INT_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RMORAGP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RESMORAGP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RPROSCORR002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPROSPCORRE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RPROSCORR004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPROSPCORRE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RPROSCORR005",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPROSPCORRE_06"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RPROSCORR006",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GREPROSPCORRE_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RRANKM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_RANK_MUJ_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RRANKM02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_RANK_MUJ_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RREPGESTCOM02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_GEST_COM_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RREPGESTCOM03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_GEST_COM_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGE_COM_CR_01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_CR_01",
+        "RS_AGE_COM_CRM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGE_COM_CR_02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_CR_03",
+        "RS_AGE_COM_CRM_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGE_COM_CR_M_01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_CRM_F_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGE_COM_CR_M_02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_CRM_F_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGE_COM_CR_M_03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_CRM_S_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGE_COM_CR_M_04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_CRM_S_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGROMIX_CHART",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGROMIX_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGROMIX_CHART2",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGROMIX_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGROMIX_CHART3",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGROMIX_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RS_AGROMIX_CHART4",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGROMIX_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSAGECOM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSAGECOM02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSAGECOM03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AGE_COM_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSAPPUSO001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "APP_USO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSAVAPOR01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_AVA_POR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSBASENEG01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_BASE_NEG_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCALCAR01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_CAL_CAR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCALCAR02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_CAL_CAR_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCAPCOME01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_SALCAP_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCLIVULNER01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CLI_VULNERABLE_01",
+        "CLI_VULNERABLE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCMGCF001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CLIF_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCMGCLIPAS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CLI_PAS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCMGCLIPAS02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CLI_PAS_STOCK_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCMGCLIPAS03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CLI_PAS_DETA_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCMGFCA002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CARTERA_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSCOMPAS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_CARTEPAS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDATPRO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_DAT_PRO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDATPRO02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_DAT_PRO_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDATPRO03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_DAT_PRO_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDATPRO04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_DAT_PRO_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDEPGSOLID01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRBSOLI_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDESEMB",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_DESEMB_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDESEMB02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_DESEMB_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDESEMP01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DESEMP_SOC_01",
+        "DESE_SOC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDESEMP02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DESE_SOC_AS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSDESEMPAS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DESEMP_SOC_PAS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSEGASE01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEGUROS_ASESOR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSEGSECTOR001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Sec_ciiu_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSGESMOEF001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "rma/administracion/Mora/monitor_efectividad_rma_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSGETCOM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_GEST_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSHHCARB001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "HCARBONO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSIMR01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RSIMR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSLISTCCN01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "LCCUOTANUEVA_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFE01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFEC_01",
+        "RS_MON_EFECM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFE02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFEC_02",
+        "RS_MON_EFECM_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFE03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFEC_03",
+        "RS_MON_EFECM_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFE05",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFEC_SEC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFER01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFECREASIG_01",
+        "RS_MON_EFECREASIGM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFER02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFECREASIG_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFER03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFECREASIG_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFEREPRO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFECREPRO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONEFETRC01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_EFECTRAMOSC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSMONRENT01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_RETE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPANSUP001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PANEL_SUP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPANSUP002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PANEL_SUP_02",
+        "PANEL_SUP_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPANSUP003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PANEL_SUP_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPANSUP004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PANEL_SUP_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPANSUP005",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PANEL_SUP_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_COLREC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_COLREC_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_DIACOLREC_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_DIACOLREC_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES005",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_DIACOLREC_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES006",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_DIACOLREC_AS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES007",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_DIACOLREC_AS_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES008",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_DIACOLREC_AS_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES009",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_COLREC_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSPROYCOLDES010",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "PROYEC_COLREC_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRANKCOM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_RANK_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA007",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Clientes_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA011",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Clientes_nuevoRec_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA021",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DesemDiario_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA022",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DesemDiario_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA023",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DesemDiario_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA024",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CONT_ELECT_M_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA025",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CONT_ELECT_M_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA026",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CONT_ELECT_M_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA027",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Monitor_Dese_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA028",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Monitor_Dese_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA029",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Monitor_Dese_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA030",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Monitor_Dese_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA031",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "DesemDiario_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA032",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CONT_ELECT_M_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA035",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CARACT_CARTERA_01",
+        "CARACT_CARTERA_M_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA036",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CARACT_pas_M_01",
+        "CARACT_pas_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA037",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CARTERA_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA038",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "CMG_CARTERA_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA050",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Monitor_Dese_misi_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA050_3",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Monitor_Dese_misi_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDFCA050_4",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "prod_misi_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRDMA023",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "R_APADRINA_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSROPERA001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TB_PANEL_OPE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSROPERA002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TB_PANEL_OPE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRPD001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_MON_CAR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRSRV001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RECSERV_PAS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOP001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RSRTOP01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPMIS001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "prod_misi_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPMIS002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "prod_misi_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPMIS003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "prod_misi_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPMIS004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "prod_misi_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPPOMIS001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "pob_misi_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPPOMIS002",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "pob_misi_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPPOMIS003",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "pob_misi_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPPOMIS004",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "pob_misi_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSRTOPV001",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RSRTOPV01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSALCAR01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SAL_CAR_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSALCAR02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SAL_CAR_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSALCAR03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SAL_CAR_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSALCARVIGE01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SAL_CAR_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSALCARVIGE02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SAL_CAR_05"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSEGPAS01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SEG_PAS_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSEGPAS02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SEG_PAS_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSEGPAS03",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SEG_PAS_03"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSEGPAS04",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_SEG_PAS_04"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSSEGPDM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "SEG_PDM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSTABCOMER",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_TAB_COM_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RSTABCOMER02",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "Tab_Dig_Com_A_01",
+        "RS_TAB_COM_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RTABDIGCOM01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "TABDIGITAL_COMERCIAL_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.com.RTOPZCUO01",
+      "base": "mod_rep",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "RS_TOP_ZCUO_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.dbo.REPORTE_DEMO",
+      "base": "mod_rep",
+      "esquema": "dbo",
+      "estado": "pendiente",
+      "reportes": [
+        "reporte-demo"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.rep.GSREVA01",
+      "base": "mod_rep",
+      "esquema": "rep",
+      "estado": "pendiente",
+      "reportes": [
+        "GSREVA01",
+        "GSREVA101",
+        "GSREVA201"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_rep.rep.RTABCUERES01",
+      "base": "mod_rep",
+      "esquema": "rep",
+      "estado": "pendiente",
+      "reportes": [
+        "TAB_CUE_RES_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "mod_sec.dbo.GCATSEC01",
+      "base": "mod_sec",
+      "esquema": "dbo",
+      "estado": "pendiente",
+      "reportes": [
+        "REP_CATEGO_ASE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "storage.com.RGRAFGESTCOM07_",
+      "base": "storage",
+      "esquema": "com",
+      "estado": "pendiente",
+      "reportes": [
+        "GRAF_GEST_COM_07_"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.CABGMRESULUNINEGB01",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "resultado_unidad_negocio_rma_01",
+        "resultado_unidad_negocio_rma_ope_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDACTITASA01",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "actividadtasas_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDCCAP_BP01",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "CaptaBP_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDDESEMDIA",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "DesemDiario_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDEFECTMORA01",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "EfecRecTramos_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDPORTAGRO01",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "PortafolioAgro_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDPSUPERV01",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "PORTSUPE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.GDPSUPERV02",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "PORTSUPE_02"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    },
+    {
+      "nombre": "strategos.mod_rep_com_act.HTTPTRACE",
+      "base": "strategos",
+      "esquema": "mod_rep_com_act",
+      "estado": "pendiente",
+      "reportes": [
+        "HTTPTRACE_01"
+      ],
+      "parametros": null,
+      "resultados": null,
+      "invoca": [],
+      "tablas": []
+    }
+  ],
+  "tablas": [
+    {
+      "nombre": "storage.com_act.WCED001",
+      "columnas": [
+        {
+          "nombre": "HFCRES",
+          "confianza": "inferida",
+          "procedimientos": [
+            "mod_rep.com.GSELREP001"
+          ]
+        }
+      ],
+      "procedimientos": [
+        "mod_rep.com.GSELREP001"
+      ]
+    }
+  ],
+  "hallazgos": [
+    {
+      "nivel": "aviso",
+      "regla": "codigo-duplicado",
+      "objeto": "CLI_VULNERABLE_01",
+      "detalle": "aparece 2 veces en reportes.json (entradas idénticas)"
+    },
+    {
+      "nivel": "aviso",
+      "regla": "codigo-duplicado",
+      "objeto": "PANEL_SUP_02",
+      "detalle": "aparece 2 veces en reportes.json (entradas idénticas)"
+    },
+    {
+      "nivel": "aviso",
+      "regla": "nombre-con-espacios",
+      "objeto": "strategos.mod_rep_com_act.GDDESEMDIA",
+      "detalle": "escrito como \"strategos.mod_rep_com_act.GDDESEMDIA  \": los espacios rompen búsquedas y comparaciones"
+    },
+    {
+      "nivel": "info",
+      "regla": "parametro-con-variantes",
+      "objeto": "cod_rel",
+      "detalle": "se escribe de 2 formas: `codrel` (6), `cod_rel` (298)"
+    },
+    {
+      "nivel": "info",
+      "regla": "parametro-con-variantes",
+      "objeto": "fecha",
+      "detalle": "se escribe de 2 formas: `Fecha` (7), `fecha` (69)"
+    },
+    {
+      "nivel": "info",
+      "regla": "parametro-con-variantes",
+      "objeto": "tip_cod",
+      "detalle": "se escribe de 2 formas: `tipcod` (8), `tip_cod` (289)"
+    }
+  ]
+}

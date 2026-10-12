@@ -1,0 +1,30 @@
+{
+  "nota": "Índice de las skills de governance/skills/. Cada entrada refleja el frontmatter de su SKILL.md: al agregar o renombrar una skill, actualizar también este archivo (npm run verificar lo controla).",
+  "skills": [
+    {
+      "name": "dic-analisis-dependencias",
+      "path": "governance/skills/dic-analisis-dependencias/SKILL.md",
+      "description": "Cómo se determina qué tablas y columnas usa cada SP, combinando el analizador estático de T-SQL con las dependencias del motor de SQL Server. Usar al revisar una ficha generada, resolver columnas inferidas o sin resolver, validar un lote con sys.dm_sql_referenced_entities o corregir un error del analizador."
+    },
+    {
+      "name": "dic-extraccion-sp",
+      "path": "governance/skills/dic-extraccion-sp/SKILL.md",
+      "description": "Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server y dejarlo donde el diccionario lo lee. Usar al extraer uno o muchos SP del catálogo, al pegar un resultado de sp_helptext, o cuando un SP aparece como pendiente, huérfano o incompleto."
+    },
+    {
+      "name": "dic-fichas",
+      "path": "governance/skills/dic-fichas/SKILL.md",
+      "description": "Cómo documentar a mano las fichas del diccionario (propósito y reglas de un SP, descripción de tablas y columnas) sin que la regeneración pise el trabajo. Usar al completar una ficha, al describir columnas o al revisar que la prosa siga siendo cierta después de que un SP cambió."
+    },
+    {
+      "name": "dic-lectura-tsql",
+      "path": "governance/skills/dic-lectura-tsql/SKILL.md",
+      "description": "Patrones de los procedimientos de reportes MIS y cómo leerlos sin equivocarse — CTE encadenadas, filtros con TODO/VACÍO, parámetros de jerarquía y fecha, invocación de FTHEACOLS01, bases cruzadas. Usar al documentar el propósito y las reglas de un SP o al interpretar una columna que devuelve."
+    },
+    {
+      "name": "dic-trazabilidad-front",
+      "path": "governance/skills/dic-trazabilidad-front/SKILL.md",
+      "description": "Cómo unir un RCODREP con su pantalla en MIS-angular-front y con su tabla de origen, en las dos direcciones. Usar para rastrear de dónde sale una cifra de la pantalla, medir el impacto de cambiar una tabla o SP, o priorizar qué SP extraer primero."
+    }
+  ]
+}
