@@ -27,28 +27,22 @@
 | 3 | `@fec` | date | — |  | `fec` |
 | 4 | `@resp` | varchar(250) | — |  | `resp` |
 
-### Tablas y columnas (18)
+### Tablas y columnas (12)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.SDAE002](../../../tablas/storage/com_act/SDAE002.md) | lee | `scodagr`, `SCODSEC`, `sfecpro`, `SSALINIMN`, `SSALMAN01MN`, `SSALRECMN` | estatico + motor |
 | [storage.com_act.SDAE003](../../../tablas/storage/com_act/SDAE003.md) | lee | `scodagr`, `SCODSEC`, `sfecpro`, `SSALINIMN`, `SSALMAN01MN`, `SSALRECMN` | estatico + motor |
 | [storage.com_act.SDAF002](../../../tablas/storage/com_act/SDAF002.md) | lee | `SCODAGR`, `scodsec`, `sfecpro`, `SNUMOPE` | estatico + motor |
 | [storage.com_act.SDAS001](../../../tablas/storage/com_act/SDAS001.md) | lee | `SCODAGR`, `scodsec`, `sfecpro`, `SSALCAPMN` | estatico + motor |
-| [storage.com_act.wacli001](../../../tablas/storage/com_act/WACLI001.md) | lee | `hclinue`, `HCODSEC`, `hconcli`, `hfecpro`, `hinddes` | estatico + motor |
+| [storage.com_act.WACLI001](../../../tablas/storage/com_act/WACLI001.md) | lee | `hclinue`, `HCODSEC`, `hconcli`, `hfecpro`, `hinddes` | estatico + motor |
 | [storage.com_act.WAPPCLI001](../../../tablas/storage/com_act/WAPPCLI001.md) | lee | `HAGUSER`, `HFECPRO`, `htipnumdoc` | estatico + motor |
 | [storage.com_act.WCDCE001](../../../tablas/storage/com_act/WCDCE001.md) | lee | `HCODOPE`, `HCODSEC`, `hfecpro` | estatico + motor |
 | [storage.com_act.WCLIRETE001](../../../tablas/storage/com_act/WCLIRETE001.md) | lee | `HFECPRO`, `HNUMCLISTOCK`, `HNUMRETENCION`, `SCODSEC` | estatico + motor |
 | [storage.com_act.WJAS001](../../../tablas/storage/com_act/WJAS001.md) | lee | `hcodrel`, `hfecpro`, `HNUMCLI`, `htipcod` | estatico + motor |
 | [storage.com_seg.SDSF001](../../../tablas/storage/com_seg/SDSF001.md) | lee | `scodagr`, `SCODSEC`, `scodseg`, `SFECPRO`, `SNUMPLZ` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HVALVAR` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI`, `RFECPRO` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI`, `RFECPRO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -57,8 +51,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, '"fec"', @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = '"fec"', @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -76,6 +70,17 @@
 - ⚠️ Columna sin resolver `HTIPCOD` (¿storage.com.VDMCOM01?)
 - ⚠️ Columna sin resolver `HCODREL` (¿storage.com.VDMCOM01?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

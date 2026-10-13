@@ -26,13 +26,12 @@
 | 2 | `@tip_cod` | int | — |  | `tip_cod` |
 | 3 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [mod_rep.dbo.REVARPYG](../../../tablas/mod_rep/dbo/REVARPYG.md) | lee | `codigo`, `descripcion`, `pos`, `style` | estatico + motor |
 | [mod_rep.dbo.WREPPYG001](../../../tablas/mod_rep/dbo/WREPPYG001.md) | lee | `WACUMAA`, `WACUMACT`, `WACUMT1`, `WACUMT2`, `WACUMT3`, `WACUMT4`, `WCODMOD`, `WCODREL`, `WCODUNI`, `WCODVAR`, `WFECPRO`, `WSUBTIP`, `WTIPOPE`, `WVALAA`, `WVALACT`, `WVALANT` | estatico + motor |
-| [mod_rep.rep.if](../../../tablas/mod_rep/rep/if.md) ⚠️ esquema implícito | elimina-objeto | — | estatico |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

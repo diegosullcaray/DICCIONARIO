@@ -27,12 +27,10 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | varchar(8) | 'NOW' |  | — |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [mod_sys_admin.dbo.VUSEPROF02](../../../tablas/mod_sys_admin/dbo/VUSEPROF02.md) | lee | `SCODPROFN`, `SCODUSE` | estatico + motor |
 | [storage.com_act.HBMOV002](../../../tablas/storage/com_act/HBMOV002.md) | lee | `HCARGO`, `HCARTERA`, `HCODSEC`, `HCOMETARIO`, `HCORREDOR`, `HDESCTO`, `HDESPL_VALIDOG`, `HDISTPROMG`, `HFECPRO`, `HMONTOMOV`, `HNOMBRE`, `HPAGOFINAL`, `HPLANDATOS`, `HRECLAMO`, `HSUCURSAL`, `HTERRITORIO`, `HTOT_DESPLAZAMIENTO` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HMAILPER`, `HNUMDOC` | estatico + motor |
@@ -45,6 +43,13 @@
 1. `HFECPRO`, `HCODSEC`, `HNOMBRE`, `HCARGO`, `HTERRITORIO`, `HCORREDOR`, `HTOT_DESPLAZAMIENTO`, `HDESPL_VALIDOG`, `HDISTPROMG`, `HMONTOMOV`, `HPLANDATOS`, `HRECLAMO`, `HDESCTO`, `HPAGOFINAL`, `HCOMETARIO`, `HCARTERA`
 2. `HFECPRO`, `HCODSEC`, `HNOMBRE`, `HCARGO`, `HTERRITORIO`, `HCORREDOR`, `HTOT_DESPLAZAMIENTO`, `HDESPL_VALIDOG`, `HDISTPROMG`, `HMONTOMOV`, `HPLANDATOS`, `HRECLAMO`, `HDESCTO`, `HPAGOFINAL`, `HCOMETARIO`, `HCARTERA`
 3. `*`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

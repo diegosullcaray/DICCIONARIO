@@ -31,9 +31,9 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.WIMR001](../../../tablas/storage/com_act/WIMR001.md) | lee | `haseoper`, `hfecpro` | estatico + motor |
-| [storage.ref.rcalen001](../../../tablas/storage/ref/RCALEN001.md) | lee | `rciebt`, `RFEC` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`≈, `RCODFC`≈, `RCODGRU`≈, `RCODTER`≈, `RCODUCO`≈, `RCODUNI`≈, `RFECPRO`≈, `RINDFEC`≈ | estatico + motor |
+| [storage.com_act.WIMR001](../../../tablas/storage/com_act/WIMR001.md) | lee | `haseoper`, `HDESPROD`, `hfecpro`, `HTIPO_IS` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `rciebt`, `RFEC` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`≈, `RCODFC`≈, `RCODGRU`≈, `RCODTER`≈, `RCODUCO`≈, `RCODUNI`≈, `RFECPRO`≈, `RINDFEC`≈ | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

@@ -11,7 +11,8 @@ Comparten [`lib/`](./lib/):
 | [`catalogo.mjs`](./lib/catalogo.mjs) | lee `fuente/reportes.json`, normaliza nombres de SP y los agrupa |
 | [`tsql.mjs`](./lib/tsql.mjs) | analizador estático de T-SQL: tablas, columnas, firma, EXEC, salida |
 | [`dependencias.mjs`](./lib/dependencias.mjs) | importa el CSV de `sql/02-dependencias` |
-| [`modelo.mjs`](./lib/modelo.mjs) | une las cuatro fuentes y deriva los hallazgos |
+| [`modelo.mjs`](./lib/modelo.mjs) | une las fuentes, clasifica tablas y otros objetos, deriva hallazgos (`REGLAS`) |
+| [`estructura.mjs`](./lib/estructura.mjs) | importa `fuente/estructura/*.csv` (columnas y tipos reales) |
 | [`salida.mjs`](./lib/salida.mjs) | escribe solo si cambió, inyecta bloques generados, modo `--check` |
 
 ## Índice
@@ -20,7 +21,7 @@ Comparten [`lib/`](./lib/):
 |---|---|---|
 | [`generar-extraccion.mjs`](./generar-extraccion.mjs) | SQL de extracción y de dependencias | `npm run generar` |
 | [`generar-diccionario.mjs`](./generar-diccionario.mjs) | fichas, índices, JSON, SQL por tabla | `npm run generar` |
-| [`sincronizar-agentes.mjs`](./sincronizar-agentes.mjs) | `governance/` → `.claude/` | `npm run generar` |
+| [`sincronizar-agentes.mjs`](./sincronizar-agentes.mjs) | `governance/` → `.claude/` y `.agents/skills.json` | `npm run generar` |
 | [`validar.mjs`](./validar.mjs) | verificación única | `npm run verificar` |
 | [`trazar-front.mjs`](./trazar-front.mjs) | consumo de RCODREP en MIS-angular-front | `npm run trazar:front` |
 | [`extraer-definiciones.ps1`](./extraer-definiciones.ps1) | descarga de cuerpos con `sqlcmd` | — |
@@ -40,7 +41,7 @@ node governance/scripts/generar-extraccion.mjs [--check]
 | `sql/01-extraccion/<base>/<esquema>/<SP>.sql` | el patrón `USE … GO EXEC sp_helptext` de un SP, con los RCODREP que lo usan y dónde pegar el resultado |
 | `sql/01-extraccion/_lotes/<base>.sql` | todos los SP de una base: si existen, fechas de creación/modificación y `OBJECT_DEFINITION` |
 | `sql/01-extraccion/manifiesto.json` | lista de SP, destino y si ya está extraído; lo lee el `.ps1` |
-| `sql/02-dependencias/<base>.sql` | `sys.dm_sql_referenced_entities` por SP, con `TRY/CATCH` para que un SP roto no corte el lote, más `sys.sql_expression_dependencies` para referencias a otras bases |
+| `sql/02-dependencias/<base>.sql` | `sys.dm_sql_referenced_entities` por SP, con `TRY/CATCH` para que un SP roto no corte el lote, más `sys.sql_expression_dependencies` para referencias a otras bases, con el tipo real de cada objeto (`ref_objeto_tipo`) |
 
 Un SP aparece una vez aunque lo usen varios RCODREP: el archivo los lista a todos.
 
@@ -71,15 +72,19 @@ escritas a mano se copian a la columna **Descripción** de la tabla generada.
 ## 4. Validación
 
 ```bash
-node governance/scripts/validar.mjs                # informe
-node governance/scripts/validar.mjs --check        # falla ante errores (CI, pre-commit)
-node governance/scripts/validar.mjs --check --estricto   # falla también con avisos
-node governance/scripts/validar.mjs --detalle      # todos los hallazgos, incluidos los informativos
+node governance/scripts/validar.mjs                       # informe: errores y avisos nuevos
+node governance/scripts/validar.mjs --check               # falla ante errores nuevos o fallas estructurales (npm run verificar)
+node governance/scripts/validar.mjs --check --estricto    # falla también con avisos nuevos
+node governance/scripts/validar.mjs --detalle             # todo, incluidos informativos y línea base (npm run hallazgos)
+node governance/scripts/validar.mjs --sin-linea-base      # cuenta todo como nuevo
+node governance/scripts/validar.mjs --guardar-linea-base  # congela los actuales (deliberado: ADR-0006)
 node governance/scripts/validar.mjs --json
 ```
 
-Las reglas de hallazgos, su nivel y cómo se resuelve cada una están en
-[calidad del dato](../docs/data/quality.md).
+Las reglas, su nivel y su origen viven en `REGLAS` (`lib/modelo.mjs`); la tabla de
+[calidad](../docs/data/quality.md) se genera desde ahí. Además de los hallazgos, controla que los
+generados estén al día (incluido `.agents/skills.json`, que se deriva del frontmatter de las skills), los enlaces internos, que no haya rutas que solo difieran
+en mayúsculas y que la línea base no tenga entradas vencidas.
 
 ## 5. Traza con el front
 

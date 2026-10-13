@@ -14,22 +14,14 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
+-- storage.com.HHDC001 · lee · 7 columna(s)
+SELECT TOP (100) [HCODSUCU], [HCTACONT], [HFECPRO], [HHCARBCA], [HHCARBMO], [HHUCARUN], [HNOMBCTA]
+FROM [storage].[com].[HHDC001] WITH (NOLOCK);
 
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
+-- storage.com.HHDC002 · lee · 7 columna(s)
+SELECT TOP (100) [HCODSUCU], [HCTACONT], [HDESCCTA], [HFECPRO], [HHUECARCA], [HHUECARMO], [HHUECARUN]
+FROM [storage].[com].[HHDC002] WITH (NOLOCK);
 
--- storage.COM.HHDC001 · lee · 5 columna(s)
-SELECT TOP (100) [HCODSUCU], [HCTACONT], [HFECPRO], [HHUCARUN], [HNOMBCTA]
-FROM [storage].[COM].[HHDC001] WITH (NOLOCK);
-
--- storage.COM.HHDC002 · lee · 4 columna(s)
-SELECT TOP (100) [HCODSUCU], [HCTACONT], [HDESCCTA], [HFECPRO]
-FROM [storage].[COM].[HHDC002] WITH (NOLOCK);
-
--- STORAGE.REF.VJERCOR02 · lee · 9 columna(s)
+-- storage.ref.VJERCOR02 · lee · 9 columna(s)
 SELECT TOP (100) [RCODAGE], [RCODAGEH], [rcodcor], [rcodmat], [rcodter], [rdesage], [rdescor], [rdesmat], [rdester]
-FROM [STORAGE].[REF].[VJERCOR02] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR02] WITH (NOLOCK);

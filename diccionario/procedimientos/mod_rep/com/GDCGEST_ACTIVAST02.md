@@ -28,16 +28,13 @@
 | 3 | `@fec` | date | — |  | `fec` |
 | 4 | `@diario` | int | 0 |  | — |
 
-### Tablas y columnas (6)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.WGATH001](../../../tablas/storage/com_act/WGATH001.md) | lee | `HFECPRO`, `HGESTTAS`, `HMDES`, `HUCAP_FIN`, `ORD`, `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESUCO`, `RDESUNI`, `RFEC` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RANI`, `RCIEMES`, `rfec`, `RMESNOM` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODSEC`, `RDESCOR`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RFECPRO` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODSEC`, `RDESCOR`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RFECPRO`, `RINDFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -55,6 +52,14 @@
 - ⚠️ Columna sin resolver `RINDFEC` (¿storage.com_act.WGATH001 o storage.ref.WJERCOR03?)
 - ⚠️ Columna sin resolver `ORD` (¿storage.com_act.WGATH001 o storage.ref.WJERCOR03?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

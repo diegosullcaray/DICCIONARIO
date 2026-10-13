@@ -29,12 +29,10 @@
 | 3 | `@codrel` | varchar(50) | — |  | `codrel` |
 | 4 | `@codmod` | smallint | - 1 |  | `codmod` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFORMAT](../../../tablas/mod_rep/rep/FFORMAT.md) | — | — | motor |
-| [mod_rep.rep.FUMB](../../../tablas/mod_rep/rep/FUMB.md) | — | — | motor |
 | [mod_rep.rep.RREGVAR01](../../../tablas/mod_rep/rep/RREGVAR01.md) | lee | `RALIVAR`, `RAMBGRU`, `RCODVAR`, `RDESVAR`, `RFORV01`, `RFORV02` | estatico + motor |
 | [mod_rep.rep.SDECCOM01](../../../tablas/mod_rep/rep/SDECCOM01.md) | lee | `SCODSUB`, `STIPCOD` | estatico + motor |
 | [mod_rep.reva.SVARREVA01](../../../tablas/mod_rep/reva/SVARREVA01.md) | lee | `SAMBFIL`, `SAMBGRU`, `SCODMOD`, `SCODVAR`, `SDESVAR`, `SORDREV` | estatico + motor |
@@ -62,6 +60,13 @@
 - ⚠️ Columna sin resolver `json` (¿mod_rep.rep.RREGVAR01 o mod_rep.reva.SVARREVA01?)
 - ⚠️ Columna sin resolver `path` (¿mod_rep.rep.RREGVAR01 o mod_rep.reva.SVARREVA01?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFORMAT`
+- `mod_rep.rep.FUMB`
 
 ### Validación con el motor
 

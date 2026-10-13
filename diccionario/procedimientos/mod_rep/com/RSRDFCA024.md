@@ -26,14 +26,11 @@
 | 2 | `@codrel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | varchar(10) | — |  | `fec` |
 
-### Tablas y columnas (4)
+### Tablas y columnas (1)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `day`≈, `RCIEBT`, `RFEC` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RCIEBT`, `RFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -41,8 +38,8 @@
 
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
-| `piv.GPIVLEV01` | @tipcod, @codrel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tipcod, @codrel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -54,6 +51,14 @@
 - Temporales: `#CABS`, `#FecMensual`, `#T`, `#Tabla`
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

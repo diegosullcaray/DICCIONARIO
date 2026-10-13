@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 3 columna(s) usadas · 1 procedimiento(s) · tabla con 8 columna(s) en la base
+Base `storage` · esquema `com_act` · 7 columna(s) usadas · 1 procedimiento(s) · tabla con 8 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/WDCB002.sql](../../../../sql/03-tablas/storage/com_act/WDCB002.sql)
 
@@ -13,6 +13,10 @@ Consultas listas: [sql/03-tablas/storage/com_act/WDCB002.sql](../../../../sql/03
 |---|---|---|---|---|
 | `hcodrel` | varchar(255) | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HFECPRO` | varchar(255) | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HSALCAPMN_CC` | float | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HSALCAPMN_SC` | float | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HSALVENMN_CC` | float | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HSALVENMN_SC` | float | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `htipcod` | int | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 
 ### Procedimientos que la usan

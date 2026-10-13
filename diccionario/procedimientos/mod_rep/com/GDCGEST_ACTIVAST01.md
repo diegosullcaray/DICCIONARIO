@@ -39,13 +39,10 @@
 | 4 | `@fec` | date | — |  | `fec` |
 | 5 | `@diario` | int | 0 |  | `diario` |
 
-### Tablas y columnas (9)
+### Tablas y columnas (6)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
 | [storage.com_act.RETP001](../../../tablas/storage/com_act/RETP001.md) | lee | `RCODMOD`, `RCODPROD`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.RETP002](../../../tablas/storage/com_act/RETP002.md) | lee | `RCODMOD`, `RCODPROD`, `RSUBTIP`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.RETP003](../../../tablas/storage/com_act/RETP003.md) | lee | `RCODPROD`, `RDESGRU01`, `RDESPROD` | estatico + motor |
@@ -59,7 +56,7 @@
 
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar, output | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar output | no |
 
 ### Columnas que devuelve
 
@@ -74,6 +71,14 @@
 - ⚠️ Columna sin resolver `RDESPROD` (¿storage.com_act.RETP001 o storage.com_act.RETP002 o storage.com_act.RETP003 o storage.com_act.WGATH002?)
 - ⚠️ Columna sin resolver `ORD` (¿storage.com_act.RETP001 o storage.com_act.RETP002 o storage.com_act.RETP003 o storage.com_act.WGATH002?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

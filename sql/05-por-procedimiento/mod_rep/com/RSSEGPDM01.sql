@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.WPDM001 · lee · 17 columna(s)
 SELECT TOP (100) [HCODREL], [HFECPRO], [HNROG], [HNROG_ANT], [HNROG_DESEM], [HNUMCLI], [HNUMCLI_ANT], [HSALCAPMN], [HSALCAPMN_1_30], [HSALCAPMN_1_30_ANT], [HSALCAPMN_ANT], [HSALCAPMN_ma_30], [HSALCAPMN_ma_30_ANT], [HTIPCOD], [HULTVEN_RECUR_DESEM], [NUEVO_DESEM], [RECURRENTE_DESEM]
 FROM [storage].[com_act].[WPDM001] WITH (NOLOCK);
@@ -30,6 +22,6 @@ FROM [storage].[com_act].[WPDM001] WITH (NOLOCK);
 SELECT TOP (100) [10044], [10062], [8000], [HCODREL], [HCODVAR], [HFECPRO], [HTIPCOD], [HTIPMETA], [HVALVAR], [PVT]
 FROM [storage].[com].[metas_saldos] WITH (NOLOCK);
 
--- storage.ref.wjercor03 · lee · 12 columna(s)
+-- storage.ref.WJERCOR03 · lee · 12 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODFC], [RCODGRU], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESFC], [RDESGRU], [RDESTER], [RDESUCO], [RDESUNI]
-FROM [storage].[ref].[wjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

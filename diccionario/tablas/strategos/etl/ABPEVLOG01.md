@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `strategos` · esquema `etl` · 6 columna(s) usadas · 1 procedimiento(s) · tabla con 5 columna(s) en la base
+Base `strategos` · esquema `etl` · 5 columna(s) usadas · 1 procedimiento(s) · tabla con 5 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/strategos/etl/ABPEVLOG01.sql](../../../../sql/03-tablas/strategos/etl/ABPEVLOG01.sql)
 
@@ -11,7 +11,6 @@ Consultas listas: [sql/03-tablas/strategos/etl/ABPEVLOG01.sql](../../../../sql/0
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `dd` | ⚠️ no existe | ≈ inferida | [RSRPD001](../../../procedimientos/mod_rep/com/RSRPD001.md) | — |
 | `HCODPRO` | varchar(10) | ✅ confirmada | [RSRPD001](../../../procedimientos/mod_rep/com/RSRPD001.md) | — |
 | `HDESPRO` | varchar(100) | ✅ confirmada | [RSRPD001](../../../procedimientos/mod_rep/com/RSRPD001.md) | — |
 | `HDESTAD` | varchar(10) | ✅ confirmada | [RSRPD001](../../../procedimientos/mod_rep/com/RSRPD001.md) | — |

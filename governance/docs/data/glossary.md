@@ -32,23 +32,33 @@ agrupa variantes de mayúsculas o guion bajo de un mismo nombre (regla `parametr
 
 ## Estados de un SP
 
-| Estado | Significa | Cómo se llega |
-|---|---|---|
-| ⏳ pendiente | solo se conoce por `reportes.json` | — |
-| 🔎 extraído | su cuerpo está en `procedimientos/` y fue analizado | pegar el cuerpo y `npm run generar` |
-| ✅ validado | además, el motor confirmó sus dependencias sin error | CSV de `sql/02-dependencias` en `fuente/dependencias/` |
+| Estado | Significa |
+|---|---|
+| ⏳ pendiente | solo se conoce por `reportes.json`: falta extraer su cuerpo |
+| ❌ no existe en la base | el motor confirma que el SP del catálogo no existe: el reporte falla (`sp-inexistente`) |
+| 🔎 extraído | su cuerpo está en `procedimientos/` y fue analizado |
+| ✅ validado | además, el motor resolvió sus dependencias sin error |
 
 ## Confianza de una columna
 
 | Marca | Significa |
 |---|---|
-| ✅ confirmada | la vio el analizador **y** la registra el motor |
+| ✅ confirmada | la registra el motor **y** la vio el análisis o la estructura |
 | 🗄️ motor | solo la registra el motor (p. ej. la usa SQL dinámico o una vista) |
 | 🎯 exacta | el analizador la vio calificada (`t.COL`) o en la lista de un `INSERT` |
-| ≈ inferida | sin calificar, en una consulta con una sola tabla de origen: es probable, no seguro |
+| 🧩 por estructura | sin calificar entre varias tablas; la estructura real dice que solo una la tiene |
+| ≈ inferida | sin calificar, en una consulta con una sola tabla de origen: probable, no seguro |
 
-Una columna sin calificar en una consulta con varias tablas **no** se atribuye: queda como hallazgo
-`columna-sin-resolver` con sus tablas candidatas.
+Si ninguna de las tablas candidatas tiene la columna, es un alias o una columna de CTE y no se atribuye.
+Si varias la tienen, queda como hallazgo `columna-sin-resolver`.
+
+## Tipos de objeto
+
+| Término | Qué es |
+|---|---|
+| Tabla de trabajo | tabla permanente que el propio SP crea (`SELECT … INTO`) y borra en cada ejecución |
+| Otros objetos | lo que el motor lista y no es tabla: funciones (`util.FFMTVAR`), tipos de tabla (`piv.TPIVCONF`), SP, alias sin resolver |
+| Temporal | `#tabla` o `@variable` tabla: no se documenta como tabla del diccionario |
 
 ## Operaciones sobre una tabla
 
@@ -62,5 +72,7 @@ Una columna sin calificar en una consulta con varias tablas **no** se atribuye: 
 | Base | base de datos de SQL Server (`mod_rep`, `strategos`, `mod_gpa`, `mod_sec`, `storage`) |
 | Esquema implícito | tabla nombrada sin esquema (`FROM TABLA`): se asume el del SP, pero SQL Server la resuelve según el usuario que ejecuta. Confirmar con el motor |
 | Analizador estático | `governance/scripts/lib/tsql.mjs`: lee el texto del SP sin ejecutarlo |
+| Estructura | columnas reales de las tablas, de `INFORMATION_SCHEMA` (`fuente/estructura/`) |
+| Línea base | hallazgos conocidos que no bloquean `npm run verificar` (`governance/linea-base.json`) |
 | Motor | lo que SQL Server registra en `sys.dm_sql_referenced_entities` y `sys.sql_expression_dependencies` |
 | `FTHEACOLS01` | SP `mod_rep.rep.FTHEACOLS01`. `GSELREP001` lo invoca con su propio RCODREP (`SEL_EFEC_01`) antes del SELECT principal. Su función está **por confirmar** (el nombre sugiere cabecera de columnas); no figura en `reportes.json` |

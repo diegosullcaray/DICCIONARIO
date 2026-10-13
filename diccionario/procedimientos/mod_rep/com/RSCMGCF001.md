@@ -26,17 +26,10 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (9)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `rciebt`, `RFEC`, `RFECTXT` | estatico + motor |
 
@@ -47,9 +40,9 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
-| `piv.GPIVRES01` | @variables, =, @tvars2, @filters, =, @tfil2, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
+| `piv.GPIVRES01` | @variables = @tvars2, @filters = @tfil2, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -59,6 +52,18 @@
 
 - Temporales: `#AAA`, `#AAA_1`, `#AAA_3`, `#AAA_4`, `#CMG`, `#F`, `#F2`, `#F3`, `#RES`, `#RESULTADO`, `#RESULTPRE`, `#RESULTPRE_1`, `#RESULTPRE_3`, `#RESULTPRE_4`, `#RES_1`, `#RES_3`, `#RES_4`, `#base`, `#base_2`, `#base_22`, `#base_2_1`, `#base_2_1A`, `#base_2_3`, `#base_2_31`, `#base_2_4`, `#base_2_4A`, `#base_3`, `#base_3_1`, `#base_3_3`, `#base_3_4`, `#castigo`, `#f`, `#f2`, `#fechas`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

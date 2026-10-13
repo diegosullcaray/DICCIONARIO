@@ -30,7 +30,7 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.wjas001](../../../tablas/storage/com_act/WJAS001.md) | lee | `HCODREL`, `HFECPRO`, `HNUMCLI`, `HTIPCOD` | estatico + motor |
+| [storage.com_act.WJAS001](../../../tablas/storage/com_act/WJAS001.md) | lee | `HCODREL`, `HFECPRO`, `HNUMCLI`, `HTIPCOD` | estatico + motor |
 | [storage.com_act.wjas005](../../../tablas/storage/com_act/wjas005.md) | lee | `HCLISAL1M`, `HCLISAL3M`, `HCLIVENC`, `HCODREL`, `HFECPRO`, `HRATRET`, `HTIPCOD` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RCIEBT`, `rfec` | estatico + motor |
 

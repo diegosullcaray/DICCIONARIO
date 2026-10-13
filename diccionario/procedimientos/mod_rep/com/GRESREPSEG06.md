@@ -25,18 +25,15 @@
 | 1 | `@tip_cod` | int | — |  | `tip_cod` |
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 
-### Tablas y columnas (8)
+### Tablas y columnas (5)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [storage.com_act.SDAF002](../../../tablas/storage/com_act/SDAF002.md) | lee | `*`, `sfecpro` | estatico + motor |
-| [storage.com_seg.SDSF001](../../../tablas/storage/com_seg/SDSF001.md) | lee | `*`, `sfecpro` | estatico + motor |
+| [storage.com_act.SDAF002](../../../tablas/storage/com_act/SDAF002.md) | lee | `*`, `SCODMOD`, `sfecpro`, `SSUBTIP`, `STIPOPE` | estatico + motor |
+| [storage.com_seg.SDSF001](../../../tablas/storage/com_seg/SDSF001.md) | lee | `*`, `scodseg`, `sfecpro` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `hfecpro`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | estatico + motor |
-| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `MM`≈, `RDIAFER`≈, `rfec`≈ | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `rfecpro`, `RINDFEC` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`≈, `rfec`≈ | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `rfecpro`, `RINDFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -63,6 +60,14 @@
 - ⚠️ Columna sin resolver `scodseg` (¿storage.com_seg.SDSF001?)
 - ⚠️ Columna sin resolver `pvt.SCODDESCRIP`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `COM_ACT` · 8 columna(s) usadas · 1 procedimiento(s) · tabla con 9 columna(s) en la base
+Base `storage` · esquema `com_act` · 8 columna(s) usadas · 1 procedimiento(s) · tabla con 9 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/COM_ACT/WRODASAL001.sql](../../../../sql/03-tablas/storage/COM_ACT/WRODASAL001.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/WRODASAL001.sql](../../../../sql/03-tablas/storage/com_act/WRODASAL001.sql)
 
 ### Columnas usadas
 

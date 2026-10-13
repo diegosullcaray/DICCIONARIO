@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `STORAGE` · esquema `com_act` · 21 columna(s) usadas · 2 procedimiento(s) · tabla con 19 columna(s) en la base
+Base `storage` · esquema `com_act` · 19 columna(s) usadas · 2 procedimiento(s) · tabla con 19 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/STORAGE/com_act/HBMOV001.sql](../../../../sql/03-tablas/STORAGE/com_act/HBMOV001.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/HBMOV001.sql](../../../../sql/03-tablas/storage/com_act/HBMOV001.sql)
 
 ### Columnas usadas
 
@@ -30,8 +30,6 @@ Consultas listas: [sql/03-tablas/STORAGE/com_act/HBMOV001.sql](../../../../sql/0
 | `HNUMDOCCLI` | varchar(250) | 🗄️ motor | [GLIMOVRO01](../../../procedimientos/mod_rep/com/GLIMOVRO01.md) | — |
 | `HNUMREG` | int | ✅ confirmada | [GLIMOVO01](../../../procedimientos/mod_rep/com/GLIMOVO01.md), [GLIMOVRO01](../../../procedimientos/mod_rep/com/GLIMOVRO01.md) | — |
 | `HPROV` | varchar(250) | ✅ confirmada | [GLIMOVO01](../../../procedimientos/mod_rep/com/GLIMOVO01.md), [GLIMOVRO01](../../../procedimientos/mod_rep/com/GLIMOVRO01.md) | — |
-| `mm` | ⚠️ no existe | ≈ inferida | [GLIMOVO01](../../../procedimientos/mod_rep/com/GLIMOVO01.md), [GLIMOVRO01](../../../procedimientos/mod_rep/com/GLIMOVRO01.md) | — |
-| `yyyy` | ⚠️ no existe | ≈ inferida | [GLIMOVO01](../../../procedimientos/mod_rep/com/GLIMOVO01.md), [GLIMOVRO01](../../../procedimientos/mod_rep/com/GLIMOVRO01.md) | — |
 
 ### Procedimientos que la usan
 

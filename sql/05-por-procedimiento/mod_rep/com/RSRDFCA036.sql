@@ -14,37 +14,13 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.util.FSEMVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FSEMVAR] WITH (NOLOCK);
-
 -- storage.com_pas.WJAS004 · lee · 4 columna(s)
 SELECT TOP (100) [HCODREL], [RDESCPROD02], [hfecpro], [htipcod]
 FROM [storage].[com_pas].[WJAS004] WITH (NOLOCK);
 
--- STORAGE.com_pas.WJAS007 · lee · 8 columna(s)
+-- storage.com_pas.wjas007 · lee · 8 columna(s)
 SELECT TOP (100) [HCODPERFEME], [HCODPERRUR], [HCODPERURB], [HCODREL], [HFECPRO], [HNUMCLI], [HTIPCOD], [RDESCPROD]
-FROM [STORAGE].[com_pas].[WJAS007] WITH (NOLOCK);
+FROM [storage].[com_pas].[wjas007] WITH (NOLOCK);
 
 -- storage.com.VDMCOM01 · lee · 2 columna(s)
 SELECT TOP (100) [HCODVAR], [hfecpro]

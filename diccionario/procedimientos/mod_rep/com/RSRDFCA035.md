@@ -28,19 +28,13 @@
 | 3 | `@fec` | varchar(10) | — |  | `fec` |
 | 4 | `@prod` | varchar(250) | — |  | `prod` |
 
-### Tablas y columnas (9)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
-| [storage.com_act.WJAS004](../../../tablas/storage/com_act/WJAS004.md) | lee | `HCODREL`, `hfecpro`≈, `htipcod`≈, `RDESCPROD02`≈ | estatico + motor |
+| [storage.com_act.WJAS004](../../../tablas/storage/com_act/WJAS004.md) | lee | `HCODREL`, `hfecpro`, `htipcod`, `RDESCPROD02` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODVAR`, `hfecpro` | estatico + motor |
-| [storage.ref.wjercor03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI`, `RDESCOR`, `RDESFC`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUNI`, `rfecpro` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI`, `RDESCOR`, `RDESFC`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUNI`, `rfecpro` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -49,8 +43,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars","fec_corr"', @config, =, @tconf, @show_query, =, 1 | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars","fec_corr"', @config = @tconf, @show_query = 1 | no |
 
 ### Columnas que devuelve
 
@@ -66,6 +60,17 @@
 - ⚠️ Columna sin resolver `hcodrel` (¿storage.com_act.WJAS004?)
 - ⚠️ Columna sin resolver `RDESCPROD02` (¿storage.com_act.WJAS004?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `STORAGE` · esquema `com_act` · 40 columna(s) usadas · 5 procedimiento(s) · tabla con 48 columna(s) en la base
+Base `storage` · esquema `com_act` · 40 columna(s) usadas · 5 procedimiento(s) · tabla con 48 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/STORAGE/com_act/HCMC002.sql](../../../../sql/03-tablas/STORAGE/com_act/HCMC002.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/HCMC002.sql](../../../../sql/03-tablas/storage/com_act/HCMC002.sql)
 
 ### Columnas usadas
 

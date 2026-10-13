@@ -14,6 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_act.WCRE001 · lee · 11 columna(s)
-SELECT TOP (100) [GROUPING], [HDESPROD], [HEREDADO], [HFECPRO], [HSALDETMN], [HSALINIMN], [HSALMAN01MN], [HSALRECMN], [HTRAM], [hcodrel], [htipcod]
+-- storage.com_act.WCRE001 · lee · 10 columna(s)
+SELECT TOP (100) [HDESPROD], [HEREDADO], [HFECPRO], [HSALDETMN], [HSALINIMN], [HSALMAN01MN], [HSALRECMN], [HTRAM], [hcodrel], [htipcod]
 FROM [storage].[com_act].[WCRE001] WITH (NOLOCK);

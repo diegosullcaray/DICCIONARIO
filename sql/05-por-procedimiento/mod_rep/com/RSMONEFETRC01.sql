@@ -14,32 +14,12 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.HMMEF001 · lee · 11 columna(s)
 SELECT TOP (100) [HFECPRO], [HTR121TO150], [HTR151TO180], [HTR180TO], [HTR1TO30], [HTR30TO0], [HTR31TO60], [HTR61TO90], [HTR91TO120], [HTRJUDI], [RCODGRU]
 FROM [storage].[com_act].[HMMEF001] WITH (NOLOCK);
 
--- storage.ref.RCALEN001 · lee · 5 columna(s)
-SELECT TOP (100) [RDIAFER], [RDIASEM], [RFEC], [RFECTXT], [day]
+-- storage.ref.RCALEN001 · lee · 4 columna(s)
+SELECT TOP (100) [RDIAFER], [RDIASEM], [RFEC], [RFECTXT]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
 -- storage.ref.WJERCOR03 · lee · 7 columna(s)

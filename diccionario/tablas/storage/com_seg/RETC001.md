@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_seg` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
+Base `storage` · esquema `com_seg` · 2 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_seg/RETC001.sql](../../../../sql/03-tablas/storage/com_seg/RETC001.sql)
 
@@ -12,6 +12,7 @@ Consultas listas: [sql/03-tablas/storage/com_seg/RETC001.sql](../../../../sql/03
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `HCODSEG` | int | 🎯 exacta | [RSSEGPAS03](../../../procedimientos/mod_rep/com/RSSEGPAS03.md) | — |
+| `HCOMIFC` | float | 🧩 por estructura | [RSSEGPAS03](../../../procedimientos/mod_rep/com/RSSEGPAS03.md) | — |
 
 ### Procedimientos que la usan
 

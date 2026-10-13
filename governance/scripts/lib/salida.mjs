@@ -93,3 +93,30 @@ export const cabeceraGenerado = (script) =>
 
 /** Escapa `|` para celdas de tablas Markdown. */
 export const celda = (v) => String(v ?? '').replace(/\|/g, '\\|').replace(/\n/g, ' ');
+
+/**
+ * ¿La parte manual de una ficha sigue siendo la plantilla? (títulos, placeholders en cursiva,
+ * columnas "_por documentar_" y la línea de instrucciones). Si sí, borrarla no pierde trabajo.
+ */
+export function esSoloPlantilla(textoManual) {
+  return textoManual.split('\n').every((l) => {
+    const x = l.trim();
+    return !x || x.startsWith('#') || /^_.*_$/.test(x) || /^[-*]\s*`[^`]+`\s*:\s*_por documentar_$/i.test(x)
+      || x.startsWith('Una línea por columna con el formato');
+  });
+}
+
+/**
+ * Fichas que ya no corresponden a nada del modelo. Las intactas se borran (o se informan con --check);
+ * las que tienen prosa escrita a mano se devuelven para que alguien decida.
+ */
+export function podarFichas(salida, dir) {
+  const conProsa = [];
+  for (const ruta of listarArchivos(dir, (r) => r.endsWith('.md'))) {
+    if (salida.esperados.has(ruta)) continue;
+    if (!esSoloPlantilla(leerManual(ruta))) { conProsa.push(rel(ruta)); continue; }
+    if (salida.check) salida.desactualizados.push(`${rel(ruta)} (sobra)`);
+    else { rmSync(ruta); salida.escritos.push(`${rel(ruta)} (borrado)`); }
+  }
+  return conProsa;
+}

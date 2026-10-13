@@ -27,12 +27,10 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | varchar(10) | — |  | `fec` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_pas.RETP001](../../../tablas/storage/com_pas/RETP001.md) | lee | `RDESCPROD02`≈ | estatico + motor |
 | [storage.com_pas.SDPF007](../../../tablas/storage/com_pas/SDPF007.md) | lee | `*`, `sfecpro` | estatico + motor |
 | [storage.com_pas.WJAS010](../../../tablas/storage/com_pas/WJAS010.md) | lee | `ord`≈ | estatico + motor |
@@ -59,6 +57,13 @@
 - ⚠️ Columna sin resolver `sfecpro` (¿storage.ref.REABP01?)
 - ⚠️ Columna sin resolver `SINTMESSALMN` (¿storage.ref.REABP01?)
 - ⚠️ Columna sin resolver `SSALMN` (¿storage.ref.REABP01?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -13,7 +13,7 @@ Consultas listas: [sql/03-tablas/storage/com_act/WAPPCLI001.sql](../../../../sql
 |---|---|---|---|---|
 | `HAGUSER` | varchar(250) | ✅ confirmada | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
 | `HFECPRO` | date | ✅ confirmada | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
-| `htipnumdoc` | varchar(250) | 🎯 exacta | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
+| `htipnumdoc` | varchar(250) | 🎯 exacta | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
 
 ### Procedimientos que la usan
 

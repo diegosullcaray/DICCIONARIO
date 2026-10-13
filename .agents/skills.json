@@ -1,5 +1,5 @@
 {
-  "nota": "Índice de las skills de governance/skills/. Cada entrada refleja el frontmatter de su SKILL.md: al agregar o renombrar una skill, actualizar también este archivo (npm run verificar lo controla).",
+  "nota": "Generado por governance/scripts/sincronizar-agentes.mjs desde el frontmatter de cada SKILL.md. No editar.",
   "skills": [
     {
       "name": "dic-analisis-dependencias",
@@ -9,12 +9,12 @@
     {
       "name": "dic-conexiones-bd",
       "path": "governance/skills/dic-conexiones-bd/SKILL.md",
-      "description": "Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y los comandos de herramientas/bd.py para extraer cuerpos, dependencias y estructura. Usar al configurar el entorno, al bajar SP de la base o al diagnosticar un error de conexión."
+      "description": "Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y cómo diagnosticar un error de conexión. Usar al configurar el entorno, al bajar SP o dependencias de la base o cuando herramientas/bd.py falla al conectar."
     },
     {
       "name": "dic-extraccion-sp",
       "path": "governance/skills/dic-extraccion-sp/SKILL.md",
-      "description": "Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server y dejarlo donde el diccionario lo lee. Usar al extraer uno o muchos SP del catálogo, al pegar un resultado de sp_helptext, o cuando un SP aparece como pendiente, huérfano o incompleto."
+      "description": "Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server y dejarlo donde el diccionario lo lee. Usar al extraer uno o muchos SP del catálogo, al pegar un resultado de sp_helptext, o cuando un SP aparece como pendiente, inexistente, huérfano o incompleto."
     },
     {
       "name": "dic-fichas",

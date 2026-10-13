@@ -26,13 +26,10 @@
 | 2 | `@cod_rel` | varchar(50) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (4)
+### Tablas y columnas (1)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RCIEBT`, `RDIAFER`, `RFEC`, `RFECTXT`, `RMES` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -41,8 +38,8 @@
 
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
-| `piv.GPIVLEV09` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"Prod_Seg","vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV09` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"Prod_Seg","vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -53,6 +50,14 @@
 
 - CTE: `b`, `cta`, `cte_a`, `cte_b`, `x`
 - Temporales: `#Res`, `#ST`, `#T_`, `#fec`, `#fec_Cat`, `#sss`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

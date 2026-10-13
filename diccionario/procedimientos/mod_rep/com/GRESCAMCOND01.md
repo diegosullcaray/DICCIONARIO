@@ -32,13 +32,10 @@
 | 7 | `@tipmeta` | int | 1 |  | — |
 | 8 | `@fec` | date | null |  | — |
 
-### Tablas y columnas (4)
+### Tablas y columnas (1)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TCADS](../../../tablas/mod_rep/rep/TCADS.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.SCCO001](../../../tablas/storage/com_act/SCCO001.md) | lee | `SFECPRO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -61,6 +58,14 @@
 
 - Temporales: `#tmpDATOS`, `#tmpDATOS1`, `#tmpDATOS2S`, `#tmpDATOSS1S`, `#tmpDATOSSFech`, `#tmpDatosF`, `#tmpVariabless`
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TCADS` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

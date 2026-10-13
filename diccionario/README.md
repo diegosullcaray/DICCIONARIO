@@ -13,20 +13,21 @@ es la prosa debajo del bloque generado de cada ficha.
 | Procedimientos distintos | 271 |
 | Procedimientos extraídos (cuerpo analizado) | 236 (87 %) |
 | Procedimientos validados con el motor | 233 (86 %) |
-| Tablas descubiertas | 212 |
-| Columnas descubiertas | 1910 |
+| Procedimientos del catálogo que no existen en la base | 33 |
+| Tablas descubiertas | 190 |
+| Columnas descubiertas | 1976 |
 | Reportes consumidos por el front MIS | 176 (commit `d67bf84`) |
-| Hallazgos de calidad | 45 error(es) · 447 aviso(s) |
+| Hallazgos de calidad | 53 error(es) · 73 aviso(s) · 0 error(es) fuera de la línea base |
 
 ### Avance por base
 
-| Base | SP | Extraídos | Validados | Tablas usadas | Lote de extracción | Dependencias |
-|---|---:|---:|---:|---:|---|---|
-| `mod_gpa` | 2 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/mod_gpa.sql) | [dependencias](../sql/02-dependencias/mod_gpa.sql) |
-| `mod_rep` | 258 | 225 | 222 | 210 | [lote](../sql/01-extraccion/_lotes/mod_rep.sql) | [dependencias](../sql/02-dependencias/mod_rep.sql) |
-| `mod_sec` | 1 | 1 | 1 | 2 | [lote](../sql/01-extraccion/_lotes/mod_sec.sql) | [dependencias](../sql/02-dependencias/mod_sec.sql) |
-| `storage` | 1 | 1 | 1 | 2 | [lote](../sql/01-extraccion/_lotes/storage.sql) | [dependencias](../sql/02-dependencias/storage.sql) |
-| `strategos` | 9 | 9 | 9 | 4 | [lote](../sql/01-extraccion/_lotes/strategos.sql) | [dependencias](../sql/02-dependencias/strategos.sql) |
+| Base | SP | Extraídos | Validados | No existen | Tablas usadas | Lote de extracción | Dependencias |
+|---|---:|---:|---:|---:|---:|---|---|
+| `mod_gpa` | 2 | 0 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/mod_gpa.sql) | [dependencias](../sql/02-dependencias/mod_gpa.sql) |
+| `mod_rep` | 258 | 225 | 222 | 33 | 188 | [lote](../sql/01-extraccion/_lotes/mod_rep.sql) | [dependencias](../sql/02-dependencias/mod_rep.sql) |
+| `mod_sec` | 1 | 1 | 1 | 0 | 2 | [lote](../sql/01-extraccion/_lotes/mod_sec.sql) | [dependencias](../sql/02-dependencias/mod_sec.sql) |
+| `storage` | 1 | 1 | 1 | 0 | 2 | [lote](../sql/01-extraccion/_lotes/storage.sql) | [dependencias](../sql/02-dependencias/storage.sql) |
+| `strategos` | 9 | 9 | 9 | 0 | 4 | [lote](../sql/01-extraccion/_lotes/strategos.sql) | [dependencias](../sql/02-dependencias/strategos.sql) |
 <!-- generado:fin -->
 
 ## Cómo navegar

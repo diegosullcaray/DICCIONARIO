@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `STORAGE` · esquema `COM_ACT` · 3 columna(s) usadas · 2 procedimiento(s) · tabla con 7 columna(s) en la base
+Base `storage` · esquema `com_act` · 7 columna(s) usadas · 2 procedimiento(s) · tabla con 7 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/STORAGE/COM_ACT/WTIPCLI001.sql](../../../../sql/03-tablas/STORAGE/COM_ACT/WTIPCLI001.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/WTIPCLI001.sql](../../../../sql/03-tablas/storage/com_act/WTIPCLI001.sql)
 
 ### Columnas usadas
 
@@ -13,6 +13,10 @@ Consultas listas: [sql/03-tablas/STORAGE/COM_ACT/WTIPCLI001.sql](../../../../sql
 |---|---|---|---|---|
 | `hcodrel` | varchar(50) | 🎯 exacta | [RGRAFGESTCOM04](../../../procedimientos/mod_rep/com/RGRAFGESTCOM04.md), [RGRAFGESTCOM06](../../../procedimientos/mod_rep/com/RGRAFGESTCOM06.md) | — |
 | `hfecpro` | date | ≈ inferida | [RGRAFGESTCOM04](../../../procedimientos/mod_rep/com/RGRAFGESTCOM04.md) | — |
+| `HNUMCLIANTI` | int | 🧩 por estructura | [RGRAFGESTCOM06](../../../procedimientos/mod_rep/com/RGRAFGESTCOM06.md) | — |
+| `HNUMCLIINGR` | int | 🧩 por estructura | [RGRAFGESTCOM06](../../../procedimientos/mod_rep/com/RGRAFGESTCOM06.md) | — |
+| `HNUMCLIPROG` | int | 🧩 por estructura | [RGRAFGESTCOM06](../../../procedimientos/mod_rep/com/RGRAFGESTCOM06.md) | — |
+| `HNUMCLIVENC` | int | 🧩 por estructura | [RGRAFGESTCOM06](../../../procedimientos/mod_rep/com/RGRAFGESTCOM06.md) | — |
 | `htipcod` | int not null | 🎯 exacta | [RGRAFGESTCOM04](../../../procedimientos/mod_rep/com/RGRAFGESTCOM04.md), [RGRAFGESTCOM06](../../../procedimientos/mod_rep/com/RGRAFGESTCOM06.md) | — |
 
 ### Procedimientos que la usan

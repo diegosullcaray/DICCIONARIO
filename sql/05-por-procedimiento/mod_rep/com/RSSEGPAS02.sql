@@ -14,18 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
 -- storage.com.VDMCOM01 · lee · 7 columna(s)
 SELECT TOP (100) [HCODREL], [HCODVAR], [HTIPCOD], [HVALVAR], [Tip_cod], [hfecpro], [tip_cod2]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);

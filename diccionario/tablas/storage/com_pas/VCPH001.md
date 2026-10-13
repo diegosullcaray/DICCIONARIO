@@ -11,16 +11,16 @@ Consultas listas: [sql/03-tablas/storage/com_pas/VCPH001.sql](../../../../sql/03
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `HCODSEC` | tinyint | 🗄️ motor | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
-| `HESTADO` | varchar(30) | 🗄️ motor | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
+| `HCODSEC` | tinyint | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
+| `HESTADO` | varchar(30) | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
 | `HPENDOC` | varchar(12) | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
 | `HPETDOC` | tinyint | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
-| `HSBFECH` | date not null | 🗄️ motor | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
+| `HSBFECH` | date not null | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
 | `HSBMOD` | smallint not null | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
-| `HSBSDO1` | numeric(17,2) | 🗄️ motor | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
-| `HSBSUC` | smallint not null | 🗄️ motor | [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
-| `HSBTOPE` | smallint not null | 🗄️ motor | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
-| `HUSERBP` | varchar(10) | 🗄️ motor | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md) | — |
+| `HSBSDO1` | numeric(17,2) | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
+| `HSBSUC` | smallint not null | ✅ confirmada | [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
+| `HSBTOPE` | smallint not null | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md), [RENRPAS02](../../../procedimientos/mod_rep/com/RENRPAS02.md) | — |
+| `HUSERBP` | varchar(10) | ✅ confirmada | [RENRPAS01](../../../procedimientos/mod_rep/com/RENRPAS01.md) | — |
 
 ### Procedimientos que la usan
 

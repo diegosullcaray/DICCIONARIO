@@ -26,13 +26,11 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (1)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [storage.com_pas.wjas005](../../../tablas/storage/com_pas/wjas005.md) | lee | `CANAL`, `CANT_TX_ANIO_ACT`, `CANT_TX_MES_ACT`, `CANT_TX_MES_ANT`, `CANT_TX_ULT_DIA`, `EMPRESA`, `HCODREL`, `HFECPRO`, `HTIPCOD`, `MON_TX_ANIO_ACT`, `MON_TX_MES_ACT`, `MON_TX_MES_ANT`, `MON_TX_ULT_DIA`, `SERVICIO` | estatico + motor |
+| [storage.com_pas.WJAS005](../../../tablas/storage/com_pas/WJAS005.md) | lee | `CANAL`, `CANT_TX_ANIO_ACT`, `CANT_TX_MES_ACT`, `CANT_TX_MES_ANT`, `CANT_TX_ULT_DIA`, `EMPRESA`, `HCODREL`, `HFECPRO`, `HTIPCOD`, `MON_TX_ANIO_ACT`, `MON_TX_MES_ACT`, `MON_TX_MES_ANT`, `MON_TX_ULT_DIA`, `SERVICIO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -49,6 +47,13 @@
 ### Observaciones del análisis
 
 - Temporales: `#BT`, `#app`, `#bt`, `#cuadro`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -14,21 +14,9 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.util.FFMTVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FFMTVAR] WITH (NOLOCK);
-
--- storage.com_act.WDCB003 · lee · 11 columna(s)
-SELECT TOP (100) [HCODREL], [HCOM_10_20K], [HCOM_3K], [HCOM_3_5K], [HCOM_5_10K], [HCOM_M20K], [HDESEMB_COM], [HFECPRO], [HNUM_COMITE], [HOPE_APROB], [HTIPCOD]
-FROM [storage].[com_act].[WDCB003] WITH (NOLOCK);
+-- storage.com_act.wdcb003 · lee · 15 columna(s)
+SELECT TOP (100) [HCODREL], [HCOM_10_20K], [HCOM_3K], [HCOM_3_5K], [HCOM_5_10K], [HCOM_M20K], [HDESEMB_COM], [HFECPRO], [HMAX_DURA_H], [HMIN_DURA_H], [HNUM_COMITE], [HOPE_APROB], [HOPE_OBS], [HOPE_RECH], [HTIPCOD]
+FROM [storage].[com_act].[wdcb003] WITH (NOLOCK);
 
 -- storage.ref.RCALEN001 · lee · 2 columna(s)
 SELECT TOP (100) [RDIAFER], [RFEC]

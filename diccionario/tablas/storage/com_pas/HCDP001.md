@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_pas` · 2 columna(s) usadas · 2 procedimiento(s) · tabla con 64 columna(s) en la base
+Base `storage` · esquema `com_pas` · 9 columna(s) usadas · 2 procedimiento(s) · tabla con 64 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_pas/HCDP001.sql](../../../../sql/03-tablas/storage/com_pas/HCDP001.sql)
 
@@ -12,7 +12,14 @@ Consultas listas: [sql/03-tablas/storage/com_pas/HCDP001.sql](../../../../sql/03
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `*` | ⚠️ no existe | 🎯 exacta | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HCODSEC` | tinyint | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
 | `hfecpro` | date not null | ✅ confirmada | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md), [GDCCAP_BP01](../../../procedimientos/strategos/mod_rep_com_act/GDCCAP_BP01.md) | — |
+| `HPENDOC` | varchar(12) | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HPEPAIS` | smallint | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HPETDOC` | tinyint | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HSBCTA` | int not null | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HSBOPER` | int not null | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HSBSBOP` | smallint not null | 🧩 por estructura | [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
 
 ### Procedimientos que la usan
 

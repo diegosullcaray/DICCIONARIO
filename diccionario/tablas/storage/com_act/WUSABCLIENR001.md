@@ -12,8 +12,8 @@ Consultas listas: [sql/03-tablas/storage/com_act/WUSABCLIENR001.sql](../../../..
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `HCODREL` | varchar(255) | 🎯 exacta | [GRGCTABDIGO02](../../../procedimientos/mod_rep/com/GRGCTABDIGO02.md) | — |
-| `hfecpro` | date | ≈ inferida | [GRGCTABDIGO02](../../../procedimientos/mod_rep/com/GRGCTABDIGO02.md) | — |
-| `htipcod` | int | ≈ inferida | [GRGCTABDIGO02](../../../procedimientos/mod_rep/com/GRGCTABDIGO02.md) | — |
+| `hfecpro` | date | 🧩 por estructura | [GRGCTABDIGO02](../../../procedimientos/mod_rep/com/GRGCTABDIGO02.md) | — |
+| `htipcod` | int | 🧩 por estructura | [GRGCTABDIGO02](../../../procedimientos/mod_rep/com/GRGCTABDIGO02.md) | — |
 
 ### Procedimientos que la usan
 

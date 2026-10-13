@@ -26,15 +26,14 @@
 | 2 | `@cod_rel` | varchar(25) | — |  | `cod_rel` |
 | 3 | `@fecha` | DATE | — |  | `fecha` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [storage.com_act.wjas001](../../../tablas/storage/com_act/WJAS001.md) | lee | `hcodrel`, `htipcod` | estatico + motor |
-| [STORAGE.COM_ACT.WTIPCLI001](../../../tablas/STORAGE/COM_ACT/WTIPCLI001.md) | lee | `HCODREL`, `htipcod` | estatico + motor |
+| [storage.com_act.WJAS001](../../../tablas/storage/com_act/WJAS001.md) | lee | `hcodrel`, `HNUMCLIN`, `htipcod` | estatico + motor |
+| [storage.com_act.WTIPCLI001](../../../tablas/storage/com_act/WTIPCLI001.md) | lee | `HCODREL`, `HNUMCLIANTI`, `HNUMCLIINGR`, `HNUMCLIPROG`, `HNUMCLIVENC`, `htipcod` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUCO`, `RDESUNI`, `rfecpro`, `rindfec` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUCO`, `RDESUNI`, `rfecpro`, `rindfec` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -52,6 +51,12 @@
 - ⚠️ Columna sin resolver `HNUMCLIVENC` (¿STORAGE.COM_ACT.WTIPCLI001?)
 - ⚠️ Columna sin resolver `HNUMCLIPROG` (¿STORAGE.COM_ACT.WTIPCLI001?)
 - ⚠️ Columna sin resolver `HNUMCLIANTI` (¿STORAGE.COM_ACT.WTIPCLI001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
 
 ### Validación con el motor
 

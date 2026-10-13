@@ -29,16 +29,13 @@
 | 5 | `@madu` | varchar(20) | — |  | `madu` |
 | 6 | `@op` | varchar(250) | — |  | `op` |
 
-### Tablas y columnas (9)
+### Tablas y columnas (6)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.RETP001](../../../tablas/storage/com_act/RETP001.md) | lee | `RCODMOD`, `RCODPROD`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.RETP002](../../../tablas/storage/com_act/RETP002.md) | lee | `RCODMOD`, `RCODPROD`, `RSUBTIP`, `RTIPOPE` | estatico + motor |
-| [storage.com_act.RETP003](../../../tablas/storage/com_act/RETP003.md) | lee | `RCODPROD` | estatico + motor |
+| [storage.com_act.RETP003](../../../tablas/storage/com_act/RETP003.md) | lee | `RCODPROD`, `RDESPROD` | estatico + motor |
 | [storage.com_act.RETP009](../../../tablas/storage/com_act/RETP009.md) | lee | `RCODMOD`≈, `RDESSUBPROD`≈, `RTIPOPE`≈ | estatico + motor |
 | [storage.com_act.SDAS013](../../../tablas/storage/com_act/SDAS013.md) | lee | `SCODAGR`, `SCODMOD`, `SCODSEC`, `SCOSECHA`, `sfecbas`, `SFECPRO`, `SNUMOPEBAS`, `SNUMOPEMORH`, `SSALCAPBAS`, `SSALCAPMORH`, `SSUBTIP`, `STIPOPE` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`≈, `RFEC`≈, `RFECTXT`≈ | estatico + motor |
@@ -75,6 +72,14 @@
 - ⚠️ Columna sin resolver `RDESGRU` (¿storage.com_act.RETP001 o storage.com_act.RETP002 o storage.com_act.RETP003 o storage.com_act.SDAS013?)
 - ⚠️ Columna sin resolver `RDESADM` (¿storage.com_act.RETP001 o storage.com_act.RETP002 o storage.com_act.RETP003 o storage.com_act.SDAS013?)
 - ⚠️ Columna sin resolver `RDESPROD` (¿storage.com_act.RETP001 o storage.com_act.RETP002 o storage.com_act.RETP003 o storage.com_act.SDAS013?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

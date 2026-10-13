@@ -25,15 +25,11 @@
 | 1 | `@tip_cod` | int | — |  | `tip_cod` |
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 
-### Tablas y columnas (8)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
-| [storage.com_act.wacli007](../../../tablas/storage/com_act/WACLI007.md) | lee | `hfecpro` | estatico + motor |
+| [storage.com_act.wacli007](../../../tablas/storage/com_act/wacli007.md) | lee | `HCODPER`, `hcodsec`, `hfecpro`, `HINDBANC`, `HINDGEN`, `HINDMIGR`, `HINDRUR` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HNUMDOC` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | estatico + motor |
@@ -62,6 +58,15 @@
 - ⚠️ Columna sin resolver `HINDMIGR` (¿storage.com_act.wacli007?)
 - ⚠️ Columna sin resolver `hcodsec` (¿storage.com_act.wacli007?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

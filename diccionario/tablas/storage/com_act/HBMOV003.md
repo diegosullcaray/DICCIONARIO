@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `STORAGE` · esquema `com_act` · 17 columna(s) usadas · 5 procedimiento(s) · tabla con 16 columna(s) en la base
+Base `storage` · esquema `com_act` · 15 columna(s) usadas · 5 procedimiento(s) · tabla con 16 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/STORAGE/com_act/HBMOV003.sql](../../../../sql/03-tablas/STORAGE/com_act/HBMOV003.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/HBMOV003.sql](../../../../sql/03-tablas/storage/com_act/HBMOV003.sql)
 
 ### Columnas usadas
 
@@ -26,8 +26,6 @@ Consultas listas: [sql/03-tablas/STORAGE/com_act/HBMOV003.sql](../../../../sql/0
 | `HLATIT` | float | ✅ confirmada | [GLIMOVO05](../../../procedimientos/mod_rep/com/GLIMOVO05.md), [GLIMOVO06](../../../procedimientos/mod_rep/com/GLIMOVO06.md), [GLIMOVRO05](../../../procedimientos/mod_rep/com/GLIMOVRO05.md), [GLIMOVRO06](../../../procedimientos/mod_rep/com/GLIMOVRO06.md) | — |
 | `HLONG` | float | ✅ confirmada | [GLIMOVO05](../../../procedimientos/mod_rep/com/GLIMOVO05.md), [GLIMOVO06](../../../procedimientos/mod_rep/com/GLIMOVO06.md), [GLIMOVRO05](../../../procedimientos/mod_rep/com/GLIMOVRO05.md), [GLIMOVRO06](../../../procedimientos/mod_rep/com/GLIMOVRO06.md) | — |
 | `HORA` | varchar(50) | ✅ confirmada | [GLIMOVO05](../../../procedimientos/mod_rep/com/GLIMOVO05.md), [GLIMOVO06](../../../procedimientos/mod_rep/com/GLIMOVO06.md), [GLIMOVRO05](../../../procedimientos/mod_rep/com/GLIMOVRO05.md), [GLIMOVRO06](../../../procedimientos/mod_rep/com/GLIMOVRO06.md) | — |
-| `mm` | ⚠️ no existe | ≈ inferida | [GLIMOVO02](../../../procedimientos/mod_rep/com/GLIMOVO02.md) | — |
-| `yyyy` | ⚠️ no existe | ≈ inferida | [GLIMOVO02](../../../procedimientos/mod_rep/com/GLIMOVO02.md) | — |
 
 ### Procedimientos que la usan
 

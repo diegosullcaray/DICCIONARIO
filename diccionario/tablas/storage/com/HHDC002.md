@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `COM` · 4 columna(s) usadas · 1 procedimiento(s) · tabla con 25 columna(s) en la base
+Base `storage` · esquema `com` · 7 columna(s) usadas · 1 procedimiento(s) · tabla con 25 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/COM/HHDC002.sql](../../../../sql/03-tablas/storage/COM/HHDC002.sql)
+Consultas listas: [sql/03-tablas/storage/com/HHDC002.sql](../../../../sql/03-tablas/storage/com/HHDC002.sql)
 
 ### Columnas usadas
 
@@ -15,6 +15,9 @@ Consultas listas: [sql/03-tablas/storage/COM/HHDC002.sql](../../../../sql/03-tab
 | `HCTACONT` | float | 🎯 exacta | [RSHHCARB001](../../../procedimientos/mod_rep/com/RSHHCARB001.md) | — |
 | `HDESCCTA` | nvarchar(255) | 🎯 exacta | [RSHHCARB001](../../../procedimientos/mod_rep/com/RSHHCARB001.md) | — |
 | `HFECPRO` | date | 🎯 exacta | [RSHHCARB001](../../../procedimientos/mod_rep/com/RSHHCARB001.md) | — |
+| `HHUECARCA` | float | 🧩 por estructura | [RSHHCARB001](../../../procedimientos/mod_rep/com/RSHHCARB001.md) | — |
+| `HHUECARMO` | float | 🧩 por estructura | [RSHHCARB001](../../../procedimientos/mod_rep/com/RSHHCARB001.md) | — |
+| `HHUECARUN` | nvarchar(255) | 🧩 por estructura | [RSHHCARB001](../../../procedimientos/mod_rep/com/RSHHCARB001.md) | — |
 
 ### Procedimientos que la usan
 

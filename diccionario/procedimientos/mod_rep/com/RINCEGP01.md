@@ -27,12 +27,10 @@
 | 3 | `@fec` | varchar(8) | 'NOW' |  | — |
 | 4 | `@pagen` | int | 1 |  | — |
 
-### Tablas y columnas (12)
+### Tablas y columnas (10)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.HCDR001](../../../tablas/storage/com_act/HCDR001.md) | lee | `HCODOPE`≈, `HFECPRO`≈, `HFECREP`≈ | estatico + motor |
 | [storage.com_act.HCDR002](../../../tablas/storage/com_act/HCDR002.md) | lee | `HCODOPE`≈, `HFECPRO`≈, `HFECREP`≈ | estatico + motor |
 | [storage.com_act.HDGP001](../../../tablas/storage/com_act/HDGP001.md) | lee | `HESTG`, `HESTI`, `HFECPRO`, `HNROG` | estatico + motor |
@@ -42,7 +40,7 @@
 | [storage.com_act.WJAS001](../../../tablas/storage/com_act/WJAS001.md) | lee | `HCODREL`, `HFECPRO`, `HNUMCLI`, `HNUMCLIN`, `HTIPCOD` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODVAR`≈, `HFECPRO`≈, `HTIPCOD`≈ | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODFC`, `RCODGRU`, `rcodsec`, `RCODTER`, `RCODUCO`, `RCODUNI`, `rdescor`, `RDESFC`, `RDESGRU`, `RDESSEC`, `rdester`, `RDESUCO`, `rdesuni`, `rfecpro`, `RINDFEC` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODFC`, `RCODGRU`, `rcodsec`, `RCODTER`, `RCODUCO`, `RCODUNI`, `rdescor`, `RDESFC`, `RDESGRU`, `RDESSEC`, `rdester`, `RDESUCO`, `rdesuni`, `rfecpro`, `RINDFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -56,6 +54,13 @@
 - CTE: `cte_a`, `cte_b`, `cte_c`, `cte_dif`, `cte_grup`, `vgph001`, `vgph001_d`, `vgpm001`, `vgpm001_d`
 - Temporales: `#GrupAnte`, `#GrupCli`, `#Grupos`, `#VCAH001`, `#VCAM001`
 - ⚠️ Columna sin resolver `HINDCAR` (¿storage.com_act.RFOC001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

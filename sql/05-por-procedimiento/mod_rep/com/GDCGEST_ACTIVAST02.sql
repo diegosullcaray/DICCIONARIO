@@ -14,18 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.WGATH001 · lee · 14 columna(s)
 SELECT TOP (100) [HFECPRO], [HGESTTAS], [HMDES], [HUCAP_FIN], [ORD], [RCODCOR], [RCODGRU], [RCODSEC], [RCODTER], [RCODUCO], [RCODUNI], [RDESUCO], [RDESUNI], [RFEC]
 FROM [storage].[com_act].[WGATH001] WITH (NOLOCK);
@@ -34,6 +22,6 @@ FROM [storage].[com_act].[WGATH001] WITH (NOLOCK);
 SELECT TOP (100) [RANI], [RCIEMES], [RMESNOM], [rfec]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
--- storage.ref.WJERCOR03 · lee · 6 columna(s)
-SELECT TOP (100) [RCODSEC], [RDESCOR], [RDESGRU], [RDESSEC], [RDESTER], [RFECPRO]
+-- storage.ref.WJERCOR03 · lee · 7 columna(s)
+SELECT TOP (100) [RCODSEC], [RDESCOR], [RDESGRU], [RDESSEC], [RDESTER], [RFECPRO], [RINDFEC]
 FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

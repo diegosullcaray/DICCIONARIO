@@ -4,71 +4,38 @@ description: Reglas base del repositorio DICCIONARIO (diccionario de datos de lo
 always_on: true
 ---
 
-# Gobernanza y reglas base de DICCIONARIO
+# Reglas base de DICCIONARIO
 
-Este repositorio responde tres preguntas sobre cada reporte del MIS (Financiera Confianza):
-**qué procedimiento almacenado ejecuta, qué tablas usa y qué columnas de cada una.**
-Es el complemento de datos de [MIS-angular-front](https://github.com/diegosullcaray/MIS-angular-front):
-el front sabe qué `cod_rep` pide; este repositorio sabe de dónde sale cada cifra.
+Este repositorio responde, para cada reporte del MIS: **qué SP ejecuta, qué tablas usa y qué columnas
+de cada una**. Es el complemento de datos de MIS-angular-front (que sabe qué `cod_rep` pide cada pantalla)
+y usa la conexión de REPORTES-AUTOMATIZADOS.
 
-Cuando la documentación y la fuente discrepan, **gana la fuente** (el cuerpo del SP en la base,
-y después `fuente/reportes.json`). El documento se corrige; la discrepancia se registra como hallazgo.
+Antes de cambiar algo, leer la [visión general](governance/docs/architecture/system-overview.md): dice qué
+es fuente, qué es derivado y qué se edita a mano.
 
-## 1. Fuentes y derivados (el "idioma local")
+## Reglas que no se negocian
 
-| Qué | Dónde | Se edita a mano |
-|---|---|---|
-| Catálogo RCODREP → SP → parámetros | `fuente/reportes.json` | solo reemplazándolo por un export nuevo |
-| Cuerpo de cada SP | `procedimientos/<base>/<esquema>/<SP>.sql` | se pega tal cual sale de la base, sin "arreglarlo" |
-| Dependencias según el motor | `fuente/dependencias/<base>.csv` | no: es el resultado de `sql/02-dependencias/<base>.sql` |
-| Consumo del front | `fuente/consumo-front.json` | no: `npm run trazar:front` |
-| Estructura real de tablas | `fuente/estructura/<base>.csv` | no: `python herramientas/bd.py estructura` |
-| Conexión a SQL Server | `herramientas/` (Python) | sí; `pyodbc.connect` solo en `db.py` |
-| SQL de extracción, dependencias, tablas y por SP | `sql/01-*`, `02-*`, `03-*`, `05-*` | **no**: se generan |
-| Consultas utilitarias | `sql/04-consultas/` | sí |
-| Fichas, índices y JSON del diccionario | `diccionario/` | solo la prosa **debajo** de `<!-- generado:fin -->` |
+1. **Gana la fuente.** Cuando un documento y la fuente (el SP en la base, luego `fuente/reportes.json`)
+   discrepan, se corrige el documento.
+2. **Lo que se deriva no se escribe.** Si un dato del diccionario está mal, se corrige su fuente o el
+   analizador y se corre `npm run generar`. Editar dentro de `<!-- generado:… -->` o en `.claude/` es trabajo perdido.
+3. **Los cuerpos de SP no se tocan.** Se guardan tal cual salen de la base; la única edición permitida es
+   redactar una credencial embebida.
+4. **Nada de credenciales ni servidores versionados.** Viven solo en `.env` (no versionado). Ver la skill `dic-conexiones-bd`.
+5. **Solo lectura contra la base.** Metadatos, definiciones y muestras con `NOLOCK`; nunca DML ni `EXEC` de un SP de reporte.
+6. **No se inventa semántica.** Sin evidencia (código, dato perfilado o dueño funcional) una columna queda
+   `_por documentar_`. El nombre de una columna no es su significado.
+7. **`inferida` no es `confirmada`.** El analizador estático es una heurística ([ADR-0003](governance/docs/architecture/adr/ADR-0003-dos-fuentes-de-dependencias.md)).
+8. **Los parámetros de contrato no se renombran** (`tip_cod`, `cod_rel`, `fec`, `fecha`): ver el [glosario](governance/docs/data/glossary.md).
+9. **La línea base no se regenera para destrabar** ([ADR-0006](governance/docs/architecture/adr/ADR-0006-linea-base-de-hallazgos.md)).
 
-Regla de oro: **lo que se deriva no se escribe**. Si un dato del diccionario está mal, se corrige
-su fuente y se corre `npm run generar`. Editar dentro de un bloque `generado` es trabajo perdido.
+## Agentes, skills y cómo se trabaja
 
-## 2. Flujo de trabajo
+Todo indexado en [governance/readme.md](governance/readme.md): agentes (checklists con prompt de sistema,
+también disponibles como subagentes en `.claude/agents/`), skills y documentación.
 
-```text
-reportes.json ─► npm run generar ─► sql/01-extraccion/…/<SP>.sql ─► (SSMS) ─► procedimientos/…/<SP>.sql
-                                                                                  │
-                     sql/02-dependencias/<base>.sql ─► (SSMS) ─► fuente/dependencias/<base>.csv
-                                                                                  │
-                                         npm run generar ─► diccionario/ + hallazgos
-```
-
-Con acceso a la base, `python herramientas/bd.py todo` hace los pasos de SSMS sin intervención manual.
-Detalle: [flujo de trabajo](governance/docs/development/workflow.md).
-
-## 3. Reglas que no se negocian
-
-- **Nada de credenciales**: ni servidor, ni usuario, ni contraseña en archivos versionados. Viven solo en
-  `.env` (no versionado; mismas variables que REPORTES-AUTOMATIZADOS). Ver la skill `dic-conexiones-bd`.
-- **No se inventa semántica**: una columna sin descripción confirmada queda `_por documentar_`.
-  El nombre de una columna no es su significado.
-- **El analizador estático es una heurística**: `inferida` no es `confirmada`. Ver
-  [ADR-0003](governance/docs/architecture/adr/ADR-0003-dos-fuentes-de-dependencias.md).
-- **Los parámetros de contrato no se renombran**: `tip_cod`, `cod_rel`, `fec`, `fecha` se escriben como
-  el backend (ver [glosario](governance/docs/data/glossary.md)).
-- **Solo lectura contra la base**: los SQL de este repositorio consultan metadatos y muestras con
-  `NOLOCK`. Nunca `ALTER`, `DROP`, `INSERT` ni `EXEC` de un SP de reporte.
-
-## 4. Agentes y skills
-
-- **Agentes**: [pipeline y roles](governance/agents/README.md). Son checklists con prompt de sistema;
-  se pueden usar como subagentes (`.claude/agents/`), pegar como prompt o seguir a mano.
-- **Skills**: en `governance/skills/`, una carpeta por skill. Contienen el "cómo se hace" de este repo.
-  `.claude/` es una copia: editar en `governance/` y correr `npm run generar`.
-
-## 5. Verificar antes de commitear
+## Antes de commitear
 
 ```bash
-npm run generar     # regenera SQL, diccionario y copias de agentes
-npm run verificar   # hallazgos + generados al día + enlaces + índice de skills
-npm test            # pruebas del analizador T-SQL
-npm run test:py     # pruebas de las herramientas Python
+npm run generar && npm run verificar && npm test && npm run test:py
 ```

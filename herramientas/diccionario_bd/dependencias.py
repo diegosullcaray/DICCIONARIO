@@ -12,7 +12,7 @@ from .config import DIR_FUENTE, DIR_SQL, ConfiguracionError, servidor_de_base
 from .db import conexion, ejecutar_script
 
 COLUMNAS = ["sp_base", "sp_esquema", "sp_nombre", "ref_servidor", "ref_base", "ref_esquema", "ref_entidad",
-            "ref_columna", "ref_tipo", "es_lectura", "es_escritura", "es_select_todo", "origen", "error"]
+            "ref_columna", "ref_tipo", "ref_objeto_tipo", "es_lectura", "es_escritura", "es_select_todo", "origen", "error"]
 
 
 def a_csv(filas: list[dict]) -> str:

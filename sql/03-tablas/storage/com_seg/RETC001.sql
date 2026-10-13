@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'HCODSEG') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'HCODSEG', N'HCOMIFC') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'com_seg' AND c.TABLE_NAME = N'RETC001'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,11 +20,12 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'com_seg.RETC001') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [HCODSEG]
+SELECT TOP (100) [HCODSEG], [HCOMIFC]
 FROM [storage].[com_seg].[RETC001] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
 SELECT
     COUNT(*) AS filas,
-    SUM(CASE WHEN [HCODSEG] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCODSEG], COUNT(DISTINCT [HCODSEG]) AS [distintos_HCODSEG]
+    SUM(CASE WHEN [HCODSEG] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCODSEG], COUNT(DISTINCT [HCODSEG]) AS [distintos_HCODSEG],
+    SUM(CASE WHEN [HCOMIFC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCOMIFC], COUNT(DISTINCT [HCOMIFC]) AS [distintos_HCOMIFC]
 FROM [storage].[com_seg].[RETC001] WITH (NOLOCK);

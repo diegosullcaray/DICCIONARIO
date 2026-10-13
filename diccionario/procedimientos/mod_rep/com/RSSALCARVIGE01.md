@@ -26,15 +26,10 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fecha` | date | — |  | `fecha` |
 
-### Tablas y columnas (8)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.WJAS001](../../../tablas/storage/com_act/WJAS001.md) | lee | `HCANAMN`, `HCANAPGMN`, `HCANASPGMN`, `HCODREL`, `hfecpro`, `HMDESAPGMN`, `HMDESASPGMN`, `HMONDESAMN`, `HMONDESMN`, `HNUMBANCOMP`, `HNUMBANEXC`, `HNUMCLI`, `HNUMCLIEDAD1`, `HNUMCLIEDAD2`, `HNUMCLIEDAD3`, `HNUMCLIEDAD4`, `HNUMCLIEDAD5`, `HNUMCLIFEME`, `HNUMCLIG`, `HNUMCLII`, `HNUMCLIINMI`, `HNUMCLIJURI`, `HNUMCLIMASC`, `HNUMCLIMES`, `HNUMCLIMESPG`, `HNUMCLIMESSPG`, `HNUMCLIN`, `HNUMCLIPERU`, `HNUMCLIPG`, `HNUMCLIRUR`, `HNUMCLISPG`, `HNUMCLIURB`, `HNUMOPE`, `HNUMSECGMES`, `HNUMSECGMESPG`, `HNUMSECGMESSPG`, `HNUMSECIMES`, `HNUMSECIMESPG`, `HNUMSECIMESSPG`, `HNUMSECMES`, `HNUMSECMESPG`, `HNUMSECMESSPG`, `HODESAPGMN`, `HODESASPGMN`, `HOPEDESA`, `HSALMEDMN`, `HSALMEDMNVIGE`, `HSALMPGMN`, `HSALMPGMNVIGE`, `HSALMSPGMN`, `HSALMSPGMNVIGE`, `HTIPCOD`, `HVSALMN`, `HVSALPGMN`, `HVSALSPGMN`, `HVSALVIGMN`, `HVSALVIGPG`, `HVSALVIGSPG`, `HVULEXPOBREZA`, `HVULNERABLE`, `HVULOTROS`, `HVULPOBREZA`, `HVULSINCALIF` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODVAR`≈, `HFECPRO`≈, `HTIPCOD`≈, `HVALVAR`≈ | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
@@ -45,11 +40,11 @@
 
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer, output, 9, @lvl_cfg | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer output, 9, @lvl_cfg | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -63,6 +58,16 @@
 - CTE: `cte_act`, `cte_ant`, `cte_m`
 - Temporales: `#PreResult`, `#SaldoMedio`, `#ract`, `#ract0`, `#ract1`, `#rant`, `#rant0`, `#rant1`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

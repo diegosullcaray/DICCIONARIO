@@ -27,12 +27,10 @@
 | 3 | `@c_aut` | int | — |  | `c_aut` |
 | 4 | `@aut` | int | — |  | `aut` |
 
-### Tablas y columnas (7)
+### Tablas y columnas (5)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.BTPCRA001](../../../tablas/storage/com_act/BTPCRA001.md) | lee | `*`, `CARGO_ADM`, `FECHA_INGRESO`, `HFECPRO`, `SAGENCIA`, `SAUTSUG`, `SAUTWF`, `SAVGMRAPROB`, `SC12M1`, `SC12M2`, `SC12M3`, `SC12MACUM`, `SC3M1`, `SC3M2`, `SC3M3`, `SC3MACUM`, `SCODSEC`, `SCOMENT`, `Segmentacion`, `SFILMR`, `SMRAPROB1`, `SMRAPROB2`, `SMRAPROB3`, `SNOMADM`, `SREGION`, `STERRITORIO`, `usuario` | estatico + motor |
 | [storage.com_act.BTPCRC001](../../../tablas/storage/com_act/BTPCRC001.md) | lee | `*`, `AGENCIA`, `Col0`, `Comentarios`, `HFECPRO`, `REGION`, `SAUTSUG`, `SAUTSUGF`, `SAUTWF`, `SAVGMRAPRO`, `SC12M1`, `SC12M2`, `SC12M3`, `SC12MACUM`, `SC3M1`, `SC3M2`, `SC3M3`, `SC3MACUM`, `SCARCOOR`, `SCODSEC`, `Segmentacion`, `SFILMR`, `SMR1`, `SMR2`, `SMR3`, `SMRPROP`, `SNOMCOOR`, `TERRITORIO` | estatico + motor |
 | [storage.com_act.BTPCRS001](../../../tablas/storage/com_act/BTPCRS001.md) | lee | `*`, `AGENCIA`, `Col0`, `Fecha de ingreso`, `HFECPRO`, `REGION`, `Resultado`, `SANTIGFC`, `SC12M1`, `SC12M2`, `SC12M3`, `SC3M1`, `SC3M2`, `SC3M3`, `SCARSEC`, `SCODSEC`, `SCUMPANTIGFC`, `SDCODSEC`, `SMR1`, `SMR2`, `SMR3`, `SMR4`, `SMRTEND3M`, `SNIVAUT`, `TERRITORIO` | estatico + motor |
@@ -61,6 +59,13 @@
 ### Observaciones del análisis
 
 - CTE: `a`, `b`, `c`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

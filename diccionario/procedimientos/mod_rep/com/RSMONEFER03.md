@@ -31,7 +31,7 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.WCRE001](../../../tablas/storage/com_act/WCRE001.md) | lee | `GROUPING`≈, `hcodrel`≈, `HDESPROD`, `HEREDADO`, `HFECPRO`, `HSALDETMN`, `HSALINIMN`, `HSALMAN01MN`≈, `HSALRECMN`≈, `htipcod`≈, `HTRAM`≈ | estatico + motor |
+| [storage.com_act.WCRE001](../../../tablas/storage/com_act/WCRE001.md) | lee | `hcodrel`≈, `HDESPROD`, `HEREDADO`, `HFECPRO`, `HSALDETMN`, `HSALINIMN`, `HSALMAN01MN`≈, `HSALRECMN`≈, `htipcod`≈, `HTRAM`≈ | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

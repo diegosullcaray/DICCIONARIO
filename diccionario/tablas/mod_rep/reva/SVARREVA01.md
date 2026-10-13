@@ -11,11 +11,11 @@ Consultas listas: [sql/03-tablas/mod_rep/reva/SVARREVA01.sql](../../../../sql/03
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `SAMBFIL` | varchar(50) | 🗄️ motor | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
+| `SAMBFIL` | varchar(50) | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `SAMBGRU` | varchar(50) | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `SCODMOD` | smallint not null | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `SCODVAR` | smallint not null | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
-| `SDESVAR` | varchar(250) | 🗄️ motor | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
+| `SDESVAR` | varchar(250) | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `SORDREV` | int not null | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 
 ### Procedimientos que la usan

@@ -15,8 +15,8 @@ Consultas listas: [sql/03-tablas/storage/com_act/HTDA001.sql](../../../../sql/03
 | `HDESPROC` | varchar(250) | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |
 | `HFECPRO` | date not null | 🎯 exacta | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
 | `HMONTO` | numeric(17,2) | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |
-| `HNUMDOC` | varchar(20) | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |
-| `HTIPDOC` | smallint | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |
+| `HNUMDOC` | varchar(20) | 🧩 por estructura | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HTIPDOC` | smallint | 🧩 por estructura | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
 | `htiptrax` | varchar(1) | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |
 | `HTOTINTE` | smallint | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |
 | `RCODSUC` | smallint | ≈ inferida | [GRTABAPPO01](../../../procedimientos/mod_rep/com/GRTABAPPO01.md) | — |

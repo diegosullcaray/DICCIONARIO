@@ -30,8 +30,7 @@ o "limpiado" a mano produce una ficha que parece correcta y no lo es.
 ## Rechaza cuando
 
 - El texto está incompleto o es de otro SP → pedir de nuevo con `OBJECT_DEFINITION`.
-- El lote dice `existe = 0` → no inventar el cuerpo: registrar el SP como retirado en *Notas* y avisar al
-  dueño de `reportes.json`.
+- El SP no existe en la base → no inventar el cuerpo: queda ❌ y `sp-inexistente`; avisar al dueño de `reportes.json`.
 
 ## Prompt de sistema
 

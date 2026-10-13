@@ -14,32 +14,20 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- storage.com_act.SDAF002 · lee · 1 columna(s)
-SELECT TOP (100) [sfecpro]
+-- storage.com_act.SDAF002 · lee · 4 columna(s)
+SELECT TOP (100) [SCODMOD], [SSUBTIP], [STIPOPE], [sfecpro]
 FROM [storage].[com_act].[SDAF002] WITH (NOLOCK);
 
--- storage.com_seg.SDSF001 · lee · 1 columna(s)
-SELECT TOP (100) [sfecpro]
+-- storage.com_seg.SDSF001 · lee · 2 columna(s)
+SELECT TOP (100) [scodseg], [sfecpro]
 FROM [storage].[com_seg].[SDSF001] WITH (NOLOCK);
 
 -- storage.com.VDMCOM01 · lee · 6 columna(s)
 SELECT TOP (100) [HCODREL], [HCODVAR], [HTIPCOD], [HTIPMETA], [HVALVAR], [hfecpro]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
 
--- storage.ref.RCALEN001 · lee · 3 columna(s)
-SELECT TOP (100) [MM], [RDIAFER], [rfec]
+-- storage.ref.RCALEN001 · lee · 2 columna(s)
+SELECT TOP (100) [RDIAFER], [rfec]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
 -- storage.ref.WJERCOR03 · lee · 8 columna(s)

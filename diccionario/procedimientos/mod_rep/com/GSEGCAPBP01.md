@@ -27,23 +27,15 @@
 | 3 | `@fec` | varchar(10) | — |  | `fec` |
 | 4 | `@prod` | varchar(250) | — |  | `prod` |
 
-### Tablas y columnas (17)
+### Tablas y columnas (9)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
-| [storage.com_act.HTDA001](../../../tablas/storage/com_act/HTDA001.md) | lee | `HCANAL`, `hfecpro` | estatico + motor |
-| [storage.com_act.WAPPCLI001](../../../tablas/storage/com_act/WAPPCLI001.md) | lee | `hfecpro` | estatico + motor |
-| [storage.com_pas.HCDP001](../../../tablas/storage/com_pas/HCDP001.md) | lee | `*`, `hfecpro` | estatico + motor |
+| [storage.com_act.HTDA001](../../../tablas/storage/com_act/HTDA001.md) | lee | `HCANAL`, `hfecpro`, `HNUMDOC`, `HTIPDOC` | estatico + motor |
+| [storage.com_act.WAPPCLI001](../../../tablas/storage/com_act/WAPPCLI001.md) | lee | `hfecpro`, `HTIPNUMDOC` | estatico + motor |
+| [storage.com_pas.HCDP001](../../../tablas/storage/com_pas/HCDP001.md) | lee | `*`, `HCODSEC`, `hfecpro`, `HPENDOC`, `HPEPAIS`, `HPETDOC`, `HSBCTA`, `HSBOPER`, `HSBSBOP` | estatico + motor |
 | [storage.com_pas.RETP001](../../../tablas/storage/com_pas/RETP001.md) | lee | `RDESCPROD02`≈ | estatico + motor |
-| [STORAGE.com_pas.WJAS009](../../../tablas/STORAGE/com_pas/WJAS009.md) | lee | `HCODREL`, `HFECPRO`≈, `HTIPCOD`, `RDESCPROD`≈ | estatico + motor |
+| [storage.com_pas.WJAS009](../../../tablas/storage/com_pas/WJAS009.md) | lee | `HCODREL`, `HFECPRO`≈, `HTIPCOD`, `RDESCPROD`≈ | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `rfec` | estatico + motor |
 | [storage.ref.REABP001](../../../tablas/storage/ref/REABP001.md) | lee | `RESTACT`≈, `RESTSEC`≈ | estatico + motor |
 | [storage.ref.REABP002](../../../tablas/storage/ref/REABP002.md) | lee | `RCODZBP`, `RDESZBP` | estatico + motor |
@@ -61,9 +53,9 @@
 | `storage.util.FVECFEC01` (función) | — | no |
 | `storage.util.FVECFEC01` (función) | — | no |
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV02` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, '"fec"', @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV02` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = '"fec"', @columns = '"vars"', @config = @tconf | no |
 | `storage.util.FVECFEC01` (función) | — | no |
 
 ### Columnas que devuelve
@@ -86,6 +78,19 @@
 - ⚠️ Columna sin resolver `HSBOPER` (¿storage.com_pas.HCDP001?)
 - ⚠️ Columna sin resolver `HSBSBOP` (¿storage.com_pas.HCDP001?)
 - ⚠️ Columna sin resolver `HCODSEC` (¿storage.com_pas.HCDP001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

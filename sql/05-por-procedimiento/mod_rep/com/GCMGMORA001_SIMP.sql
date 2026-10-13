@@ -14,30 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.util.FFMTVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FFMTVAR] WITH (NOLOCK);
-
--- mod_rep.util.FSEMVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FSEMVAR] WITH (NOLOCK);
-
 -- storage.com_act.WJAS002_SIMP · lee · 1 columna(s)
 SELECT TOP (100) [HFECPRO]
 FROM [storage].[com_act].[WJAS002_SIMP] WITH (NOLOCK);

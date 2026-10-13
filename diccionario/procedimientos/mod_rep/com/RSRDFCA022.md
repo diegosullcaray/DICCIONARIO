@@ -25,13 +25,10 @@
 | 1 | `@tipcod` | int | — |  | `tip_cod` |
 | 2 | `@codrel` | varchar(20) | — |  | `cod_rel` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
 | [storage.com_act.SDAF001](../../../tablas/storage/com_act/SDAF001.md) | lee | `SFECPRO` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RFEC` | estatico + motor |
 
@@ -42,8 +39,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `strategos.mod_rep_com_act.CABDESEDIAR01` | @tipcod, @codrel | no |
-| `piv.GPIVLEV01` | @tipcod, @codrel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tipcod, @codrel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -53,6 +50,14 @@ No se detectó un SELECT final que devuelva filas.
 
 - Temporales: `#FecMensual`, `#T`, `#Tabla`
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

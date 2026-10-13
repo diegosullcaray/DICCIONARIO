@@ -26,15 +26,13 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.WPDM001](../../../tablas/storage/com_act/WPDM001.md) | lee | `HCODREL`, `HFECPRO`, `HNROG`, `HNROG_ANT`, `HNROG_DESEM`, `HNUMCLI`, `HNUMCLI_ANT`, `HSALCAPMN`, `HSALCAPMN_1_30`, `HSALCAPMN_1_30_ANT`, `HSALCAPMN_ANT`, `HSALCAPMN_ma_30`, `HSALCAPMN_ma_30_ANT`, `HTIPCOD`, `HULTVEN_RECUR_DESEM`, `NUEVO_DESEM`, `RECURRENTE_DESEM` | estatico + motor |
 | [storage.com.metas_saldos](../../../tablas/storage/com/metas_saldos.md) | lee | `10044`≈, `10062`≈, `8000`≈, `HCODREL`≈, `HCODVAR`≈, `HFECPRO`≈, `HTIPCOD`≈, `HTIPMETA`≈, `HVALVAR`≈, `PVT`≈ | estatico + motor |
-| [storage.ref.wjercor03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESFC`, `RDESGRU`, `RDESTER`, `RDESUCO`, `RDESUNI` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESFC`, `RDESGRU`, `RDESTER`, `RDESUCO`, `RDESUNI` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -65,6 +63,13 @@
 - ⚠️ Columna sin resolver `HSALCAPMN_ma_30_ANT` (¿storage.com_act.WPDM001?)
 - ⚠️ Columna sin resolver `HSALCAPMN_ma_30` (¿storage.com_act.WPDM001?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

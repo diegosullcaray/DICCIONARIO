@@ -26,12 +26,10 @@
 | 2 | `@fec` | date | — |  | `fec` |
 | 3 | `@Ter` | varchar(250) | — |  | `Ter` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com.HBDK004](../../../tablas/storage/com/HBDK004.md) | lee | `HBLOACU`, `hcolbt`, `HCOLCAR`, `HCOLDOC`, `HCOLNOM`, `HCOLTIP`, `HDESTER`, `HFECPRO` | estatico + motor |
 | [storage.com.HBDK005](../../../tablas/storage/com/HBDK005.md) | lee | `HBAGECORR`, `HBAGESAT`, `HBAHORRO`, `HBCTS`, `HBDIGITA`, `HBDPF`, `HBFOREXT`, `HBFRENO`, `HBFUERAOF`, `HBMSEG`, `HBPTOBAS`, `HBRIEOPE`, `HBSOAT`, `hcolbt`, `HCOLCAR`, `HCOLDOC`, `HCOLNOM`, `HCOLTIP`, `HDESTER`, `HFECPRO` | estatico + motor |
 | [storage.gpr.HPPC001](../../../tablas/storage/gpr/HPPC001.md) | lee | `hcodbt`, `hfecpro` | estatico + motor |
@@ -47,6 +45,13 @@
 
 - CTE: `cte_a`, `cte_b`
 - Temporales: `#Cab`, `#Jer`, `#Result`, `#T`, `#TT`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

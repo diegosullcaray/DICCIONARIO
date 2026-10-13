@@ -27,17 +27,13 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | varchar(8) | — |  | `fec` |
 
-### Tablas y columnas (7)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
-| [storage.com_act.WACLI007](../../../tablas/storage/com_act/WACLI007.md) | lee | `HCODSEC`≈, `HFECPRO`≈ | estatico + motor |
+| [storage.com_act.wacli007](../../../tablas/storage/com_act/wacli007.md) | lee | `HCODSEC`≈, `HFECPRO`≈ | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | estatico + motor |
-| [storage.ref.wjercor03](../../../tablas/storage/ref/wjercor03.md) | lee | `*`, `Rfecpro` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `*`, `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `Rfecpro`, `rindfec` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -63,6 +59,15 @@
 - ⚠️ Columna sin resolver `RCODUCO` (¿storage.ref.wjercor03?)
 - ⚠️ Columna sin resolver `variables` (¿storage.com.VDMCOM01?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

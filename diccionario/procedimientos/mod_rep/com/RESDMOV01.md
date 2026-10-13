@@ -27,14 +27,11 @@
 | 3 | `@fec` | varchar(8) | 'NOW' |  | — |
 | 4 | `@pagen` | int | 1 |  | — |
 
-### Tablas y columnas (5)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.com.TEMP_RESDMOV01_MOV](../../../tablas/mod_rep/com/TEMP_RESDMOV01_MOV.md) ⚠️ esquema implícito | elimina-objeto, lee | `HCODSEC`≈, `RDESTER`≈ | estatico |
-| [mod_rep.dbo.TEMP_RESDMOV01_MOV](../../../tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.md) | elimina-objeto | — | estatico + motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
+| [mod_rep.dbo.TEMP_RESDMOV01_MOV](../../../tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.md) | elimina-objeto, lee | `HCODSEC`≈, `RDESTER`≈ | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -47,6 +44,13 @@
 ### Observaciones del análisis
 
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -26,15 +26,14 @@
 | 2 | `@cod_rel` | nvarchar(10) | — |  | `cod_rel` |
 | 3 | `@carg` | nvarchar(100) | — |  | `carg` |
 
-### Tablas y columnas (8)
+### Tablas y columnas (7)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.api.FUSECDIV01](../../../tablas/storage/api/FUSECDIV01.md) | — | — | motor |
 | [storage.com_act.HDSC001](../../../tablas/storage/com_act/HDSC001.md) | lee | `HCARGO`, `HFECPRO`, `HPERSUP`, `HREG` | estatico + motor |
 | [storage.com_act.HMSUP001](../../../tablas/storage/com_act/HMSUP001.md) | lee | `HDESREL`≈, `HFECPRO`≈, `HPOSTCOORPDM`≈, `HPOSTGREG`≈, `HPOSTJAGRO`≈, `HPOSTJINCL`≈, `HPRECOORPDM`≈, `HPREGREG`≈, `HPREJAGRO`≈, `HPREJINCL`≈ | estatico + motor |
-| [storage.com_act.SDAS006](../../../tablas/storage/com_act/SDAS006.md) | lee | `SCARGO`, `SCODAGR`, `SFECPRO`, `SOPECONF`, `SOPEPRE`, `SSUCCLI` | estatico + motor |
-| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `day`≈, `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
+| [storage.com_act.SDAS006](../../../tablas/storage/com_act/SDAS006.md) | lee | `SCARGO`, `SCODAGR`, `SFECPRO`, `SOPECONF`, `SOPEPOST`, `SOPEPRE`, `SOPEREGR`, `SOPESEAL`, `SSUCCLI` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
 | [storage.ref.REAM001](../../../tablas/storage/ref/REAM001.md) | lee | `RCODAGE`, `RCODMAT` | estatico + motor |
 | [storage.ref.REMR001](../../../tablas/storage/ref/REMR001.md) | lee | `RCODMAT`, `RCODREG`, `RDESMAT` | estatico + motor |
 | [storage.ref.RERT001](../../../tablas/storage/ref/RERT001.md) | lee | `RCODREG`, `RCODTER`, `RDESREG` | estatico + motor |
@@ -58,6 +57,12 @@
 - ⚠️ Columna sin resolver `SOPEPOST` (¿storage.com_act.SDAS006 o storage.ref.REAM001 o storage.ref.REMR001 o storage.ref.RERT001?)
 - ⚠️ Columna sin resolver `SOPESEAL` (¿storage.com_act.SDAS006 o storage.ref.REAM001 o storage.ref.REMR001 o storage.ref.RERT001?)
 - ⚠️ Columna sin resolver `SOPEREGR` (¿storage.com_act.SDAS006 o storage.ref.REAM001 o storage.ref.REMR001 o storage.ref.RERT001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `storage.api.FUSECDIV01`
 
 ### Validación con el motor
 

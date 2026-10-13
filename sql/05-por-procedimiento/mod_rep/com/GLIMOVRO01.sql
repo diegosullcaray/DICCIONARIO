@@ -14,21 +14,13 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- mod_sys_admin.dbo.SUSEPROF01 · lee · 2 columna(s)
 SELECT TOP (100) [SCODPROFN], [SCODUSE]
 FROM [mod_sys_admin].[dbo].[SUSEPROF01] WITH (NOLOCK);
 
--- STORAGE.com_act.HBMOV001 · lee · 21 columna(s)
-SELECT TOP (100) [GRUPo], [HCODGEOR], [HCODSEC], [HCTACLI], [HDESCLI], [HDESPER], [HDISTR], [HDISTREC], [HDISTR_LLEGADA], [HDPT], [HFECEMI], [HFECREG], [HMONTDIS], [HMOTIV], [HNUMDOC], [HNUMDOCCLI], [HNUMREG], [HPROV], [hfecpro], [mm], [yyyy]
-FROM [STORAGE].[com_act].[HBMOV001] WITH (NOLOCK);
+-- storage.com_act.HBMOV001 · lee · 19 columna(s)
+SELECT TOP (100) [GRUPo], [HCODGEOR], [HCODSEC], [HCTACLI], [HDESCLI], [HDESPER], [HDISTR], [HDISTREC], [HDISTR_LLEGADA], [HDPT], [HFECEMI], [HFECREG], [HMONTDIS], [HMOTIV], [HNUMDOC], [HNUMDOCCLI], [HNUMREG], [HPROV], [hfecpro]
+FROM [storage].[com_act].[HBMOV001] WITH (NOLOCK);
 
 -- storage.com_act.VCAH001 · lee · 2 columna(s)
 SELECT TOP (100) [hctacli], [hdescli]

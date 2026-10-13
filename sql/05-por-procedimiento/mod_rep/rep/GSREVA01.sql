@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFORMAT · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFORMAT] WITH (NOLOCK);
-
--- mod_rep.rep.FUMB · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FUMB] WITH (NOLOCK);
-
 -- mod_rep.rep.RREGVAR01 · lee · 6 columna(s)
 SELECT TOP (100) [RALIVAR], [RAMBGRU], [RCODVAR], [RDESVAR], [RFORV01], [RFORV02]
 FROM [mod_rep].[rep].[RREGVAR01] WITH (NOLOCK);

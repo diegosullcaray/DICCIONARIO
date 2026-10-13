@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'day', N'MM', N'MONTH', N'RANI', N'RANIBIS', N'rciebt', N'RCIEMES', N'RDIA', N'RDIAANI', N'RDIAFER', N'RDIASEM', N'RFEC', N'RFECTXT', N'RFINSEM', N'RFLAG01', N'RID', N'RMES', N'RMESNOM', N'RNOMDIASEM', N'rsem', N'yy') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'RANI', N'RANIBIS', N'rciebt', N'RCIEMES', N'RDIA', N'RDIAANI', N'RDIAFER', N'RDIASEM', N'RFEC', N'RFECTXT', N'RFINSEM', N'RFLAG01', N'RID', N'RMES', N'RMESNOM', N'RNOMDIASEM', N'rsem') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'ref' AND c.TABLE_NAME = N'RCALEN001'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,15 +20,12 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'ref.RCALEN001') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [day], [MM], [MONTH], [RANI], [RANIBIS], [rciebt], [RCIEMES], [RDIA], [RDIAANI], [RDIAFER], [RDIASEM], [RFEC], [RFECTXT], [RFINSEM], [RFLAG01], [RID], [RMES], [RMESNOM], [RNOMDIASEM], [rsem], [yy]
+SELECT TOP (100) [RANI], [RANIBIS], [rciebt], [RCIEMES], [RDIA], [RDIAANI], [RDIAFER], [RDIASEM], [RFEC], [RFECTXT], [RFINSEM], [RFLAG01], [RID], [RMES], [RMESNOM], [RNOMDIASEM], [rsem]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
 SELECT
     COUNT(*) AS filas,
-    SUM(CASE WHEN [day] IS NULL THEN 1 ELSE 0 END) AS [nulos_day], COUNT(DISTINCT [day]) AS [distintos_day],
-    SUM(CASE WHEN [MM] IS NULL THEN 1 ELSE 0 END) AS [nulos_MM], COUNT(DISTINCT [MM]) AS [distintos_MM],
-    SUM(CASE WHEN [MONTH] IS NULL THEN 1 ELSE 0 END) AS [nulos_MONTH], COUNT(DISTINCT [MONTH]) AS [distintos_MONTH],
     SUM(CASE WHEN [RANI] IS NULL THEN 1 ELSE 0 END) AS [nulos_RANI], COUNT(DISTINCT [RANI]) AS [distintos_RANI],
     SUM(CASE WHEN [RANIBIS] IS NULL THEN 1 ELSE 0 END) AS [nulos_RANIBIS], COUNT(DISTINCT [RANIBIS]) AS [distintos_RANIBIS],
     SUM(CASE WHEN [rciebt] IS NULL THEN 1 ELSE 0 END) AS [nulos_rciebt], COUNT(DISTINCT [rciebt]) AS [distintos_rciebt],
@@ -45,6 +42,5 @@ SELECT
     SUM(CASE WHEN [RMES] IS NULL THEN 1 ELSE 0 END) AS [nulos_RMES], COUNT(DISTINCT [RMES]) AS [distintos_RMES],
     SUM(CASE WHEN [RMESNOM] IS NULL THEN 1 ELSE 0 END) AS [nulos_RMESNOM], COUNT(DISTINCT [RMESNOM]) AS [distintos_RMESNOM],
     SUM(CASE WHEN [RNOMDIASEM] IS NULL THEN 1 ELSE 0 END) AS [nulos_RNOMDIASEM], COUNT(DISTINCT [RNOMDIASEM]) AS [distintos_RNOMDIASEM],
-    SUM(CASE WHEN [rsem] IS NULL THEN 1 ELSE 0 END) AS [nulos_rsem], COUNT(DISTINCT [rsem]) AS [distintos_rsem],
-    SUM(CASE WHEN [yy] IS NULL THEN 1 ELSE 0 END) AS [nulos_yy], COUNT(DISTINCT [yy]) AS [distintos_yy]
+    SUM(CASE WHEN [rsem] IS NULL THEN 1 ELSE 0 END) AS [nulos_rsem], COUNT(DISTINCT [rsem]) AS [distintos_rsem]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);

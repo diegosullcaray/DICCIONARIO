@@ -1,83 +1,65 @@
 # Flujo de trabajo
 
-## 0. Actualizar el catálogo (cuando cambian los reportes)
+De `reportes.json` a una ficha validada y documentada. Hay dos caminos para hablar con la base:
+**Python** (recomendado, sin pasos manuales) y **SSMS** (para quien no tiene Python o el driver ODBC).
+Los dos dejan los mismos archivos; lo que sigue después es igual.
 
-Reemplazar `fuente/reportes.json` por el export nuevo y correr:
-
-```bash
-npm run generar     # aparecen/desaparecen los SQL de extracción de los SP nuevos/retirados
-npm run verificar   # hallazgos de la fuente: duplicados, nombres, parámetros
+```text
+reportes.json ─► npm run generar ─► sql/01, 02 ─►  [Python bd.py | SSMS]  ─► procedimientos/, fuente/
+                                                                                   │
+                                     npm run generar ◄─────────────────────────────┘
+                                            │
+                       diccionario/ + hallazgos ─► documentar prosa ─► npm run verificar ─► commit
 ```
 
-## Atajo: todo desde Python
+## 0. Actualizar el catálogo (cuando cambian los reportes)
 
-Con el `.env` configurado (ver skill [dic-conexiones-bd](../../skills/dic-conexiones-bd/SKILL.md)), los pasos 1, 2 y 4
-se hacen solos:
+Reemplazar `fuente/reportes.json` por el export nuevo y correr `npm run generar`: aparecen o desaparecen
+los SQL de extracción de los SP nuevos o retirados.
+
+## 1. Extraer, validar y perfilar → 🔎 extraído / ✅ validado
+
+**Con Python** (configuración en la skill [dic-conexiones-bd](../../skills/dic-conexiones-bd/SKILL.md)):
 
 ```bash
 python herramientas/bd.py --env <ruta al .env> todo [--base mod_rep]
 ```
 
-Los pasos de abajo son lo mismo, a mano desde SSMS, para quien no tenga Python o el driver ODBC.
+Hace extraer → generar → dependencias → generar → estructura → generar. Cada paso por separado y sus
+opciones: [herramientas/README.md](../../../herramientas/README.md).
 
-## 1. Extraer el cuerpo del SP → 🔎 extraído
+**Con SSMS**, por SP o por base:
 
-**Uno por uno (SSMS):**
+| Paso | Ejecutar | Guardar el resultado en |
+|---|---|---|
+| Cuerpo de un SP | `sql/01-extraccion/<base>/<esquema>/<SP>.sql` | `procedimientos/<base>/<esquema>/<SP>.sql` |
+| Cuerpos de una base | `sql/01-extraccion/_lotes/<base>.sql` (además dice qué SP no existen) | un archivo por fila, igual que arriba |
+| Dependencias del motor | `sql/02-dependencias/<base>.sql` | `fuente/dependencias/<base>.csv`, **con encabezados** |
 
-1. Abrir `sql/01-extraccion/<base>/<esquema>/<SP>.sql` y ejecutarlo.
-2. Copiar el resultado completo de `sp_helptext` a `procedimientos/<base>/<esquema>/<SP>.sql`.
-   Si el SP tiene líneas de más de 255 caracteres, usar la consulta `OBJECT_DEFINITION` comentada
-   al final del mismo archivo.
+`sp_helptext` corta las líneas de más de 255 caracteres: si el SP las tiene, usar `OBJECT_DEFINITION`
+(comentado al final de cada SQL de extracción) con "Conservar CR/LF al copiar" activado en SSMS.
+Sin Python pero con `sqlcmd`: `governance/scripts/extraer-definiciones.ps1 -Servidor <servidor>`.
 
-**En lote (Windows + sqlcmd):**
+Después de cualquiera de los dos caminos: `npm run generar`.
 
-```powershell
-./governance/scripts/extraer-definiciones.ps1 -Servidor <servidor> -Base mod_rep
-```
+## 2. Revisar lo generado
 
-**En lote (SSMS, sin sqlcmd):** ejecutar `sql/01-extraccion/_lotes/<base>.sql`, que además informa qué SP
-del catálogo ya no existen (`existe = 0`) y su fecha de modificación.
-
-Después:
-
-```bash
-npm run generar
-```
-
-La ficha aparece en `diccionario/procedimientos/<base>/<esquema>/<SP>.md`.
-
-## 2. Validar con el motor → ✅ validado
-
-1. Ejecutar `sql/02-dependencias/<base>.sql` en SSMS.
-2. *Guardar resultados como…* → `fuente/dependencias/<base>.csv`, **con encabezados**
-   (Herramientas › Opciones › Resultados a cuadrícula › "Incluir encabezados de columna al copiar o guardar").
-3. `npm run generar`.
-
-Los SP sin error del motor pasan a ✅; las columnas vistas por las dos fuentes, a "confirmada".
+- La ficha de cada SP (`diccionario/procedimientos/…`) contra su cuerpo: skill
+  [dic-analisis-dependencias](../../skills/dic-analisis-dependencias/SKILL.md).
+- Los hallazgos nuevos: `npm run verificar` los lista; el informe completo por origen está en
+  [hallazgos](../evidence/quality/hallazgos.md). Qué hacer con cada regla: [calidad](../data/quality.md).
+- Para ver una tabla con datos reales: `sql/03-tablas/<base>/<esquema>/<tabla>.sql`; para las tablas de un SP
+  con solo las columnas que usa: `sql/05-por-procedimiento/<base>/<esquema>/<SP>.sql`.
 
 ## 3. Documentar el significado
 
-En la ficha del SP, debajo de `<!-- generado:fin -->`: propósito, reglas de negocio, notas.
-En la ficha de cada tabla: descripción y una línea por columna `` - `COLUMNA`: descripción ``.
-Ver la skill [dic-fichas](../../skills/dic-fichas/SKILL.md).
+Debajo de `<!-- generado:fin -->` en cada ficha: propósito, reglas de negocio y descripción de columnas.
+Cómo, sin que la regeneración lo pise: skill [dic-fichas](../../skills/dic-fichas/SKILL.md).
 
-## 4. Estructura y perfil de las tablas
-
-`python herramientas/bd.py estructura` guarda tipos y columnas reales en `fuente/estructura/<base>.csv`:
-la ficha de tabla muestra el tipo de cada columna y el validador marca `tabla-inexistente` y
-`columna-inexistente`.
-
-`sql/05-por-procedimiento/<base>/<esquema>/<SP>.sql` trae, para un SP, una muestra de cada tabla que usa
-con solo sus columnas, y las columnas que devuelve sin ejecutarlo.
-
-`sql/03-tablas/<base>/<esquema>/<tabla>.sql` trae, para cada tabla descubierta: estructura real, tamaño,
-muestra de 100 filas y nulos/distintos de cada columna usada. Útil para escribir descripciones con datos,
-no con suposiciones.
-
-## 5. Cerrar
+## 4. Cerrar
 
 ```bash
-npm run generar && npm run verificar && npm test
+npm run generar && npm run verificar && npm test && npm run test:py
 ```
 
-Commit con el cuerpo, la ficha y lo regenerado juntos. Ver [convenciones](./conventions.md).
+Commit con los cuerpos, las fichas y lo regenerado juntos ([convenciones](./conventions.md)).

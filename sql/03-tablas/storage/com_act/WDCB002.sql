@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'hcodrel', N'HFECPRO', N'htipcod') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'hcodrel', N'HFECPRO', N'HSALCAPMN_CC', N'HSALCAPMN_SC', N'HSALVENMN_CC', N'HSALVENMN_SC', N'htipcod') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'com_act' AND c.TABLE_NAME = N'WDCB002'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,7 +20,7 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'com_act.WDCB002') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [hcodrel], [HFECPRO], [htipcod]
+SELECT TOP (100) [hcodrel], [HFECPRO], [HSALCAPMN_CC], [HSALCAPMN_SC], [HSALVENMN_CC], [HSALVENMN_SC], [htipcod]
 FROM [storage].[com_act].[WDCB002] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
@@ -28,5 +28,9 @@ SELECT
     COUNT(*) AS filas,
     SUM(CASE WHEN [hcodrel] IS NULL THEN 1 ELSE 0 END) AS [nulos_hcodrel], COUNT(DISTINCT [hcodrel]) AS [distintos_hcodrel],
     SUM(CASE WHEN [HFECPRO] IS NULL THEN 1 ELSE 0 END) AS [nulos_HFECPRO], COUNT(DISTINCT [HFECPRO]) AS [distintos_HFECPRO],
+    SUM(CASE WHEN [HSALCAPMN_CC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HSALCAPMN_CC], COUNT(DISTINCT [HSALCAPMN_CC]) AS [distintos_HSALCAPMN_CC],
+    SUM(CASE WHEN [HSALCAPMN_SC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HSALCAPMN_SC], COUNT(DISTINCT [HSALCAPMN_SC]) AS [distintos_HSALCAPMN_SC],
+    SUM(CASE WHEN [HSALVENMN_CC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HSALVENMN_CC], COUNT(DISTINCT [HSALVENMN_CC]) AS [distintos_HSALVENMN_CC],
+    SUM(CASE WHEN [HSALVENMN_SC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HSALVENMN_SC], COUNT(DISTINCT [HSALVENMN_SC]) AS [distintos_HSALVENMN_SC],
     SUM(CASE WHEN [htipcod] IS NULL THEN 1 ELSE 0 END) AS [nulos_htipcod], COUNT(DISTINCT [htipcod]) AS [distintos_htipcod]
 FROM [storage].[com_act].[WDCB002] WITH (NOLOCK);

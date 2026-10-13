@@ -14,21 +14,13 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
+-- storage.com_act.HBMOV003 · lee · 8 columna(s)
+SELECT TOP (100) [HFECPRO], [codigo_bt], [filtro2], [filtro3], [filtro4], [filtro5], [filtro6], [filtro7]
+FROM [storage].[com_act].[HBMOV003] WITH (NOLOCK);
 
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- STORAGE.com_act.HBMOV003 · lee · 10 columna(s)
-SELECT TOP (100) [HFECPRO], [codigo_bt], [filtro2], [filtro3], [filtro4], [filtro5], [filtro6], [filtro7], [mm], [yyyy]
-FROM [STORAGE].[com_act].[HBMOV003] WITH (NOLOCK);
-
--- STORAGE.com_act.HBMOV004 · lee · 3 columna(s)
+-- storage.com_act.HBMOV004 · lee · 3 columna(s)
 SELECT TOP (100) [CODIGO_BT], [FLAG_PAGADOR], [HFECPRO]
-FROM [STORAGE].[com_act].[HBMOV004] WITH (NOLOCK);
+FROM [storage].[com_act].[HBMOV004] WITH (NOLOCK);
 
 -- storage.gpr.VPPH001 · lee · 2 columna(s)
 SELECT TOP (100) [HCODBT], [HNUMDOC]

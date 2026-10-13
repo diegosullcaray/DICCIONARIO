@@ -6,6 +6,7 @@
 //
 //   governance/agents/NN-<nombre>.md      → .claude/agents/<name del frontmatter>.md
 //   governance/skills/<skill>/SKILL.md    → .claude/skills/<skill>/SKILL.md
+//   frontmatter de cada SKILL.md          → .agents/skills.json (índice para otras herramientas)
 //
 // Uso: node governance/scripts/sincronizar-agentes.mjs [--check]
 
@@ -39,11 +40,20 @@ for (const archivo of listarArchivos(join(RAIZ, 'governance', 'agents'), (r) => 
   const destino = join(RAIZ, '.claude', 'agents', `${name}.md`);
   salida.escribir(destino, conAviso(reubicar(texto, archivo, destino), `governance/agents/${basename(archivo)}`));
 }
+const indice = [];
 for (const archivo of listarArchivos(join(RAIZ, 'governance', 'skills'), (r) => r.endsWith('SKILL.md'))) {
   const skill = basename(dirname(archivo));
+  const fm = readFileSync(archivo, 'utf8').replace(/\r\n/g, '\n').match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+  const campo = (k) => fm.match(new RegExp(`^${k}:\\s*(.+)$`, 'm'))?.[1].trim();
+  if (campo('name') !== skill) throw new Error(`${archivo}: "name" del frontmatter debe ser "${skill}" (el nombre de la carpeta)`);
+  indice.push({ name: skill, path: `governance/skills/${skill}/SKILL.md`, description: campo('description') });
   const destino = join(RAIZ, '.claude', 'skills', skill, 'SKILL.md');
   salida.escribir(destino, conAviso(reubicar(readFileSync(archivo, 'utf8').replace(/\r\n/g, '\n'), archivo, destino), `governance/skills/${skill}/SKILL.md`));
 }
+salida.escribir(join(RAIZ, '.agents', 'skills.json'), `${JSON.stringify({
+  nota: 'Generado por governance/scripts/sincronizar-agentes.mjs desde el frontmatter de cada SKILL.md. No editar.',
+  skills: indice,
+}, null, 2)}\n`);
 salida.podar(join(RAIZ, '.claude', 'agents'), (r) => r.endsWith('.md'));
 salida.podar(join(RAIZ, '.claude', 'skills'), (r) => r.endsWith('SKILL.md'));
 process.exitCode = salida.informe('Agentes y skills en .claude/');

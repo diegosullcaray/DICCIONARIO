@@ -14,9 +14,9 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_act.wjas001 · lee · 4 columna(s)
+-- storage.com_act.WJAS001 · lee · 4 columna(s)
 SELECT TOP (100) [HCODREL], [HFECPRO], [HNUMCLI], [HTIPCOD]
-FROM [storage].[com_act].[wjas001] WITH (NOLOCK);
+FROM [storage].[com_act].[WJAS001] WITH (NOLOCK);
 
 -- storage.com_act.wjas005 · lee · 7 columna(s)
 SELECT TOP (100) [HCLISAL1M], [HCLISAL3M], [HCLIVENC], [HCODREL], [HFECPRO], [HRATRET], [HTIPCOD]

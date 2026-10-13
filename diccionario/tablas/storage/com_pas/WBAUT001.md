@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_pas` · 2 columna(s) usadas · 1 procedimiento(s) · tabla con 88 columna(s) en la base
+Base `storage` · esquema `com_pas` · 8 columna(s) usadas · 1 procedimiento(s) · tabla con 88 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_pas/WBAUT001.sql](../../../../sql/03-tablas/storage/com_pas/WBAUT001.sql)
 
@@ -11,8 +11,14 @@ Consultas listas: [sql/03-tablas/storage/com_pas/WBAUT001.sql](../../../../sql/0
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
+| `CANAL` | varchar(3) not null | 🧩 por estructura | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
+| `HAOTASA` | numeric(9,6) | 🧩 por estructura | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
 | `HCOFIC` | smallint | 🎯 exacta | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
+| `HDMODU` | varchar(50) | 🧩 por estructura | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
 | `HFECPRO` | date not null | ✅ confirmada | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
+| `HMAPER` | numeric(17,2) | 🧩 por estructura | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
+| `HRENOV` | varchar(50) | 🧩 por estructura | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
+| `HTMAXI` | numeric(9,6) | 🧩 por estructura | [GDCGEST_PASIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | — |
 
 ### Procedimientos que la usan
 

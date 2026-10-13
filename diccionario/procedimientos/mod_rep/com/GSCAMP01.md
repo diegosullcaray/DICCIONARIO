@@ -30,17 +30,12 @@
 | 6 | `@fec` | date | null |  | — |
 | 7 | `@CONFIG` | varchar(100) | 'RDA' |  | — |
 
-### Tablas y columnas (8)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TCADS](../../../tablas/mod_rep/rep/TCADS.md) | — | — | motor |
-| [mod_rep.rep.TFECMES](../../../tablas/mod_rep/rep/TFECMES.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.HACA001](../../../tablas/storage/com_act/HACA001.md) | lee | `HCODASE`, `HDCARGO`, `HFECPRO`, `HPART` | estatico + motor |
 | [storage.com_act.SABT001](../../../tablas/storage/com_act/SABT001.md) | lee | `SCODREL`, `SDESVAL`, `SFECPRO`, `SINDPDM`, `STIPCOD`, `SVAL` | estatico + motor |
-| [storage.com.FCAMPFEC2](../../../tablas/storage/com/FCAMPFEC2.md) | — | — | motor |
 | [storage.gpr.HPPC001](../../../tablas/storage/gpr/HPPC001.md) | lee | `hcodbt`, `HNUMDOC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -74,6 +69,16 @@
 - Temporales: `#tmpAse`, `#tmpDATOSPAR`, `#tmpDatos`, `#tmpFec`, `#tmpNoPiv`, `#tmpdesc`
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `storage.com.FCAMPFEC2`
+- `mod_rep.rep.TCADS` (tipo de tabla)
+- `mod_rep.rep.TFECMES` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

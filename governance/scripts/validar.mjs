@@ -4,25 +4,40 @@
 //   1. Hallazgos de calidad del modelo (fuente, cuerpos, motor)
 //   2. Artefactos generados al día (extracción, diccionario, agentes)
 //   3. Enlaces Markdown internos que no apuntan a nada
-//   4. Índice de skills (.agents/skills.json) igual al frontmatter de cada SKILL.md
+//   4. Rutas que solo difieren en mayúsculas (chocan en Windows)
 //
-// Uso: node governance/scripts/validar.mjs [--check] [--estricto] [--json] [--detalle]
-//   --check     falla (exit 1) si hay errores
-//   --estricto  falla también con avisos
-//   --detalle   lista todos los hallazgos, no solo el resumen
+// Uso: node governance/scripts/validar.mjs [opciones]
+//   --check                falla (exit 1) ante errores NUEVOS (fuera de la línea base) o estructurales
+//   --estricto             falla también con avisos nuevos
+//   --detalle              lista todos los hallazgos, incluidos informativos y los de la línea base
+//   --sin-linea-base       ignora la línea base: muestra y cuenta todo como nuevo
+//   --guardar-linea-base   congela los errores y avisos actuales en governance/linea-base.json (deliberado: ADR-0006)
+//   --json
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { argumentos, listarArchivos, RAIZ, rel } from './lib/catalogo.mjs';
-import { construirModelo } from './lib/modelo.mjs';
+import { claveHallazgo, construirModelo, RUTA_LINEA_BASE } from './lib/modelo.mjs';
 
 const { flags } = argumentos();
-const resultado = { hallazgos: [], generados: [], enlaces: [], skills: [] };
+const resultado = { hallazgos: [], generados: [], enlaces: [], rutas: [], lineaBaseVencida: [] };
 
 // ── 1. Hallazgos
 const modelo = construirModelo();
-resultado.hallazgos = modelo.hallazgos;
+if (flags.has('guardar-linea-base')) {
+  const congelar = modelo.hallazgos.filter((h) => h.nivel !== 'info').map(claveHallazgo).sort();
+  writeFileSync(RUTA_LINEA_BASE, `${JSON.stringify({
+    nota: 'Hallazgos conocidos y aceptados: npm run verificar solo falla por los nuevos. Ver ADR-0006. Regenerar solo de forma deliberada.',
+    hallazgos: congelar,
+  }, null, 2)}\n`);
+  console.log(`✓ Línea base: ${congelar.length} hallazgo(s) congelados en ${rel(RUTA_LINEA_BASE)}`);
+  process.exit(0);
+}
+const sinLineaBase = flags.has('sin-linea-base');
+resultado.hallazgos = modelo.hallazgos.map((h) => ({ ...h, enLineaBase: !sinLineaBase && h.enLineaBase }));
+// Una entrada de la línea base que ya no aparece se corrigió: hay que sacarla, si no, esconde una regresión futura.
+resultado.lineaBaseVencida = sinLineaBase ? [] : modelo.lineaBaseVencida;
 
 // ── 2. Generados al día
 for (const script of ['generar-extraccion.mjs', 'generar-diccionario.mjs', 'sincronizar-agentes.mjs']) {
@@ -44,31 +59,24 @@ for (const archivo of markdown) {
   }
 }
 
-// ── 4. Índice de skills
-const indice = JSON.parse(readFileSync(join(RAIZ, '.agents', 'skills.json'), 'utf8'));
-const enIndice = new Map(indice.skills.map((s) => [s.name, s]));
-for (const archivo of listarArchivos(join(RAIZ, 'governance', 'skills'), (r) => r.endsWith('SKILL.md'))) {
-  const fm = readFileSync(archivo, 'utf8').replace(/\r\n/g, '\n').match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
-  const name = fm.match(/^name:\s*(.+)$/m)?.[1].trim();
-  const description = fm.match(/^description:\s*(.+)$/m)?.[1].trim();
-  const entrada = enIndice.get(name);
-  if (!entrada) resultado.skills.push(`${rel(archivo)}: "${name}" no está en .agents/skills.json`);
-  else {
-    if (entrada.description !== description) resultado.skills.push(`${name}: la descripción de .agents/skills.json no coincide con su SKILL.md`);
-    if (entrada.path !== rel(archivo)) resultado.skills.push(`${name}: path ${entrada.path} ≠ ${rel(archivo)}`);
-    enIndice.delete(name);
-  }
+// ── 4. Rutas que chocan en Windows (el sistema de archivos no distingue mayúsculas)
+const porMinusculas = new Map();
+for (const archivo of listarArchivos(RAIZ)) {
+  const k = rel(archivo).toLowerCase();
+  porMinusculas.set(k, [...(porMinusculas.get(k) ?? []), rel(archivo)]);
 }
-for (const name of enIndice.keys()) resultado.skills.push(`${name}: figura en .agents/skills.json y no tiene carpeta`);
+for (const rutas of porMinusculas.values()) if (rutas.length > 1) resultado.rutas.push(rutas.join(' ≡ '));
 
 // ── Informe
 if (flags.has('json')) { console.log(JSON.stringify(resultado, null, 2)); }
 else {
-  const cuenta = (n) => resultado.hallazgos.filter((h) => h.nivel === n).length;
+  const cuenta = (n, f = () => true) => resultado.hallazgos.filter((h) => h.nivel === n && f(h)).length;
+  const nuevo = (h) => !h.enLineaBase;
   console.log(`Hallazgos: ${cuenta('error')} error(es) · ${cuenta('aviso')} aviso(s) · ${cuenta('info')} info`);
-  const lista = flags.has('detalle') ? resultado.hallazgos : resultado.hallazgos.filter((h) => h.nivel !== 'info').slice(0, 25);
-  for (const h of lista) console.log(`  ${h.nivel.padEnd(5)} ${h.regla.padEnd(26)} ${h.objeto} — ${h.detalle}`);
-  if (!flags.has('detalle') && resultado.hallazgos.length > lista.length) console.log('  … ver todos con --detalle o en governance/docs/evidence/quality/hallazgos.md');
+  console.log(`  nuevos (fuera de la línea base): ${cuenta('error', nuevo)} error(es) · ${cuenta('aviso', nuevo)} aviso(s)`);
+  const lista = flags.has('detalle') ? resultado.hallazgos : resultado.hallazgos.filter((h) => h.nivel !== 'info' && nuevo(h)).slice(0, 25);
+  for (const h of lista) console.log(`  ${h.nivel.padEnd(5)} ${h.origen.padEnd(11)} ${h.regla.padEnd(28)} ${h.objeto} — ${h.detalle}${h.enLineaBase ? ' [línea base]' : ''}`);
+  if (!flags.has('detalle')) console.log('  … todos con --detalle, o por origen en governance/docs/evidence/quality/hallazgos.md');
   const bloque = (titulo, items, como) => {
     console.log(`${items.length ? '✗' : '✓'} ${titulo}${items.length ? `: ${items.length}` : ''}`);
     for (const i of items.slice(0, 15)) console.log(`  · ${i}`);
@@ -76,10 +84,12 @@ else {
   };
   bloque('Generados al día', resultado.generados, 'npm run generar');
   bloque('Enlaces internos', resultado.enlaces);
-  bloque('Índice de skills', resultado.skills, 'actualizar .agents/skills.json');
+  bloque('Rutas sin choque de mayúsculas', resultado.rutas, 'unificar la grafía (los generados usan la de fuente/estructura)');
+  bloque('Línea base vigente', resultado.lineaBaseVencida, 'ya corregidos: npm run verificar -- --guardar-linea-base');
 }
 
-const errores = resultado.hallazgos.filter((h) => h.nivel === 'error').length
-  + resultado.generados.length + resultado.enlaces.length + resultado.skills.length;
-const avisos = resultado.hallazgos.filter((h) => h.nivel === 'aviso').length;
+const errores = resultado.hallazgos.filter((h) => h.nivel === 'error' && !h.enLineaBase).length
+  + resultado.generados.length + resultado.enlaces.length + resultado.rutas.length
+  + resultado.lineaBaseVencida.length;
+const avisos = resultado.hallazgos.filter((h) => h.nivel === 'aviso' && !h.enLineaBase).length;
 if (flags.has('check') && (errores || (flags.has('estricto') && avisos))) process.exitCode = 1;

@@ -14,9 +14,9 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- LS_FCMIS_REP.FCMIS_REP.dbo.ControlCargaData · lee · 6 columna(s)
+-- FCMIS_REP.dbo.ControlCargaData · lee · 6 columna(s)
 SELECT TOP (100) [BitAct], [FechaRep], [FechaRepAnt], [descripcion], [fechaAct], [id]
-FROM [LS_FCMIS_REP].[FCMIS_REP].[dbo].[ControlCargaData] WITH (NOLOCK);
+FROM [FCMIS_REP].[dbo].[ControlCargaData] WITH (NOLOCK);
 
 -- storage.ref.RCALEN001 · lee · 2 columna(s)
 SELECT TOP (100) [RDIAFER], [RFEC]
@@ -26,6 +26,6 @@ FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 SELECT TOP (100) [HCODPRO], [HDESLOG], [HDESPRO], [HSTATUS], [HTIPPRO]
 FROM [strategos].[etl].[ABPCONF01] WITH (NOLOCK);
 
--- strategos.etl.ABPEVLOG01 · lee · 6 columna(s)
-SELECT TOP (100) [HCODPRO], [HDESPRO], [HDESTAD], [HFECLOG], [HFECPRO], [dd]
+-- strategos.etl.ABPEVLOG01 · lee · 5 columna(s)
+SELECT TOP (100) [HCODPRO], [HDESPRO], [HDESTAD], [HFECLOG], [HFECPRO]
 FROM [strategos].[etl].[ABPEVLOG01] WITH (NOLOCK);

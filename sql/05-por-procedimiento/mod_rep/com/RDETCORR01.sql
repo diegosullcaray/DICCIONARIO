@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.HCMC001 · lee · 7 columna(s)
 SELECT TOP (100) [HCAUSAL], [HCODIGOCB], [HFECHAMOV], [HFECPRO], [HNOMBREPTO], [HTIPOTRN], [HVALORTX]
 FROM [storage].[com_act].[HCMC001] WITH (NOLOCK);
@@ -30,10 +22,10 @@ FROM [storage].[com_act].[HCMC001] WITH (NOLOCK);
 SELECT TOP (100) [HCODREDEXT], [HCODSUC], [HESTCORR], [HFECINSTALA], [HFECPRO]
 FROM [storage].[com_act].[HCMC004] WITH (NOLOCK);
 
--- storage.ref.rcalen001 · lee · 2 columna(s)
+-- storage.ref.RCALEN001 · lee · 2 columna(s)
 SELECT TOP (100) [RDIAFER], [rfec]
-FROM [storage].[ref].[rcalen001] WITH (NOLOCK);
+FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
--- storage.ref.vjercor03 · lee · 4 columna(s)
+-- storage.ref.VJERCOR03 · lee · 4 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODMAT], [RCODTER], [rcodage]
-FROM [storage].[ref].[vjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR03] WITH (NOLOCK);

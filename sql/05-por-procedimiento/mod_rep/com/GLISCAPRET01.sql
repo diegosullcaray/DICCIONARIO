@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com.VLDRD01 · lee · 17 columna(s)
 SELECT TOP (100) [HCODOPE], [HCODSEC], [HCTACLI], [HDCLI], [HDIAATR], [HDREACC], [HDSITCRED], [HFECPRO], [HFFINVIG], [HFINIVIG], [HHORPRO], [HNUMDOC], [HPAIS], [HSALCAPMN], [HTIPDOC], [HTIPOPE], [HTIPSBS]
 FROM [storage].[com].[VLDRD01] WITH (NOLOCK);

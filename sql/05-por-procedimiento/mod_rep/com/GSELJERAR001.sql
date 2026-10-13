@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.HCMC001 · lee · 4 columna(s)
 SELECT TOP (100) [HESTADOTX], [HFECPRO], [HNOMBREPTO], [HNOMTITCB]
 FROM [storage].[com_act].[HCMC001] WITH (NOLOCK);
@@ -34,6 +26,6 @@ FROM [storage].[ref].[REGCIIU003] WITH (NOLOCK);
 SELECT TOP (100) [RDESDEP], [RDESDIS], [RDESPRO]
 FROM [storage].[ref].[REUBI01] WITH (NOLOCK);
 
--- storage.ref.vjercor03 · lee · 4 columna(s)
+-- storage.ref.VJERCOR03 · lee · 4 columna(s)
 SELECT TOP (100) [RDESAGE], [RDESCOR], [RDESMAT], [RDESTER]
-FROM [storage].[ref].[vjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR03] WITH (NOLOCK);

@@ -23,7 +23,9 @@ npm test            # verde
 npm run hallazgos   # leer los nuevos
 ```
 
-1. **Hallazgos nuevos**: cada error tiene arreglo; cada aviso nuevo está explicado en la ficha.
+1. **Hallazgos nuevos** (fuera de la línea base): los de origen `repositorio` y `analisis` se arreglan o se
+   explican en la ficha; los de `produccion` y `catalogo` se documentan y se entregan a su dueño. La línea base
+   solo se regenera en un commit propio y justificado ([ADR-0006](../../governance/docs/architecture/adr/ADR-0006-linea-base-de-hallazgos.md)).
 2. **Prosa vs generado**: si cambió el bloque de una ficha (tablas, firma), releer *Propósito* y *Reglas*.
 3. **Parámetros**: `parametros-de-mas` / `parametros-faltantes` son errores de contrato: escalar al dueño
    del backend, no "arreglar" `reportes.json` a mano.

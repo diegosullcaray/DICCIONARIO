@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 2 columna(s) usadas · 1 procedimiento(s) · tabla con 29 columna(s) en la base
+Base `storage` · esquema `com_act` · 4 columna(s) usadas · 1 procedimiento(s) · tabla con 29 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/WIMR001.sql](../../../../sql/03-tablas/storage/com_act/WIMR001.sql)
 
@@ -12,7 +12,9 @@ Consultas listas: [sql/03-tablas/storage/com_act/WIMR001.sql](../../../../sql/03
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `haseoper` | ⚠️ no existe | 🎯 exacta | [RSIMR01](../../../procedimientos/mod_rep/com/RSIMR01.md) | — |
+| `HDESPROD` | varchar(150) | 🧩 por estructura | [RSIMR01](../../../procedimientos/mod_rep/com/RSIMR01.md) | — |
 | `hfecpro` | date | 🎯 exacta | [RSIMR01](../../../procedimientos/mod_rep/com/RSIMR01.md) | — |
+| `HTIPO_IS` | varchar(50) | 🧩 por estructura | [RSIMR01](../../../procedimientos/mod_rep/com/RSIMR01.md) | — |
 
 ### Procedimientos que la usan
 

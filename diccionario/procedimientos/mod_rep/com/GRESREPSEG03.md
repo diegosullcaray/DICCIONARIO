@@ -25,11 +25,10 @@
 | 1 | `@tip_cod` | int | — |  | `tip_cod` |
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 
-### Tablas y columnas (2)
+### Tablas y columnas (1)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
 | [storage.com_seg.SDSF001](../../../tablas/storage/com_seg/SDSF001.md) | lee | `SFECPRO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -49,6 +48,12 @@
 ### Observaciones del análisis
 
 - Temporales: `#MaxCodVar`, `#ResumenSeguro3`, `#cab3`, `#tmpDATOSSOPC3S`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
 
 ### Validación con el motor
 

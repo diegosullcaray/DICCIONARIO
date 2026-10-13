@@ -14,13 +14,13 @@ Consultas listas: [sql/03-tablas/storage/com_act/HCMC001.sql](../../../../sql/03
 | `HCAUSAL` | varchar(255) | ✅ confirmada | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
 | `HCODIGOCB` | int | ✅ confirmada | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
 | `HESTADOTX` | varchar(255) | ≈ inferida | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [GSELJERAR001](../../../procedimientos/mod_rep/com/GSELJERAR001.md) | — |
-| `HFECHAMOV` | varchar(255) | 🗄️ motor | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
+| `HFECHAMOV` | varchar(255) | ✅ confirmada | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
 | `hfecpro` | varchar(255) | ✅ confirmada | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [GSELJERAR001](../../../procedimientos/mod_rep/com/GSELJERAR001.md), [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md), [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
 | `HMUNICB` | varchar(255) | ✅ confirmada | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
 | `HNOMBREPTO` | varchar(255) | ✅ confirmada | [GSELJERAR001](../../../procedimientos/mod_rep/com/GSELJERAR001.md), [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md), [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
 | `HNOMTITCB` | varchar(255) | ≈ inferida | [GSELJERAR001](../../../procedimientos/mod_rep/com/GSELJERAR001.md) | — |
-| `HTIPOTRN` | varchar(255) | 🗄️ motor | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
-| `HVALORTX` | float | 🗄️ motor | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
+| `HTIPOTRN` | varchar(255) | ✅ confirmada | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
+| `HVALORTX` | float | ✅ confirmada | [RDETCORR01](../../../procedimientos/mod_rep/com/RDETCORR01.md) | — |
 
 ### Procedimientos que la usan
 

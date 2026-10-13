@@ -9,7 +9,6 @@
 | Estado | ✅ validado |
 | Cuerpo | [procedimientos/mod_rep/com/GSMODAGEN01.sql](../../../../procedimientos/mod_rep/com/GSMODAGEN01.sql) |
 | Extracción | [sql/01-extraccion/mod_rep/com/GSMODAGEN01.sql](../../../../sql/01-extraccion/mod_rep/com/GSMODAGEN01.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/mod_rep/com/GSMODAGEN01.sql](../../../../sql/05-por-procedimiento/mod_rep/com/GSMODAGEN01.sql) |
 | Consumido por el front MIS | no (según la última traza) |
 
 ### Reportes que lo ejecutan (1)
@@ -27,15 +26,9 @@
 | 3 | `@tipmeta` | int | 1 |  | — |
 | 4 | `@fec` | date | null |  | — |
 
-### Tablas y columnas (3)
+### Tablas y columnas (0)
 
-| Tabla | Operación | Columnas usadas | Fuente |
-|---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TCADS](../../../tablas/mod_rep/rep/TCADS.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-
-`≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
+No se detectaron tablas.
 
 ### Procedimientos y funciones invocados
 
@@ -52,6 +45,14 @@
 
 - Temporales: `#tmpDATOS`, `#tmpVariables`
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TCADS` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

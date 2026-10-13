@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `STORAGE` · esquema `com_act` · 3 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
+Base `storage` · esquema `com_act` · 3 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/STORAGE/com_act/HBMOV004.sql](../../../../sql/03-tablas/STORAGE/com_act/HBMOV004.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/HBMOV004.sql](../../../../sql/03-tablas/storage/com_act/HBMOV004.sql)
 
 ### Columnas usadas
 

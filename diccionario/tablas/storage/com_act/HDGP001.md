@@ -17,8 +17,8 @@ Consultas listas: [sql/03-tablas/storage/com_act/HDGP001.sql](../../../../sql/03
 | `HDNIP` | varchar(20) not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
 | `HDOCC` | varchar(20) not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
 | `HEJEC` | int not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
-| `HESTG` | varchar(20) not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md) | — |
-| `HESTI` | varchar(20) not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md) | — |
+| `HESTG` | varchar(20) not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md), [RMORAGP01](../../../procedimientos/mod_rep/com/RMORAGP01.md) | — |
+| `HESTI` | varchar(20) not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md), [RMORAGP01](../../../procedimientos/mod_rep/com/RMORAGP01.md) | — |
 | `HFALG` | date | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
 | `HFECPRO` | date not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md), [RMORAGP01](../../../procedimientos/mod_rep/com/RMORAGP01.md), [RSMONEFE02](../../../procedimientos/mod_rep/com/RSMONEFE02.md), [RSMONEFER02](../../../procedimientos/mod_rep/com/RSMONEFER02.md) | — |
 | `HINST` | int not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
@@ -26,7 +26,7 @@ Consultas listas: [sql/03-tablas/storage/com_act/HDGP001.sql](../../../../sql/03
 | `HNCTA` | int not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
 | `HNOMC` | varchar(80) not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
 | `HNOMG` | varchar(80) not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RSMONEFE02](../../../procedimientos/mod_rep/com/RSMONEFE02.md), [RSMONEFER02](../../../procedimientos/mod_rep/com/RSMONEFER02.md) | — |
-| `HNROG` | int not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md), [RSMONEFE02](../../../procedimientos/mod_rep/com/RSMONEFE02.md), [RSMONEFER02](../../../procedimientos/mod_rep/com/RSMONEFER02.md) | — |
+| `HNROG` | int not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RINCEGP01](../../../procedimientos/mod_rep/com/RINCEGP01.md), [RMORAGP01](../../../procedimientos/mod_rep/com/RMORAGP01.md), [RSMONEFE02](../../../procedimientos/mod_rep/com/RSMONEFE02.md), [RSMONEFER02](../../../procedimientos/mod_rep/com/RSMONEFER02.md) | — |
 | `HOPER` | int not null | ✅ confirmada | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md), [RSMONEFE02](../../../procedimientos/mod_rep/com/RSMONEFE02.md), [RSMONEFER02](../../../procedimientos/mod_rep/com/RSMONEFER02.md) | — |
 | `HROWID` | int not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |
 | `HSTOP` | smallint not null | 🗄️ motor | [DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | — |

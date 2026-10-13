@@ -28,16 +28,14 @@
 | 4 | `@pagen` | int | 1 |  | `pagen` |
 | 5 | `@tipo` | varchar(250) | — |  | `tipo` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.HCMC001](../../../tablas/storage/com_act/HCMC001.md) | lee | `HCAUSAL`, `HCODIGOCB`, `HFECHAMOV`, `HFECPRO`, `HNOMBREPTO`, `HTIPOTRN`, `HVALORTX` | estatico + motor |
 | [storage.com_act.HCMC004](../../../tablas/storage/com_act/HCMC004.md) | lee | `HCODREDEXT`, `HCODSUC`, `HESTCORR`, `HFECINSTALA`, `HFECPRO` | estatico + motor |
-| [storage.ref.rcalen001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `rfec` | estatico + motor |
-| [storage.ref.vjercor03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `rcodage`, `RCODCOR`, `RCODMAT`, `RCODTER` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `rfec` | estatico + motor |
+| [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `rcodage`, `RCODCOR`, `RCODMAT`, `RCODTER` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -55,6 +53,13 @@
 - ⚠️ Columna sin resolver `hfecpro` (¿storage.com_act.HCMC001?)
 - ⚠️ Columna sin resolver `HTIPOTRN` (¿storage.com_act.HCMC001 o storage.ref.vjercor03?)
 - ⚠️ Columna sin resolver `HVALORTX` (¿storage.com_act.HCMC001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

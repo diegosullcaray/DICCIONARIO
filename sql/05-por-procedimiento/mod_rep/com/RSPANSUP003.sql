@@ -14,10 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.api.FUSECDIV01 · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [storage].[api].[FUSECDIV01] WITH (NOLOCK);
-
 -- storage.com_act.HDSC001 · lee · 4 columna(s)
 SELECT TOP (100) [HCARGO], [HFECPRO], [HPERSUP], [HREG]
 FROM [storage].[com_act].[HDSC001] WITH (NOLOCK);
@@ -26,12 +22,12 @@ FROM [storage].[com_act].[HDSC001] WITH (NOLOCK);
 SELECT TOP (100) [HDESREL], [HFECPRO], [HPOSTCOORPDM], [HPOSTGREG], [HPOSTJAGRO], [HPOSTJINCL], [HPRECOORPDM], [HPREGREG], [HPREJAGRO], [HPREJINCL]
 FROM [storage].[com_act].[HMSUP001] WITH (NOLOCK);
 
--- storage.com_act.SDAS006 · lee · 6 columna(s)
-SELECT TOP (100) [SCARGO], [SCODAGR], [SFECPRO], [SOPECONF], [SOPEPRE], [SSUCCLI]
+-- storage.com_act.SDAS006 · lee · 9 columna(s)
+SELECT TOP (100) [SCARGO], [SCODAGR], [SFECPRO], [SOPECONF], [SOPEPOST], [SOPEPRE], [SOPEREGR], [SOPESEAL], [SSUCCLI]
 FROM [storage].[com_act].[SDAS006] WITH (NOLOCK);
 
--- storage.ref.RCALEN001 · lee · 4 columna(s)
-SELECT TOP (100) [RDIAFER], [RFEC], [RFECTXT], [day]
+-- storage.ref.RCALEN001 · lee · 3 columna(s)
+SELECT TOP (100) [RDIAFER], [RFEC], [RFECTXT]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
 -- storage.ref.REAM001 · lee · 2 columna(s)

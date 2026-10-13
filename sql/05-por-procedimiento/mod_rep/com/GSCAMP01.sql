@@ -14,22 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TCADS · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TCADS] WITH (NOLOCK);
-
--- mod_rep.rep.TFECMES · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TFECMES] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.HACA001 · lee · 4 columna(s)
 SELECT TOP (100) [HCODASE], [HDCARGO], [HFECPRO], [HPART]
 FROM [storage].[com_act].[HACA001] WITH (NOLOCK);
@@ -37,10 +21,6 @@ FROM [storage].[com_act].[HACA001] WITH (NOLOCK);
 -- storage.com_act.SABT001 · lee · 6 columna(s)
 SELECT TOP (100) [SCODREL], [SDESVAL], [SFECPRO], [SINDPDM], [STIPCOD], [SVAL]
 FROM [storage].[com_act].[SABT001] WITH (NOLOCK);
-
--- storage.com.FCAMPFEC2 · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [storage].[com].[FCAMPFEC2] WITH (NOLOCK);
 
 -- storage.gpr.HPPC001 · lee · 2 columna(s)
 SELECT TOP (100) [HNUMDOC], [hcodbt]

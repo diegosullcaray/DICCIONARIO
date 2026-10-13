@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 6 columna(s) usadas · 1 procedimiento(s) · tabla con 17 columna(s) en la base
+Base `storage` · esquema `com_act` · 9 columna(s) usadas · 1 procedimiento(s) · tabla con 17 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/SDAS006.sql](../../../../sql/03-tablas/storage/com_act/SDAS006.sql)
 
@@ -15,7 +15,10 @@ Consultas listas: [sql/03-tablas/storage/com_act/SDAS006.sql](../../../../sql/03
 | `SCODAGR` | int | 🎯 exacta | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
 | `SFECPRO` | date | 🎯 exacta | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
 | `SOPECONF` | int | 🎯 exacta | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
+| `SOPEPOST` | int | 🧩 por estructura | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
 | `SOPEPRE` | int | 🎯 exacta | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
+| `SOPEREGR` | int | 🧩 por estructura | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
+| `SOPESEAL` | int | 🧩 por estructura | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
 | `SSUCCLI` | numeric(3,0) | 🎯 exacta | [RSPANSUP003](../../../procedimientos/mod_rep/com/RSPANSUP003.md) | — |
 
 ### Procedimientos que la usan

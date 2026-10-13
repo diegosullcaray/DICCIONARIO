@@ -34,7 +34,7 @@
 | [storage.com_act.RETP006](../../../tablas/storage/com_act/RETP006.md) | lee | `RCODMOD`, `RDESSUBP`, `RSUBTIP`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.SDAF002](../../../tablas/storage/com_act/SDAF002.md) | lee | `scodagr`≈, `sfecpro`≈ | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`≈, `HCODVAR`≈, `hfecpro`≈, `HTIPCOD`≈, `HVALVAR`≈ | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`≈, `RCODGRU`≈, `RCODSEC`≈, `RCODTER`≈, `RCODUCO`≈, `RCODUNI`≈, `RDESCOR`≈, `RDESTER`≈, `RDESUNI`≈, `rfecpro`≈, `RINDFEC`≈ | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`≈, `RCODGRU`≈, `RCODSEC`≈, `RCODTER`≈, `RCODUCO`≈, `RCODUNI`≈, `RDESCOR`≈, `RDESTER`≈, `RDESUNI`≈, `rfecpro`≈, `RINDFEC`≈ | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

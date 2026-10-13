@@ -32,12 +32,10 @@
 | 8 | `@tdcr` | varchar(50) | — |  | `tdcr` |
 | 9 | `@pagen` | int | — |  | `pagen` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.WCED001](../../../tablas/storage/com_act/WCED001.md) | lee | `HCODMON`, `HCODOPE`, `HCODSEC`, `HCTACLI`, `HDCODSEC`, `HDESCLI`, `HDIAATR`, `HESTC`, `HFCCOM`, `HFCFGEST`, `HFCFVPP`, `HFCMPP`, `HFCRES`, `HFCRSPB`, `HFDGPR`, `HFECDES`, `HFGPR`, `HFTVEN`, `HINDUCUO`, `HINDZCUO`, `HMONDES`, `HNIVSOB`, `HPROBR`, `HREGG`, `HREGN`, `HSALCAPMN`, `HTRAM`, `RDESPROD` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HNUMDOC` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
@@ -52,6 +50,13 @@
 ### Observaciones del análisis
 
 - CTE: `a`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -30,6 +30,7 @@ varying view waitfor when where while with within writetext throw nocount ansi_n
 xact_abort ansi_warnings arithabort isolation level uncommitted committed repeatable serializable snapshot
 nolock readuncommitted readcommitted rowlock tablock tablockx updlock xlock paglock nowait readpast
 recompile apply rows range unbounded preceding following first next only offset fetch ties
+grouping rollup cube sets
 `.trim().split(/\s+/));
 
 const TIPOS = new Set(`
@@ -368,17 +369,28 @@ function analizarSecuencia(items, ctx, padres, profundidad) {
           continue;
         case 'truncate':
           bloque = nuevoBloque('ddl');
-          if (esPalabra(items[i + 1], 'table') && items[i + 2]?.t === 'id') { registrarTabla(ctx, items[i + 2].partes, 'trunca'); i += 2; }
+          // DROP TABLE IF EXISTS x: el nombre viene después de IF EXISTS.
+          if (esPalabra(items[i + 1], 'table') && esPalabra(items[i + 2], 'if') && esPalabra(items[i + 3], 'exists')) i += 2;
+          if (esPalabra(items[i + 1], 'table') && items[i + 2]?.t === 'id' && !esClave(items[i + 2])) {
+            const partes = items[i + 2].partes;
+            if (esTemporal(partes)) ctx.r.temporales.add(partes.at(-1));
+            else registrarTabla(ctx, partes, 'trunca');
+            i += 2;
+          }
           continue;
         case 'exec': case 'execute':
           bloque = nuevoBloque('exec'); registrarExec(items, i, ctx); i = saltarExec(items, i); continue;
         case 'create': case 'alter': case 'drop':
           bloque = nuevoBloque('ddl');
-          if (esPalabra(items[i + 1], 'table') && items[i + 2]?.t === 'id') {
-            const partes = items[i + 2].partes;
-            if (esTemporal(partes)) ctx.r.temporales.add(partes.at(-1));
-            else registrarTabla(ctx, partes, p === 'drop' ? 'elimina-objeto' : 'crea');
-            i += 2;
+          // DROP TABLE IF EXISTS x: el nombre viene después de IF EXISTS.
+          if (esPalabra(items[i + 1], 'table')) {
+            const k = esPalabra(items[i + 2], 'if') && esPalabra(items[i + 3], 'exists') ? i + 4 : i + 2;
+            if (items[k]?.t === 'id' && !esClave(items[k])) {
+              const partes = items[k].partes;
+              if (esTemporal(partes)) ctx.r.temporales.add(partes.at(-1));
+              else registrarTabla(ctx, partes, p === 'drop' ? 'elimina-objeto' : 'crea');
+              i = k;
+            }
           }
           continue;
         case 'declare':
@@ -483,7 +495,7 @@ function analizarSecuencia(items, ctx, padres, profundidad) {
     // ── Expresión: referencias a columna, subconsultas, funciones
     if (tk.t === 'grupo') {
       if (esSubconsulta(tk)) analizarSecuencia(tk.hijos, ctx, [bloque, ...padres], profundidad + 1);
-      else recorrerExpresion(tk.hijos, bloque, ctx, padres, profundidad, modo === 'set');
+      else recorrerExpresion(tk.hijos, bloque, ctx, padres, profundidad, modo === 'set', pc(items[i - 1]));
       continue;
     }
     if (tk.t === 'id') {
@@ -496,14 +508,18 @@ function analizarSecuencia(items, ctx, padres, profundidad) {
 }
 
 /** Contenido de paréntesis que no es subconsulta: argumentos, IN (…), OVER (…). */
-function recorrerExpresion(hijos, bloque, ctx, padres, profundidad, enSet) {
+// Funciones de fecha cuyo primer argumento es una parte de fecha (day, mm, yyyy…), no una columna.
+const FUNCIONES_DE_FECHA = new Set(['dateadd', 'datediff', 'datediff_big', 'datepart', 'datename', 'datetrunc', 'date_bucket']);
+
+function recorrerExpresion(hijos, bloque, ctx, padres, profundidad, enSet, funcion = null) {
   for (let i = 0; i < hijos.length; i++) {
     const tk = hijos[i];
     if (tk.t === 'grupo') {
       if (esSubconsulta(tk)) analizarSecuencia(tk.hijos, ctx, [bloque, ...padres], profundidad + 1);
-      else recorrerExpresion(tk.hijos, bloque, ctx, padres, profundidad, enSet);
+      else recorrerExpresion(tk.hijos, bloque, ctx, padres, profundidad, enSet, pc(hijos[i - 1]));
       continue;
     }
+    if (i === 0 && FUNCIONES_DE_FECHA.has(funcion)) continue;
     if (tk.t !== 'id' || esClave(tk) || esVariable(tk)) continue;
     if (hijos[i + 1]?.t === 'grupo') continue;
     // CAST(x AS tipo): lo que sigue a AS es un tipo, no una columna.
@@ -530,14 +546,15 @@ function registrarExec(items, i, ctx) {
   if (tk.t !== 'id') return;
   const nombre = tk.partes;
   if (/^sp_executesql$/i.test(nombre.at(-1))) { ctx.r.sqlDinamico = true; return; }
-  const args = [];
+  // Un argumento por coma, con sus tokens juntos: `@p = @x OUTPUT` queda como un solo argumento.
+  const args = [[]];
   for (let j = k + 1; j < items.length; j++) {
     const a = items[j];
     if (a.t === ';' || (pc(a) && INICIO_SENTENCIA.has(pc(a)) && !a.citado)) break;
-    if (a.t === ',') continue;
-    args.push(textoToken(a));
+    if (a.t === ',') args.push([]);
+    else args.at(-1).push(textoToken(a));
   }
-  ctx.r.invocaciones.push({ nombre: nombre.join('.'), partes: nombre, argumentos: args });
+  ctx.r.invocaciones.push({ nombre: nombre.join('.'), partes: nombre, argumentos: args.map((x) => x.join(' ')).filter(Boolean) });
 }
 
 function saltarExec(items, i) {

@@ -26,15 +26,11 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
-| [storage.com_pas.Wacli007](../../../tablas/storage/com_pas/Wacli007.md) | lee | `HCODREL`, `HFECPRO`, `HFEMCLI`, `HMIGCLI`, `HRURCLI`, `HTIPCOD`, `HTOTCLI` | estatico + motor |
+| [storage.com_pas.WACLI007](../../../tablas/storage/com_pas/WACLI007.md) | lee | `HCODREL`, `HFECPRO`, `HFEMCLI`, `HMIGCLI`, `HRURCLI`, `HTIPCOD`, `HTOTCLI` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -54,6 +50,15 @@
 - CTE: `cte_a`
 - Temporales: `#AAA`, `#ACUM00`, `#ACUM000`, `#CMG`, `#FECS`, `#RES`, `#RESULTADO`, `#RESULTPRE`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

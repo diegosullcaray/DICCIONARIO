@@ -14,7 +14,7 @@ Consultas listas: [sql/03-tablas/mod_rep/rep/RREGVAR01.sql](../../../../sql/03-t
 | `RALIVAR` | varchar(100) | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `RAMBGRU` | varchar(500) | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `RCODVAR` | smallint not null | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
-| `RDESVAR` | varchar(100) | 🗄️ motor | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
+| `RDESVAR` | varchar(100) | ✅ confirmada | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `RFORV01` | varchar(15) | 🎯 exacta | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 | `RFORV02` | varchar(15) | 🎯 exacta | [GSREVA01](../../../procedimientos/mod_rep/rep/GSREVA01.md) | — |
 

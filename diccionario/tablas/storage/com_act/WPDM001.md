@@ -13,21 +13,21 @@ Consultas listas: [sql/03-tablas/storage/com_act/WPDM001.sql](../../../../sql/03
 |---|---|---|---|---|
 | `HCODREL` | varchar(255) | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
 | `HFECPRO` | varchar(255) | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HNROG` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HNROG_ANT` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HNROG_DESEM` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HNUMCLI` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HNUMCLI_ANT` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HSALCAPMN` | float | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HSALCAPMN_1_30` | float | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HSALCAPMN_1_30_ANT` | float | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HSALCAPMN_ANT` | float | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HSALCAPMN_ma_30` | float | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HSALCAPMN_ma_30_ANT` | float | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HNROG` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HNROG_ANT` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HNROG_DESEM` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HNUMCLI` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HNUMCLI_ANT` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HSALCAPMN` | float | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HSALCAPMN_1_30` | float | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HSALCAPMN_1_30_ANT` | float | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HSALCAPMN_ANT` | float | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HSALCAPMN_ma_30` | float | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HSALCAPMN_ma_30_ANT` | float | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
 | `HTIPCOD` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `HULTVEN_RECUR_DESEM` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `NUEVO_DESEM` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
-| `RECURRENTE_DESEM` | int | 🗄️ motor | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `HULTVEN_RECUR_DESEM` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `NUEVO_DESEM` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
+| `RECURRENTE_DESEM` | int | ✅ confirmada | [RSSEGPDM01](../../../procedimientos/mod_rep/com/RSSEGPDM01.md) | — |
 
 ### Procedimientos que la usan
 

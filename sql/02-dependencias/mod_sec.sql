@@ -23,7 +23,7 @@ INSERT INTO @catalogo (esquema, nombre) VALUES
 DECLARE @resultado TABLE (
     sp_base sysname, sp_esquema sysname, sp_nombre sysname,
     ref_servidor sysname NULL, ref_base sysname NULL, ref_esquema sysname NULL,
-    ref_entidad sysname NULL, ref_columna sysname NULL, ref_tipo nvarchar(60) NULL,
+    ref_entidad sysname NULL, ref_columna sysname NULL, ref_tipo nvarchar(60) NULL, ref_objeto_tipo nvarchar(60) NULL,
     es_lectura bit NULL, es_escritura bit NULL, es_select_todo bit NULL,
     origen varchar(30), error nvarchar(2000) NULL);
 
@@ -45,9 +45,10 @@ BEGIN
             SELECT DB_NAME(), @esquema, @nombre,
                    r.referenced_server_name, ISNULL(r.referenced_database_name, DB_NAME()),
                    r.referenced_schema_name, r.referenced_entity_name, r.referenced_minor_name,
-                   r.referenced_class_desc, r.is_selected, r.is_updated, r.is_select_all,
+                   r.referenced_class_desc, o.type_desc, r.is_selected, r.is_updated, r.is_select_all,
                    'dm_sql_referenced_entities', NULL
-            FROM sys.dm_sql_referenced_entities(@objeto, N'OBJECT') r;
+            FROM sys.dm_sql_referenced_entities(@objeto, N'OBJECT') r
+            LEFT JOIN sys.objects o ON o.object_id = r.referenced_id;  -- tipo real (tabla, vista, función…); NULL si es de otra base
         END TRY
         BEGIN CATCH
             INSERT INTO @resultado (sp_base, sp_esquema, sp_nombre, origen, error)
@@ -56,11 +57,12 @@ BEGIN
 
         -- Nivel tabla, nunca falla e incluye referencias a otras bases.
         INSERT INTO @resultado (sp_base, sp_esquema, sp_nombre, ref_servidor, ref_base, ref_esquema,
-                                ref_entidad, ref_tipo, origen)
+                                ref_entidad, ref_tipo, ref_objeto_tipo, origen)
         SELECT DB_NAME(), @esquema, @nombre, d.referenced_server_name,
                ISNULL(d.referenced_database_name, DB_NAME()), d.referenced_schema_name,
-               d.referenced_entity_name, d.referenced_class_desc, 'sql_expression_dependencies'
+               d.referenced_entity_name, d.referenced_class_desc, o.type_desc, 'sql_expression_dependencies'
         FROM sys.sql_expression_dependencies d
+        LEFT JOIN sys.objects o ON o.object_id = d.referenced_id
         WHERE d.referencing_id = OBJECT_ID(@objeto);
     END;
     FETCH NEXT FROM c INTO @esquema, @nombre;
@@ -69,6 +71,6 @@ CLOSE c;
 DEALLOCATE c;
 
 SELECT sp_base, sp_esquema, sp_nombre, ref_servidor, ref_base, ref_esquema, ref_entidad,
-       ref_columna, ref_tipo, es_lectura, es_escritura, es_select_todo, origen, error
+       ref_columna, ref_tipo, ref_objeto_tipo, es_lectura, es_escritura, es_select_todo, origen, error
 FROM @resultado
 ORDER BY sp_esquema, sp_nombre, ref_base, ref_esquema, ref_entidad, ref_columna;

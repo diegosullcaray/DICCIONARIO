@@ -14,10 +14,10 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_act.WACLI007 · lee · 4 columna(s)
+-- storage.com_act.wacli007 · lee · 4 columna(s)
 SELECT TOP (100) [HCODPER], [HINDGEN], [hcodsec], [hfecpro]
-FROM [storage].[com_act].[WACLI007] WITH (NOLOCK);
+FROM [storage].[com_act].[wacli007] WITH (NOLOCK);
 
--- storage.ref.wjercor03 · lee · 16 columna(s)
+-- storage.ref.WJERCOR03 · lee · 16 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODFC], [RCODGRU], [RCODSEC], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESFC], [RDESGRU], [RDESSEC], [RDESTER], [RDESUCO], [RDESUNI], [rfecpro], [rindfec]
-FROM [storage].[ref].[wjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

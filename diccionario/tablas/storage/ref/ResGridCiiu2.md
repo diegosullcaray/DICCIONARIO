@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `ref` · 4 columna(s) usadas · 1 procedimiento(s) · estructura real sin consultar (`python herramientas/bd.py estructura`)
+Base `storage` · esquema `ref` · 4 columna(s) usadas · 1 procedimiento(s) · ⚠️ no existe en la base
 
 Consultas listas: [sql/03-tablas/storage/ref/ResGridCiiu2.sql](../../../../sql/03-tablas/storage/ref/ResGridCiiu2.sql)
 

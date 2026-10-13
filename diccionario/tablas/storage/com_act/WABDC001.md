@@ -14,9 +14,9 @@ Consultas listas: [sql/03-tablas/storage/com_act/WABDC001.sql](../../../../sql/0
 | `HCODSEC` | varchar(10) | ✅ confirmada | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
 | `HEVTO` | float not null | ✅ confirmada | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
 | `HFECPRO` | date | ✅ confirmada | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
-| `HINDBASE` | int not null | 🗄️ motor | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
-| `HINDDESB` | int not null | 🗄️ motor | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
-| `HNUMCON` | varchar(82) | 🗄️ motor | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
+| `HINDBASE` | int not null | ✅ confirmada | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
+| `HINDDESB` | int not null | ✅ confirmada | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
+| `HNUMCON` | varchar(82) | ✅ confirmada | [RSAGECOM01](../../../procedimientos/mod_rep/com/RSAGECOM01.md) | — |
 
 ### Procedimientos que la usan
 

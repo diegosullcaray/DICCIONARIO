@@ -14,37 +14,21 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
 -- storage.com_act.WJAS001 · lee · 8 columna(s)
 SELECT TOP (100) [HCODREL], [HFECPRO], [HNUMCLI], [HNUMCLIN], [HNUMSECGMES], [HNUMSECIMES], [HTIPCOD], [HVSALVIGMN]
 FROM [storage].[com_act].[WJAS001] WITH (NOLOCK);
 
--- storage.COM_ACT.WRODASAL001 · lee · 8 columna(s)
+-- storage.com_act.WRODASAL001 · lee · 8 columna(s)
 SELECT TOP (100) [HCODREL], [HRODAM], [HSALNOVIG], [HSALVIGEN], [HTIPCOD], [TMMHSALNOVIG], [TMMRODAMIENTO], [TMMSALVIGE]
-FROM [storage].[COM_ACT].[WRODASAL001] WITH (NOLOCK);
+FROM [storage].[com_act].[WRODASAL001] WITH (NOLOCK);
 
--- storage.com.VDMCOM01 · lee · 6 columna(s)
-SELECT TOP (100) [HCODREL], [HTIPCOD], [HTIPMETA], [hcodvar], [hfecpro], [month]
+-- storage.com.VDMCOM01 · lee · 5 columna(s)
+SELECT TOP (100) [HCODREL], [HTIPCOD], [HTIPMETA], [hcodvar], [hfecpro]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
 
--- storage.ref.rcalen001 · lee · 4 columna(s)
-SELECT TOP (100) [RDIASEM], [month], [rdiafer], [rfec]
-FROM [storage].[ref].[rcalen001] WITH (NOLOCK);
+-- storage.ref.RCALEN001 · lee · 3 columna(s)
+SELECT TOP (100) [RDIASEM], [rdiafer], [rfec]
+FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
 -- storage.ref.WJERCOR03 · lee · 16 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODFC], [RCODGRU], [RCODSEC], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESFC], [RDESGRU], [RDESSEC], [RDESTER], [RDESUCO], [RDESUNI], [rfecpro], [rindfec]

@@ -30,8 +30,8 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.wjas001](../../../tablas/storage/com_act/WJAS001.md) | lee | `hcodrel`≈, `hfecpro`≈, `HNUMCLIN`≈, `htipcod`≈ | estatico + motor |
-| [STORAGE.COM_ACT.WTIPCLI001](../../../tablas/STORAGE/COM_ACT/WTIPCLI001.md) | lee | `hcodrel`≈, `hfecpro`≈, `htipcod`≈ | estatico + motor |
+| [storage.com_act.WJAS001](../../../tablas/storage/com_act/WJAS001.md) | lee | `hcodrel`≈, `hfecpro`≈, `HNUMCLIN`≈, `htipcod`≈ | estatico + motor |
+| [storage.com_act.WTIPCLI001](../../../tablas/storage/com_act/WTIPCLI001.md) | lee | `hcodrel`≈, `hfecpro`≈, `htipcod`≈ | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RCIEBT`, `RDIAFER`, `RFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.

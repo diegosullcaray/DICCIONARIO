@@ -30,10 +30,10 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [STORAGE.com_act.HCGEO002](../../../tablas/STORAGE/com_act/HCGEO002.md) | lee | `HNOMCOR` | estatico + motor |
+| [storage.com_act.HCGEO002](../../../tablas/storage/com_act/HCGEO002.md) | lee | `HAGENCI`, `HCOORDE`, `HCORRED`, `HFECPRO`, `HNOMCOR`, `HTERRIT` | estatico + motor |
 | [storage.com_act.HCMC001](../../../tablas/storage/com_act/HCMC001.md) | lee | `HMUNICB`, `HNOMBREPTO` | estatico + motor |
 | [storage.com_act.SDAS021](../../../tablas/storage/com_act/SDAS021.md) | lee | `SCORRES` | estatico + motor |
-| [storage.ref.vjercor03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODCOR`≈, `RCODMAT`≈, `RCODTER`≈, `RDESCOR`≈, `RDESMAT`≈, `RDESTER`≈ | estatico + motor |
+| [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODCOR`≈, `RCODMAT`≈, `RCODTER`≈, `RDESCOR`≈, `RDESMAT`≈, `RDESTER`≈ | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

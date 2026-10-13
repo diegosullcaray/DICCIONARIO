@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com.HBDK006 · lee · 8 columna(s)
 SELECT TOP (100) [HBLOACU], [HCOLCAR], [HCOLDOC], [HCOLNOM], [HCOLTIP], [HDESTER], [HFECPRO], [hcolbt]
 FROM [storage].[com].[HBDK006] WITH (NOLOCK);

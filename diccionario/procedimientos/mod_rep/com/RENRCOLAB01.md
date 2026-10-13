@@ -26,12 +26,10 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fecha` | date | — |  | `fecha` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.VLCAPP001](../../../tablas/storage/com_act/VLCAPP001.md) | lee | `HTIPNUMDOC` | estatico + motor |
 | [storage.gpr.HPPC001](../../../tablas/storage/gpr/HPPC001.md) | lee | `HCODSUC`, `HDESTER`, `hfecpro`, `HNUMDOC` | estatico + motor |
 | [storage.ref.VJERCOR02](../../../tablas/storage/ref/VJERCOR02.md) | lee | `rcodage`, `RCODAGEH`, `RCODCOR`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESMAT`, `RDESTER` | estatico + motor |
@@ -51,6 +49,13 @@
 - ⚠️ Columna sin resolver `rcodcor` (¿storage.com_act.VLCAPP001 o storage.gpr.HPPC001 o storage.ref.VJERCOR02?)
 - ⚠️ Columna sin resolver `rcodmat` (¿storage.com_act.VLCAPP001 o storage.gpr.HPPC001 o storage.ref.VJERCOR02?)
 - ⚠️ Columna sin resolver `RCODAGEH` (¿storage.com_act.VLCAPP001 o storage.gpr.HPPC001 o storage.ref.VJERCOR02?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

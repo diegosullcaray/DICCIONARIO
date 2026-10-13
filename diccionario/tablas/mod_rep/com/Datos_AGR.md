@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `mod_rep` · esquema `com` · 0 columna(s) usadas · 3 procedimiento(s) · estructura real sin consultar (`python herramientas/bd.py estructura`)
+Base `mod_rep` · esquema `com` · 0 columna(s) usadas · 3 procedimiento(s) · tabla de trabajo: la crea y borra un SP en cada ejecución
 
 Consultas listas: [sql/03-tablas/mod_rep/com/Datos_AGR.sql](../../../../sql/03-tablas/mod_rep/com/Datos_AGR.sql)
 

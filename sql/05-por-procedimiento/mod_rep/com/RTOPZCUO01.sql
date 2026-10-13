@@ -14,6 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_act.wzcuo001 · lee · 16 columna(s)
+-- storage.com_act.WZCUO001 · lee · 16 columna(s)
 SELECT TOP (100) [HASEOPER], [HCODDES], [HCODOPE], [HCODORI], [RCODCOR], [RCODFC], [RCODGRU], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESSEC], [RDESTER], [RDESUNI], [hfecpro], [hsalcapmn]
-FROM [storage].[com_act].[wzcuo001] WITH (NOLOCK);
+FROM [storage].[com_act].[WZCUO001] WITH (NOLOCK);

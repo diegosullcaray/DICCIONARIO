@@ -18,18 +18,6 @@ ORDER BY column_ordinal;
 SELECT TOP (100) *
 FROM [mod_rep].[com].[Datos_AGR] WITH (NOLOCK);
 
--- mod_rep.dbo.Datos_AGR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[Datos_AGR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.ref.RCALEN001 · lee · 2 columna(s)
 SELECT TOP (100) [RDIAFER], [RFEC]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);

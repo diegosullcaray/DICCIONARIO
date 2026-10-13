@@ -26,14 +26,10 @@
 | 2 | `@cod_rel` | nvarchar(10) | — |  | `cod_rel` |
 | 3 | `@carg` | nvarchar(100) | — |  | `carg` |
 
-### Tablas y columnas (13)
+### Tablas y columnas (9)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [mod_sys_login.dbo.SUSEALT01](../../../tablas/mod_sys_login/dbo/SUSEALT01.md) | lee | `SFECCRE`≈ | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HFECPRO`, `HTIPCOD` | estatico + motor |
 | [storage.gpr.HPAD001](../../../tablas/storage/gpr/HPAD001.md) | lee | `HCODPER`, `HMAILPER` | estatico + motor |
@@ -42,7 +38,7 @@
 | [storage.ref.RECCA001](../../../tablas/storage/ref/RECCA001.md) | lee | `RCODTER`, `RUSUADM` | estatico + motor |
 | [storage.ref.RECCT001](../../../tablas/storage/ref/RECCT001.md) | lee | `rcodcor`, `RUSUADM` | estatico + motor |
 | [storage.ref.RECUC001](../../../tablas/storage/ref/RECUC001.md) | lee | `RCODADM`, `RCODUNI` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODSEC` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODSEC`, `RDESGRU`, `RFECPRO`, `RINDFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -51,8 +47,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `rep.FTHEACOLS01` | 'PANEL_SUP_01' | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -72,6 +68,15 @@ No se detectó un SELECT final que devuelva filas.
 - ⚠️ Columna sin resolver `SCODUSE` (¿storage.gpr.HPAD001 o storage.ref.RECUC001?)
 - ⚠️ Columna sin resolver `RCODCOR` (¿storage.ref.RECCA001?)
 - ⚠️ Columna sin resolver `RCODGRU` (¿storage.ref.RECCA001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

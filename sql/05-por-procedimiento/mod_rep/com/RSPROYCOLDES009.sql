@@ -18,18 +18,6 @@ ORDER BY column_ordinal;
 SELECT TOP (100) *
 FROM [mod_rep].[com].[Datos_PD] WITH (NOLOCK);
 
--- mod_rep.dbo.Datos_PD · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[Datos_PD] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- STORAGE.com_act.HBPDR001 · lee · 2 columna(s)
+-- storage.com_act.HBPDR001 · lee · 2 columna(s)
 SELECT TOP (100) [HFECPRO], [hfecreg]
-FROM [STORAGE].[com_act].[HBPDR001] WITH (NOLOCK);
+FROM [storage].[com_act].[HBPDR001] WITH (NOLOCK);

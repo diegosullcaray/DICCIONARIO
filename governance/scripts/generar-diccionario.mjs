@@ -18,8 +18,8 @@
 
 import { dirname, join, relative, sep } from 'node:path';
 import { argumentos, rel, RUTAS } from './lib/catalogo.mjs';
-import { confianza, construirModelo } from './lib/modelo.mjs';
-import { cabeceraGenerado, celda, leerDescripciones, leerManual, Salida } from './lib/salida.mjs';
+import { confianza, construirModelo, ORIGENES, REGLAS } from './lib/modelo.mjs';
+import { cabeceraGenerado, celda, leerDescripciones, leerManual, podarFichas, Salida } from './lib/salida.mjs';
 
 const { flags } = argumentos();
 const salida = new Salida({ check: flags.has('check') });
@@ -33,9 +33,9 @@ const archivoTabla = (t) => join(D, 'tablas', t.base ?? '_sin_base', t.esquema ?
 const archivoSqlTabla = (t) => join(RUTAS.sql, '03-tablas', t.base ?? '_sin_base', t.esquema ?? 'dbo', `${t.nombre}.sql`);
 const archivoSqlSp = (sp) => join(RUTAS.sql, '05-por-procedimiento', sp.base ?? '_sin_base', sp.esquema ?? 'dbo', `${sp.nombre}.sql`);
 const archivoExtraccion = (sp) => join(RUTAS.sql, '01-extraccion', sp.base ?? '_sin_base', sp.esquema ?? 'dbo', `${sp.nombre}.sql`);
-const tieneFicha = (sp) => sp.estado !== 'pendiente';
-const ESTADO = { pendiente: '⏳ pendiente', extraido: '🔎 extraído', validado: '✅ validado' };
-const ICONO_CONF = { confirmada: '✅ confirmada', motor: '🗄️ motor', exacta: '🎯 exacta', inferida: '≈ inferida' };
+const tieneFicha = (sp) => sp.estado === 'extraido' || sp.estado === 'validado';
+const ESTADO = { pendiente: '⏳ pendiente', inexistente: '❌ no existe en la base', extraido: '🔎 extraído', validado: '✅ validado' };
+const ICONO_CONF = { confirmada: '✅ confirmada', motor: '🗄️ motor', exacta: '🎯 exacta', estructura: '🧩 por estructura', inferida: '≈ inferida' };
 const sps = [...m.sps.values()];
 const tablas = [...m.tablas.values()];
 
@@ -76,7 +76,7 @@ for (const sp of sps.filter(tieneFicha)) {
   else {
     l.push('| Tabla | Operación | Columnas usadas | Fuente |', '|---|---|---|---|');
     for (const d of sp.dependencias) {
-      const t = m.tablas.get(d.completo.toLowerCase());
+      const t = m.tablas.get(d.clave);
       const cols = [...d.columnas.values()].sort((x, y) => x.nombre.localeCompare(y.nombre))
         .map((c) => `\`${c.nombre}\`${confianza(c.fuentes) === 'inferida' ? '≈' : ''}`).join(', ') || '—';
       const nombre = t ? `[${d.completo}](${enlace(ruta, archivoTabla(t))})` : d.completo;
@@ -110,6 +110,12 @@ for (const sp of sps.filter(tieneFicha)) {
     for (const w of a.advertencias) extra.push(`⚠️ ${w}`);
     if (extra.length) { l.push('### Observaciones del análisis', '', ...extra.map((x) => `- ${x}`), ''); }
   }
+  if (sp.otrosObjetos.size || sp.tiposTabla.size) {
+    l.push('### Otros objetos que referencia', '', 'Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.', '');
+    for (const o of [...sp.otrosObjetos].sort()) l.push(`- \`${o}\``);
+    for (const o of [...sp.tiposTabla].sort()) l.push(`- \`${o}\` (tipo de tabla)`);
+    l.push('');
+  }
   if (sp.motor) {
     l.push('### Validación con el motor', '', `Fuente: \`${sp.motor.archivo}\`.`);
     for (const e of new Set(sp.motor.errores)) l.push(`- ⚠️ ${celda(e)}`);
@@ -142,7 +148,9 @@ for (const t of tablas) {
   const desc = leerDescripciones(leerManual(ruta));
   const cols = [...t.columnas.values()].sort((a, b) => a.nombre.localeCompare(b.nombre));
   const l = [cabeceraGenerado(SCRIPT), ''];
-  const real = t.real ? `${t.real.tipoObjeto === 'VIEW' ? 'vista' : 'tabla'} con ${t.real.columnas.size} columna(s) en la base` : 'estructura real sin consultar (`python herramientas/bd.py estructura`)';
+  const real = t.real ? `${t.real.tipoObjeto === 'VIEW' ? 'vista' : 'tabla'} con ${t.real.columnas.size} columna(s) en la base`
+    : t.trabajo ? 'tabla de trabajo: la crea y borra un SP en cada ejecución'
+      : m.estructura.bases.has(String(t.base).toLowerCase()) ? '⚠️ no existe en la base' : 'estructura real sin consultar (`python herramientas/bd.py estructura`)';
   l.push(`Base \`${t.base}\` · esquema \`${t.esquema}\` · ${cols.length} columna(s) usadas · ${t.sps.size} procedimiento(s) · ${real}`, '');
   l.push(`Consultas listas: [${rel(archivoSqlTabla(t))}](${enlace(ruta, archivoSqlTabla(t))})`, '');
   l.push('### Columnas usadas', '');
@@ -254,11 +262,13 @@ salida.podar(join(RUTAS.sql, '05-por-procedimiento'), (r) => r.endsWith('.sql'))
 // ─── Índices ──────────────────────────────────────────────────────────────────
 const cuenta = (f) => sps.filter(f).length;
 const pct = (n, total) => (total ? `${Math.round((n / total) * 100)} %` : '—');
-const extraidos = cuenta((s) => s.estado !== 'pendiente');
+const extraidos = cuenta(tieneFicha);
+const inexistentes = cuenta((s) => s.estado === 'inexistente');
 const validados = cuenta((s) => s.estado === 'validado');
 const bases = [...new Set(sps.map((s) => s.base))].sort();
 const errores = m.hallazgos.filter((h) => h.nivel === 'error').length;
 const avisos = m.hallazgos.filter((h) => h.nivel === 'aviso').length;
+const nuevos = m.hallazgos.filter((h) => h.nivel === 'error' && !h.enLineaBase).length;
 
 {
   const ruta = join(D, 'README.md');
@@ -268,16 +278,17 @@ const avisos = m.hallazgos.filter((h) => h.nivel === 'aviso').length;
   l.push(`| Procedimientos distintos | ${sps.length} |`);
   l.push(`| Procedimientos extraídos (cuerpo analizado) | ${extraidos} (${pct(extraidos, sps.length)}) |`);
   l.push(`| Procedimientos validados con el motor | ${validados} (${pct(validados, sps.length)}) |`);
+  l.push(`| Procedimientos del catálogo que no existen en la base | ${inexistentes} |`);
   l.push(`| Tablas descubiertas | ${tablas.length} |`);
   l.push(`| Columnas descubiertas | ${tablas.reduce((n, t) => n + t.columnas.size, 0)} |`);
   l.push(`| Reportes consumidos por el front MIS | ${m.reportes.filter((r) => r.front).length} (commit \`${m.consumo.commit ?? '—'}\`) |`);
-  l.push(`| Hallazgos de calidad | ${errores} error(es) · ${avisos} aviso(s) |`);
+  l.push(`| Hallazgos de calidad | ${errores} error(es) · ${avisos} aviso(s) · ${nuevos} error(es) fuera de la línea base |`);
   l.push('', '### Avance por base', '');
-  l.push('| Base | SP | Extraídos | Validados | Tablas usadas | Lote de extracción | Dependencias |', '|---|---:|---:|---:|---:|---|---|');
+  l.push('| Base | SP | Extraídos | Validados | No existen | Tablas usadas | Lote de extracción | Dependencias |', '|---|---:|---:|---:|---:|---:|---|---|');
   for (const b of bases) {
     const lista = sps.filter((s) => s.base === b);
     const tb = new Set(lista.flatMap((s) => s.dependencias.map((d) => d.completo.toLowerCase())));
-    l.push(`| \`${b}\` | ${lista.length} | ${lista.filter((s) => s.estado !== 'pendiente').length} | ${lista.filter((s) => s.estado === 'validado').length} | ${tb.size} | [lote](${enlace(ruta, join(RUTAS.sql, '01-extraccion', '_lotes', `${b}.sql`))}) | [dependencias](${enlace(ruta, join(RUTAS.sql, '02-dependencias', `${b}.sql`))}) |`);
+    l.push(`| \`${b}\` | ${lista.length} | ${lista.filter(tieneFicha).length} | ${lista.filter((s) => s.estado === 'validado').length} | ${lista.filter((s) => s.estado === 'inexistente').length} | ${tb.size} | [lote](${enlace(ruta, join(RUTAS.sql, '01-extraccion', '_lotes', `${b}.sql`))}) | [dependencias](${enlace(ruta, join(RUTAS.sql, '02-dependencias', `${b}.sql`))}) |`);
   }
   salida.inyectar(ruta, 'resumen', l.join('\n'), (bloque) => [
     '# Diccionario de reportes',
@@ -332,7 +343,7 @@ const avisos = m.hallazgos.filter((h) => h.nivel === 'aviso').length;
   }
   salida.inyectar(ruta, 'procedimientos', l.join('\n'), (bloque) => [
     '# Procedimientos', '',
-    '⏳ pendiente: falta el cuerpo · 🔎 extraído: cuerpo analizado · ✅ validado: además confirmado con el motor.', '',
+    '⏳ pendiente: falta el cuerpo · ❌ no existe en la base · 🔎 extraído: cuerpo analizado · ✅ validado: además confirmado con el motor.', '',
     bloque, '',
   ].join('\n'));
 }
@@ -367,6 +378,7 @@ const json = {
     parametros: sp.analisis?.procedimiento?.parametros ?? null,
     resultados: sp.analisis?.resultados ?? null,
     invoca: sp.analisis?.invocaciones.map((i) => i.nombre) ?? [],
+    otrosObjetos: [...sp.otrosObjetos, ...sp.tiposTabla].sort(),
     tablas: sp.dependencias.map((d) => ({
       nombre: d.completo,
       usos: [...d.usos],
@@ -387,25 +399,47 @@ salida.escribir(join(D, 'diccionario.json'), `${JSON.stringify(json, null, 2)}\n
 {
   const ruta = join(RUTAS.docs, 'data', 'catalog.md');
   const l = [cabeceraGenerado(SCRIPT), ''];
-  l.push('| Base | Esquemas | Procedimientos | Reportes | Extraídos | Validados |', '|---|---|---:|---:|---:|---:|');
+  l.push('| Base | Esquemas | Procedimientos | Reportes | Extraídos | Validados | No existen |', '|---|---|---:|---:|---:|---:|---:|');
   for (const b of bases) {
     const lista = sps.filter((s) => s.base === b);
     const esquemas = [...new Set(lista.map((s) => s.esquema))].sort().map((e) => `\`${e}\``).join(', ');
-    l.push(`| \`${b}\` | ${esquemas} | ${lista.length} | ${lista.reduce((n, s) => n + s.reportes.length, 0)} | ${lista.filter((s) => s.estado !== 'pendiente').length} | ${lista.filter((s) => s.estado === 'validado').length} |`);
+    l.push(`| \`${b}\` | ${esquemas} | ${lista.length} | ${lista.reduce((n, s) => n + s.reportes.length, 0)} | ${lista.filter(tieneFicha).length} | ${lista.filter((s) => s.estado === 'validado').length} | ${lista.filter((s) => s.estado === 'inexistente').length} |`);
   }
   salida.inyectar(ruta, 'catalogo', l.join('\n'), () => { throw new Error(`${rel(ruta)} no existe`); });
 }
 {
   const ruta = join(RUTAS.docs, 'evidence', 'quality', 'hallazgos.md');
   const l = [cabeceraGenerado(SCRIPT), ''];
-  const porRegla = new Map();
-  for (const h of m.hallazgos) porRegla.set(`${h.nivel}|${h.regla}`, (porRegla.get(`${h.nivel}|${h.regla}`) ?? 0) + 1);
-  l.push('| Nivel | Regla | Cantidad |', '|---|---|---:|');
-  for (const [k, n] of porRegla) { const [nivel, regla] = k.split('|'); l.push(`| ${nivel} | \`${regla}\` | ${n} |`); }
-  l.push('', '| Nivel | Regla | Objeto | Detalle |', '|---|---|---|---|');
-  for (const h of m.hallazgos) l.push(`| ${h.nivel} | \`${h.regla}\` | \`${celda(h.objeto)}\` | ${celda(h.detalle)} |`);
+  l.push('| Origen | Errores | Avisos | Info | En línea base |', '|---|---:|---:|---:|---:|');
+  for (const origen of Object.keys(ORIGENES)) {
+    const lista = m.hallazgos.filter((h) => h.origen === origen);
+    const n = (nivel) => lista.filter((h) => h.nivel === nivel).length;
+    l.push(`| ${origen} | ${n('error')} | ${n('aviso')} | ${n('info')} | ${lista.filter((h) => h.enLineaBase).length} |`);
+  }
+  for (const [origen, explicacion] of Object.entries(ORIGENES)) {
+    const lista = m.hallazgos.filter((h) => h.origen === origen && h.nivel !== 'info');
+    if (!lista.length) continue;
+    const titulo = { catalogo: 'Catálogo', produccion: 'Producción', repositorio: 'Repositorio', analisis: 'Análisis' }[origen];
+    l.push('', `### ${titulo}`, '', explicacion + '.', '');
+    l.push('| Nivel | Regla | Objeto | Detalle | Línea base |', '|---|---|---|---|---|');
+    for (const h of lista) l.push(`| ${h.nivel} | \`${h.regla}\` | \`${celda(h.objeto)}\` | ${celda(h.detalle)} | ${h.enLineaBase ? 'sí' : '**nuevo**'} |`);
+  }
+  const info = m.hallazgos.filter((h) => h.nivel === 'info').length;
+  l.push('', `Más ${info} hallazgo(s) informativo(s): \`npm run hallazgos\` o \`diccionario/diccionario.json\`.`);
   salida.inyectar(ruta, 'hallazgos', l.join('\n'), () => { throw new Error(`${rel(ruta)} no existe`); });
 }
+{
+  // Tabla de reglas: se deriva de REGLAS para que el documento no pueda quedar distinto del código.
+  const ruta = join(RUTAS.docs, 'data', 'quality.md');
+  const l = [cabeceraGenerado(SCRIPT), ''];
+  l.push('| Regla | Nivel | Origen | Qué detecta |', '|---|---|---|---|');
+  for (const [regla, r] of Object.entries(REGLAS)) l.push(`| \`${regla}\` | ${r.nivel} | ${r.origen} | ${celda(r.que)} |`);
+  salida.inyectar(ruta, 'reglas', l.join('\n'), () => { throw new Error(`${rel(ruta)} no existe`); });
+}
+
+// ─── Fichas que ya no corresponden (tabla que resultó función, grafía vieja, SP retirado) ─
+const huerfanas = [join(D, 'procedimientos'), join(D, 'tablas')].flatMap((dir) => podarFichas(salida, dir));
+for (const f of huerfanas) console.warn(`⚠ ficha sin objeto pero con prosa escrita a mano (decidir si se borra o se mueve): ${f}`);
 
 process.exitCode = salida.informe('Diccionario');
 

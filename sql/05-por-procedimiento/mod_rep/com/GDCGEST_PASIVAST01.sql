@@ -14,8 +14,8 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_pas.WBAUT001 · lee · 2 columna(s)
-SELECT TOP (100) [HCOFIC], [HFECPRO]
+-- storage.com_pas.WBAUT001 · lee · 8 columna(s)
+SELECT TOP (100) [CANAL], [HAOTASA], [HCOFIC], [HDMODU], [HFECPRO], [HMAPER], [HRENOV], [HTMAXI]
 FROM [storage].[com_pas].[WBAUT001] WITH (NOLOCK);
 
 -- storage.ref.VJERCOR03 · lee · 10 columna(s)

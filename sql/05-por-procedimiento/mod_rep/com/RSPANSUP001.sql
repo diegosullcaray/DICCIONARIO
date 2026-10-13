@@ -14,22 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- mod_sys_login.dbo.SUSEALT01 · lee · 1 columna(s)
 SELECT TOP (100) [SFECCRE]
 FROM [mod_sys_login].[dbo].[SUSEALT01] WITH (NOLOCK);
@@ -62,6 +46,6 @@ FROM [storage].[ref].[RECCT001] WITH (NOLOCK);
 SELECT TOP (100) [RCODADM], [RCODUNI]
 FROM [storage].[ref].[RECUC001] WITH (NOLOCK);
 
--- storage.ref.WJERCOR03 · lee · 1 columna(s)
-SELECT TOP (100) [RCODSEC]
+-- storage.ref.WJERCOR03 · lee · 4 columna(s)
+SELECT TOP (100) [RCODSEC], [RDESGRU], [RFECPRO], [RINDFEC]
 FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

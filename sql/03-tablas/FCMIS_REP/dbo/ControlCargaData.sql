@@ -1,4 +1,4 @@
--- LS_FCMIS_REP.FCMIS_REP.dbo.ControlCargaData
+-- FCMIS_REP.dbo.ControlCargaData
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
 -- Usada por: mod_rep.com.RSRPD001
 

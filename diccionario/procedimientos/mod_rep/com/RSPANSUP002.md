@@ -34,7 +34,7 @@
 |---|---|---|---|
 | [storage.com_act.VDSC001](../../../tablas/storage/com_act/VDSC001.md) | lee | `HAGDEP`, `HASESUP`, `HCARGO`, `HCDEFIN`, `HCODASE`, `HDESCLI`, `HFECPRO`, `HFECVIS`, `HJUSTIF`, `HMDESOL`, `HNTOPE`, `HPERSUP`, `HTCANAL` | estatico + motor |
 | [storage.ref.RCAR001](../../../tablas/storage/ref/RCAR001.md) | lee | `RCODCAR`, `RDESCAR` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

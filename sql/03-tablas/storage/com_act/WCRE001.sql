@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'GROUPING', N'hcodrel', N'HDESPROD', N'HEREDADO', N'HFECPRO', N'HSALDETMN', N'HSALINIMN', N'HSALMAN01MN', N'HSALRECMN', N'htipcod', N'HTRAM') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'hcodrel', N'HDESPROD', N'HEREDADO', N'HFECPRO', N'HSALDETMN', N'HSALINIMN', N'HSALMAN01MN', N'HSALRECMN', N'htipcod', N'HTRAM') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'com_act' AND c.TABLE_NAME = N'WCRE001'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,13 +20,12 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'com_act.WCRE001') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [GROUPING], [hcodrel], [HDESPROD], [HEREDADO], [HFECPRO], [HSALDETMN], [HSALINIMN], [HSALMAN01MN], [HSALRECMN], [htipcod], [HTRAM]
+SELECT TOP (100) [hcodrel], [HDESPROD], [HEREDADO], [HFECPRO], [HSALDETMN], [HSALINIMN], [HSALMAN01MN], [HSALRECMN], [htipcod], [HTRAM]
 FROM [storage].[com_act].[WCRE001] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
 SELECT
     COUNT(*) AS filas,
-    SUM(CASE WHEN [GROUPING] IS NULL THEN 1 ELSE 0 END) AS [nulos_GROUPING], COUNT(DISTINCT [GROUPING]) AS [distintos_GROUPING],
     SUM(CASE WHEN [hcodrel] IS NULL THEN 1 ELSE 0 END) AS [nulos_hcodrel], COUNT(DISTINCT [hcodrel]) AS [distintos_hcodrel],
     SUM(CASE WHEN [HDESPROD] IS NULL THEN 1 ELSE 0 END) AS [nulos_HDESPROD], COUNT(DISTINCT [HDESPROD]) AS [distintos_HDESPROD],
     SUM(CASE WHEN [HEREDADO] IS NULL THEN 1 ELSE 0 END) AS [nulos_HEREDADO], COUNT(DISTINCT [HEREDADO]) AS [distintos_HEREDADO],

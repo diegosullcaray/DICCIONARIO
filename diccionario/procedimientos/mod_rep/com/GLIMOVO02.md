@@ -27,14 +27,12 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [STORAGE.com_act.HBMOV003](../../../tablas/STORAGE/com_act/HBMOV003.md) | lee | `codigo_bt`, `filtro2`, `filtro3`, `filtro4`, `filtro5`, `filtro6`, `filtro7`, `HFECPRO`, `mm`≈, `yyyy`≈ | estatico + motor |
-| [STORAGE.com_act.HBMOV004](../../../tablas/STORAGE/com_act/HBMOV004.md) | lee | `CODIGO_BT`, `FLAG_PAGADOR`, `HFECPRO` | estatico + motor |
+| [storage.com_act.HBMOV003](../../../tablas/storage/com_act/HBMOV003.md) | lee | `codigo_bt`, `filtro2`, `filtro3`, `filtro4`, `filtro5`, `filtro6`, `filtro7`, `HFECPRO` | estatico + motor |
+| [storage.com_act.HBMOV004](../../../tablas/storage/com_act/HBMOV004.md) | lee | `CODIGO_BT`, `FLAG_PAGADOR`, `HFECPRO` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HNUMDOC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -48,6 +46,13 @@
 ### Observaciones del análisis
 
 - Temporales: `#rangos`, `#resultados`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

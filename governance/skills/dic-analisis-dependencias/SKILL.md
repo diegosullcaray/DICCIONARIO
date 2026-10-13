@@ -42,16 +42,26 @@ Por cada SP: `sys.dm_sql_referenced_entities` (columnas, misma base) dentro de `
 Límites: **no da columnas de tablas de otra base**, no ve SQL dinámico ni `#temporales`, y falla si el
 SP no compila contra el esquema actual (queda `motor-con-error`).
 
-## 3. Leer una ficha
+## 3. Cómo se combinan
+
+- Una referencia del motor es **tabla** si `ref_objeto_tipo` lo dice, si el análisis también la ve o si
+  existe en `fuente/estructura`. Funciones, tipos de tabla, SP y alias sin resolver van a *Otros objetos*.
+- Un nombre sin esquema (`FROM TABLA`) toma el esquema con el que el mismo SP la nombra, o el que tiene en
+  la estructura real; si no hay ninguno, queda ⚠️ esquema implícito.
+- Una columna sin calificar entre varias tablas se atribuye a la única que la tiene en la estructura
+  (🧩 por estructura). Si ninguna la tiene es un alias; si varias, `columna-sin-resolver`.
+
+## 4. Leer una ficha
 
 | Ves | Hacé |
 |---|---|
-| `≈` en una columna | si hay CSV del motor y la tabla es de la misma base, debería pasar a confirmada; si es de otra base, leer el SP y confirmar |
-| `columna-sin-resolver` | leer el SP: casi siempre es una columna de la tabla principal. Anotarlo en *Notas del analista*; si el patrón se repite, mejorar el analizador |
+| `≈` en una columna | confirmarla leyendo el SP; con estructura cargada, si no existiera sería `columna-inferida-inexistente` |
+| `columna-sin-resolver` | leer el SP y anotar en *Notas del analista* de qué tabla es |
+| `columna-inexistente` / `tabla-inexistente` | error del SP en producción: documentarlo, no "arreglar" la ficha |
 | `discrepancia-motor` | la tabla la ve el analizador y no el motor: alias mal leído, o el objeto ya no existe |
-| tabla con fuente solo `motor` | la usa SQL dinámico, una vista o un sinónimo: documentar a mano |
+| tabla con fuente solo `motor` | la usa SQL dinámico o una vista: documentar a mano |
 
-## 4. Corregir el analizador
+## 5. Corregir el analizador
 
 1. Reducir el SP a un caso mínimo que reproduzca el error.
 2. Agregarlo a `governance/scripts/tests/tsql.test.mjs` y ver que falla (`npm test`).

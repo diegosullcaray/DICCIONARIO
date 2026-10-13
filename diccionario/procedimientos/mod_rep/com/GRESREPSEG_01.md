@@ -26,13 +26,10 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (8)
+### Tablas y columnas (5)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
 | [storage.com_act.SDAF002](../../../tablas/storage/com_act/SDAF002.md) | lee | `SCODAGR`≈, `SFECPRO`≈ | estatico + motor |
 | [storage.com_seg.retp003](../../../tablas/storage/com_seg/retp003.md) | lee | `hcodmod`, `HCODSEG`, `HDESSEG`, `HSUBTIP`, `HTIPOPE` | estatico + motor |
 | [storage.com_seg.SDSF001](../../../tablas/storage/com_seg/SDSF001.md) | lee | `scodagr`≈, `scodseg`≈, `sfecpro`≈ | estatico + motor |
@@ -46,8 +43,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.ref.fjercor02` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jerar, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jerar, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -60,6 +57,14 @@
 - Temporales: `#Meta_Vr2`, `#R1`, `#TABRESULT`, `#TP`, `#fjercor02`
 - ⚠️ Columna sin resolver `pvt.SCODDESCRIP`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

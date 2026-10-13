@@ -14,57 +14,25 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.util.FFMTVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FFMTVAR] WITH (NOLOCK);
-
--- mod_rep.util.FSEMVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FSEMVAR] WITH (NOLOCK);
-
--- storage.com_act.HTDA001 · lee · 2 columna(s)
-SELECT TOP (100) [HCANAL], [hfecpro]
+-- storage.com_act.HTDA001 · lee · 4 columna(s)
+SELECT TOP (100) [HCANAL], [HNUMDOC], [HTIPDOC], [hfecpro]
 FROM [storage].[com_act].[HTDA001] WITH (NOLOCK);
 
--- storage.com_act.WAPPCLI001 · lee · 1 columna(s)
-SELECT TOP (100) [hfecpro]
+-- storage.com_act.WAPPCLI001 · lee · 2 columna(s)
+SELECT TOP (100) [HTIPNUMDOC], [hfecpro]
 FROM [storage].[com_act].[WAPPCLI001] WITH (NOLOCK);
 
--- storage.com_pas.HCDP001 · lee · 1 columna(s)
-SELECT TOP (100) [hfecpro]
+-- storage.com_pas.HCDP001 · lee · 8 columna(s)
+SELECT TOP (100) [HCODSEC], [HPENDOC], [HPEPAIS], [HPETDOC], [HSBCTA], [HSBOPER], [HSBSBOP], [hfecpro]
 FROM [storage].[com_pas].[HCDP001] WITH (NOLOCK);
 
 -- storage.com_pas.RETP001 · lee · 1 columna(s)
 SELECT TOP (100) [RDESCPROD02]
 FROM [storage].[com_pas].[RETP001] WITH (NOLOCK);
 
--- STORAGE.com_pas.WJAS009 · lee · 4 columna(s)
+-- storage.com_pas.WJAS009 · lee · 4 columna(s)
 SELECT TOP (100) [HCODREL], [HFECPRO], [HTIPCOD], [RDESCPROD]
-FROM [STORAGE].[com_pas].[WJAS009] WITH (NOLOCK);
+FROM [storage].[com_pas].[WJAS009] WITH (NOLOCK);
 
 -- storage.ref.RCALEN001 · lee · 2 columna(s)
 SELECT TOP (100) [RDIAFER], [rfec]

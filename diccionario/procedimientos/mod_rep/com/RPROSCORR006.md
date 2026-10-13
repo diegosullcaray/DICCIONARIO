@@ -26,13 +26,12 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fecha` | date | — |  | `fecha` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [storage.com_act.HCMC002](../../../tablas/STORAGE/com_act/HCMC002.md) | lee | `HAPERTCTA`, `HDESAGE`, `HFECPRO`, `HINSTALAD`, `HMESINST`, `HPROSPEC`, `HZONA` | estatico + motor |
-| [storage.ref.vjercor03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESMAT`, `RDESTER` | estatico + motor |
+| [storage.com_act.HCMC002](../../../tablas/storage/com_act/HCMC002.md) | lee | `HAPERTCTA`, `HDESAGE`, `HFECPRO`, `HINSTALAD`, `HMESINST`, `HPROSPEC`, `HZONA` | estatico + motor |
+| [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESMAT`, `RDESTER` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -46,6 +45,12 @@
 
 - CTE: `cte_a`, `cte_b`
 - Temporales: `#Res`, `#Res2`, `#Result`, `#Total`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
 
 ### Validación con el motor
 

@@ -14,9 +14,9 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- STORAGE.com_act.HCGEO002 · lee · 1 columna(s)
-SELECT TOP (100) [HNOMCOR]
-FROM [STORAGE].[com_act].[HCGEO002] WITH (NOLOCK);
+-- storage.com_act.HCGEO002 · lee · 6 columna(s)
+SELECT TOP (100) [HAGENCI], [HCOORDE], [HCORRED], [HFECPRO], [HNOMCOR], [HTERRIT]
+FROM [storage].[com_act].[HCGEO002] WITH (NOLOCK);
 
 -- storage.com_act.HCMC001 · lee · 2 columna(s)
 SELECT TOP (100) [HMUNICB], [HNOMBREPTO]
@@ -26,6 +26,6 @@ FROM [storage].[com_act].[HCMC001] WITH (NOLOCK);
 SELECT TOP (100) [SCORRES]
 FROM [storage].[com_act].[SDAS021] WITH (NOLOCK);
 
--- storage.ref.vjercor03 · lee · 6 columna(s)
+-- storage.ref.VJERCOR03 · lee · 6 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODMAT], [RCODTER], [RDESCOR], [RDESMAT], [RDESTER]
-FROM [storage].[ref].[vjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR03] WITH (NOLOCK);

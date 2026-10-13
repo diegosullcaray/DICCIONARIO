@@ -14,18 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.RETP001 · lee · 3 columna(s)
 SELECT TOP (100) [RCODMOD], [RCODPROD], [RTIPOPE]
 FROM [storage].[com_act].[RETP001] WITH (NOLOCK);
@@ -34,8 +22,8 @@ FROM [storage].[com_act].[RETP001] WITH (NOLOCK);
 SELECT TOP (100) [RCODMOD], [RCODPROD], [RSUBTIP], [RTIPOPE]
 FROM [storage].[com_act].[RETP002] WITH (NOLOCK);
 
--- storage.com_act.RETP003 · lee · 1 columna(s)
-SELECT TOP (100) [RCODPROD]
+-- storage.com_act.RETP003 · lee · 2 columna(s)
+SELECT TOP (100) [RCODPROD], [RDESPROD]
 FROM [storage].[com_act].[RETP003] WITH (NOLOCK);
 
 -- storage.com_act.RETP009 · lee · 3 columna(s)

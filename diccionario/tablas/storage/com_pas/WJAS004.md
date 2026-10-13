@@ -12,9 +12,9 @@ Consultas listas: [sql/03-tablas/storage/com_pas/WJAS004.sql](../../../../sql/03
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `HCODREL` | varchar(50) | 🎯 exacta | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
-| `hfecpro` | date not null | ≈ inferida | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
-| `htipcod` | int not null | ≈ inferida | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
-| `RDESCPROD02` | varchar(50) | ≈ inferida | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
+| `hfecpro` | date not null | 🧩 por estructura | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
+| `htipcod` | int not null | 🧩 por estructura | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
+| `RDESCPROD02` | varchar(50) | 🧩 por estructura | [RSRDFCA036](../../../procedimientos/mod_rep/com/RSRDFCA036.md) | — |
 
 ### Procedimientos que la usan
 

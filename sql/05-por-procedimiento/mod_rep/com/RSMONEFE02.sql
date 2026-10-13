@@ -14,25 +14,13 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- storage.com_act.hbac002 · lee · 4 columna(s)
+-- storage.com_act.HBAC002 · lee · 4 columna(s)
 SELECT TOP (100) [HCODOPE], [HFECEJC], [HNUM_CONDONADO], [hfecpro]
-FROM [storage].[com_act].[hbac002] WITH (NOLOCK);
+FROM [storage].[com_act].[HBAC002] WITH (NOLOCK);
 
--- storage.com_act.hbae001 · lee · 1 columna(s)
+-- storage.com_act.HBAE001 · lee · 1 columna(s)
 SELECT TOP (100) [hcodope]
-FROM [storage].[com_act].[hbae001] WITH (NOLOCK);
+FROM [storage].[com_act].[HBAE001] WITH (NOLOCK);
 
 -- storage.com_act.HCDR001 · lee · 2 columna(s)
 SELECT TOP (100) [HCODOPE], [HFECPRO]
@@ -50,9 +38,9 @@ FROM [storage].[com_act].[HDGP001] WITH (NOLOCK);
 SELECT TOP (100) [HASEOPER], [HASEORI], [HCAPPEN], [HCARCOB], [HCARNCOB], [HCLFSBS], [HCODCIIU], [HCODCNV], [HCODEMP], [HCODMOD], [HCODMON], [HCODOPE], [HCODSEC], [HCRESBS], [HCTACLI], [HCTAFIA], [HCUOPEN], [HCUOVEN], [HDCODCNV], [HDCODSEC], [HDESCIIU], [HDESCLI], [HDESCRE], [HDESMOD], [HDESRUB], [HDESTOPE], [HDIAATR], [HDINDCAM], [HDIREC], [HDNIVAPR], [HDOCCON], [HDOCFIA], [HDPAIS], [HDSUBTIP], [HDSUCCLI], [HDSUCSEC], [HDTIPOPE], [HESTOPE], [HFECCLF], [HFECDES], [HFECMOR], [HFECPER], [HFECPRC], [HFECPRO], [HFECUCC], [HFRCPAG], [HGENPER], [HHORREG], [HINDCAM], [HINDCAR], [HINDTIPCB], [HINGDIF], [HINTCMP], [HINTMOR], [HINTVEN], [HMONDES], [HMONGAR], [HMONPRV], [HNASEORI], [HNIVAPR], [HNOMFIA], [HNOMREG], [HNUMCOR], [HNUMCRCLI], [HNUMDOC], [HNUMLET], [HNUMREN], [HNUMRUB], [HNUMTAS], [HNUMTHR], [HOCUP], [HPAIS], [HPAPEL], [HPRIVEN], [HRANDIA], [HRESID], [HRIECBCLI], [HRIECBOPE], [HROWID], [HSALCAP], [HSALCAPMN], [HSALCAR], [HSALRIE], [HSALVEN], [HSALVENMN], [HSHKCMB], [HSITCRE], [HSUBOPE], [HSUBTIP], [HSUCCLI], [HSUCOPER], [HSUCSEC], [HTIPCAR], [HTIPCMB], [HTIPDOC], [HTIPOPE], [HTIPPER], [HTOTCUO], [HTOTDEU], [HTOTGAR], [HUBIGEO], [HULTVEN], [HUSUPRO], [HVENATR]
 FROM [storage].[com_act].[VCAM001] WITH (NOLOCK);
 
--- STORAGE.com_act.WABDC003 · lee · 2 columna(s)
+-- storage.com_act.WABDC003 · lee · 2 columna(s)
 SELECT TOP (100) [HCTA], [HINDBASE]
-FROM [STORAGE].[com_act].[WABDC003] WITH (NOLOCK);
+FROM [storage].[com_act].[WABDC003] WITH (NOLOCK);
 
 -- storage.com_act.WCED001 · lee · 45 columna(s)
 SELECT TOP (100) [HCODMON], [HCODOPE], [HCODSEC], [HCREDSBS], [HCTACLI], [HCUOPAG], [HDCODSEC], [HDESCLI], [HDIAATR], [HESTACT], [HESTC], [HFCCOM], [HFCFGEST], [HFCFVPP], [HFCMPP], [HFCRES], [HFCRSPB], [HFDGPR], [HFECDES], [HFECMOR], [HFECUCC], [HFGPR], [HFTVEN], [HINDUCUO], [HINDZCUO], [HMONDES], [HNIVRIEBT], [HNIVSOB], [HPRECOS], [HPROBR], [HREGG], [HREGN], [HSALCAPMN], [HSALINIMN], [HTOTCUO], [HTRAM], [HUBIGEO], [RCODMAT], [RCODREG], [RCODTER], [RDESAGE], [RDESMAT], [RDESPROD], [RDESREG], [RDESTER]

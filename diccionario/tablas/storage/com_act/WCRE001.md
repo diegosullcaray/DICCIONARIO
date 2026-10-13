@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 11 columna(s) usadas · 1 procedimiento(s) · tabla con 10 columna(s) en la base
+Base `storage` · esquema `com_act` · 10 columna(s) usadas · 1 procedimiento(s) · tabla con 10 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/WCRE001.sql](../../../../sql/03-tablas/storage/com_act/WCRE001.sql)
 
@@ -11,7 +11,6 @@ Consultas listas: [sql/03-tablas/storage/com_act/WCRE001.sql](../../../../sql/03
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `GROUPING` | ⚠️ no existe | ≈ inferida | [RSMONEFER03](../../../procedimientos/mod_rep/com/RSMONEFER03.md) | — |
 | `hcodrel` | varchar(20) | ≈ inferida | [RSMONEFER03](../../../procedimientos/mod_rep/com/RSMONEFER03.md) | — |
 | `HDESPROD` | varchar(150) | 🎯 exacta | [RSMONEFER03](../../../procedimientos/mod_rep/com/RSMONEFER03.md) | — |
 | `HEREDADO` | smallint | 🎯 exacta | [RSMONEFER03](../../../procedimientos/mod_rep/com/RSMONEFER03.md) | — |

@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 19 columna(s) usadas · 24 procedimiento(s) · tabla con 103 columna(s) en la base
+Base `storage` · esquema `com_act` · 20 columna(s) usadas · 24 procedimiento(s) · tabla con 103 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/HCDA001.sql](../../../../sql/03-tablas/storage/com_act/HCDA001.sql)
 
@@ -28,6 +28,7 @@ Consultas listas: [sql/03-tablas/storage/com_act/HCDA001.sql](../../../../sql/03
 | `HNUMDOC` | varchar(20) | 🎯 exacta | [GCOSELIS001](../../../procedimientos/mod_rep/com/GCOSELIS001.md) | — |
 | `HSALVENMN` | numeric(17,2) | 🎯 exacta | [GCOSELIS001](../../../procedimientos/mod_rep/com/GCOSELIS001.md) | — |
 | `HSUBTIP` | int | 🎯 exacta | [GRESPROGOB02](../../../procedimientos/mod_rep/com/GRESPROGOB02.md) | — |
+| `HTIPCMB` | numeric(17,4) | 🧩 por estructura | [GCOSELIS001](../../../procedimientos/mod_rep/com/GCOSELIS001.md) | — |
 | `HTIPDOC` | smallint | 🎯 exacta | [GCOSELIS001](../../../procedimientos/mod_rep/com/GCOSELIS001.md) | — |
 | `HTIPOPE` | smallint | 🎯 exacta | [GRESPROGOB01](../../../procedimientos/mod_rep/com/GRESPROGOB01.md), [GRESPROGOB02](../../../procedimientos/mod_rep/com/GRESPROGOB02.md) | — |
 

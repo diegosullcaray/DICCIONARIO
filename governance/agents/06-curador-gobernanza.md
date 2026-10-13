@@ -14,13 +14,12 @@ Este agente no atiende un cambio sino el estado del repositorio.
 ## Ronda
 
 1. `npm run verificar` y `npm test` desde un checkout limpio.
-2. **Fichas huérfanas**: fichas en `diccionario/procedimientos/` cuyo SP ya no está en `reportes.json`
-   (el generador no las borra; ver [ADR-0002](../docs/architecture/adr/ADR-0002-diccionario-derivado.md)).
-   Decidir: borrar o mover a una nota de retiro.
-3. **Reglas**: cada regla de `lib/modelo.mjs` figura en [calidad](../docs/data/quality.md) con nivel y resolución.
-4. **Skills e índice**: `.agents/skills.json` igual al frontmatter de cada `SKILL.md`.
-5. **Docs**: lo que dicen `README.md`, `AGENTS.md` y `governance/` sigue siendo cierto (comandos, rutas, cifras).
-6. **Avance**: registrar en el PR la variación de extraídos/validados desde la ronda anterior.
+2. **Fichas huérfanas con prosa**: el generador borra solo las fichas sin trabajo manual y avisa de las demás
+   (`⚠ ficha sin objeto pero con prosa`). Decidir: mover la prosa a la ficha nueva o borrarla.
+3. **Línea base vencida**: si `verificar` dice que una entrada ya no aparece, se corrigió en producción:
+   regenerar la línea base en un commit propio.
+4. **Docs**: lo que dicen `README.md`, `AGENTS.md` y `governance/` sigue siendo cierto (comandos, rutas, cifras).
+5. **Avance**: registrar en el PR la variación de extraídos/validados desde la ronda anterior.
 
 ## Rechaza cuando
 
@@ -31,8 +30,7 @@ Este agente no atiende un cambio sino el estado del repositorio.
 
 ```text
 Sos el curador de gobernanza del repositorio DICCIONARIO. Buscás deriva: generados desactualizados, enlaces rotos,
-fichas de SP que ya no están en fuente/reportes.json, reglas de governance/scripts/lib/modelo.mjs sin documentar en
-governance/docs/data/quality.md, skills fuera de .agents/skills.json y documentación que afirma algo que el código ya
+fichas huérfanas con prosa, entradas vencidas de governance/linea-base.json y documentación que afirma algo que el código ya
 no hace. Corregís el documento o abrís el hallazgo; nunca editás un bloque generado ni relajás una regla para que
 npm run verificar pase.
 ```

@@ -14,34 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.util.FFMTVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FFMTVAR] WITH (NOLOCK);
-
 -- storage.com_act.WACIIU0012 · lee · 1 columna(s)
 SELECT TOP (100) [HFECPRO]
 FROM [storage].[com_act].[WACIIU0012] WITH (NOLOCK);
@@ -50,9 +22,9 @@ FROM [storage].[com_act].[WACIIU0012] WITH (NOLOCK);
 SELECT TOP (100) [HCODSEC], [HCUOVEN], [HSALVENMN], [MontoDesembolsados], [MontoDesembolsadosNuevos], [MontoDesembolsadosRecurrentes], [NDesembolsados], [NDesembolsadosNuevos], [NDesembolsadosRecurrentes], [RDESGRUP], [SalCapi], [hfecpro], [hfecproc], [ord]
 FROM [storage].[com_act].[WACIIU0013] WITH (NOLOCK);
 
--- STORAGE.com_act.WJAS003 · lee · 5 columna(s)
+-- storage.com_act.WJAS003 · lee · 5 columna(s)
 SELECT TOP (100) [HCODREL], [HRATMORR], [HTIPCOD], [ORD], [RDESGRUP]
-FROM [STORAGE].[com_act].[WJAS003] WITH (NOLOCK);
+FROM [storage].[com_act].[WJAS003] WITH (NOLOCK);
 
 -- storage.gpr.VPPH001 · lee · 2 columna(s)
 SELECT TOP (100) [HNUMDOC], [hcodbt]
@@ -66,6 +38,6 @@ FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 SELECT TOP (100) [ROWI], [codvars], [style], [vars]
 FROM [storage].[ref].[ResGridCiiu2] WITH (NOLOCK);
 
--- storage.ref.WJERCOR01 · lee · 3 columna(s)
+-- storage.ref.wjercor01 · lee · 3 columna(s)
 SELECT TOP (100) [RCODSEC], [RFECPRO], [RINDFEC]
-FROM [storage].[ref].[WJERCOR01] WITH (NOLOCK);
+FROM [storage].[ref].[wjercor01] WITH (NOLOCK);

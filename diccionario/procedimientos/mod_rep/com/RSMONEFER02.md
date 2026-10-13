@@ -35,22 +35,19 @@
 | 11 | `@pagen` | int | — |  | `pagen` |
 | 12 | `@fcompro` | varchar(50) | — |  | `fcompro` |
 
-### Tablas y columnas (12)
+### Tablas y columnas (9)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [storage.com_act.hbac002](../../../tablas/storage/com_act/hbac002.md) | lee | `HCODOPE`, `HFECEJC`, `hfecpro`, `HNUM_CONDONADO` | estatico + motor |
-| [storage.com_act.hbae001](../../../tablas/storage/com_act/hbae001.md) | lee | `hcodope`≈ | estatico + motor |
+| [storage.com_act.HBAC002](../../../tablas/storage/com_act/HBAC002.md) | lee | `HCODOPE`, `HFECEJC`, `hfecpro`, `HNUM_CONDONADO` | estatico + motor |
+| [storage.com_act.HBAE001](../../../tablas/storage/com_act/HBAE001.md) | lee | `hcodope`≈ | estatico + motor |
 | [storage.com_act.HCDR001](../../../tablas/storage/com_act/HCDR001.md) | lee | `HCODOPE`≈, `HFECPRO`≈ | estatico + motor |
 | [storage.com_act.HCDR002](../../../tablas/storage/com_act/HCDR002.md) | lee | `HCODOPE`≈, `HFECPRO`≈ | estatico + motor |
 | [storage.com_act.HDGP001](../../../tablas/storage/com_act/HDGP001.md) | lee | `hfecpro`, `HNOMG`, `HNROG`, `HOPER` | estatico + motor |
 | [storage.com_act.VCAM001](../../../tablas/storage/com_act/VCAM001.md) | lee | `HASEOPER`, `HASEORI`, `HCAPPEN`, `HCARCOB`, `HCARNCOB`, `HCLFSBS`, `HCODCIIU`, `HCODCNV`, `HCODEMP`, `HCODMOD`, `HCODMON`, `HCODOPE`, `HCODSEC`, `HCRESBS`, `HCTACLI`, `HCTAFIA`, `HCUOPEN`, `HCUOVEN`, `HDCODCNV`, `HDCODSEC`, `HDESCIIU`, `HDESCLI`, `HDESCRE`, `HDESMOD`, `HDESRUB`, `HDESTOPE`, `HDIAATR`, `HDINDCAM`, `HDIREC`, `HDNIVAPR`, `HDOCCON`, `HDOCFIA`, `HDPAIS`, `HDSUBTIP`, `HDSUCCLI`, `HDSUCSEC`, `HDTIPOPE`, `HESTOPE`, `HFECCLF`, `HFECDES`, `HFECMOR`, `HFECPER`, `HFECPRC`, `HFECPRO`, `HFECUCC`, `HFRCPAG`, `HGENPER`, `HHORREG`, `HINDCAM`, `HINDCAR`, `HINDTIPCB`, `HINGDIF`, `HINTCMP`, `HINTMOR`, `HINTVEN`, `HMONDES`, `HMONGAR`, `HMONPRV`, `HNASEORI`, `HNIVAPR`, `HNOMFIA`, `HNOMREG`, `HNUMCOR`, `HNUMCRCLI`, `HNUMDOC`, `HNUMLET`, `HNUMREN`, `HNUMRUB`, `HNUMTAS`, `HNUMTHR`, `HOCUP`, `HPAIS`, `HPAPEL`, `HPRIVEN`, `HRANDIA`, `HRESID`, `HRIECBCLI`, `HRIECBOPE`, `HROWID`, `HSALCAP`, `HSALCAPMN`, `HSALCAR`, `HSALRIE`, `HSALVEN`, `HSALVENMN`, `HSHKCMB`, `HSITCRE`, `HSUBOPE`, `HSUBTIP`, `HSUCCLI`, `HSUCOPER`, `HSUCSEC`, `HTIPCAR`, `HTIPCMB`, `HTIPDOC`, `HTIPOPE`, `HTIPPER`, `HTOTCUO`, `HTOTDEU`, `HTOTGAR`, `HUBIGEO`, `HULTVEN`, `HUSUPRO`, `HVENATR` | estatico + motor |
 | [storage.com_act.WCED002](../../../tablas/storage/com_act/WCED002.md) | lee | `HCODMON`, `HCODOPE`, `HCODSEC`, `HCREDSBS`, `HCTACLI`, `HCUOPAG`, `HDCODSEC`, `HDESCLI`, `HDIAATR`, `HESTACT`, `HESTC`, `HFCCOM`, `HFCFGEST`, `HFCFVPP`, `HFCMPP`, `HFCRES`, `HFCRSPB`, `HFDGPR`, `HFECDES`, `HFECMOR`, `HFECUCC`, `HFGPR`, `HFTVEN`, `HINDUCUO`, `HINDZCUO`, `HMONDES`, `HNIVRIEBT`, `HNIVSOB`, `HPROBR`, `HREGG`, `HREGN`, `HSALCAPMN`, `HSALINIMN`, `HTOTCUO`, `HTRAM`, `HUBIGEO`, `RCODMAT`, `RCODREG`, `RCODTER`, `RDESAGE`, `RDESMAT`, `RDESPROD`, `RDESREG`, `RDESTER` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/wjercor03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI`, `RDESCOR`, `RDESTER`, `RDESUNI`, `RFECPRO` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUNI`, `RDESCOR`, `RDESTER`, `RDESUNI`, `RFECPRO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -63,6 +60,14 @@
 
 - CTE: `a`, `cte_condonados`
 - Temporales: `#HDGP001`, `#VCAM001`, `#WCED002`, `#condonados`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

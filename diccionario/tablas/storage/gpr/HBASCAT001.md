@@ -47,24 +47,24 @@ Consultas listas: [sql/03-tablas/storage/gpr/HBASCAT001.sql](../../../../sql/03-
 | `c6_4` | smallint | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
 | `c6_5` | smallint | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
 | `c6_6` | smallint | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCARSEC` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCATSEC` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCARSEC` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCATSEC` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
 | `HCODSEC` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOM001` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOM002` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOM003` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOM004` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOM005` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOM006` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HCOMFIN` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HDESSEC` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOM001` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOM002` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOM003` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOM004` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOM005` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOM006` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HCOMFIN` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HDESSEC` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
 | `HFECPRO` | date | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HGENSEC` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HNUMDOC` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HREQ001` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HREQ002` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HREQ003` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
-| `HREQ004` | nvarchar(255) | 🗄️ motor | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HGENSEC` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HNUMDOC` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HREQ001` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HREQ002` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HREQ003` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
+| `HREQ004` | nvarchar(255) | ✅ confirmada | [GCATSEC01](../../../procedimientos/mod_sec/dbo/GCATSEC01.md) | — |
 
 ### Procedimientos que la usan
 

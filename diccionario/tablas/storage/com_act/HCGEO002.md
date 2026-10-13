@@ -3,15 +3,20 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `STORAGE` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 6 columna(s) en la base
+Base `storage` · esquema `com_act` · 6 columna(s) usadas · 1 procedimiento(s) · tabla con 6 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/STORAGE/com_act/HCGEO002.sql](../../../../sql/03-tablas/STORAGE/com_act/HCGEO002.sql)
+Consultas listas: [sql/03-tablas/storage/com_act/HCGEO002.sql](../../../../sql/03-tablas/storage/com_act/HCGEO002.sql)
 
 ### Columnas usadas
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
+| `HAGENCI` | varchar(250) | 🧩 por estructura | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
+| `HCOORDE` | varchar(250) | 🧩 por estructura | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
+| `HCORRED` | varchar(250) | 🧩 por estructura | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
+| `HFECPRO` | date | 🧩 por estructura | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
 | `HNOMCOR` | varchar(250) | 🎯 exacta | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
+| `HTERRIT` | varchar(250) | 🧩 por estructura | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
 
 ### Procedimientos que la usan
 

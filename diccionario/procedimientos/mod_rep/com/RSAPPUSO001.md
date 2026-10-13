@@ -9,7 +9,6 @@
 | Estado | ✅ validado |
 | Cuerpo | [procedimientos/mod_rep/com/RSAPPUSO001.sql](../../../../procedimientos/mod_rep/com/RSAPPUSO001.sql) |
 | Extracción | [sql/01-extraccion/mod_rep/com/RSAPPUSO001.sql](../../../../sql/01-extraccion/mod_rep/com/RSAPPUSO001.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/mod_rep/com/RSAPPUSO001.sql](../../../../sql/05-por-procedimiento/mod_rep/com/RSAPPUSO001.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)
@@ -25,14 +24,9 @@
 | 1 | `@tip_cod` | int | — |  | `tip_cod` |
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 
-### Tablas y columnas (2)
+### Tablas y columnas (0)
 
-| Tabla | Operación | Columnas usadas | Fuente |
-|---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-
-`≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
+No se detectaron tablas.
 
 ### Columnas que devuelve
 
@@ -41,6 +35,13 @@ No se detectó un SELECT final que devuelva filas.
 ### Observaciones del análisis
 
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

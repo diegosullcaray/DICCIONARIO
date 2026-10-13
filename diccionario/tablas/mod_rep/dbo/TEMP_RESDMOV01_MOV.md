@@ -3,19 +3,22 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `mod_rep` · esquema `dbo` · 0 columna(s) usadas · 1 procedimiento(s) · estructura real sin consultar (`python herramientas/bd.py estructura`)
+Base `mod_rep` · esquema `dbo` · 2 columna(s) usadas · 1 procedimiento(s) · tabla de trabajo: la crea y borra un SP en cada ejecución
 
 Consultas listas: [sql/03-tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.sql](../../../../sql/03-tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.sql)
 
 ### Columnas usadas
 
-Ningún procedimiento nombra columnas de esta tabla (o solo usa `*`).
+| Columna | Tipo | Confianza | Usada por | Descripción |
+|---|---|---|---|---|
+| `HCODSEC` | — | ≈ inferida | [RESDMOV01](../../../procedimientos/mod_rep/com/RESDMOV01.md) | — |
+| `RDESTER` | — | ≈ inferida | [RESDMOV01](../../../procedimientos/mod_rep/com/RESDMOV01.md) | — |
 
 ### Procedimientos que la usan
 
 | Procedimiento | Operación | Reportes |
 |---|---|---|
-| [mod_rep.com.RESDMOV01](../../../procedimientos/mod_rep/com/RESDMOV01.md) | elimina-objeto | `RESNMOV_01` |
+| [mod_rep.com.RESDMOV01](../../../procedimientos/mod_rep/com/RESDMOV01.md) | elimina-objeto, lee | `RESNMOV_01` |
 <!-- generado:fin -->
 
 ## Descripción

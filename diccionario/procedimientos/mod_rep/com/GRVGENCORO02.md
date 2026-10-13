@@ -9,7 +9,6 @@
 | Estado | ✅ validado |
 | Cuerpo | [procedimientos/mod_rep/com/GRVGENCORO02.sql](../../../../procedimientos/mod_rep/com/GRVGENCORO02.sql) |
 | Extracción | [sql/01-extraccion/mod_rep/com/GRVGENCORO02.sql](../../../../sql/01-extraccion/mod_rep/com/GRVGENCORO02.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/mod_rep/com/GRVGENCORO02.sql](../../../../sql/05-por-procedimiento/mod_rep/com/GRVGENCORO02.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)
@@ -27,25 +26,17 @@
 | 3 | `@fec` | date | — |  | `fec` |
 | 4 | `@tip_age` | VARCHAR(250) | — |  | `tip_age` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (0)
 
-| Tabla | Operación | Columnas usadas | Fuente |
-|---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-
-`≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
+No se detectaron tablas.
 
 ### Procedimientos y funciones invocados
 
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
-| `piv.GPIVLEV06` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars","agr_trx"', @config, =, @tconf | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars","esta_corr"', @config, =, @tconf | no |
+| `piv.GPIVLEV06` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars","agr_trx"', @config = @tconf | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars","esta_corr"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -54,6 +45,16 @@
 ### Observaciones del análisis
 
 - Temporales: `#R1`, `#R1_1`, `#R2`, `#R2_2`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

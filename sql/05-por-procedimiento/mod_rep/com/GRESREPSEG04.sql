@@ -14,10 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
 -- storage.com_seg.SDSF001 · lee · 1 columna(s)
 SELECT TOP (100) [SFECPRO]
 FROM [storage].[com_seg].[SDSF001] WITH (NOLOCK);

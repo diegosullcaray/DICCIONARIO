@@ -14,26 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.HTDA001 · lee · 9 columna(s)
 SELECT TOP (100) [HCANAL], [HDESPROC], [HFECPRO], [HMONTO], [HNUMDOC], [HTIPDOC], [HTOTINTE], [RCODSUC], [htiptrax]
 FROM [storage].[com_act].[HTDA001] WITH (NOLOCK);
@@ -54,14 +34,14 @@ FROM [storage].[com_act].[WHOP001] WITH (NOLOCK);
 SELECT TOP (100) [RCODSUC]
 FROM [storage].[com_act].[WTRXMON001] WITH (NOLOCK);
 
--- storage.com.WJAS004 · lee · 2 columna(s)
-SELECT TOP (100) [hfecpro], [htipcod]
-FROM [storage].[com].[WJAS004] WITH (NOLOCK);
+-- storage.com.wjas004 · lee · 13 columna(s)
+SELECT TOP (100) [HDATINPUTRXUSA], [HPERCENTCART], [HPERCENTENROCLINET], [HPERCENTPASI], [HPERCENTUSABILIDAD], [HTIPAMBO], [HTIPCRED], [HTIPFALT], [HTIPPASI], [HTOTALCLIENROL], [hcodrel], [hfecpro], [htipcod]
+FROM [storage].[com].[wjas004] WITH (NOLOCK);
 
--- storage.ref.RCALEN001 · lee · 3 columna(s)
-SELECT TOP (100) [MM], [RDIAFER], [rfec]
+-- storage.ref.RCALEN001 · lee · 2 columna(s)
+SELECT TOP (100) [RDIAFER], [rfec]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
--- storage.ref.vjercor03 · lee · 10 columna(s)
+-- storage.ref.VJERCOR03 · lee · 10 columna(s)
 SELECT TOP (100) [RCODAGE], [RCODCOR], [RCODFC], [RCODMAT], [RCODTER], [RDESAGE], [RDESCOR], [RDESFC], [RDESMAT], [RDESTER]
-FROM [storage].[ref].[vjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR03] WITH (NOLOCK);

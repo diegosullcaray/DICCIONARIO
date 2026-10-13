@@ -38,7 +38,7 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_pas.WBAUT001](../../../tablas/storage/com_pas/WBAUT001.md) | lee | `HCOFIC`, `HFECPRO` | estatico + motor |
+| [storage.com_pas.WBAUT001](../../../tablas/storage/com_pas/WBAUT001.md) | lee | `CANAL`, `HAOTASA`, `HCOFIC`, `HDMODU`, `HFECPRO`, `HMAPER`, `HRENOV`, `HTMAXI` | estatico + motor |
 | [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODFC`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESFC`, `RDESMAT`, `RDESTER` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.

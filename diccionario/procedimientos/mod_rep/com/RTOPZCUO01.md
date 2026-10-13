@@ -30,7 +30,7 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.wzcuo001](../../../tablas/storage/com_act/WZCUO001.md) | lee | `HASEOPER`, `HCODDES`, `HCODOPE`, `HCODORI`, `hfecpro`, `hsalcapmn`, `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESSEC`, `RDESTER`, `RDESUNI` | estatico + motor |
+| [storage.com_act.WZCUO001](../../../tablas/storage/com_act/WZCUO001.md) | lee | `HASEOPER`, `HCODDES`, `HCODOPE`, `HCODORI`, `hfecpro`, `hsalcapmn`, `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESSEC`, `RDESTER`, `RDESUNI` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

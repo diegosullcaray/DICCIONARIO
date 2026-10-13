@@ -26,14 +26,11 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | date | '20240610' |  | `fec` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [storage.com_seg.RETC001](../../../tablas/storage/com_seg/RETC001.md) | lee | `HCODSEG` | estatico + motor |
+| [storage.com_seg.RETC001](../../../tablas/storage/com_seg/RETC001.md) | lee | `HCODSEG`, `HCOMIFC` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `hfecpro`, `HTIPCOD`, `HVALVAR` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RDIASEM`, `RFEC` | estatico + motor |
 
@@ -47,8 +44,8 @@
 | `storage.util.FVECFEC01` (función) | — | no |
 | `storage.util.FVECFEC01` (función) | — | no |
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV09` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars","fec_corr"', @config, =, @tconf | no |
+| `piv.GPIVLEV09` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars","fec_corr"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -63,6 +60,14 @@
 - ⚠️ Columna sin resolver `num_pol_pasiv_2` (¿storage.com_seg.RETC001?)
 - ⚠️ Columna sin resolver `cod_Prod_Seg` (¿storage.com_seg.RETC001?)
 - ⚠️ Columna sin resolver `HCOMIFC` (¿storage.com_seg.RETC001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

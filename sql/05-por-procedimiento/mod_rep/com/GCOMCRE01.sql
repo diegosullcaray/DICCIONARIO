@@ -14,32 +14,16 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.util.FFMTVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FFMTVAR] WITH (NOLOCK);
-
--- mod_rep.util.FSEMVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FSEMVAR] WITH (NOLOCK);
-
--- storage.com_act.WDCB001 · lee · 19 columna(s)
-SELECT TOP (100) [HCOM_10K], [HCOM_10_20K], [HCOM_DESEMB], [HCOM_FIRMA], [HCOM_FISICO], [HCOM_M20K], [HCOM_SDESEMB], [HCOM_SFIRMA], [HCOM_VIRTUAL], [HDESEMB_COM], [HDESEMB_SCOM], [HFECPRO], [HNUM_COMITE], [HSCOM_10K], [HSCOM_10_20K], [HSCOM_M20K], [HTOT_OPEDESEMB], [hcodrel], [htipcod]
+-- storage.com_act.WDCB001 · lee · 25 columna(s)
+SELECT TOP (100) [HAVG_ASIST], [HAVG_DURA], [HAVG_OPE], [HCOM_10K], [HCOM_10_20K], [HCOM_DESEMB], [HCOM_FIRMA], [HCOM_FISICO], [HCOM_M20K], [HCOM_SDESEMB], [HCOM_SFIRMA], [HCOM_VIRTUAL], [HDESEMB_COM], [HDESEMB_SCOM], [HFECPRO], [HMAX_ASIST], [HMAX_DURA], [HMAX_OPE], [HNUM_COMITE], [HSCOM_10K], [HSCOM_10_20K], [HSCOM_M20K], [HTOT_OPEDESEMB], [hcodrel], [htipcod]
 FROM [storage].[com_act].[WDCB001] WITH (NOLOCK);
 
--- storage.com_act.WDCB002 · lee · 3 columna(s)
-SELECT TOP (100) [HFECPRO], [hcodrel], [htipcod]
+-- storage.com_act.WDCB002 · lee · 7 columna(s)
+SELECT TOP (100) [HFECPRO], [HSALCAPMN_CC], [HSALCAPMN_SC], [HSALVENMN_CC], [HSALVENMN_SC], [hcodrel], [htipcod]
 FROM [storage].[com_act].[WDCB002] WITH (NOLOCK);
 
--- storage.com_act.wjas002 · lee · 3 columna(s)
-SELECT TOP (100) [HFECPRO], [hcodrel], [htipcod]
+-- storage.com_act.wjas002 · lee · 6 columna(s)
+SELECT TOP (100) [HCAST12M], [HFECPRO], [HRECCAST12M], [HVENTA_CARTMN12M], [hcodrel], [htipcod]
 FROM [storage].[com_act].[wjas002] WITH (NOLOCK);
 
 -- storage.ref.RCALEN001 · lee · 2 columna(s)

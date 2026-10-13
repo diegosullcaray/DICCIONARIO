@@ -26,17 +26,13 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (8)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
-| [storage.com_act.WDCB001](../../../tablas/storage/com_act/WDCB001.md) | lee | `hcodrel`, `HCOM_10_20K`, `HCOM_10K`, `HCOM_DESEMB`, `HCOM_FIRMA`, `HCOM_FISICO`, `HCOM_M20K`, `HCOM_SDESEMB`, `HCOM_SFIRMA`, `HCOM_VIRTUAL`, `HDESEMB_COM`, `HDESEMB_SCOM`, `HFECPRO`, `HNUM_COMITE`, `HSCOM_10_20K`, `HSCOM_10K`, `HSCOM_M20K`, `htipcod`, `HTOT_OPEDESEMB` | estatico + motor |
-| [storage.com_act.WDCB002](../../../tablas/storage/com_act/WDCB002.md) | lee | `hcodrel`, `HFECPRO`, `htipcod` | estatico + motor |
-| [storage.com_act.wjas002](../../../tablas/storage/com_act/WJAS002.md) | lee | `hcodrel`, `HFECPRO`, `htipcod` | estatico + motor |
+| [storage.com_act.WDCB001](../../../tablas/storage/com_act/WDCB001.md) | lee | `HAVG_ASIST`, `HAVG_DURA`, `HAVG_OPE`, `hcodrel`, `HCOM_10_20K`, `HCOM_10K`, `HCOM_DESEMB`, `HCOM_FIRMA`, `HCOM_FISICO`, `HCOM_M20K`, `HCOM_SDESEMB`, `HCOM_SFIRMA`, `HCOM_VIRTUAL`, `HDESEMB_COM`, `HDESEMB_SCOM`, `HFECPRO`, `HMAX_ASIST`, `HMAX_DURA`, `HMAX_OPE`, `HNUM_COMITE`, `HSCOM_10_20K`, `HSCOM_10K`, `HSCOM_M20K`, `htipcod`, `HTOT_OPEDESEMB` | estatico + motor |
+| [storage.com_act.WDCB002](../../../tablas/storage/com_act/WDCB002.md) | lee | `hcodrel`, `HFECPRO`, `HSALCAPMN_CC`, `HSALCAPMN_SC`, `HSALVENMN_CC`, `HSALVENMN_SC`, `htipcod` | estatico + motor |
+| [storage.com_act.wjas002](../../../tablas/storage/com_act/wjas002.md) | lee | `HCAST12M`, `hcodrel`, `HFECPRO`, `HRECCAST12M`, `htipcod`, `HVENTA_CARTMN12M` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `rciebt`≈, `RFEC`≈ | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -68,6 +64,15 @@ No se detectó un SELECT final que devuelva filas.
 - ⚠️ Columna sin resolver `HSALVENMN_SC` (¿storage.com_act.WDCB001 o storage.com_act.WDCB002 o storage.com_act.wjas002?)
 - ⚠️ Columna sin resolver `HSALCAPMN_SC` (¿storage.com_act.WDCB001 o storage.com_act.WDCB002 o storage.com_act.wjas002?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -26,12 +26,10 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@cargo` | varchar(250) | — |  | `cargo` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.VCAUT001](../../../tablas/storage/com_act/VCAUT001.md) | lee | `HCODSEC`, `HCODUSAUT`, `HFECPRO`, `HSALCAPMN`, `HSALVENMN` | estatico + motor |
 | [storage.com_act.VCAUT002](../../../tablas/storage/com_act/VCAUT002.md) | lee | `HCODSEC`≈, `HCODUSAUT`≈, `HCOSECHA`≈, `HFECBAS`≈, `SNUMOPEBAS`≈, `SNUMOPEMORH`≈ | estatico + motor |
 | [storage.gpr.HPPC001](../../../tablas/storage/gpr/HPPC001.md) | lee | `HCODBT`≈, `HDESCAR`≈, `HDESPER`≈, `hfecpro` | estatico + motor |
@@ -57,6 +55,13 @@
 - CTE: `a`, `b`
 - Temporales: `#CarteraPivot`, `#CastigoPivot`, `#ResulCap`, `#Result`, `#temp1`
 - ⚠️ SQL dinámico: hay tablas que el análisis no puede ver
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

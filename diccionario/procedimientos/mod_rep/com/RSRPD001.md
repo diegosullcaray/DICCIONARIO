@@ -28,10 +28,10 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [LS_FCMIS_REP.FCMIS_REP.dbo.ControlCargaData](../../../tablas/FCMIS_REP/dbo/ControlCargaData.md) | lee | `BitAct`≈, `descripcion`≈, `fechaAct`≈, `FechaRep`≈, `FechaRepAnt`≈, `id`≈ | estatico + motor |
+| [FCMIS_REP.dbo.ControlCargaData](../../../tablas/FCMIS_REP/dbo/ControlCargaData.md) | lee | `BitAct`≈, `descripcion`≈, `fechaAct`≈, `FechaRep`≈, `FechaRepAnt`≈, `id`≈ | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | estatico + motor |
 | [strategos.etl.ABPCONF01](../../../tablas/strategos/etl/ABPCONF01.md) | lee | `HCODPRO`, `HDESLOG`, `HDESPRO`, `HSTATUS`, `HTIPPRO` | estatico + motor |
-| [strategos.etl.ABPEVLOG01](../../../tablas/strategos/etl/ABPEVLOG01.md) | lee | `dd`≈, `HCODPRO`, `HDESPRO`, `HDESTAD`, `HFECLOG`, `HFECPRO` | estatico + motor |
+| [strategos.etl.ABPEVLOG01](../../../tablas/strategos/etl/ABPEVLOG01.md) | lee | `HCODPRO`, `HDESPRO`, `HDESTAD`, `HFECLOG`, `HFECPRO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

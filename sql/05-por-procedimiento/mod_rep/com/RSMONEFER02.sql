@@ -14,25 +14,13 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- storage.com_act.hbac002 · lee · 4 columna(s)
+-- storage.com_act.HBAC002 · lee · 4 columna(s)
 SELECT TOP (100) [HCODOPE], [HFECEJC], [HNUM_CONDONADO], [hfecpro]
-FROM [storage].[com_act].[hbac002] WITH (NOLOCK);
+FROM [storage].[com_act].[HBAC002] WITH (NOLOCK);
 
--- storage.com_act.hbae001 · lee · 1 columna(s)
+-- storage.com_act.HBAE001 · lee · 1 columna(s)
 SELECT TOP (100) [hcodope]
-FROM [storage].[com_act].[hbae001] WITH (NOLOCK);
+FROM [storage].[com_act].[HBAE001] WITH (NOLOCK);
 
 -- storage.com_act.HCDR001 · lee · 2 columna(s)
 SELECT TOP (100) [HCODOPE], [HFECPRO]

@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- storage.com_pas.wjas005 · lee · 14 columna(s)
+-- storage.com_pas.WJAS005 · lee · 14 columna(s)
 SELECT TOP (100) [CANAL], [CANT_TX_ANIO_ACT], [CANT_TX_MES_ACT], [CANT_TX_MES_ANT], [CANT_TX_ULT_DIA], [EMPRESA], [HCODREL], [HFECPRO], [HTIPCOD], [MON_TX_ANIO_ACT], [MON_TX_MES_ACT], [MON_TX_MES_ANT], [MON_TX_ULT_DIA], [SERVICIO]
-FROM [storage].[com_pas].[wjas005] WITH (NOLOCK);
+FROM [storage].[com_pas].[WJAS005] WITH (NOLOCK);

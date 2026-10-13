@@ -28,16 +28,10 @@
 | 3 | `@tip_cod` | varchar(5) | — |  | `tip_cod` |
 | 4 | `@tipmeta` | int | 1 |  | — |
 
-### Tablas y columnas (8)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.util.FFMTVAR](../../../tablas/mod_rep/util/FFMTVAR.md) | — | — | motor |
-| [mod_rep.util.FSEMVAR](../../../tablas/mod_rep/util/FSEMVAR.md) | — | — | motor |
 | [storage.com_act.WJAS002_SIMP](../../../tablas/storage/com_act/WJAS002_SIMP.md) | lee | `HFECPRO` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | estatico + motor |
 
@@ -49,10 +43,10 @@
 |---|---|---|
 | `storage.com.FCMGCAB` (función) | — | no |
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, '"fec"', @columns, =, '"vars"', @config, =, @tconf | no |
-| `piv.GPIVLEV04` | @tip_cod, @cod_rel, @jerar, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, '"fec"', @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jerar output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = '"fec"', @columns = '"vars"', @config = @tconf | no |
+| `piv.GPIVLEV04` | @tip_cod, @cod_rel, @jerar output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = '"fec"', @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -64,6 +58,17 @@
 - CTE: `cte_a`
 - Temporales: `#AAA`, `#ACUM01`, `#CMG`, `#FECS`, `#PARTE01`, `#PARTE02_NUMEROS`, `#PARTE03_RATIOS`, `#PROD00`, `#RES`, `#RESULT00`, `#RESULT01`, `#RESULTPIV`, `#RESULTPIV1`, `#RESULTPRE`, `#VAR01A_MORAREALNETA`, `#VAR02_MORARB`, `#WJAS002`, `#tabla`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.util.FFMTVAR`
+- `mod_rep.util.FSEMVAR`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

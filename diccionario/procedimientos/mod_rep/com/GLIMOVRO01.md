@@ -26,14 +26,12 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [mod_sys_admin.dbo.SUSEPROF01](../../../tablas/mod_sys_admin/dbo/SUSEPROF01.md) | lee | `SCODPROFN`, `SCODUSE` | estatico + motor |
-| [STORAGE.com_act.HBMOV001](../../../tablas/STORAGE/com_act/HBMOV001.md) | lee | `GRUPo`, `HCODGEOR`, `HCODSEC`, `HCTACLI`, `HDESCLI`, `HDESPER`, `HDISTR`, `HDISTR_LLEGADA`, `HDISTREC`, `HDPT`, `HFECEMI`, `hfecpro`, `HFECREG`, `HMONTDIS`, `HMOTIV`, `HNUMDOC`, `HNUMDOCCLI`, `HNUMREG`, `HPROV`, `mm`≈, `yyyy`≈ | estatico + motor |
+| [storage.com_act.HBMOV001](../../../tablas/storage/com_act/HBMOV001.md) | lee | `GRUPo`, `HCODGEOR`, `HCODSEC`, `HCTACLI`, `HDESCLI`, `HDESPER`, `HDISTR`, `HDISTR_LLEGADA`, `HDISTREC`, `HDPT`, `HFECEMI`, `hfecpro`, `HFECREG`, `HMONTDIS`, `HMOTIV`, `HNUMDOC`, `HNUMDOCCLI`, `HNUMREG`, `HPROV` | estatico + motor |
 | [storage.com_act.VCAH001](../../../tablas/storage/com_act/VCAH001.md) | lee | `hctacli`, `hdescli` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HMAILPER`, `HNUMDOC` | estatico + motor |
 
@@ -50,6 +48,13 @@
 
 - Temporales: `#HBMOV001`
 - ⚠️ Columna sin resolver `HMOTIV` (¿STORAGE.com_act.HBMOV001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

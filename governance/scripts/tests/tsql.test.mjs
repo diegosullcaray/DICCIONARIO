@@ -125,3 +125,34 @@ test('tokenizador: identificadores multiparte con corchetes y base..tabla', () =
   const ids = tokenizar('SELECT * FROM [mod_rep].[com].[T 1] JOIN storage..X').filter((t) => t.t === 'id').map((t) => t.partes);
   assert.deepEqual(ids, [['SELECT'], ['FROM'], ['mod_rep', 'com', 'T 1'], ['JOIN'], ['storage', '', 'X']]);
 });
+
+test('DROP TABLE IF EXISTS y TRUNCATE de temporales no crean tablas', () => {
+  const r = analizarProcedimiento(`CREATE PROC rep.X AS
+    drop table if exists #pyg;
+    SELECT * INTO #temp3 FROM dbo.ORIGEN;
+    truncate table #temp3;
+    DROP TABLE IF EXISTS dbo.TRABAJO;`, ctx);
+  assert.deepEqual(r.tablas.map((t) => t.completo).sort(), ['mod_rep.dbo.ORIGEN', 'mod_rep.dbo.TRABAJO']);
+  assert.deepEqual(r.temporales, ['#pyg', '#temp3']);
+});
+
+test('tabla de trabajo: el SP la crea con SELECT INTO y la borra', () => {
+  const r = analizarProcedimiento(`CREATE PROC com.X AS
+    select a.COD into Datos_AGR from dbo.ORIGEN a;
+    select * from Datos_AGR;
+    drop table Datos_AGR;`, { base: 'mod_rep', esquema: 'com' });
+  assert.deepEqual(tabla(r, 'mod_rep.com.Datos_AGR').usos, ['crea', 'elimina-objeto', 'lee']);
+});
+
+test('partes de fecha y GROUPING no son columnas', () => {
+  const r = analizarProcedimiento(`CREATE PROC rep.X AS
+    SELECT DATEPART(mm, c.FECHA) mes, DATEADD(day, -1, FECPRO) ayer, DATEDIFF(yyyy, FECPRO, GETDATE()) anios
+    FROM dbo.CALENDARIO c GROUP BY ROLLUP(c.FECHA)`, ctx);
+  assert.deepEqual(columnas(r, 'mod_rep.dbo.CALENDARIO'), ['FECHA:exacta', 'FECPRO:inferida']);
+});
+
+test('EXEC con parámetros con nombre: un argumento por coma', () => {
+  const r = analizarProcedimiento(`CREATE PROC rep.X AS
+    EXEC piv.GPIVRES01 @variables = @tvars, @rows = 'fec', @salida = @n OUTPUT;`, ctx);
+  assert.deepEqual(r.invocaciones[0].argumentos, ['@variables = @tvars', "@rows = 'fec'", '@salida = @n OUTPUT']);
+});

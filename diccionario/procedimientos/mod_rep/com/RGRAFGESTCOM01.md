@@ -9,7 +9,6 @@
 | Estado | ✅ validado |
 | Cuerpo | [procedimientos/mod_rep/com/RGRAFGESTCOM01.sql](../../../../procedimientos/mod_rep/com/RGRAFGESTCOM01.sql) |
 | Extracción | [sql/01-extraccion/mod_rep/com/RGRAFGESTCOM01.sql](../../../../sql/01-extraccion/mod_rep/com/RGRAFGESTCOM01.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/mod_rep/com/RGRAFGESTCOM01.sql](../../../../sql/05-por-procedimiento/mod_rep/com/RGRAFGESTCOM01.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)
@@ -26,23 +25,17 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@Fecha` | varchar(10) | — |  | `fecha` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (0)
 
-| Tabla | Operación | Columnas usadas | Fuente |
-|---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-
-`≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
+No se detectaron tablas.
 
 ### Procedimientos y funciones invocados
 
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -52,6 +45,14 @@
 
 - CTE: `cte_a`
 - Temporales: `#DataMostrar`, `#FECS`, `#RDiario`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

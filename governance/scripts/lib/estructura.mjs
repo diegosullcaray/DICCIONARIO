@@ -19,7 +19,7 @@ export function cargarEstructura(dir = join(RUTAS.dependenciasMotor, '..', 'estr
     for (const f of parsearCsv(readFileSync(archivo, 'utf8'))) {
       if (!f.tabla) continue;
       const clave = `${f.base}.${f.esquema}.${f.tabla}`.toLowerCase();
-      if (!tablas.has(clave)) tablas.set(clave, { tipoObjeto: f.tipo_objeto, columnas: new Map(), archivo: rel(archivo) });
+      if (!tablas.has(clave)) tablas.set(clave, { base: f.base, esquema: f.esquema, nombre: f.tabla, tipoObjeto: f.tipo_objeto, columnas: new Map(), archivo: rel(archivo) });
       const largo = f.largo === '-1' ? 'max' : f.largo;
       const tipo = f.tipo + (largo ? `(${largo})` : ['decimal', 'numeric'].includes(f.tipo) && f.precision ? `(${f.precision},${f.escala || 0})` : '');
       tablas.get(clave).columnas.set(f.columna.toLowerCase(), { nombre: f.columna, orden: Number(f.orden), tipo, nulos: f.acepta_nulos === 'YES' });

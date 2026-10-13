@@ -14,21 +14,9 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- STORAGE.com_act.HCMC002 · lee · 3 columna(s)
+-- storage.com_act.HCMC002 · lee · 3 columna(s)
 SELECT TOP (100) [HDESAGE], [HFECINSTAL], [HINSTALAD]
-FROM [STORAGE].[com_act].[HCMC002] WITH (NOLOCK);
+FROM [storage].[com_act].[HCMC002] WITH (NOLOCK);
 
 -- storage.com.metas_saldos · lee · 3 columna(s)
 SELECT TOP (100) [HTIPCOD], [hcodvar], [hfecpro]
@@ -38,6 +26,6 @@ FROM [storage].[com].[metas_saldos] WITH (NOLOCK);
 SELECT TOP (100) [RCIEBT], [rfec]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
 
--- storage.ref.vjercor03 · lee · 8 columna(s)
+-- storage.ref.VJERCOR03 · lee · 8 columna(s)
 SELECT TOP (100) [RCODAGE], [RCODCOR], [RCODMAT], [RCODTER], [RDESAGE], [RDESCOR], [RDESMAT], [RDESTER]
-FROM [storage].[ref].[vjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR03] WITH (NOLOCK);

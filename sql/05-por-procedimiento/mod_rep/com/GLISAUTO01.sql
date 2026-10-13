@@ -14,14 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
 -- storage.com_act.BTPCRA001 · lee · 26 columna(s)
 SELECT TOP (100) [CARGO_ADM], [FECHA_INGRESO], [HFECPRO], [SAGENCIA], [SAUTSUG], [SAUTWF], [SAVGMRAPROB], [SC12M1], [SC12M2], [SC12M3], [SC12MACUM], [SC3M1], [SC3M2], [SC3M3], [SC3MACUM], [SCODSEC], [SCOMENT], [SFILMR], [SMRAPROB1], [SMRAPROB2], [SMRAPROB3], [SNOMADM], [SREGION], [STERRITORIO], [Segmentacion], [usuario]
 FROM [storage].[com_act].[BTPCRA001] WITH (NOLOCK);

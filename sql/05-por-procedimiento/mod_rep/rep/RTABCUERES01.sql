@@ -21,7 +21,3 @@ FROM [mod_rep].[dbo].[REVARPYG] WITH (NOLOCK);
 -- mod_rep.dbo.WREPPYG001 · lee · 16 columna(s)
 SELECT TOP (100) [WACUMAA], [WACUMACT], [WACUMT1], [WACUMT2], [WACUMT3], [WACUMT4], [WCODMOD], [WCODREL], [WCODUNI], [WCODVAR], [WFECPRO], [WSUBTIP], [WTIPOPE], [WVALAA], [WVALACT], [WVALANT]
 FROM [mod_rep].[dbo].[WREPPYG001] WITH (NOLOCK);
-
--- mod_rep.rep.if · elimina-objeto · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[if] WITH (NOLOCK);

@@ -1,69 +1,38 @@
 ---
 name: dic-extraccion-sp
-description: Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server y dejarlo donde el diccionario lo lee. Usar al extraer uno o muchos SP del catálogo, al pegar un resultado de sp_helptext, o cuando un SP aparece como pendiente, huérfano o incompleto.
+description: Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server y dejarlo donde el diccionario lo lee. Usar al extraer uno o muchos SP del catálogo, al pegar un resultado de sp_helptext, o cuando un SP aparece como pendiente, inexistente, huérfano o incompleto.
 ---
 <!-- Copia de governance/skills/dic-extraccion-sp/SKILL.md. Editar el original y correr npm run generar. -->
 
 # Extracción de procedimientos
 
-El diccionario solo puede describir lo que tiene: un SP sin cuerpo en `procedimientos/` queda ⏳ pendiente.
+Un SP sin cuerpo en `procedimientos/<base>/<esquema>/<SP>.sql` queda ⏳ pendiente: el diccionario solo
+describe lo que tiene. Los comandos están en el [flujo de trabajo](../../../governance/docs/development/workflow.md);
+acá va lo que hay que verificar.
 
-## 1. Dónde está todo
+## Elegir el camino
 
-| Necesito | Archivo |
+| Situación | Usar |
 |---|---|
-| El SQL para un SP | `sql/01-extraccion/<base>/<esquema>/<SP>.sql` |
-| Todos los de una base | `sql/01-extraccion/_lotes/<base>.sql` |
-| Dónde pegar el resultado | `procedimientos/<base>/<esquema>/<SP>.sql` (lo dice la cabecera del SQL) |
-| Qué falta | `diccionario/procedimientos.md` (⏳) o `sql/01-extraccion/manifiesto.json` (`"extraido": false`) |
+| Hay `.env` y driver ODBC | `python herramientas/bd.py extraer [--base] [--sp] [--reporte]` |
+| Un SP suelto, solo SSMS | `sql/01-extraccion/<base>/<esquema>/<SP>.sql` |
+| Una base entera, solo SSMS | `sql/01-extraccion/_lotes/<base>.sql` |
+| `sqlcmd` sin Python | `governance/scripts/extraer-definiciones.ps1` |
 
-## 2. Cuatro formas
+## Verificar el cuerpo
 
-**Python, con conexión (recomendada)** — skill `dic-conexiones-bd`:
+- Contiene `CREATE PROCEDURE` (o `ALTER`) completo; si no, el validador lo marca `cuerpo-incompleto`.
+- El nombre del CREATE coincide con el archivo; si no, `cuerpo-de-otro-sp`.
+- No hay identificadores partidos a mitad de línea (síntoma de `sp_helptext` con líneas de más de 255 caracteres).
+- Se guarda **tal cual**: sin formatear, sin quitar código comentado. Lo único que se edita es una credencial
+  embebida, que se reemplaza por `<redactado>`.
 
-```bash
-python herramientas/bd.py extraer                       # todos los pendientes, una consulta por base
-python herramientas/bd.py extraer --reporte SEL_JEFE_01
-python herramientas/bd.py extraer --base strategos --sobrescribir   # rebaja y reescribe solo los que cambiaron
-```
+## Lo que la extracción informa
 
-Las otras tres, sin Python:
+| Resultado | Qué hacer |
+|---|---|
+| No existe en la base | no inventar el cuerpo: queda ❌ y `sp-inexistente` (origen producción). Avisar al dueño de `reportes.json` |
+| Sin definición | SP cifrado o sin permiso `VIEW DEFINITION`: pedir el permiso |
+| Sin cambios | la versión del repo ya es la de la base |
 
-**Uno, en SSMS** — el patrón original del repositorio:
-
-```sql
-USE mod_rep;
-GO
-EXEC sp_helptext 'com.GSELREP002';
-```
-
-Copiar todas las filas del resultado y pegarlas en el archivo de destino.
-⚠️ `sp_helptext` corta líneas de más de 255 caracteres: si el SP tiene líneas largas (listas de columnas,
-CASE extensos), el texto pegado puede partir un identificador. Usar entonces la línea comentada
-`OBJECT_DEFINITION` del mismo archivo, con "Conservar CR/LF al copiar" activado en SSMS.
-
-**Una base, en SSMS** — `_lotes/<base>.sql` devuelve una fila por SP con `existe`, `modificado` y
-`definicion`. Sirve también para detectar SP del catálogo que ya no existen.
-
-**Todo, por consola (Windows)**:
-
-```powershell
-./governance/scripts/extraer-definiciones.ps1 -Servidor <servidor>
-./governance/scripts/extraer-definiciones.ps1 -Servidor <servidor> -Base strategos
-```
-
-## 3. Reglas
-
-- Pegar **tal cual**. No formatear, no corregir, no quitar código comentado: el diccionario describe producción.
-- El archivo tiene que contener `CREATE PROCEDURE` (o `ALTER`); si no, el validador lo marca `cuerpo-incompleto`.
-- Si el CREATE nombra otro SP, es `cuerpo-de-otro-sp`: se pegó en el archivo equivocado.
-- No versionar el nombre del servidor ni credenciales.
-
-## 4. Cerrar
-
-```bash
-npm run generar     # crea la ficha
-npm run verificar
-```
-
-Revisar la ficha generada contra el cuerpo antes de commitear (ver skill `dic-analisis-dependencias`).
+Después: `npm run generar` y revisar la ficha con la skill `dic-analisis-dependencias`.

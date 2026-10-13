@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 19 columna(s) usadas · 1 procedimiento(s) · tabla con 26 columna(s) en la base
+Base `storage` · esquema `com_act` · 25 columna(s) usadas · 1 procedimiento(s) · tabla con 26 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/WDCB001.sql](../../../../sql/03-tablas/storage/com_act/WDCB001.sql)
 
@@ -11,6 +11,9 @@ Consultas listas: [sql/03-tablas/storage/com_act/WDCB001.sql](../../../../sql/03
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
+| `HAVG_ASIST` | float not null | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HAVG_DURA` | int not null | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HAVG_OPE` | int not null | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `hcodrel` | varchar(50) | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HCOM_10_20K` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HCOM_10K` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
@@ -24,6 +27,9 @@ Consultas listas: [sql/03-tablas/storage/com_act/WDCB001.sql](../../../../sql/03
 | `HDESEMB_COM` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HDESEMB_SCOM` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HFECPRO` | date | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HMAX_ASIST` | float not null | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HMAX_DURA` | smallint not null | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
+| `HMAX_OPE` | int not null | 🧩 por estructura | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HNUM_COMITE` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HSCOM_10_20K` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |
 | `HSCOM_10K` | int not null | 🎯 exacta | [GCOMCRE01](../../../procedimientos/mod_rep/com/GCOMCRE01.md) | — |

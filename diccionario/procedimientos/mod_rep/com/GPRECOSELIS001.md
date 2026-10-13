@@ -30,13 +30,11 @@
 | 6 | `@pagen` | int | 1 |  | `pagen` |
 | 7 | `@nom` | VARCHAR(500) | — |  | `nom` |
 
-### Tablas y columnas (4)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [storage.com_act.WBCH002](../../../tablas/storage/com_act/WBCH002.md) | lee | `hCODSEC`, `HDESCLI`, `HDTIPOPE`, `HFECPRO`, `RDESPROD` | estatico + motor |
+| [storage.com_act.WBCH002](../../../tablas/storage/com_act/WBCH002.md) | lee | `HCODMOD`, `HCODOPE`, `hCODSEC`, `HCTACLI`, `HDESCLI`, `HDTIPOPE`, `HFECPRO`, `HMONDESMN`, `HSUCCLI`, `RDESPROD` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -62,6 +60,13 @@
 - ⚠️ Columna sin resolver `HSUCCLI` (¿storage.com_act.WBCH002?)
 - ⚠️ Columna sin resolver `HCODMOD` (¿storage.com_act.WBCH002?)
 - ⚠️ Columna sin resolver `HDTIPOPE` (¿storage.com_act.WBCH002?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -26,17 +26,11 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | DATE | — |  | `fec` |
 
-### Tablas y columnas (9)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.dbo.a](../../../tablas/mod_rep/dbo/a.md) | — | — | motor |
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [storage.com_act.HDGP001](../../../tablas/storage/com_act/HDGP001.md) | lee | `HFECPRO` | estatico + motor |
+| [storage.com_act.HDGP001](../../../tablas/storage/com_act/HDGP001.md) | lee | `HESTG`, `HESTI`, `HFECPRO`, `HNROG` | estatico + motor |
 | [storage.com_act.WCED001](../../../tablas/storage/com_act/WCED001.md) | lee | `*`, `hcodsec` | estatico + motor |
 | [storage.com_act.WCEM001](../../../tablas/storage/com_act/WCEM001.md) | lee | `*`, `hcodsec` | estatico + motor |
 
@@ -47,8 +41,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, @jer, @columns, =, '"vars"', @config, =, @tconf | no |
+| `piv.GPIVLEV01` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = @jer, @columns = '"vars"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -62,6 +56,17 @@
 - ⚠️ Columna sin resolver `HESTI` (¿storage.com_act.HDGP001?)
 - ⚠️ Columna sin resolver `hfecpro` (¿storage.com_act.HDGP001?)
 - ⚠️ Columna sin resolver `HNROG` (¿storage.com_act.HDGP001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.dbo.a`
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

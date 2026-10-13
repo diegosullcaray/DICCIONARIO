@@ -27,15 +27,13 @@
 | 3 | `@fec` | date | — |  | `fec` |
 | 4 | `@cargambiental` | varchar(250) | — |  | `cargambiental` |
 
-### Tablas y columnas (5)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [storage.COM.HHDC001](../../../tablas/storage/COM/HHDC001.md) | lee | `HCODSUCU`, `HCTACONT`, `HFECPRO`, `HHUCARUN`, `HNOMBCTA` | estatico + motor |
-| [storage.COM.HHDC002](../../../tablas/storage/COM/HHDC002.md) | lee | `HCODSUCU`, `HCTACONT`, `HDESCCTA`, `HFECPRO` | estatico + motor |
-| [STORAGE.REF.VJERCOR02](../../../tablas/storage/ref/VJERCOR02.md) | lee | `RCODAGE`, `RCODAGEH`, `rcodcor`, `rcodmat`, `rcodter`, `rdesage`, `rdescor`, `rdesmat`, `rdester` | estatico + motor |
+| [storage.com.HHDC001](../../../tablas/storage/com/HHDC001.md) | lee | `HCODSUCU`, `HCTACONT`, `HFECPRO`, `HHCARBCA`, `HHCARBMO`, `HHUCARUN`, `HNOMBCTA` | estatico + motor |
+| [storage.com.HHDC002](../../../tablas/storage/com/HHDC002.md) | lee | `HCODSUCU`, `HCTACONT`, `HDESCCTA`, `HFECPRO`, `HHUECARCA`, `HHUECARMO`, `HHUECARUN` | estatico + motor |
+| [storage.ref.VJERCOR02](../../../tablas/storage/ref/VJERCOR02.md) | lee | `RCODAGE`, `RCODAGEH`, `rcodcor`, `rcodmat`, `rcodter`, `rdesage`, `rdescor`, `rdesmat`, `rdester` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -53,6 +51,13 @@
 - ⚠️ Columna sin resolver `HHUECARUN` (¿storage.COM.HHDC002?)
 - ⚠️ Columna sin resolver `HHUECARCA` (¿storage.COM.HHDC002?)
 - ⚠️ Columna sin resolver `HHUECARMO` (¿storage.COM.HHDC002?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

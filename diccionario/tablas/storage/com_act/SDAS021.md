@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 2 columna(s) usadas · 3 procedimiento(s) · tabla con 13 columna(s) en la base
+Base `storage` · esquema `com_act` · 10 columna(s) usadas · 3 procedimiento(s) · tabla con 13 columna(s) en la base
 
 Consultas listas: [sql/03-tablas/storage/com_act/SDAS021.sql](../../../../sql/03-tablas/storage/com_act/SDAS021.sql)
 
@@ -11,8 +11,16 @@ Consultas listas: [sql/03-tablas/storage/com_act/SDAS021.sql](../../../../sql/03
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `SCORRES` | varchar(250) | ✅ confirmada | [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
+| `SAGENCI` | varchar(250) | 🧩 por estructura | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `SCORRED` | varchar(250) | 🧩 por estructura | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `SCORRES` | varchar(250) | ✅ confirmada | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md), [RCORRES05](../../../procedimientos/mod_rep/com/RCORRES05.md) | — |
 | `sfecpro` | date | 🎯 exacta | [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `SMONTO` | numeric(17,2) | 🧩 por estructura | [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `SNUMCORRE` | int | 🧩 por estructura | [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `SNUMTRANS` | int | 🧩 por estructura | [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `STERRIT` | varchar(250) | 🧩 por estructura | [GRTABCORRO01](../../../procedimientos/mod_rep/com/GRTABCORRO01.md), [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `STICKPROM` | numeric(17,2) | 🧩 por estructura | [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
+| `STIPTRA` | varchar(250) | 🧩 por estructura | [RCORRES01](../../../procedimientos/mod_rep/com/RCORRES01.md) | — |
 
 ### Procedimientos que la usan
 

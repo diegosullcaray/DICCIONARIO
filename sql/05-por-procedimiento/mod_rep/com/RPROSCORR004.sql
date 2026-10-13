@@ -14,14 +14,10 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.dbo.a · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
-
 -- storage.com_act.HCMC002 · lee · 7 columna(s)
 SELECT TOP (100) [HAPERTCTA], [HDESAGE], [HFECPRO], [HINSTALAD], [HMESINST], [HPROSPEC], [HZONA]
 FROM [storage].[com_act].[HCMC002] WITH (NOLOCK);
 
--- storage.ref.vjercor03 · lee · 8 columna(s)
+-- storage.ref.VJERCOR03 · lee · 8 columna(s)
 SELECT TOP (100) [RCODAGE], [RCODCOR], [RCODMAT], [RCODTER], [RDESAGE], [RDESCOR], [RDESMAT], [RDESTER]
-FROM [storage].[ref].[vjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[VJERCOR03] WITH (NOLOCK);

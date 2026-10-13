@@ -26,16 +26,14 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fecha` | date | — |  | `fecha` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.HCMC001](../../../tablas/storage/com_act/HCMC001.md) | lee | `hfecpro` | estatico + motor |
-| [storage.com_act.SDAS021](../../../tablas/storage/com_act/SDAS021.md) | lee | `sfecpro` | estatico + motor |
+| [storage.com_act.SDAS021](../../../tablas/storage/com_act/SDAS021.md) | lee | `SAGENCI`, `SCORRED`, `SCORRES`, `sfecpro`, `SMONTO`, `SNUMCORRE`, `SNUMTRANS`, `STERRIT`, `STICKPROM`, `STIPTRA` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RCIEBT`, `RDIAFER`, `RFEC` | estatico + motor |
-| [storage.ref.vjercor03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODCOR`≈, `RCODMAT`≈, `RCODTER`≈, `RDESCOR`≈, `RDESMAT`≈, `RDESTER`≈ | estatico + motor |
+| [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODCOR`≈, `RCODMAT`≈, `RCODTER`≈, `RDESCOR`≈, `RDESMAT`≈, `RDESTER`≈ | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -58,6 +56,13 @@
 - ⚠️ Columna sin resolver `SMONTO` (¿storage.com_act.SDAS021?)
 - ⚠️ Columna sin resolver `STICKPROM` (¿storage.com_act.SDAS021?)
 - ⚠️ Columna sin resolver `SNUMCORRE` (¿storage.com_act.SDAS021?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

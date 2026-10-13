@@ -14,30 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.com.#temp3 · trunca · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[com].[#temp3] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- storage.ref.RCALEN001 · lee · 4 columna(s)
-SELECT TOP (100) [MONTH], [RDIAFER], [RFEC], [RFECTXT]
+-- storage.ref.RCALEN001 · lee · 3 columna(s)
+SELECT TOP (100) [RDIAFER], [RFEC], [RFECTXT]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);

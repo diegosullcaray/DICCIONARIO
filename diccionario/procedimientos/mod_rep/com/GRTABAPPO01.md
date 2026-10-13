@@ -26,23 +26,18 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (13)
+### Tablas y columnas (8)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.piv.TPIVCONF](../../../tablas/mod_rep/piv/TPIVCONF.md) | — | — | motor |
-| [mod_rep.piv.TPIVFIL](../../../tablas/mod_rep/piv/TPIVFIL.md) | — | — | motor |
-| [mod_rep.piv.TPIVVAR](../../../tablas/mod_rep/piv/TPIVVAR.md) | — | — | motor |
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.HTDA001](../../../tablas/storage/com_act/HTDA001.md) | lee | `HCANAL`≈, `HDESPROC`≈, `HFECPRO`≈, `HMONTO`≈, `HNUMDOC`≈, `HTIPDOC`≈, `htiptrax`≈, `HTOTINTE`≈, `RCODSUC`≈ | estatico + motor |
 | [storage.com_act.WHDV001](../../../tablas/storage/com_act/WHDV001.md) | lee | `hcodrel`≈, `htipcod`≈ | estatico + motor |
 | [storage.com_act.WHDV002](../../../tablas/storage/com_act/WHDV002.md) | lee | `hcodrel`≈, `htipcod`≈ | estatico + motor |
 | [storage.com_act.WHOP001](../../../tablas/storage/com_act/WHOP001.md) | lee | `hcodrel`≈, `htipcod`≈ | estatico + motor |
 | [storage.com_act.WTRXMON001](../../../tablas/storage/com_act/WTRXMON001.md) | lee | `RCODSUC` | estatico + motor |
-| [storage.com.WJAS004](../../../tablas/storage/com/WJAS004.md) | lee | `hfecpro`, `htipcod` | estatico + motor |
-| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `MM`≈, `RDIAFER`, `rfec` | estatico + motor |
-| [storage.ref.vjercor03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODFC`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESFC`, `RDESMAT`, `RDESTER` | estatico + motor |
+| [storage.com.wjas004](../../../tablas/storage/com/wjas004.md) | lee | `hcodrel`, `HDATINPUTRXUSA`, `hfecpro`, `HPERCENTCART`, `HPERCENTENROCLINET`, `HPERCENTPASI`, `HPERCENTUSABILIDAD`, `HTIPAMBO`, `htipcod`, `HTIPCRED`, `HTIPFALT`, `HTIPPASI`, `HTOTALCLIENROL` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `rfec` | estatico + motor |
+| [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODFC`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESFC`, `RDESMAT`, `RDESTER` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -51,8 +46,8 @@
 | Objeto | Argumentos | En el catálogo |
 |---|---|---|
 | `storage.util.FVECFEC01` (función) | — | no |
-| `piv.GPIVLEV03` | @tip_cod, @cod_rel, @jer, output | no |
-| `piv.GPIVRES01` | @variables, =, @tvars, @filters, =, @tfil, @rows, =, '"vars"', @columns, =, '"fec_corr"', @config, =, @tconf | no |
+| `piv.GPIVLEV03` | @tip_cod, @cod_rel, @jer output | no |
+| `piv.GPIVRES01` | @variables = @tvars, @filters = @tfil, @rows = '"vars"', @columns = '"fec_corr"', @config = @tconf | no |
 
 ### Columnas que devuelve
 
@@ -76,6 +71,16 @@
 - ⚠️ Columna sin resolver `HDATINPUTRXUSA` (¿storage.com.WJAS004?)
 - ⚠️ Columna sin resolver `hcodrel` (¿storage.com.WJAS004?)
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

@@ -24,13 +24,11 @@
 |---:|---|---|---|---|---|
 | 1 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 
-### Tablas y columnas (4)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
-| [STORAGE.com_act.HCMC002](../../../tablas/STORAGE/com_act/HCMC002.md) | lee | `HAPENOMB`, `HAPERTCTA`, `HASEASIG`, `HCANACAP`, `HCELULAR`, `HCODSEC`, `HCODSECASIG`, `HCONSLNE`, `HCONSRCC`, `HCONSRUC`, `HCTALICEF`, `HDCIIU`, `HDEPA`, `HDESAGE`, `HDESASE`, `HDESCOR`, `HDESTER`, `HDIREC`, `HDISTR`, `HESTDCORE`, `HFECINSTAL`, `HFECPRO`, `HFIRMADN`, `HFOTNEGO`, `HGEOLATI`, `HGEOLON`, `HIDCORRES`, `HINSTALAD`, `HLICFUNCI`, `HMESINST`, `HNOMCOM`, `HNUMDOC`, `HNUMRUC`, `HPROSPEC`, `HPROV`, `HTAPERCC`, `HTIPAGENT`, `HTIPVINC`, `HVINFAMI`, `HZONA` | estatico + motor |
+| [storage.com_act.HCMC002](../../../tablas/storage/com_act/HCMC002.md) | lee | `HAPENOMB`, `HAPERTCTA`, `HASEASIG`, `HCANACAP`, `HCELULAR`, `HCODSEC`, `HCODSECASIG`, `HCONSLNE`, `HCONSRCC`, `HCONSRUC`, `HCTALICEF`, `HDCIIU`, `HDEPA`, `HDESAGE`, `HDESASE`, `HDESCOR`, `HDESTER`, `HDIREC`, `HDISTR`, `HESTDCORE`, `HFECINSTAL`, `HFECPRO`, `HFIRMADN`, `HFOTNEGO`, `HGEOLATI`, `HGEOLON`, `HIDCORRES`, `HINSTALAD`, `HLICFUNCI`, `HMESINST`, `HNOMCOM`, `HNUMDOC`, `HNUMRUC`, `HPROSPEC`, `HPROV`, `HTAPERCC`, `HTIPAGENT`, `HTIPVINC`, `HVINFAMI`, `HZONA` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HNUMDOC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -42,6 +40,13 @@
 ### Observaciones del análisis
 
 - CTE: `a`
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 

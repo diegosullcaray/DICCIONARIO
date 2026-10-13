@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'HCODREL', N'HCODVAR', N'hfecpro', N'HTIPCOD', N'HTIPMETA', N'HVALVAR', N'month', N'Tip_cod', N'tip_cod2') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'HCODREL', N'HCODVAR', N'hfecpro', N'HTIPCOD', N'HTIPMETA', N'HVALVAR', N'Tip_cod', N'tip_cod2') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'com' AND c.TABLE_NAME = N'VDMCOM01'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,7 +20,7 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'com.VDMCOM01') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [HCODREL], [HCODVAR], [hfecpro], [HTIPCOD], [HTIPMETA], [HVALVAR], [month], [Tip_cod], [tip_cod2]
+SELECT TOP (100) [HCODREL], [HCODVAR], [hfecpro], [HTIPCOD], [HTIPMETA], [HVALVAR], [Tip_cod], [tip_cod2]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
@@ -32,7 +32,6 @@ SELECT
     SUM(CASE WHEN [HTIPCOD] IS NULL THEN 1 ELSE 0 END) AS [nulos_HTIPCOD], COUNT(DISTINCT [HTIPCOD]) AS [distintos_HTIPCOD],
     SUM(CASE WHEN [HTIPMETA] IS NULL THEN 1 ELSE 0 END) AS [nulos_HTIPMETA], COUNT(DISTINCT [HTIPMETA]) AS [distintos_HTIPMETA],
     SUM(CASE WHEN [HVALVAR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HVALVAR], COUNT(DISTINCT [HVALVAR]) AS [distintos_HVALVAR],
-    SUM(CASE WHEN [month] IS NULL THEN 1 ELSE 0 END) AS [nulos_month], COUNT(DISTINCT [month]) AS [distintos_month],
     SUM(CASE WHEN [Tip_cod] IS NULL THEN 1 ELSE 0 END) AS [nulos_Tip_cod], COUNT(DISTINCT [Tip_cod]) AS [distintos_Tip_cod],
     SUM(CASE WHEN [tip_cod2] IS NULL THEN 1 ELSE 0 END) AS [nulos_tip_cod2], COUNT(DISTINCT [tip_cod2]) AS [distintos_tip_cod2]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);

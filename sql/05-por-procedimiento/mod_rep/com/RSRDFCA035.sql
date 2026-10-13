@@ -14,30 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- mod_rep.piv.TPIVCONF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVFIL · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
-
--- mod_rep.piv.TPIVVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
-
--- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
-
--- mod_rep.util.FSEMVAR · — · 0 columna(s)
-SELECT TOP (100) *
-FROM [mod_rep].[util].[FSEMVAR] WITH (NOLOCK);
-
 -- storage.com_act.WJAS004 · lee · 4 columna(s)
 SELECT TOP (100) [HCODREL], [RDESCPROD02], [hfecpro], [htipcod]
 FROM [storage].[com_act].[WJAS004] WITH (NOLOCK);
@@ -46,6 +22,6 @@ FROM [storage].[com_act].[WJAS004] WITH (NOLOCK);
 SELECT TOP (100) [HCODVAR], [hfecpro]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
 
--- storage.ref.wjercor03 · lee · 12 columna(s)
+-- storage.ref.WJERCOR03 · lee · 12 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODGRU], [RCODSEC], [RCODTER], [RCODUNI], [RDESCOR], [RDESFC], [RDESGRU], [RDESSEC], [RDESTER], [RDESUNI], [rfecpro]
-FROM [storage].[ref].[wjercor03] WITH (NOLOCK);
+FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

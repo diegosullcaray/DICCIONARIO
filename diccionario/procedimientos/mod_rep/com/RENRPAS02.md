@@ -26,16 +26,14 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fecha` | date | — |  | `fecha` |
 
-### Tablas y columnas (6)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [mod_rep.rep.FFTHCOLDEF](../../../tablas/mod_rep/rep/FFTHCOLDEF.md) | — | — | motor |
-| [mod_rep.rep.TTHCOLDEF](../../../tablas/mod_rep/rep/TTHCOLDEF.md) | — | — | motor |
 | [storage.com_act.VLCAPP001](../../../tablas/storage/com_act/VLCAPP001.md) | lee | `HTIPNUMDOC` | estatico + motor |
 | [storage.com_pas.VCPH001](../../../tablas/storage/com_pas/VCPH001.md) | lee | `HCODSEC`, `HESTADO`, `HPENDOC`, `HPETDOC`, `HSBFECH`, `HSBMOD`, `HSBSDO1`, `HSBSUC`, `HSBTOPE` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
-| [storage.ref.vjercor03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESMAT`, `RDESTER` | estatico + motor |
+| [storage.ref.VJERCOR03](../../../tablas/storage/ref/VJERCOR03.md) | lee | `RCODAGE`, `RCODCOR`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESCOR`, `RDESMAT`, `RDESTER` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -48,12 +46,17 @@
 - Temporales: `#T1`
 - ⚠️ Columna sin resolver `HSBSUC` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
 - ⚠️ Columna sin resolver `HSBFECH` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
-- ⚠️ Columna sin resolver `dw` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
-- ⚠️ Columna sin resolver `day` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
 - ⚠️ Columna sin resolver `HSBTOPE` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
 - ⚠️ Columna sin resolver `HCODSEC` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
 - ⚠️ Columna sin resolver `HESTADO` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
 - ⚠️ Columna sin resolver `HSBSDO1` (¿storage.com_act.VLCAPP001 o storage.com_pas.VCPH001?)
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.rep.FFTHCOLDEF`
+- `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor
 
