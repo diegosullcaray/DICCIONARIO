@@ -6,8 +6,9 @@
 -- GCOMCRE_02, ver el comentario al final de extraccion/procedimientos/mod_rep/com/GCOMCRE02.sql).
 -- Este script cambia solo el nombre del SP de GST_ACTIVAS_06 y GST_ACTIVAS_M_06; los parámetros quedan iguales.
 --
--- ESCRIBE en la base: lo ejecuta quien tenga permiso sobre el catálogo, DESPUÉS de los pasos 1 a 3 de
--- 04-verificacion.sql. Deja la transacción abierta: revisar el resultado y elegir COMMIT o ROLLBACK al final.
+-- Antes de ejecutarlo: el paso 1 de 04-verificacion.sql debe decir "OK" y los pasos 2 a 4 deben cuadrar.
+-- Si el paso 1 dice "YA APLICADO", el original ya muestra las columnas: NO ejecutar este script.
+-- ESCRIBE en la base: lo ejecuta quien tenga permiso sobre el catálogo. Deja la transacción abierta: revisar el resultado y elegir COMMIT o ROLLBACK al final.
 -- Volver atrás después del COMMIT: 05-rollback.sql.
 
 USE mod_rep;
@@ -25,10 +26,11 @@ SELECT RCODREP, RTPREP FROM rep.RREGREP01 WHERE RCODREP IN ('GST_ACTIVAS_06', 'G
 
 BEGIN TRANSACTION;
 
+-- Solo cambia el nombre del SP dentro de RTPREP: los parámetros y el resto del texto quedan como están.
 UPDATE rep.RREGREP01
-SET    RTPREP = '{"name":"mod_rep.com.GDCGEST_ACTIVAST01_NEW","params":[{"order":1,"name":"tip_cod"},{"order":2,"name":"cod_rel"},{"order":3,"name":"var"},{"order":4,"name":"fec"},{"order":5,"name":"diario"}]}'
+SET    RTPREP = REPLACE(RTPREP, '"mod_rep.com.GDCGEST_ACTIVAST01"', '"mod_rep.com.GDCGEST_ACTIVAST01_NEW"')
 WHERE  RCODREP IN ('GST_ACTIVAS_06', 'GST_ACTIVAS_M_06')
-  AND  RTPREP LIKE '%"mod_rep.com.GDCGEST_ACTIVAST01"%';   -- solo si siguen apuntando al original
+  AND  CHARINDEX('"mod_rep.com.GDCGEST_ACTIVAST01"', RTPREP) > 0;   -- solo si siguen apuntando al original
 
 -- Debe decir 2. Si dice 0, alguien ya los cambió: revisar el SELECT de "Antes".
 SELECT @@ROWCOUNT AS filas_actualizadas;
