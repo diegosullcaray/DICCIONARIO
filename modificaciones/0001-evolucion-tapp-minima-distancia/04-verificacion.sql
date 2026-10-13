@@ -117,3 +117,25 @@ SELECT  (SELECT COUNT(*) FROM storage.com_act.WGATH002 WITH (NOLOCK) WHERE ORD =
                 LEFT JOIN storage.com_act.RETP003 E WITH (NOLOCK) ON ISNULL(D.RCODPROD, C.RCODPROD) = E.RCODPROD
          WHERE  A.ORD = @ORD AND A.HFECPRO <= @fec_corte)                                                      AS filas_con_join;
 GO
+
+------------------------------------------------------------------------------------------------
+-- PASO 4: cuadre contra la tabla de referencia (pestaña "Por Rango", GST_ACTIVAS_10)
+------------------------------------------------------------------------------------------------
+-- La tabla "TAPP Mes de operaciones desembolsadas por producto y nivel de tasas" de Por Rango ya muestra
+-- TAPP Mínima (TM) y Distancia (DT) con la misma fórmula (ver 02-analisis.md, "Comparación con la tabla de
+-- referencia"). Para la misma fecha y nivel:
+--   TM y DT de la fila "<fecha> (%)" del nuevo (@var = 6)  =  TM y DT de la fila "TOTAL" de ACTIVAST04 (@var = 10)
+-- Si difieren, revisar el control de JOIN del paso 3.
+IF OBJECT_ID(N'com.GDCGEST_ACTIVAST01_NEW', N'P') IS NULL
+BEGIN
+    PRINT 'PASO 4 omitido: todavía no existe com.GDCGEST_ACTIVAST01_NEW.';
+    RETURN;
+END;
+
+DECLARE @tip_cod varchar(10) = '7', @cod_rel varchar(10) = '231', @fec date = '20240319', @diario int = 1;
+
+PRINT '--- Por Rango (referencia): mirar la fila TOTAL, columnas TM y DT';
+EXEC com.GDCGEST_ACTIVAST04     @tip_cod, @cod_rel, 10, @fec, @diario;
+PRINT '--- Evolución de TAPP Mes (nuevo): mirar la fila "<fecha> (%)", columnas TM y DT';
+EXEC com.GDCGEST_ACTIVAST01_NEW @tip_cod, @cod_rel, 6, @fec, @diario;
+GO

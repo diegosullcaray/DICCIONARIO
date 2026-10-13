@@ -90,22 +90,42 @@ una copia exacta salvo estos dos cambios). **El front no necesita cambios**: las
 
 (Los números son ilustrativos.)
 
+### Comparación con la tabla de referencia (pestaña *Por Rango*)
+
+Observación recibida ([observaciones.md](../observaciones.md)): la tabla *TAPP Mes de operaciones desembolsadas
+por producto y nivel de tasas* de la pestaña **Por Rango** ya trae *Encima Tasa Mínima*, *TAPP Final*,
+*TAPP Mínima* y *Distancia (en pbs)*; las dos últimas son las que se piden en *Evolución de TAPP Mes*. Esa
+tabla es `GST_ACTIVAS_10` → `mod_rep.com.GDCGEST_ACTIVAST04` con `@var = 10` (el front pide los bloques en el
+orden 1…8, 10, 9 y la pestaña Por Rango muestra los dos últimos). Se comparó línea por línea con el `_NEW`:
+
+| Punto | `GDCGEST_ACTIVAST04` `@var=10` (Por Rango) | `GDCGEST_ACTIVAST01_NEW` `@var=6` (Evolutivo) | ¿Igual? |
+|---|---|---|---|
+| TAPP Mínima | `HTAPPMIN = Σ(HMDES·HTMIN/100) / Σ HMDES` | misma expresión en `cte_b` | sí |
+| Distancia | `HDIFTAPPMM = ROUND((HTAPPMES − HTAPPMIN)·10000, 0)` | misma expresión en `cte_b` | sí |
+| Qué valor se muestra | columna `[10]` (total de gestión) de `#C` (`HUCAP_FIN = 'TOTAL'`), join `E`/`F` | igual, join `E`/`F` | sí |
+| Formato | `TM` con `'P'`, `DT` con `'N0'` | igual | sí |
+| Corte (`@ORD`) | `MAX(ORD)` con tope 31 si `@diario = 1`, 100 si no | igual | sí |
+| Fechas | solo `@fec` (una foto del día), filas por rango de monto | todas las fechas del corte hasta `@fec`, una fila por fecha | distinto a propósito: es la evolución |
+| Cabecera | `TM` "TAPP M nima" (isdata 9), `DT` "Distancia (en pbs)" (isdata 10) | mismos textos, isdata 11 y 12 (van después de Ticket Promedio) | sí |
+| Fila "Var Abs (pbs)" | no existe | `TM`/`DT` vacíos, como Ticket Promedio | — |
+
+**Conclusión: el `_NEW` es correcto** y no necesita cambios de cálculo. Para la fecha de corte, la fila
+`<fecha> (%)` de *Evolución de TAPP Mes* debe mostrar la misma *TAPP Mínima* y *Distancia* que la fila
+**TOTAL** de la tabla de Por Rango. El paso 4 de `04-verificacion.sql` lo comprueba en producción.
+
+Única diferencia posible: `GDCGEST_ACTIVAST01` une `WGATH002` con `RETP001/002/003` para obtener el producto y
+`GDCGEST_ACTIVAST04` no. Si esos JOIN duplican operaciones, las dos tablas difieren (también en la TAPP Final
+que ya muestran hoy); el control de JOIN del paso 3 lo detecta. No lo introduce esta modificación.
+
 ## 4. Riesgos y cómo se cubren
 
-### Riesgo de tildes
+### Riesgo de tildes (descartado)
 
-En la copia extraída, los textos con tilde aparecen con un espacio: `"TAPP M nima"`, `"Autonom as"`,
-`[Gte. Divisi n Comercial]`. No hay forma de saber desde acá si el original en producción está así o si las
-tildes se perdieron al extraer. Importa porque `[Gte. Divisi n Comercial]` no es solo un texto: es nombre
-de columna del `PIVOT` sobre `HUCAP_FIN` y tiene que coincidir con los datos.
-
-Con el SP nuevo este riesgo **ya no puede romper el reporte vigente**, pero sí el nuevo:
-
-- `04-verificacion.sql` paso 1 lo detecta antes de crearlo (`con_tilde > 0`): en ese caso se corrigen esos
-  textos en `03-…_NEW.create.sql` antes de ejecutarlo.
-- El paso 2 lo detectaría igual después: la columna *Gte. División Comercial* saldría en cero solo en el nuevo.
-- Hallazgo para el repositorio: revisar por qué la extracción dejó espacios en lugar de tildes antes de usar
-  cualquier cuerpo de `extraccion/procedimientos/` como base de un SP.
+En la copia extraída, los textos con tilde aparecen con un espacio: `"TAPP M nima"`, `[Gte. Divisi n Comercial]`.
+El paso 1 de `04-verificacion.sql`, ejecutado en producción el 2026-10-13, dio `sin_tilde = 3411` y
+`con_tilde = 0`: **la base guarda los textos así**, no se perdieron al extraer. El `_NEW` usa los mismos
+textos que el original y que `GDCGEST_ACTIVAST04` (`"TAPP M nima"`), así que el `PIVOT` sobre `HUCAP_FIN`
+sigue coincidiendo con los datos.
 
 ### Versión vigente
 
@@ -122,7 +142,7 @@ Solo `GST_ACTIVAS_06` y `GST_ACTIVAS_M_06` (por el nombre, la versión mensual):
 
 1. `04-verificacion.sql` **paso 1**: confirmar fecha de modificación y tildes del original.
 2. Ejecutar `03-GDCGEST_ACTIVAST01_NEW.create.sql` (crea el SP nuevo; el original no cambia).
-3. `04-verificacion.sql` **paso 2**: original y nuevo lado a lado — `@var=6` igual más TM y DT; `@var=1…5` idénticos.
+3. `04-verificacion.sql` **pasos 2 y 4** (el 4 cuadra contra la tabla de Por Rango): original y nuevo lado a lado — `@var=6` igual más TM y DT; `@var=1…5` idénticos.
 4. `04-verificacion.sql` **paso 3**: TM y DT de la última fecha cuadran con el recálculo desde `WGATH002`.
 5. `06-activacion.sql`: apunta los reportes **`GST_ACTIVAS_06`** y **`GST_ACTIVAS_M_06`** a
    `mod_rep.com.GDCGEST_ACTIVAST01_NEW` en el catálogo del backend, `[mod_rep].[rep].[RREGREP01]` (campo
