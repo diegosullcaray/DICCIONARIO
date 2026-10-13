@@ -26,13 +26,14 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@fec` | date | — |  | `fec` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.WPDM001](../../../tablas/storage/com_act/WPDM001.md) | lee | `HCODREL`, `HFECPRO`, `HNROG`, `HNROG_ANT`, `HNROG_DESEM`, `HNUMCLI`, `HNUMCLI_ANT`, `HSALCAPMN`, `HSALCAPMN_1_30`, `HSALCAPMN_1_30_ANT`, `HSALCAPMN_ANT`, `HSALCAPMN_ma_30`, `HSALCAPMN_ma_30_ANT`, `HTIPCOD`, `HULTVEN_RECUR_DESEM`, `NUEVO_DESEM`, `RECURRENTE_DESEM` | estatico + motor |
+| [storage.com_act.WPDM001](../../../tablas/storage/com_act/WPDM001.md) | lee | `HCODREL`, `HFECPRO`, `HNROG`, `HNROG_ANT`, `HNROG_DESEM`, `HNUMCLI`, `HNUMCLI_ANT`, `HSALCAPMN`, `HSALCAPMN_1_30`, `HSALCAPMN_1_30_ANT`, `HSALCAPMN_ANT`, `HSALCAPMN_ma_30`, `HSALCAPMN_ma_30_ANT`, `HTIPCOD`, `HULTVEN_RECUR_DESEM`, `NUEVO_DESEM`, `RECURRENTE_DESEM` | estatico |
 | [storage.com.metas_saldos](../../../tablas/storage/com/metas_saldos.md) | lee | `10044`≈, `10062`≈, `8000`≈, `HCODREL`≈, `HCODVAR`≈, `HFECPRO`≈, `HTIPCOD`≈, `HTIPMETA`≈, `HVALVAR`≈, `PVT`≈ | estatico + motor |
-| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESFC`, `RDESGRU`, `RDESTER`, `RDESUCO`, `RDESUNI` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODFC`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESFC`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUCO`, `RDESUNI`, `RFECPRO`, `RINDFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -69,6 +70,7 @@
 Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
 
 - `mod_rep.rep.FFTHCOLDEF`
+- `storage.com_act.WPDM002`
 - `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor

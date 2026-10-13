@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_seg` · 5 columna(s) usadas · 1 procedimiento(s) · tabla con 5 columna(s) en la base
+Base `storage` · esquema `com_seg` · 5 columna(s) usadas · 2 procedimiento(s) · tabla con 5 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/retp003.sql](../../../../extraccion/sql/03-tablas/storage/com_seg/retp003.sql)
 
@@ -11,17 +11,18 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/retp003.sql](../../.
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `hcodmod` | int | 🎯 exacta | [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
-| `HCODSEG` | int | 🎯 exacta | [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
-| `HDESSEG` | varchar(255) | 🎯 exacta | [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
-| `HSUBTIP` | int | 🎯 exacta | [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
-| `HTIPOPE` | int | 🎯 exacta | [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
+| `hcodmod` | int | ✅ confirmada | [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
+| `HCODSEG` | int | ✅ confirmada | [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
+| `HDESSEG` | varchar(255) | ✅ confirmada | [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
+| `HSUBTIP` | int | ✅ confirmada | [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
+| `HTIPOPE` | int | ✅ confirmada | [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | — |
 
 ### Procedimientos que la usan
 
 | Procedimiento | Operación | Reportes |
 |---|---|---|
 | [mod_rep.com.GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md) | lee | `GRSCMISREP_01` |
+| [mod_rep.com.GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md) | lee | `GRSCMIS_02` |
 <!-- generado:fin -->
 
 ## Descripción

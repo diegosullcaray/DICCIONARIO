@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 34 columna(s) en la base
+Base `storage` · esquema `com_act` · 1 columna(s) usadas · 2 procedimiento(s) · tabla con 34 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WPROYDES001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WPROYDES001.sql)
 
@@ -11,13 +11,14 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WPROYDES001.sql](../
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `hfecreg` | date | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md) | — |
+| `hfecreg` | date | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES002](../../../procedimientos/mod_rep/com/RSPROYCOLDES002.md) | — |
 
 ### Procedimientos que la usan
 
 | Procedimiento | Operación | Reportes |
 |---|---|---|
 | [mod_rep.com.RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md) | lee | `PROYEC_COLREC_01` |
+| [mod_rep.com.RSPROYCOLDES002](../../../procedimientos/mod_rep/com/RSPROYCOLDES002.md) | lee | `PROYEC_COLREC_02` |
 <!-- generado:fin -->
 
 ## Descripción

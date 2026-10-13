@@ -30,7 +30,7 @@
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [storage.com_act.HRPDM002](../../../tablas/storage/com_act/HRPDM002.md) | lee | `HFFINVIG`, `HFINIVIG`, `HHORPRO`, `HMOREACC`, `HNUMDOC`, `HPAIS`, `HREACC`, `HTIPDOC` | estatico + motor |
-| [storage.com_act.VRPDM001](../../../tablas/storage/com_act/VRPDM001.md) | lee | `HCODSEC`, `HCTACLI`, `HDCLI`, `HDGRP`, `HDIAATR`, `HENTID`, `HFECPRO`, `HFFINVIG`, `HFINIVIG`, `HFUVEN`, `HHORPRO`, `HMONDESMN`, `HNUMDOC`, `HPAIS`, `HSEMF`, `HTELF01`, `HTIPBASE`, `HTIPDOC`, `HTIPIN`, `HTIPOF` | estatico + motor |
+| [storage.com_act.VRPDM001](../../../tablas/storage/com_act/VRPDM001.md) | lee | `HCODSEC`, `HCTACLI`, `HDCLI`, `HDGRP`, `HDIAATR`, `HDPROP`, `HENTID`, `HFECPRO`, `HFFINVIG`, `HFINIVIG`, `HFUVEN`, `HHORPRO`, `HMONDESMN`, `HNUMDOC`, `HPAIS`, `HSEMF`, `HTELF01`, `HTIPBASE`, `HTIPDOC`, `HTIPIN`, `HTIPOF` | estatico + motor |
 | [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HNUMDOC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.

@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 94 columna(s) usadas · 4 procedimiento(s) · tabla con 93 columna(s) en la base
+Base `storage` · esquema `com_act` · 94 columna(s) usadas · 5 procedimiento(s) · tabla con 93 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WGATH002.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WGATH002.sql)
 
@@ -12,99 +12,99 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WGATH002.sql](../../
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `*` | ⚠️ no existe | 🎯 exacta | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md) | — |
-| `HAUTO` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCAPP1` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCAPP2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCAPP3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCAPP4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCAPP5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCASE` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCCLI` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HAUTO` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCAPP1` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCAPP2` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCAPP3` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCAPP4` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCAPP5` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCASE` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCCLI` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HCOFI` | int | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT10` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT11` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT12` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT6` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT7` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT8` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HCRT9` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HDASE` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HDOFI` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HDTDOC` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFAPP1` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFAPP2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFAPP3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFAPP4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFAPP5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFDES` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HFECPRO` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT10` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT11` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT12` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT2` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT3` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT4` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT5` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT6` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT7` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT8` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HCRT9` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HDASE` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HDOFI` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HDTDOC` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFAPP1` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFAPP2` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFAPP3` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFAPP4` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFAPP5` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFDES` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HFECPRO` | date | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md) | — |
 | `HGESTTAS` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HHAPP1` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HHAPP2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HHAPP3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HHAPP4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HHAPP5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HMDES` | float | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HHAPP1` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HHAPP2` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HHAPP3` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HHAPP4` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HHAPP5` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HMDES` | numeric(17,2) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HMOD` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNAPP1` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNAPP2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNAPP3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNAPP4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNAPP5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNCLI` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNAPP1` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNAPP2` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNAPP3` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNAPP4` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNAPP5` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNCLI` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HNCUO` | int | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HNDOC` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HNDOC` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HOPER` | int | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HPBS` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HPBS` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HPLZO` | int | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HPROD` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HREGI` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HPROD` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HREGI` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HSOLI` | int | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HSUBTIP` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTBAS` | float | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTDES` | float | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTERR` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTMER` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTMIN` | float | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTBAS` | numeric(8,6) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTDES` | numeric(8,6) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTERR` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTMER` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTMIN` | numeric(8,6) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `HTOPE` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTSEG` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTSOL` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HTTAR` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUAPP1` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUAPP2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUAPP3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUAPP4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUAPP5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUCAP` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUCAP_FIN` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUFAP` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUHAP` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUNAP` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HUUAP` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HVARI1` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HVARI2` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HVARI3` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HVARI4` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `HVARI5` | varchar(255) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTSEG` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTSOL` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HTTAR` | varchar(50) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUAPP1` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUAPP2` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUAPP3` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUAPP4` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUAPP5` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUCAP` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUCAP_FIN` | varchar(50) not null | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUFAP` | date | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUHAP` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUNAP` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HUUAP` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HVARI1` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HVARI2` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HVARI3` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HVARI4` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `HVARI5` | varchar(250) | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `ID` | int | 🗄️ motor | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `ORD` | bigint | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RCODCOR` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RCODGRU` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `RCODSEC` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `RCODTER` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `RCODSEC` | varchar(10) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `RCODTER` | varchar(25) not null | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RCODUCO` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RCODUNI` | int | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RDESCOR` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `RDESGRU` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `RDESGRU` | varchar(11) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RDESSEC` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RDESTER` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `RDESUCO` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `RDESUCO` | varchar(200) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 | `RDESUNI` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `RFEC` | varchar(255) | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `RFEC` | date | ✅ confirmada | [GDCGEST_ACTIVAST01](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md), [GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
 
 ### Procedimientos que la usan
 
@@ -114,6 +114,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WGATH002.sql](../../
 | [mod_rep.com.GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md) | lee | `GST_ACTIVAS_08`, `GST_ACTIVAS_07` |
 | [mod_rep.com.GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md) | lee | `GST_ACTIVAS_09`, `GST_ACTIVAS_10` |
 | [mod_rep.com.RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | lee | `CMG_CARTERA_02` |
+| [mod_rep.com.RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md) | lee | `CMG_CARTERA_03` |
 <!-- generado:fin -->
 
 ## Descripción

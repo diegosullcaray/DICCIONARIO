@@ -1,6 +1,6 @@
 -- storage.com_act.HCDA001
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GCMCNUE002, mod_rep.com.GCMGCAP01, mod_rep.com.GCOSELIS001, mod_rep.com.GLIMOVO05, mod_rep.com.GLIMOVO06, mod_rep.com.GLIMOVRO05, mod_rep.com.GLIMOVRO06, mod_rep.com.GRESPROGOB01, mod_rep.com.GRESPROGOB02, mod_rep.com.GSEGUIINC001, mod_rep.com.GTOPCERCUO001, mod_rep.com.GTOPCERCUO002, mod_rep.com.GTOPCERCUO003, mod_rep.com.GTOPCERCUO004, mod_rep.com.GTOPCERCUO005, mod_rep.com.RSRDFCA027, mod_rep.com.RSRDFCA028, mod_rep.com.RSRDFCA029, mod_rep.com.RSRDFCA030, strategos.mod_rep_com_act.GDACTITASA01, strategos.mod_rep_com_act.GDEFECTMORA01, strategos.mod_rep_com_act.GDPORTAGRO01, strategos.mod_rep_com_act.GDPSUPERV01, strategos.mod_rep_com_act.GDPSUPERV02
+-- Usada por: mod_rep.com.GCMCNUE002, mod_rep.com.GCMGCAP01, mod_rep.com.GCOSELIS001, mod_rep.com.GLIMOVO05, mod_rep.com.GLIMOVO06, mod_rep.com.GLIMOVRO05, mod_rep.com.GLIMOVRO06, mod_rep.com.GRESPROGOB01, mod_rep.com.GRESPROGOB02, mod_rep.com.GSEGUIINC001, mod_rep.com.GTOPCERCUO001, mod_rep.com.GTOPCERCUO002, mod_rep.com.GTOPCERCUO003, mod_rep.com.GTOPCERCUO004, mod_rep.com.GTOPCERCUO005, mod_rep.com.RRANKM02, mod_rep.com.RSRDFCA027, mod_rep.com.RSRDFCA028, mod_rep.com.RSRDFCA029, mod_rep.com.RSRDFCA030, mod_rep.com.RSRDFCA038, mod_rep.com.RSRDFCA050, mod_rep.com.RSRDFCA050_3, mod_rep.com.RSRDFCA050_4, mod_rep.com.RSTABCOMER02, strategos.mod_rep_com_act.GDACTITASA01, strategos.mod_rep_com_act.GDEFECTMORA01, strategos.mod_rep_com_act.GDPORTAGRO01, strategos.mod_rep_com_act.GDPSUPERV01, strategos.mod_rep_com_act.GDPSUPERV02
 
 USE storage;
 GO
@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'*', N'HASEOPER', N'HCODMOD', N'HCODMON', N'HCODOPE', N'HCTACLI', N'HDCODSEC', N'HDESCLI', N'HDSUCCLI', N'HDTIPOPE', N'HFECMOR', N'HFECPRO', N'HINDCAR', N'HMONDES', N'HNUMDOC', N'HSALVENMN', N'HSUBTIP', N'HTIPCMB', N'HTIPDOC', N'HTIPOPE') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'*', N'HASEOPER', N'HCODMOD', N'HCODMON', N'HCODOPE', N'HCTACLI', N'HDCODSEC', N'HDESCLI', N'HDSUCCLI', N'HDTIPOPE', N'HFECMOR', N'HFECPRO', N'HGENPER', N'HINDCAR', N'HMONDES', N'HNUMDOC', N'hpais', N'HSALVENMN', N'HSUBTIP', N'HTIPCMB', N'HTIPDOC', N'HTIPOPE') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'com_act' AND c.TABLE_NAME = N'HCDA001'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,7 +20,7 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'com_act.HCDA001') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [*], [HASEOPER], [HCODMOD], [HCODMON], [HCODOPE], [HCTACLI], [HDCODSEC], [HDESCLI], [HDSUCCLI], [HDTIPOPE], [HFECMOR], [HFECPRO], [HINDCAR], [HMONDES], [HNUMDOC], [HSALVENMN], [HSUBTIP], [HTIPCMB], [HTIPDOC], [HTIPOPE]
+SELECT TOP (100) [*], [HASEOPER], [HCODMOD], [HCODMON], [HCODOPE], [HCTACLI], [HDCODSEC], [HDESCLI], [HDSUCCLI], [HDTIPOPE], [HFECMOR], [HFECPRO], [HGENPER], [HINDCAR], [HMONDES], [HNUMDOC], [hpais], [HSALVENMN], [HSUBTIP], [HTIPCMB], [HTIPDOC], [HTIPOPE]
 FROM [storage].[com_act].[HCDA001] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
@@ -38,9 +38,11 @@ SELECT
     SUM(CASE WHEN [HDTIPOPE] IS NULL THEN 1 ELSE 0 END) AS [nulos_HDTIPOPE], COUNT(DISTINCT [HDTIPOPE]) AS [distintos_HDTIPOPE],
     SUM(CASE WHEN [HFECMOR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HFECMOR], COUNT(DISTINCT [HFECMOR]) AS [distintos_HFECMOR],
     SUM(CASE WHEN [HFECPRO] IS NULL THEN 1 ELSE 0 END) AS [nulos_HFECPRO], COUNT(DISTINCT [HFECPRO]) AS [distintos_HFECPRO],
+    SUM(CASE WHEN [HGENPER] IS NULL THEN 1 ELSE 0 END) AS [nulos_HGENPER], COUNT(DISTINCT [HGENPER]) AS [distintos_HGENPER],
     SUM(CASE WHEN [HINDCAR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDCAR], COUNT(DISTINCT [HINDCAR]) AS [distintos_HINDCAR],
     SUM(CASE WHEN [HMONDES] IS NULL THEN 1 ELSE 0 END) AS [nulos_HMONDES], COUNT(DISTINCT [HMONDES]) AS [distintos_HMONDES],
     SUM(CASE WHEN [HNUMDOC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HNUMDOC], COUNT(DISTINCT [HNUMDOC]) AS [distintos_HNUMDOC],
+    SUM(CASE WHEN [hpais] IS NULL THEN 1 ELSE 0 END) AS [nulos_hpais], COUNT(DISTINCT [hpais]) AS [distintos_hpais],
     SUM(CASE WHEN [HSALVENMN] IS NULL THEN 1 ELSE 0 END) AS [nulos_HSALVENMN], COUNT(DISTINCT [HSALVENMN]) AS [distintos_HSALVENMN],
     SUM(CASE WHEN [HSUBTIP] IS NULL THEN 1 ELSE 0 END) AS [nulos_HSUBTIP], COUNT(DISTINCT [HSUBTIP]) AS [distintos_HSUBTIP],
     SUM(CASE WHEN [HTIPCMB] IS NULL THEN 1 ELSE 0 END) AS [nulos_HTIPCMB], COUNT(DISTINCT [HTIPCMB]) AS [distintos_HTIPCMB],

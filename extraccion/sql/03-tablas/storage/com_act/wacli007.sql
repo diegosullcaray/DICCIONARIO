@@ -1,6 +1,6 @@
 -- storage.com_act.wacli007
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.RRANKM01, mod_rep.com.RSDESEMP01, mod_rep.com.RSDESEMP02
+-- Usada por: mod_rep.com.RRANKM01, mod_rep.com.RSDESEMP01, mod_rep.com.RSDESEMP02, mod_rep.com.RSRTOPPOMIS001, mod_rep.com.RSRTOPPOMIS002, mod_rep.com.RSRTOPPOMIS003, mod_rep.com.RSRTOPPOMIS004
 
 USE storage;
 GO
@@ -9,7 +9,7 @@ GO
 SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
        c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
        c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
-       CASE WHEN c.COLUMN_NAME IN (N'HCODPER', N'hcodsec', N'hfecpro', N'HINDBANC', N'HINDGEN', N'HINDMIGR', N'HINDRUR') THEN 1 ELSE 0 END AS usada_por_reportes
+       CASE WHEN c.COLUMN_NAME IN (N'HCODPER', N'hcodsec', N'hfecpro', N'HINDBANC', N'HINDGEN', N'HINDMIGR', N'HINDRUR', N'HINDVULN') THEN 1 ELSE 0 END AS usada_por_reportes
 FROM INFORMATION_SCHEMA.COLUMNS c
 WHERE c.TABLE_SCHEMA = N'com_act' AND c.TABLE_NAME = N'wacli007'
 ORDER BY c.ORDINAL_POSITION;
@@ -20,7 +20,7 @@ FROM sys.partitions p
 WHERE p.object_id = OBJECT_ID(N'com_act.wacli007') AND p.index_id IN (0, 1);
 
 -- 3. Muestra de las columnas que usan los reportes.
-SELECT TOP (100) [HCODPER], [hcodsec], [hfecpro], [HINDBANC], [HINDGEN], [HINDMIGR], [HINDRUR]
+SELECT TOP (100) [HCODPER], [hcodsec], [hfecpro], [HINDBANC], [HINDGEN], [HINDMIGR], [HINDRUR], [HINDVULN]
 FROM [storage].[com_act].[wacli007] WITH (NOLOCK);
 
 -- 4. Perfil rápido: nulos y valores distintos por columna usada.
@@ -32,5 +32,6 @@ SELECT
     SUM(CASE WHEN [HINDBANC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDBANC], COUNT(DISTINCT [HINDBANC]) AS [distintos_HINDBANC],
     SUM(CASE WHEN [HINDGEN] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDGEN], COUNT(DISTINCT [HINDGEN]) AS [distintos_HINDGEN],
     SUM(CASE WHEN [HINDMIGR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDMIGR], COUNT(DISTINCT [HINDMIGR]) AS [distintos_HINDMIGR],
-    SUM(CASE WHEN [HINDRUR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDRUR], COUNT(DISTINCT [HINDRUR]) AS [distintos_HINDRUR]
+    SUM(CASE WHEN [HINDRUR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDRUR], COUNT(DISTINCT [HINDRUR]) AS [distintos_HINDRUR],
+    SUM(CASE WHEN [HINDVULN] IS NULL THEN 1 ELSE 0 END) AS [nulos_HINDVULN], COUNT(DISTINCT [HINDVULN]) AS [distintos_HINDVULN]
 FROM [storage].[com_act].[wacli007] WITH (NOLOCK);

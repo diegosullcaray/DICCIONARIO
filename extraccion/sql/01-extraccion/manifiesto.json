@@ -48,7 +48,7 @@
       "esquema": "com",
       "nombre": "GCMGCARTAS001",
       "destino": "extraccion/procedimientos/mod_rep/com/GCMGCARTAS001.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -475,7 +475,7 @@
       "esquema": "com",
       "nombre": "GRGCTABDIGO03",
       "destino": "extraccion/procedimientos/mod_rep/com/GRGCTABDIGO03.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -510,14 +510,14 @@
       "esquema": "com",
       "nombre": "GRTABDIGO01",
       "destino": "extraccion/procedimientos/mod_rep/com/GRTABDIGO01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "GRTABDIGO02",
       "destino": "extraccion/procedimientos/mod_rep/com/GRTABDIGO02.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -671,7 +671,7 @@
       "esquema": "com",
       "nombre": "RAGROMIX",
       "destino": "extraccion/procedimientos/mod_rep/com/RAGROMIX.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -888,7 +888,7 @@
       "esquema": "com",
       "nombre": "RINCEPDM01",
       "destino": "extraccion/procedimientos/mod_rep/com/RINCEPDM01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -902,7 +902,7 @@
       "esquema": "com",
       "nombre": "RMONINTCOM01",
       "destino": "extraccion/procedimientos/mod_rep/com/RMONINTCOM01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -951,21 +951,21 @@
       "esquema": "com",
       "nombre": "RRANKM02",
       "destino": "extraccion/procedimientos/mod_rep/com/RRANKM02.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RREPGESTCOM02",
       "destino": "extraccion/procedimientos/mod_rep/com/RREPGESTCOM02.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RREPGESTCOM03",
       "destino": "extraccion/procedimientos/mod_rep/com/RREPGESTCOM03.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1014,28 +1014,28 @@
       "esquema": "com",
       "nombre": "RS_AGROMIX_CHART",
       "destino": "extraccion/procedimientos/mod_rep/com/RS_AGROMIX_CHART.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RS_AGROMIX_CHART2",
       "destino": "extraccion/procedimientos/mod_rep/com/RS_AGROMIX_CHART2.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RS_AGROMIX_CHART3",
       "destino": "extraccion/procedimientos/mod_rep/com/RS_AGROMIX_CHART3.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RS_AGROMIX_CHART4",
       "destino": "extraccion/procedimientos/mod_rep/com/RS_AGROMIX_CHART4.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1098,7 +1098,7 @@
       "esquema": "com",
       "nombre": "RSCAPCOME01",
       "destino": "extraccion/procedimientos/mod_rep/com/RSCAPCOME01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1147,7 +1147,7 @@
       "esquema": "com",
       "nombre": "RSCOMPAS01",
       "destino": "extraccion/procedimientos/mod_rep/com/RSCOMPAS01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1182,7 +1182,7 @@
       "esquema": "com",
       "nombre": "RSDEPGSOLID01",
       "destino": "extraccion/procedimientos/mod_rep/com/RSDEPGSOLID01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1224,7 +1224,7 @@
       "esquema": "com",
       "nombre": "RSEGASE01",
       "destino": "extraccion/procedimientos/mod_rep/com/RSEGASE01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1448,7 +1448,7 @@
       "esquema": "com",
       "nombre": "RSRANKCOM01",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRANKCOM01.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1574,28 +1574,28 @@
       "esquema": "com",
       "nombre": "RSRDFCA038",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRDFCA038.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSRDFCA050",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRDFCA050.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSRDFCA050_3",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRDFCA050_3.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSRDFCA050_4",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRDFCA050_4.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1609,14 +1609,14 @@
       "esquema": "com",
       "nombre": "RSROPERA001",
       "destino": "extraccion/procedimientos/mod_rep/com/RSROPERA001.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSROPERA002",
       "destino": "extraccion/procedimientos/mod_rep/com/RSROPERA002.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1672,28 +1672,28 @@
       "esquema": "com",
       "nombre": "RSRTOPPOMIS001",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRTOPPOMIS001.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSRTOPPOMIS002",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRTOPPOMIS002.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSRTOPPOMIS003",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRTOPPOMIS003.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
       "esquema": "com",
       "nombre": "RSRTOPPOMIS004",
       "destino": "extraccion/procedimientos/mod_rep/com/RSRTOPPOMIS004.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1735,7 +1735,7 @@
       "esquema": "com",
       "nombre": "RSSALCARVIGE02",
       "destino": "extraccion/procedimientos/mod_rep/com/RSSALCARVIGE02.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1763,7 +1763,7 @@
       "esquema": "com",
       "nombre": "RSSEGPAS04",
       "destino": "extraccion/procedimientos/mod_rep/com/RSSEGPAS04.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1784,7 +1784,7 @@
       "esquema": "com",
       "nombre": "RSTABCOMER02",
       "destino": "extraccion/procedimientos/mod_rep/com/RSTABCOMER02.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",
@@ -1805,7 +1805,7 @@
       "esquema": "dbo",
       "nombre": "REPORTE_DEMO",
       "destino": "extraccion/procedimientos/mod_rep/dbo/REPORTE_DEMO.sql",
-      "extraido": false
+      "extraido": true
     },
     {
       "base": "mod_rep",

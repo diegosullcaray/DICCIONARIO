@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 110 columna(s) usadas · 1 procedimiento(s) · vista con 110 columna(s) en la base
+Base `storage` · esquema `com_act` · 110 columna(s) usadas · 3 procedimiento(s) · vista con 110 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VCAH002.sql](../../../../extraccion/sql/03-tablas/storage/com_act/VCAH002.sql)
 
@@ -127,6 +127,8 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VCAH002.sql](../../.
 | Procedimiento | Operación | Reportes |
 |---|---|---|
 | [mod_rep.com.DINCEPDM01](../../../procedimientos/mod_rep/com/DINCEPDM01.md) | lee | `DET_INCEN_PDM_01` |
+| [mod_rep.com.GDCGEST_ACTIVAST03](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md) | — | `GST_ACTIVAS_08`, `GST_ACTIVAS_07` |
+| [mod_rep.com.GDCGEST_ACTIVAST04](../../../procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md) | — | `GST_ACTIVAS_09`, `GST_ACTIVAS_10` |
 <!-- generado:fin -->
 
 ## Descripción

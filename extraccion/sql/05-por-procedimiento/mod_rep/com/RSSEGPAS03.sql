@@ -18,6 +18,10 @@ ORDER BY column_ordinal;
 SELECT TOP (100) [HCODSEG], [HCOMIFC]
 FROM [storage].[com_seg].[RETC001] WITH (NOLOCK);
 
+-- storage.com_seg.RETPP004 · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [storage].[com_seg].[RETPP004] WITH (NOLOCK);
+
 -- storage.com.VDMCOM01 · lee · 5 columna(s)
 SELECT TOP (100) [HCODREL], [HCODVAR], [HTIPCOD], [HVALVAR], [hfecpro]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
@@ -25,3 +29,7 @@ FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
 -- storage.ref.RCALEN001 · lee · 3 columna(s)
 SELECT TOP (100) [RDIAFER], [RDIASEM], [RFEC]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
+
+-- storage.ref.VJERCOR04 · lee · 10 columna(s)
+SELECT TOP (100) [RCODAGE], [RCODFC], [RCODMAC], [RCODMAT], [RCODTER], [RDESAGE], [RDESFC], [RDESMAC], [RDESMAT], [RDESTER]
+FROM [storage].[ref].[VJERCOR04] WITH (NOLOCK);

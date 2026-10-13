@@ -12,13 +12,13 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAS014.sql](../../.
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `SCODAGR` | int | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
-| `SCODMOD` | smallint | 🎯 exacta | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
-| `SCODSEC` | varchar(10) | 🎯 exacta | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
+| `SCODMOD` | smallint | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
+| `SCODSEC` | varchar(10) | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
 | `sfecbas` | date | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
-| `SNUMOPEBAS` | int | 🎯 exacta | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
-| `SSALCAPBAS` | numeric(38,6) | 🎯 exacta | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
-| `SSUBTIP` | int | 🎯 exacta | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
-| `STIPOPE` | smallint | 🎯 exacta | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
+| `SNUMOPEBAS` | int | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
+| `SSALCAPBAS` | numeric(38,6) | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
+| `SSUBTIP` | int | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
+| `STIPOPE` | smallint | ✅ confirmada | [GPRECOSCUAD001](../../../procedimientos/mod_rep/com/GPRECOSCUAD001.md) | — |
 
 ### Procedimientos que la usan
 

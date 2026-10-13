@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 20 columna(s) usadas · 1 procedimiento(s) · vista con 28 columna(s) en la base
+Base `storage` · esquema `com_act` · 21 columna(s) usadas · 1 procedimiento(s) · vista con 29 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VRPDM001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/VRPDM001.sql)
 
@@ -16,6 +16,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VRPDM001.sql](../../
 | `HDCLI` | varchar(255) | ✅ confirmada | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |
 | `HDGRP` | varchar(255) not null | ✅ confirmada | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |
 | `HDIAATR` | int | ✅ confirmada | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |
+| `HDPROP` | varchar(20) | 🗄️ motor | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |
 | `HENTID` | int | ✅ confirmada | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |
 | `HFECPRO` | date not null | ✅ confirmada | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |
 | `HFFINVIG` | date not null | ✅ confirmada | [GLISDETCLIPDM01](../../../procedimientos/mod_rep/com/GLISDETCLIPDM01.md) | — |

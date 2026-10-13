@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 7 columna(s) usadas · 3 procedimiento(s) · tabla con 10 columna(s) en la base
+Base `storage` · esquema `com_act` · 8 columna(s) usadas · 7 procedimiento(s) · tabla con 10 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/wacli007.sql](../../../../extraccion/sql/03-tablas/storage/com_act/wacli007.sql)
 
@@ -11,13 +11,14 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/wacli007.sql](../../
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `HCODPER` | varchar(255) | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
-| `hcodsec` | varchar(255) | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP01](../../../procedimientos/mod_rep/com/RSDESEMP01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
-| `hfecpro` | varchar(255) | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP01](../../../procedimientos/mod_rep/com/RSDESEMP01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
-| `HINDBANC` | int | 🧩 por estructura | [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
-| `HINDGEN` | int | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
+| `HCODPER` | varchar(255) | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md), [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
+| `hcodsec` | varchar(255) | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP01](../../../procedimientos/mod_rep/com/RSDESEMP01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md), [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
+| `hfecpro` | varchar(255) | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP01](../../../procedimientos/mod_rep/com/RSDESEMP01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md), [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
+| `HINDBANC` | int | 🧩 por estructura | [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md), [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
+| `HINDGEN` | int | ✅ confirmada | [RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md), [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md), [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
 | `HINDMIGR` | int | 🧩 por estructura | [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
-| `HINDRUR` | int | 🧩 por estructura | [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | — |
+| `HINDRUR` | int | 🧩 por estructura | [RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md), [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
+| `HINDVULN` | int | ≈ inferida | [RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md), [RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md), [RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md), [RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | — |
 
 ### Procedimientos que la usan
 
@@ -26,6 +27,10 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/wacli007.sql](../../
 | [mod_rep.com.RRANKM01](../../../procedimientos/mod_rep/com/RRANKM01.md) | lee | `RS_RANK_MUJ_01` |
 | [mod_rep.com.RSDESEMP01](../../../procedimientos/mod_rep/com/RSDESEMP01.md) | lee | `DESEMP_SOC_01`, `DESE_SOC_01` |
 | [mod_rep.com.RSDESEMP02](../../../procedimientos/mod_rep/com/RSDESEMP02.md) | lee | `DESE_SOC_AS_01` |
+| [mod_rep.com.RSRTOPPOMIS001](../../../procedimientos/mod_rep/com/RSRTOPPOMIS001.md) | lee | `pob_misi_01` |
+| [mod_rep.com.RSRTOPPOMIS002](../../../procedimientos/mod_rep/com/RSRTOPPOMIS002.md) | lee | `pob_misi_02` |
+| [mod_rep.com.RSRTOPPOMIS003](../../../procedimientos/mod_rep/com/RSRTOPPOMIS003.md) | lee | `pob_misi_03` |
+| [mod_rep.com.RSRTOPPOMIS004](../../../procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | lee | `pob_misi_04` |
 <!-- generado:fin -->
 
 ## Descripción

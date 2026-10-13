@@ -20,7 +20,7 @@
 | [com.GCMCNUE001](procedimientos/mod_rep/com/GCMCNUE001.md) | ✅ validado | `CMCUONUEV_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMCNUE001.sql) |
 | [com.GCMCNUE002](procedimientos/mod_rep/com/GCMCNUE002.md) | ✅ validado | `CMCUONUEV_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMCNUE002.sql) |
 | [com.GCMGCAP01](procedimientos/mod_rep/com/GCMGCAP01.md) | ✅ validado | `GCMGCAP_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMGCAP01.sql) |
-| `com.GCMGCARTAS001` | ❌ no existe en la base | `CMG_CARTERA_ASESOR_01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMGCARTAS001.sql) |
+| [com.GCMGCARTAS001](procedimientos/mod_rep/com/GCMGCARTAS001.md) | ✅ validado | `CMG_CARTERA_ASESOR_01` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMGCARTAS001.sql) |
 | [com.GCMGMORA001](procedimientos/mod_rep/com/GCMGMORA001.md) | ✅ validado | `cuadro_Variable_Riesgo_01`, `cuadro_Variable_M_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMGMORA001.sql) |
 | [com.GCMGMORA001_SIMP](procedimientos/mod_rep/com/GCMGMORA001_SIMP.md) | ✅ validado | `cmg_mora_simp_01`, `cmg_mora_simp_m_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMGMORA001_SIMP.sql) |
 | [com.GCMGMORA003](procedimientos/mod_rep/com/GCMGMORA003.md) | ✅ validado | `cuadro_Variable_Riesgo_F_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GCMGMORA003.sql) |
@@ -37,8 +37,8 @@
 | [com.GDCEROCN004](procedimientos/mod_rep/com/GDCEROCN004.md) | ✅ validado | `REP_CERCUOT_02` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCEROCN004.sql) |
 | [com.GDCGEST_ACTIVAST01](procedimientos/mod_rep/com/GDCGEST_ACTIVAST01.md) | ✅ validado | `GST_ACTIVAS_01`, `GST_ACTIVAS_02`, `GST_ACTIVAS_03`, `GST_ACTIVAS_04`, `GST_ACTIVAS_05`, `GST_ACTIVAS_06`, `GST_ACTIVAS_M_01`, `GST_ACTIVAS_M_02`, `GST_ACTIVAS_M_03`, `GST_ACTIVAS_M_04`, `GST_ACTIVAS_M_05`, `GST_ACTIVAS_M_06` | 6 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_ACTIVAST01.sql) |
 | [com.GDCGEST_ACTIVAST02](procedimientos/mod_rep/com/GDCGEST_ACTIVAST02.md) | ✅ validado | `reporte_autonomia_newdiaria_01`, `reporte_autonomia_new_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_ACTIVAST02.sql) |
-| [com.GDCGEST_ACTIVAST03](procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md) | ✅ validado | `GST_ACTIVAS_08`, `GST_ACTIVAS_07` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_ACTIVAST03.sql) |
-| [com.GDCGEST_ACTIVAST04](procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md) | ✅ validado | `GST_ACTIVAS_09`, `GST_ACTIVAS_10` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_ACTIVAST04.sql) |
+| [com.GDCGEST_ACTIVAST03](procedimientos/mod_rep/com/GDCGEST_ACTIVAST03.md) | ✅ validado | `GST_ACTIVAS_08`, `GST_ACTIVAS_07` | 5 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_ACTIVAST03.sql) |
+| [com.GDCGEST_ACTIVAST04](procedimientos/mod_rep/com/GDCGEST_ACTIVAST04.md) | ✅ validado | `GST_ACTIVAS_09`, `GST_ACTIVAS_10` | 5 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_ACTIVAST04.sql) |
 | [com.GDCGEST_PASIVAST01](procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | ✅ validado | `GST_PASIVA_01`, `GST_PASIVA_02`, `GST_PASIVA_03`, `GST_PASIVA_M_01`, `GST_PASIVA_M_02`, `GST_PASIVA_M_03` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCGEST_PASIVAST01.sql) |
 | [com.GDCLIOPE01](procedimientos/mod_rep/com/GDCLIOPE01.md) | ✅ validado | `Clientes_Ope_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDCLIOPE01.sql) |
 | [com.GDMREP001](procedimientos/mod_rep/com/GDMREP001.md) | ✅ validado | `RS_MON_REP_01`, `RS_MON_REP_SEC_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GDMREP001.sql) |
@@ -71,25 +71,25 @@
 | [com.GRESPDATOS02](procedimientos/mod_rep/com/GRESPDATOS02.md) | ✅ validado | `P_Datos_02` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESPDATOS02.sql) |
 | [com.GRESPROGOB01](procedimientos/mod_rep/com/GRESPROGOB01.md) | ✅ validado | `RPROGOB_01`, `RPROGOB_M_01`, `RPROGOB_02`, `RPROGOB_M_02` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESPROGOB01.sql) |
 | [com.GRESPROGOB02](procedimientos/mod_rep/com/GRESPROGOB02.md) | ✅ validado | `RPROGOB_03`, `RPROGOB_M_03`, `RPROGOB_04`, `RPROGOB_M_04` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESPROGOB02.sql) |
-| [com.GRESREAGRO01](procedimientos/mod_rep/com/GRESREAGRO01.md) | ✅ validado | `AGRO_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREAGRO01.sql) |
+| [com.GRESREAGRO01](procedimientos/mod_rep/com/GRESREAGRO01.md) | ✅ validado | `AGRO_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREAGRO01.sql) |
 | [com.GRESREPSEG_01](procedimientos/mod_rep/com/GRESREPSEG_01.md) | ✅ validado | `GRSCMISREP_01` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG_01.sql) |
 | [com.GRESREPSEG01](procedimientos/mod_rep/com/GRESREPSEG01.md) | ✅ validado | `GRSCMIS_01` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG01.sql) |
-| [com.GRESREPSEG02](procedimientos/mod_rep/com/GRESREPSEG02.md) | ✅ validado | `GRSCMIS_02` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG02.sql) |
+| [com.GRESREPSEG02](procedimientos/mod_rep/com/GRESREPSEG02.md) | ✅ validado | `GRSCMIS_02` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG02.sql) |
 | [com.GRESREPSEG03](procedimientos/mod_rep/com/GRESREPSEG03.md) | ✅ validado | `GRSCMIS_03` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG03.sql) |
 | [com.GRESREPSEG04](procedimientos/mod_rep/com/GRESREPSEG04.md) | ✅ validado | `SEG_AGRO_01` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG04.sql) |
 | [com.GRESREPSEG05](procedimientos/mod_rep/com/GRESREPSEG05.md) | ✅ validado | `GRSCMIS_04` | 8 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG05.sql) |
 | [com.GRESREPSEG06](procedimientos/mod_rep/com/GRESREPSEG06.md) | ✅ validado | `GRSCMIS_05` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESREPSEG06.sql) |
 | [com.GRESTOPIMP01](procedimientos/mod_rep/com/GRESTOPIMP01.md) | ✅ validado | `GRESCAMIMP_02` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRESTOPIMP01.sql) |
 | [com.GRGCTABDIGO02](procedimientos/mod_rep/com/GRGCTABDIGO02.md) | ✅ validado | `GCTABDIG_VR2_OPE_02` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRGCTABDIGO02.sql) |
-| `com.GRGCTABDIGO03` | ❌ no existe en la base | `GCTABDIG_VR2_COM_03` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRGCTABDIGO03.sql) |
+| [com.GRGCTABDIGO03](procedimientos/mod_rep/com/GRGCTABDIGO03.md) | ✅ validado | `GCTABDIG_VR2_COM_03` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRGCTABDIGO03.sql) |
 | [com.GRMENTOR001](procedimientos/mod_rep/com/GRMENTOR001.md) | ✅ validado | `RMENTORIN_01` | 12 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRMENTOR001.sql) |
 | [com.GRMENTOR002](procedimientos/mod_rep/com/GRMENTOR002.md) | ✅ validado | `RMENTORIN_02` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRMENTOR002.sql) |
 | [com.GRTABAPPO01](procedimientos/mod_rep/com/GRTABAPPO01.md) | ✅ validado | `TABDIG_01` | 8 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRTABAPPO01.sql) |
 | [com.GRTABCORRO01](procedimientos/mod_rep/com/GRTABCORRO01.md) | ✅ validado | `TABDIG_02` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRTABCORRO01.sql) |
-| `com.GRTABDIGO01` | ❌ no existe en la base | `TABDIG_VR2_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRTABDIGO01.sql) |
-| `com.GRTABDIGO02` | ❌ no existe en la base | `TABDIG_VR2_COM_02` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRTABDIGO02.sql) |
+| [com.GRTABDIGO01](procedimientos/mod_rep/com/GRTABDIGO01.md) | ✅ validado | `TABDIG_VR2_01` | 7 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRTABDIGO01.sql) |
+| [com.GRTABDIGO02](procedimientos/mod_rep/com/GRTABDIGO02.md) | ✅ validado | `TABDIG_VR2_COM_02` | 6 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRTABDIGO02.sql) |
 | [com.GRVGENCORO01](procedimientos/mod_rep/com/GRVGENCORO01.md) | ✅ validado | `RVIUWGCOR_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRVGENCORO01.sql) |
-| [com.GRVGENCORO02](procedimientos/mod_rep/com/GRVGENCORO02.md) | ✅ validado | `RVIUWGCORE_02` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRVGENCORO02.sql) |
+| [com.GRVGENCORO02](procedimientos/mod_rep/com/GRVGENCORO02.md) | ✅ validado | `RVIUWGCORE_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GRVGENCORO02.sql) |
 | [com.GSCAMP01](procedimientos/mod_rep/com/GSCAMP01.md) | ✅ validado | `GSCAMP_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GSCAMP01.sql) |
 | [com.GSCASEG01](procedimientos/mod_rep/com/GSCASEG01.md) | ✅ validado | `GSCASEG_01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GSCASEG01.sql) |
 | [com.GSEGCAPBP01](procedimientos/mod_rep/com/GSEGCAPBP01.md) | ✅ validado | `CAP_SEGUI_BP_01` | 9 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GSEGCAPBP01.sql) |
@@ -109,7 +109,7 @@
 | [com.GTOPCERCUO004](procedimientos/mod_rep/com/GTOPCERCUO004.md) | ✅ validado | `CEROCUOTA_TOPCNUEVA_04`, `CEROCUOTA_TOPCNUEVA_M_04` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GTOPCERCUO004.sql) |
 | [com.GTOPCERCUO005](procedimientos/mod_rep/com/GTOPCERCUO005.md) | ✅ validado | `CEROCUOTA_TOPCNUEVA_05`, `CEROCUOTA_TOPCNUEVA_M_05` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/GTOPCERCUO005.sql) |
 | [com.RACTGP01](procedimientos/mod_rep/com/RACTGP01.md) | ✅ validado | `RACTGP_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RACTGP01.sql) |
-| `com.RAGROMIX` | ❌ no existe en la base | `RS_AGROMIX_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RAGROMIX.sql) |
+| [com.RAGROMIX](procedimientos/mod_rep/com/RAGROMIX.md) | ✅ validado | `RS_AGROMIX_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RAGROMIX.sql) |
 | [com.RCARDZCUO01](procedimientos/mod_rep/com/RCARDZCUO01.md) | ✅ validado | `RS_CARD_ZCUO_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RCARDZCUO01.sql) |
 | [com.RCDATREACT01](procedimientos/mod_rep/com/RCDATREACT01.md) | ✅ validado | `LSRC_DATA_REACT_01` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RCDATREACT01.sql) |
 | [com.RCORRES01](procedimientos/mod_rep/com/RCORRES01.md) | ✅ validado | `GREPORCORRE_01` | 4 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RCORRES01.sql) |
@@ -140,28 +140,28 @@
 | [com.RGRAFZCUO03](procedimientos/mod_rep/com/RGRAFZCUO03.md) | ✅ validado | `GRAF_ZCUO_03` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RGRAFZCUO03.sql) |
 | [com.RGRAFZCUO04](procedimientos/mod_rep/com/RGRAFZCUO04.md) | ✅ validado | `GRAF_ZCUO_04` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RGRAFZCUO04.sql) |
 | [com.RINCEGP01](procedimientos/mod_rep/com/RINCEGP01.md) | ✅ validado | `RESINCGRUP_01` | 10 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RINCEGP01.sql) |
-| `com.RINCEPDM01` | ❌ no existe en la base | `INCEN_PDM_01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RINCEPDM01.sql) |
+| [com.RINCEPDM01](procedimientos/mod_rep/com/RINCEPDM01.md) | ✅ validado | `INCEN_PDM_01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RINCEPDM01.sql) |
 | [com.RMESA01](procedimientos/mod_rep/com/RMESA01.md) | ✅ validado | `RMESA_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RMESA01.sql) |
-| `com.RMONINTCOM01` | ❌ no existe en la base | `RS_MON_INT_COM_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RMONINTCOM01.sql) |
+| [com.RMONINTCOM01](procedimientos/mod_rep/com/RMONINTCOM01.md) | ✅ validado | `RS_MON_INT_COM_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RMONINTCOM01.sql) |
 | [com.RMORAGP01](procedimientos/mod_rep/com/RMORAGP01.md) | ✅ validado | `RESMORAGP_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RMORAGP01.sql) |
 | [com.RPROSCORR002](procedimientos/mod_rep/com/RPROSCORR002.md) | ✅ validado | `GREPROSPCORRE_01` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RPROSCORR002.sql) |
 | [com.RPROSCORR004](procedimientos/mod_rep/com/RPROSCORR004.md) | ✅ validado | `GREPROSPCORRE_02` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RPROSCORR004.sql) |
 | [com.RPROSCORR005](procedimientos/mod_rep/com/RPROSCORR005.md) | ✅ validado | `GREPROSPCORRE_06` | 4 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RPROSCORR005.sql) |
 | [com.RPROSCORR006](procedimientos/mod_rep/com/RPROSCORR006.md) | ✅ validado | `GREPROSPCORRE_03` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RPROSCORR006.sql) |
 | [com.RRANKM01](procedimientos/mod_rep/com/RRANKM01.md) | ✅ validado | `RS_RANK_MUJ_01` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RRANKM01.sql) |
-| `com.RRANKM02` | ❌ no existe en la base | `RS_RANK_MUJ_02` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RRANKM02.sql) |
-| `com.RREPGESTCOM02` | ❌ no existe en la base | `RS_GEST_COM_02` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RREPGESTCOM02.sql) |
-| `com.RREPGESTCOM03` | ❌ no existe en la base | `RS_GEST_COM_03` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RREPGESTCOM03.sql) |
+| [com.RRANKM02](procedimientos/mod_rep/com/RRANKM02.md) | ✅ validado | `RS_RANK_MUJ_02` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RRANKM02.sql) |
+| [com.RREPGESTCOM02](procedimientos/mod_rep/com/RREPGESTCOM02.md) | ✅ validado | `RS_GEST_COM_02` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RREPGESTCOM02.sql) |
+| [com.RREPGESTCOM03](procedimientos/mod_rep/com/RREPGESTCOM03.md) | ✅ validado | `RS_GEST_COM_03` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RREPGESTCOM03.sql) |
 | [com.RS_AGE_COM_CR_01](procedimientos/mod_rep/com/RS_AGE_COM_CR_01.md) | ✅ validado | `RS_AGE_COM_CR_01`, `RS_AGE_COM_CRM_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGE_COM_CR_01.sql) |
 | [com.RS_AGE_COM_CR_02](procedimientos/mod_rep/com/RS_AGE_COM_CR_02.md) | ✅ validado | `RS_AGE_COM_CR_03`, `RS_AGE_COM_CRM_03` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGE_COM_CR_02.sql) |
 | [com.RS_AGE_COM_CR_M_01](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_01.md) | ✅ validado | `RS_AGE_COM_CRM_F_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGE_COM_CR_M_01.sql) |
 | [com.RS_AGE_COM_CR_M_02](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_02.md) | ✅ validado | `RS_AGE_COM_CRM_F_03` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGE_COM_CR_M_02.sql) |
 | [com.RS_AGE_COM_CR_M_03](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_03.md) | ✅ validado | `RS_AGE_COM_CRM_S_01` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGE_COM_CR_M_03.sql) |
 | [com.RS_AGE_COM_CR_M_04](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_04.md) | ✅ validado | `RS_AGE_COM_CRM_S_03` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGE_COM_CR_M_04.sql) |
-| `com.RS_AGROMIX_CHART` | ❌ no existe en la base | `RS_AGROMIX_02` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART.sql) |
-| `com.RS_AGROMIX_CHART2` | ❌ no existe en la base | `RS_AGROMIX_03` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART2.sql) |
-| `com.RS_AGROMIX_CHART3` | ❌ no existe en la base | `RS_AGROMIX_04` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART3.sql) |
-| `com.RS_AGROMIX_CHART4` | ❌ no existe en la base | `RS_AGROMIX_05` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART4.sql) |
+| [com.RS_AGROMIX_CHART](procedimientos/mod_rep/com/RS_AGROMIX_CHART.md) | ✅ validado | `RS_AGROMIX_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART.sql) |
+| [com.RS_AGROMIX_CHART2](procedimientos/mod_rep/com/RS_AGROMIX_CHART2.md) | ✅ validado | `RS_AGROMIX_03` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART2.sql) |
+| [com.RS_AGROMIX_CHART3](procedimientos/mod_rep/com/RS_AGROMIX_CHART3.md) | ✅ validado | `RS_AGROMIX_04` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART3.sql) |
+| [com.RS_AGROMIX_CHART4](procedimientos/mod_rep/com/RS_AGROMIX_CHART4.md) | ✅ validado | `RS_AGROMIX_05` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RS_AGROMIX_CHART4.sql) |
 | [com.RSAGECOM01](procedimientos/mod_rep/com/RSAGECOM01.md) | ✅ validado | `RS_AGE_COM_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSAGECOM01.sql) |
 | [com.RSAGECOM02](procedimientos/mod_rep/com/RSAGECOM02.md) | ✅ validado | `RS_AGE_COM_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSAGECOM02.sql) |
 | [com.RSAGECOM03](procedimientos/mod_rep/com/RSAGECOM03.md) | ✅ validado | `RS_AGE_COM_03` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSAGECOM03.sql) |
@@ -170,25 +170,25 @@
 | [com.RSBASENEG01](procedimientos/mod_rep/com/RSBASENEG01.md) | 🔎 extraído | `RS_BASE_NEG_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSBASENEG01.sql) |
 | [com.RSCALCAR01](procedimientos/mod_rep/com/RSCALCAR01.md) | ✅ validado | `RS_CAL_CAR_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCALCAR01.sql) |
 | [com.RSCALCAR02](procedimientos/mod_rep/com/RSCALCAR02.md) | ✅ validado | `RS_CAL_CAR_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCALCAR02.sql) |
-| `com.RSCAPCOME01` | ❌ no existe en la base | `RS_MON_SALCAP_COM_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCAPCOME01.sql) |
+| [com.RSCAPCOME01](procedimientos/mod_rep/com/RSCAPCOME01.md) | ✅ validado | `RS_MON_SALCAP_COM_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCAPCOME01.sql) |
 | [com.RSCLIVULNER01](procedimientos/mod_rep/com/RSCLIVULNER01.md) | ✅ validado | `CLI_VULNERABLE_01`, `CLI_VULNERABLE_01` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCLIVULNER01.sql) |
 | [com.RSCMGCF001](procedimientos/mod_rep/com/RSCMGCF001.md) | ✅ validado | `CMG_CLIF_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCMGCF001.sql) |
 | [com.RSCMGCLIPAS01](procedimientos/mod_rep/com/RSCMGCLIPAS01.md) | ✅ validado | `CMG_CLI_PAS_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCMGCLIPAS01.sql) |
 | [com.RSCMGCLIPAS02](procedimientos/mod_rep/com/RSCMGCLIPAS02.md) | ✅ validado | `CMG_CLI_PAS_STOCK_02` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCMGCLIPAS02.sql) |
 | [com.RSCMGCLIPAS03](procedimientos/mod_rep/com/RSCMGCLIPAS03.md) | ✅ validado | `CMG_CLI_PAS_DETA_01` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCMGCLIPAS03.sql) |
 | [com.RSCMGFCA002](procedimientos/mod_rep/com/RSCMGFCA002.md) | ✅ validado | `CMG_CARTERA_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCMGFCA002.sql) |
-| `com.RSCOMPAS01` | ❌ no existe en la base | `RS_CARTEPAS_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCOMPAS01.sql) |
+| [com.RSCOMPAS01](procedimientos/mod_rep/com/RSCOMPAS01.md) | ✅ validado | `RS_CARTEPAS_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSCOMPAS01.sql) |
 | [com.RSDATPRO01](procedimientos/mod_rep/com/RSDATPRO01.md) | ✅ validado | `RS_DAT_PRO_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDATPRO01.sql) |
 | [com.RSDATPRO02](procedimientos/mod_rep/com/RSDATPRO02.md) | ✅ validado | `RS_DAT_PRO_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDATPRO02.sql) |
 | [com.RSDATPRO03](procedimientos/mod_rep/com/RSDATPRO03.md) | ✅ validado | `RS_DAT_PRO_03` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDATPRO03.sql) |
 | [com.RSDATPRO04](procedimientos/mod_rep/com/RSDATPRO04.md) | ✅ validado | `RS_DAT_PRO_04` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDATPRO04.sql) |
-| `com.RSDEPGSOLID01` | ❌ no existe en la base | `GRBSOLI_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDEPGSOLID01.sql) |
+| [com.RSDEPGSOLID01](procedimientos/mod_rep/com/RSDEPGSOLID01.md) | ✅ validado | `GRBSOLI_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDEPGSOLID01.sql) |
 | [com.RSDESEMB](procedimientos/mod_rep/com/RSDESEMB.md) | ✅ validado | `RS_DESEMB_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDESEMB.sql) |
 | [com.RSDESEMB02](procedimientos/mod_rep/com/RSDESEMB02.md) | ✅ validado | `RS_DESEMB_02` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDESEMB02.sql) |
 | [com.RSDESEMP01](procedimientos/mod_rep/com/RSDESEMP01.md) | ✅ validado | `DESEMP_SOC_01`, `DESE_SOC_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDESEMP01.sql) |
 | [com.RSDESEMP02](procedimientos/mod_rep/com/RSDESEMP02.md) | ✅ validado | `DESE_SOC_AS_01` | 4 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDESEMP02.sql) |
 | [com.RSDESEMPAS01](procedimientos/mod_rep/com/RSDESEMPAS01.md) | ✅ validado | `DESEMP_SOC_PAS_01` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSDESEMPAS01.sql) |
-| `com.RSEGASE01` | ❌ no existe en la base | `SEGUROS_ASESOR_01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSEGASE01.sql) |
+| [com.RSEGASE01](procedimientos/mod_rep/com/RSEGASE01.md) | ✅ validado | `SEGUROS_ASESOR_01` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSEGASE01.sql) |
 | [com.RSEGSECTOR001](procedimientos/mod_rep/com/RSEGSECTOR001.md) | ✅ validado | `Sec_ciiu_01` | 7 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSEGSECTOR001.sql) |
 | [com.RSGESMOEF001](procedimientos/mod_rep/com/RSGESMOEF001.md) | ✅ validado | `rma/administracion/Mora/monitor_efectividad_rma_03` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSGESMOEF001.sql) |
 | [com.RSGETCOM01](procedimientos/mod_rep/com/RSGETCOM01.md) | ✅ validado | `RS_GEST_COM_01` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSGETCOM01.sql) |
@@ -198,11 +198,11 @@
 | [com.RSMONEFE01](procedimientos/mod_rep/com/RSMONEFE01.md) | ✅ validado | `RS_MON_EFEC_01`, `RS_MON_EFECM_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFE01.sql) |
 | [com.RSMONEFE02](procedimientos/mod_rep/com/RSMONEFE02.md) | ✅ validado | `RS_MON_EFEC_02`, `RS_MON_EFECM_02` | 10 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFE02.sql) |
 | [com.RSMONEFE03](procedimientos/mod_rep/com/RSMONEFE03.md) | ✅ validado | `RS_MON_EFEC_03`, `RS_MON_EFECM_03` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFE03.sql) |
-| [com.RSMONEFE05](procedimientos/mod_rep/com/RSMONEFE05.md) | ✅ validado | `RS_MON_EFEC_SEC_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFE05.sql) |
+| [com.RSMONEFE05](procedimientos/mod_rep/com/RSMONEFE05.md) | ✅ validado | `RS_MON_EFEC_SEC_01` | 4 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFE05.sql) |
 | [com.RSMONEFER01](procedimientos/mod_rep/com/RSMONEFER01.md) | ✅ validado | `RS_MON_EFECREASIG_01`, `RS_MON_EFECREASIGM_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFER01.sql) |
 | [com.RSMONEFER02](procedimientos/mod_rep/com/RSMONEFER02.md) | ✅ validado | `RS_MON_EFECREASIG_02` | 9 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFER02.sql) |
 | [com.RSMONEFER03](procedimientos/mod_rep/com/RSMONEFER03.md) | ✅ validado | `RS_MON_EFECREASIG_03` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFER03.sql) |
-| [com.RSMONEFEREPRO01](procedimientos/mod_rep/com/RSMONEFEREPRO01.md) | ✅ validado | `RS_MON_EFECREPRO_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFEREPRO01.sql) |
+| [com.RSMONEFEREPRO01](procedimientos/mod_rep/com/RSMONEFEREPRO01.md) | ✅ validado | `RS_MON_EFECREPRO_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFEREPRO01.sql) |
 | [com.RSMONEFETRC01](procedimientos/mod_rep/com/RSMONEFETRC01.md) | ✅ validado | `RS_MON_EFECTRAMOSC_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONEFETRC01.sql) |
 | [com.RSMONRENT01](procedimientos/mod_rep/com/RSMONRENT01.md) | ✅ validado | `RS_RETE_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSMONRENT01.sql) |
 | [com.RSPANSUP001](procedimientos/mod_rep/com/RSPANSUP001.md) | ✅ validado | `PANEL_SUP_01` | 9 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPANSUP001.sql) |
@@ -211,17 +211,17 @@
 | [com.RSPANSUP004](procedimientos/mod_rep/com/RSPANSUP004.md) | ✅ validado | `PANEL_SUP_04` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPANSUP004.sql) |
 | [com.RSPANSUP005](procedimientos/mod_rep/com/RSPANSUP005.md) | ✅ validado | `PANEL_SUP_05` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPANSUP005.sql) |
 | [com.RSPROYCOLDES001](procedimientos/mod_rep/com/RSPROYCOLDES001.md) | ✅ validado | `PROYEC_COLREC_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES001.sql) |
-| [com.RSPROYCOLDES002](procedimientos/mod_rep/com/RSPROYCOLDES002.md) | ✅ validado | `PROYEC_COLREC_02` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES002.sql) |
+| [com.RSPROYCOLDES002](procedimientos/mod_rep/com/RSPROYCOLDES002.md) | ✅ validado | `PROYEC_COLREC_02` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES002.sql) |
 | [com.RSPROYCOLDES003](procedimientos/mod_rep/com/RSPROYCOLDES003.md) | ✅ validado | `PROYEC_DIACOLREC_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES003.sql) |
 | [com.RSPROYCOLDES004](procedimientos/mod_rep/com/RSPROYCOLDES004.md) | ✅ validado | `PROYEC_DIACOLREC_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES004.sql) |
 | [com.RSPROYCOLDES005](procedimientos/mod_rep/com/RSPROYCOLDES005.md) | ✅ validado | `PROYEC_DIACOLREC_03` | 1 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES005.sql) |
 | [com.RSPROYCOLDES006](procedimientos/mod_rep/com/RSPROYCOLDES006.md) | ✅ validado | `PROYEC_DIACOLREC_AS_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES006.sql) |
 | [com.RSPROYCOLDES007](procedimientos/mod_rep/com/RSPROYCOLDES007.md) | ✅ validado | `PROYEC_DIACOLREC_AS_02` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES007.sql) |
 | [com.RSPROYCOLDES008](procedimientos/mod_rep/com/RSPROYCOLDES008.md) | ✅ validado | `PROYEC_DIACOLREC_AS_03` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES008.sql) |
-| [com.RSPROYCOLDES009](procedimientos/mod_rep/com/RSPROYCOLDES009.md) | ✅ validado | `PROYEC_COLREC_03` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES009.sql) |
+| [com.RSPROYCOLDES009](procedimientos/mod_rep/com/RSPROYCOLDES009.md) | ✅ validado | `PROYEC_COLREC_03` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES009.sql) |
 | [com.RSPROYCOLDES010](procedimientos/mod_rep/com/RSPROYCOLDES010.md) | ✅ validado | `PROYEC_COLREC_04` | 2 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSPROYCOLDES010.sql) |
-| `com.RSRANKCOM01` | ❌ no existe en la base | `RS_RANK_COM_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRANKCOM01.sql) |
-| [com.RSRDFCA007](procedimientos/mod_rep/com/RSRDFCA007.md) | ✅ validado | `Clientes_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA007.sql) |
+| [com.RSRANKCOM01](procedimientos/mod_rep/com/RSRANKCOM01.md) | ✅ validado | `RS_RANK_COM_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRANKCOM01.sql) |
+| [com.RSRDFCA007](procedimientos/mod_rep/com/RSRDFCA007.md) | ✅ validado | `Clientes_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA007.sql) |
 | [com.RSRDFCA011](procedimientos/mod_rep/com/RSRDFCA011.md) | ✅ validado | `Clientes_nuevoRec_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA011.sql) |
 | [com.RSRDFCA021](procedimientos/mod_rep/com/RSRDFCA021.md) | ✅ validado | `DesemDiario_02` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA021.sql) |
 | [com.RSRDFCA022](procedimientos/mod_rep/com/RSRDFCA022.md) | ✅ validado | `DesemDiario_03` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA022.sql) |
@@ -238,13 +238,13 @@
 | [com.RSRDFCA035](procedimientos/mod_rep/com/RSRDFCA035.md) | ✅ validado | `CARACT_CARTERA_01`, `CARACT_CARTERA_M_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA035.sql) |
 | [com.RSRDFCA036](procedimientos/mod_rep/com/RSRDFCA036.md) | ✅ validado | `CARACT_pas_M_01`, `CARACT_pas_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA036.sql) |
 | [com.RSRDFCA037](procedimientos/mod_rep/com/RSRDFCA037.md) | ✅ validado | `CMG_CARTERA_02` | 9 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA037.sql) |
-| `com.RSRDFCA038` | ❌ no existe en la base | `CMG_CARTERA_03` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA038.sql) |
-| `com.RSRDFCA050` | ❌ no existe en la base | `Monitor_Dese_misi_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA050.sql) |
-| `com.RSRDFCA050_3` | ❌ no existe en la base | `Monitor_Dese_misi_02` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA050_3.sql) |
-| `com.RSRDFCA050_4` | ❌ no existe en la base | `prod_misi_05` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA050_4.sql) |
+| [com.RSRDFCA038](procedimientos/mod_rep/com/RSRDFCA038.md) | ✅ validado | `CMG_CARTERA_03` | 8 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA038.sql) |
+| [com.RSRDFCA050](procedimientos/mod_rep/com/RSRDFCA050.md) | ✅ validado | `Monitor_Dese_misi_01` | 7 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA050.sql) |
+| [com.RSRDFCA050_3](procedimientos/mod_rep/com/RSRDFCA050_3.md) | ✅ validado | `Monitor_Dese_misi_02` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA050_3.sql) |
+| [com.RSRDFCA050_4](procedimientos/mod_rep/com/RSRDFCA050_4.md) | ✅ validado | `prod_misi_05` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDFCA050_4.sql) |
 | [com.RSRDMA023](procedimientos/mod_rep/com/RSRDMA023.md) | ✅ validado | `R_APADRINA_01` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRDMA023.sql) |
-| `com.RSROPERA001` | ❌ no existe en la base | `TB_PANEL_OPE_01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSROPERA001.sql) |
-| `com.RSROPERA002` | ❌ no existe en la base | `TB_PANEL_OPE_02` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSROPERA002.sql) |
+| [com.RSROPERA001](procedimientos/mod_rep/com/RSROPERA001.md) | ✅ validado | `TB_PANEL_OPE_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSROPERA001.sql) |
+| [com.RSROPERA002](procedimientos/mod_rep/com/RSROPERA002.md) | ✅ validado | `TB_PANEL_OPE_02` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSROPERA002.sql) |
 | [com.RSRPD001](procedimientos/mod_rep/com/RSRPD001.md) | ✅ validado | `RS_MON_CAR_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRPD001.sql) |
 | [com.RSRSRV001](procedimientos/mod_rep/com/RSRSRV001.md) | ✅ validado | `RECSERV_PAS_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRSRV001.sql) |
 | [com.RSRTOP001](procedimientos/mod_rep/com/RSRTOP001.md) | ✅ validado | `RSRTOP01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOP001.sql) |
@@ -252,26 +252,26 @@
 | [com.RSRTOPMIS002](procedimientos/mod_rep/com/RSRTOPMIS002.md) | ✅ validado | `prod_misi_02` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPMIS002.sql) |
 | [com.RSRTOPMIS003](procedimientos/mod_rep/com/RSRTOPMIS003.md) | ✅ validado | `prod_misi_03` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPMIS003.sql) |
 | [com.RSRTOPMIS004](procedimientos/mod_rep/com/RSRTOPMIS004.md) | ✅ validado | `prod_misi_04` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPMIS004.sql) |
-| `com.RSRTOPPOMIS001` | ❌ no existe en la base | `pob_misi_01` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS001.sql) |
-| `com.RSRTOPPOMIS002` | ❌ no existe en la base | `pob_misi_02` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS002.sql) |
-| `com.RSRTOPPOMIS003` | ❌ no existe en la base | `pob_misi_03` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS003.sql) |
-| `com.RSRTOPPOMIS004` | ❌ no existe en la base | `pob_misi_04` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS004.sql) |
+| [com.RSRTOPPOMIS001](procedimientos/mod_rep/com/RSRTOPPOMIS001.md) | ✅ validado | `pob_misi_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS001.sql) |
+| [com.RSRTOPPOMIS002](procedimientos/mod_rep/com/RSRTOPPOMIS002.md) | ✅ validado | `pob_misi_02` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS002.sql) |
+| [com.RSRTOPPOMIS003](procedimientos/mod_rep/com/RSRTOPPOMIS003.md) | ✅ validado | `pob_misi_03` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS003.sql) |
+| [com.RSRTOPPOMIS004](procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | ✅ validado | `pob_misi_04` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPPOMIS004.sql) |
 | [com.RSRTOPV001](procedimientos/mod_rep/com/RSRTOPV001.md) | ✅ validado | `RSRTOPV01` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSRTOPV001.sql) |
-| [com.RSSALCAR01](procedimientos/mod_rep/com/RSSALCAR01.md) | ✅ validado | `RS_SAL_CAR_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCAR01.sql) |
+| [com.RSSALCAR01](procedimientos/mod_rep/com/RSSALCAR01.md) | ✅ validado | `RS_SAL_CAR_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCAR01.sql) |
 | [com.RSSALCAR02](procedimientos/mod_rep/com/RSSALCAR02.md) | ✅ validado | `RS_SAL_CAR_02` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCAR02.sql) |
-| [com.RSSALCAR03](procedimientos/mod_rep/com/RSSALCAR03.md) | ✅ validado | `RS_SAL_CAR_03` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCAR03.sql) |
+| [com.RSSALCAR03](procedimientos/mod_rep/com/RSSALCAR03.md) | ✅ validado | `RS_SAL_CAR_03` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCAR03.sql) |
 | [com.RSSALCARVIGE01](procedimientos/mod_rep/com/RSSALCARVIGE01.md) | ✅ validado | `RS_SAL_CAR_04` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCARVIGE01.sql) |
-| `com.RSSALCARVIGE02` | ❌ no existe en la base | `RS_SAL_CAR_05` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCARVIGE02.sql) |
-| [com.RSSEGPAS01](procedimientos/mod_rep/com/RSSEGPAS01.md) | ✅ validado | `RS_SEG_PAS_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS01.sql) |
-| [com.RSSEGPAS02](procedimientos/mod_rep/com/RSSEGPAS02.md) | ✅ validado | `RS_SEG_PAS_02` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS02.sql) |
-| [com.RSSEGPAS03](procedimientos/mod_rep/com/RSSEGPAS03.md) | ✅ validado | `RS_SEG_PAS_03` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS03.sql) |
-| `com.RSSEGPAS04` | ❌ no existe en la base | `RS_SEG_PAS_04` | — | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS04.sql) |
-| [com.RSSEGPDM01](procedimientos/mod_rep/com/RSSEGPDM01.md) | ✅ validado | `SEG_PDM_01` | 3 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPDM01.sql) |
+| [com.RSSALCARVIGE02](procedimientos/mod_rep/com/RSSALCARVIGE02.md) | ✅ validado | `RS_SAL_CAR_05` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSALCARVIGE02.sql) |
+| [com.RSSEGPAS01](procedimientos/mod_rep/com/RSSEGPAS01.md) | ✅ validado | `RS_SEG_PAS_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS01.sql) |
+| [com.RSSEGPAS02](procedimientos/mod_rep/com/RSSEGPAS02.md) | ✅ validado | `RS_SEG_PAS_02` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS02.sql) |
+| [com.RSSEGPAS03](procedimientos/mod_rep/com/RSSEGPAS03.md) | ✅ validado | `RS_SEG_PAS_03` | 5 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS03.sql) |
+| [com.RSSEGPAS04](procedimientos/mod_rep/com/RSSEGPAS04.md) | ✅ validado | `RS_SEG_PAS_04` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPAS04.sql) |
+| [com.RSSEGPDM01](procedimientos/mod_rep/com/RSSEGPDM01.md) | ✅ validado | `SEG_PDM_01` | 4 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSSEGPDM01.sql) |
 | [com.RSTABCOMER](procedimientos/mod_rep/com/RSTABCOMER.md) | ✅ validado | `RS_TAB_COM_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSTABCOMER.sql) |
-| `com.RSTABCOMER02` | ❌ no existe en la base | `Tab_Dig_Com_A_01`, `RS_TAB_COM_02` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSTABCOMER02.sql) |
+| [com.RSTABCOMER02](procedimientos/mod_rep/com/RSTABCOMER02.md) | ✅ validado | `Tab_Dig_Com_A_01`, `RS_TAB_COM_02` | 4 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RSTABCOMER02.sql) |
 | [com.RTABDIGCOM01](procedimientos/mod_rep/com/RTABDIGCOM01.md) | ✅ validado | `TABDIGITAL_COMERCIAL_01` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RTABDIGCOM01.sql) |
 | [com.RTOPZCUO01](procedimientos/mod_rep/com/RTOPZCUO01.md) | ✅ validado | `RS_TOP_ZCUO_01` | 1 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/com/RTOPZCUO01.sql) |
-| `dbo.REPORTE_DEMO` | ❌ no existe en la base | `reporte-demo` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/dbo/REPORTE_DEMO.sql) |
+| [dbo.REPORTE_DEMO](procedimientos/mod_rep/dbo/REPORTE_DEMO.md) | 🔎 extraído | `reporte-demo` | — | — | [sql](../extraccion/sql/01-extraccion/mod_rep/dbo/REPORTE_DEMO.sql) |
 | [rep.GSREVA01](procedimientos/mod_rep/rep/GSREVA01.md) | ✅ validado | `GSREVA01`, `GSREVA101`, `GSREVA201` | 3 | — | [sql](../extraccion/sql/01-extraccion/mod_rep/rep/GSREVA01.sql) |
 | [rep.RTABCUERES01](procedimientos/mod_rep/rep/RTABCUERES01.md) | ✅ validado | `TAB_CUE_RES_01` | 2 | sí | [sql](../extraccion/sql/01-extraccion/mod_rep/rep/RTABCUERES01.sql) |
 

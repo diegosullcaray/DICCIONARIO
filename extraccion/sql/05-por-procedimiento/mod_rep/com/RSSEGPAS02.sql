@@ -14,6 +14,10 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
+-- storage.com_seg.RETPP004 · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [storage].[com_seg].[RETPP004] WITH (NOLOCK);
+
 -- storage.com.VDMCOM01 · lee · 7 columna(s)
 SELECT TOP (100) [HCODREL], [HCODVAR], [HTIPCOD], [HVALVAR], [Tip_cod], [hfecpro], [tip_cod2]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);

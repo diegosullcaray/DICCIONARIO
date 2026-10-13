@@ -1,6 +1,6 @@
 -- storage.com_act.WGATH002
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GDCGEST_ACTIVAST01, mod_rep.com.GDCGEST_ACTIVAST03, mod_rep.com.GDCGEST_ACTIVAST04, mod_rep.com.RSRDFCA037
+-- Usada por: mod_rep.com.GDCGEST_ACTIVAST01, mod_rep.com.GDCGEST_ACTIVAST03, mod_rep.com.GDCGEST_ACTIVAST04, mod_rep.com.RSRDFCA037, mod_rep.com.RSRDFCA038
 
 USE storage;
 GO

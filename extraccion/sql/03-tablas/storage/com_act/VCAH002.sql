@@ -1,6 +1,6 @@
 -- storage.com_act.VCAH002
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.DINCEPDM01
+-- Usada por: mod_rep.com.DINCEPDM01, mod_rep.com.GDCGEST_ACTIVAST03, mod_rep.com.GDCGEST_ACTIVAST04
 
 USE storage;
 GO

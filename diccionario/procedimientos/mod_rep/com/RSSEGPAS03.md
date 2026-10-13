@@ -26,13 +26,15 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fec` | date | '20240610' |  | `fec` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (5)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_seg.RETC001](../../../tablas/storage/com_seg/RETC001.md) | lee | `HCODSEG`, `HCOMIFC` | estatico + motor |
+| [storage.com_seg.RETC001](../../../tablas/storage/com_seg/RETC001.md) | lee | `HCODSEG`, `HCOMIFC` | estatico |
+| [storage.com_seg.RETPP004](../../../tablas/storage/com_seg/RETPP004.md) | — | — | motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `hfecpro`, `HTIPCOD`, `HVALVAR` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RDIASEM`, `RFEC` | estatico + motor |
+| [storage.ref.VJERCOR04](../../../tablas/storage/ref/VJERCOR04.md) | lee | `RCODAGE`, `RCODFC`, `RCODMAC`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESFC`, `RDESMAC`, `RDESMAT`, `RDESTER` | motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -65,6 +67,7 @@
 
 Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
 
+- `mod_rep.dbo.A`
 - `mod_rep.piv.TPIVCONF` (tipo de tabla)
 - `mod_rep.piv.TPIVFIL` (tipo de tabla)
 - `mod_rep.piv.TPIVVAR` (tipo de tabla)

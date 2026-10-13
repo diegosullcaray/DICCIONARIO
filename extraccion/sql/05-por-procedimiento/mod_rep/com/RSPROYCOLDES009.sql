@@ -21,3 +21,7 @@ FROM [mod_rep].[com].[Datos_PD] WITH (NOLOCK);
 -- storage.com_act.HBPDR001 · lee · 2 columna(s)
 SELECT TOP (100) [HFECPRO], [hfecreg]
 FROM [storage].[com_act].[HBPDR001] WITH (NOLOCK);
+
+-- storage.com_act.HBPDR002 · lee · 3 columna(s)
+SELECT TOP (100) [HFECPRO], [HFECREG], [HHORPRO]
+FROM [storage].[com_act].[HBPDR002] WITH (NOLOCK);

@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 3 columna(s) usadas · 2 procedimiento(s) · tabla con 36 columna(s) en la base
+Base `storage` · esquema `com_act` · 3 columna(s) usadas · 3 procedimiento(s) · tabla con 36 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/HBPDR002.sql](../../../../extraccion/sql/03-tablas/storage/com_act/HBPDR002.sql)
 
@@ -11,9 +11,9 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/HBPDR002.sql](../../
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `hfecpro` | date not null | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md) | — |
-| `HFECREG` | date | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md) | — |
-| `HHORPRO` | tinyint not null | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md) | — |
+| `hfecpro` | date not null | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md), [RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md) | — |
+| `HFECREG` | date | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md), [RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md) | — |
+| `HHORPRO` | tinyint not null | ✅ confirmada | [RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md), [RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md), [RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md) | — |
 
 ### Procedimientos que la usan
 
@@ -21,6 +21,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/HBPDR002.sql](../../
 |---|---|---|
 | [mod_rep.com.RSPROYCOLDES001](../../../procedimientos/mod_rep/com/RSPROYCOLDES001.md) | lee | `PROYEC_COLREC_01` |
 | [mod_rep.com.RSPROYCOLDES003](../../../procedimientos/mod_rep/com/RSPROYCOLDES003.md) | lee | `PROYEC_DIACOLREC_01` |
+| [mod_rep.com.RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md) | lee | `PROYEC_COLREC_03` |
 <!-- generado:fin -->
 
 ## Descripción

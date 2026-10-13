@@ -1,6 +1,6 @@
 -- storage.com_act.RETP006
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.RSRTOPMIS001, mod_rep.com.RSRTOPMIS002, mod_rep.com.RSRTOPMIS003, mod_rep.com.RSRTOPMIS004
+-- Usada por: mod_rep.com.RSRDFCA050, mod_rep.com.RSRTOPMIS001, mod_rep.com.RSRTOPMIS002, mod_rep.com.RSRTOPMIS003, mod_rep.com.RSRTOPMIS004
 
 USE storage;
 GO

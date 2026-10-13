@@ -26,11 +26,12 @@
 | 2 | `@cod_rel` | varchar(20) | — |  | `cod_rel` |
 | 3 | `@fecha` | date | null |  | `fecha` |
 
-### Tablas y columnas (1)
+### Tablas y columnas (2)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [storage.com_act.HMMEF001](../../../tablas/storage/com_act/HMMEF001.md) | lee | `HFECPRO`, `HTR121TO150`, `HTR151TO180`, `HTR180TO`, `HTR1TO30`, `HTR30TO0`, `HTR31TO60`, `HTR61TO90`, `HTR91TO120`, `HTRJUDI`, `RCODGRU` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

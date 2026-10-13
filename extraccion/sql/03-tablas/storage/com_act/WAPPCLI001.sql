@@ -1,6 +1,6 @@
 -- storage.com_act.WAPPCLI001
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GRMENTOR001, mod_rep.com.GSEGCAPBP01
+-- Usada por: mod_rep.com.GRMENTOR001, mod_rep.com.GSEGCAPBP01, mod_rep.com.RSTABCOMER02
 
 USE storage;
 GO

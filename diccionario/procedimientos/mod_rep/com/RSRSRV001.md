@@ -30,7 +30,7 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_pas.WJAS005](../../../tablas/storage/com_pas/WJAS005.md) | lee | `CANAL`, `CANT_TX_ANIO_ACT`, `CANT_TX_MES_ACT`, `CANT_TX_MES_ANT`, `CANT_TX_ULT_DIA`, `EMPRESA`, `HCODREL`, `HFECPRO`, `HTIPCOD`, `MON_TX_ANIO_ACT`, `MON_TX_MES_ACT`, `MON_TX_MES_ANT`, `MON_TX_ULT_DIA`, `SERVICIO` | estatico + motor |
+| [storage.com_pas.WJAS005](../../../tablas/storage/com_pas/WJAS005.md) | lee | `CANAL`, `CANT_TX_ANIO_ACT`, `CANT_TX_MES_ACT`, `CANT_TX_MES_ANT`, `CANT_TX_ULT_DIA`, `EMPRESA`, `HCODREL`, `HFECPRO`, `HTIPCOD`, `ING_X_MONREC_ANIO_ACT`, `ING_X_MONREC_MES_ACT`, `ING_X_MONREC_MES_ANT`, `ING_X_MONREC_ULT_DIA`, `MON_TX_ANIO_ACT`, `MON_TX_MES_ACT`, `MON_TX_MES_ANT`, `MON_TX_ULT_DIA`, `SERVICIO` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

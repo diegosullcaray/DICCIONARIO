@@ -1,6 +1,6 @@
 -- storage.gpr.HPPC001
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GDASHKAY03, mod_rep.com.GDASHKAY05, mod_rep.com.GDASHKAY06, mod_rep.com.GLISAUTO01, mod_rep.com.GLISAUTRO05, mod_rep.com.GSCAMP01, mod_rep.com.RENRCOLAB01
+-- Usada por: mod_rep.com.GDASHKAY03, mod_rep.com.GDASHKAY05, mod_rep.com.GDASHKAY06, mod_rep.com.GLISAUTO01, mod_rep.com.GLISAUTRO05, mod_rep.com.GSCAMP01, mod_rep.com.RENRCOLAB01, mod_rep.com.RSMONEFE05
 
 USE storage;
 GO

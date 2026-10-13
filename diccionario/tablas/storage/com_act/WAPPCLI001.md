@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 3 columna(s) usadas · 2 procedimiento(s) · tabla con 11 columna(s) en la base
+Base `storage` · esquema `com_act` · 3 columna(s) usadas · 3 procedimiento(s) · tabla con 11 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WAPPCLI001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WAPPCLI001.sql)
 
@@ -12,8 +12,8 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WAPPCLI001.sql](../.
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `HAGUSER` | varchar(250) | ✅ confirmada | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
-| `HFECPRO` | date | ✅ confirmada | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
-| `htipnumdoc` | varchar(250) | 🎯 exacta | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | — |
+| `HFECPRO` | date | ✅ confirmada | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md), [RSTABCOMER02](../../../procedimientos/mod_rep/com/RSTABCOMER02.md) | — |
+| `htipnumdoc` | varchar(250) | 🎯 exacta | [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md), [RSTABCOMER02](../../../procedimientos/mod_rep/com/RSTABCOMER02.md) | — |
 
 ### Procedimientos que la usan
 
@@ -21,6 +21,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WAPPCLI001.sql](../.
 |---|---|---|
 | [mod_rep.com.GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | lee | `RMENTORIN_01` |
 | [mod_rep.com.GSEGCAPBP01](../../../procedimientos/mod_rep/com/GSEGCAPBP01.md) | lee | `CAP_SEGUI_BP_01` |
+| [mod_rep.com.RSTABCOMER02](../../../procedimientos/mod_rep/com/RSTABCOMER02.md) | lee | `Tab_Dig_Com_A_01`, `RS_TAB_COM_02` |
 <!-- generado:fin -->
 
 ## Descripción

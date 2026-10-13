@@ -1,6 +1,6 @@
 -- storage.com_seg.SDSF001
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GRESREPSEG01, mod_rep.com.GRESREPSEG02, mod_rep.com.GRESREPSEG03, mod_rep.com.GRESREPSEG04, mod_rep.com.GRESREPSEG05, mod_rep.com.GRESREPSEG06, mod_rep.com.GRESREPSEG_01, mod_rep.com.GRMENTOR001
+-- Usada por: mod_rep.com.GRESREPSEG01, mod_rep.com.GRESREPSEG02, mod_rep.com.GRESREPSEG03, mod_rep.com.GRESREPSEG04, mod_rep.com.GRESREPSEG05, mod_rep.com.GRESREPSEG06, mod_rep.com.GRESREPSEG_01, mod_rep.com.GRMENTOR001, mod_rep.com.RSEGASE01
 
 USE storage;
 GO

@@ -17,7 +17,7 @@ sale cada fuente y cómo se actualiza: [visión general](../architecture/system-
 | Base | Esquemas | Procedimientos | Reportes | Extraídos | Validados | No existen |
 |---|---|---:|---:|---:|---:|---:|
 | `mod_gpa` | `vac` | 2 | 2 | 0 | 0 | 0 |
-| `mod_rep` | `com`, `dbo`, `rep` | 258 | 310 | 225 | 222 | 33 |
+| `mod_rep` | `com`, `dbo`, `rep` | 258 | 310 | 258 | 254 | 0 |
 | `mod_sec` | `dbo` | 1 | 1 | 1 | 1 | 0 |
 | `storage` | `com` | 1 | 1 | 1 | 1 | 0 |
 | `strategos` | `mod_rep_com_act` | 9 | 10 | 9 | 9 | 0 |

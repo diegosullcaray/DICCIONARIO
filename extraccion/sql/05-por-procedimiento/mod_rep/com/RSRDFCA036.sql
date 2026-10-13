@@ -18,8 +18,8 @@ ORDER BY column_ordinal;
 SELECT TOP (100) [HCODREL], [RDESCPROD02], [hfecpro], [htipcod]
 FROM [storage].[com_pas].[WJAS004] WITH (NOLOCK);
 
--- storage.com_pas.wjas007 · lee · 8 columna(s)
-SELECT TOP (100) [HCODPERFEME], [HCODPERRUR], [HCODPERURB], [HCODREL], [HFECPRO], [HNUMCLI], [HTIPCOD], [RDESCPROD]
+-- storage.com_pas.wjas007 · lee · 9 columna(s)
+SELECT TOP (100) [HCODPERFEME], [HCODPERMIG], [HCODPERRUR], [HCODPERURB], [HCODREL], [HFECPRO], [HNUMCLI], [HTIPCOD], [RDESCPROD]
 FROM [storage].[com_pas].[wjas007] WITH (NOLOCK);
 
 -- storage.com.VDMCOM01 · lee · 2 columna(s)

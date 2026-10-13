@@ -1,6 +1,6 @@
 -- storage.com_act.WPROYDES001
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.RSPROYCOLDES001
+-- Usada por: mod_rep.com.RSPROYCOLDES001, mod_rep.com.RSPROYCOLDES002
 
 USE storage;
 GO

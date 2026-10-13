@@ -18,9 +18,17 @@ ORDER BY column_ordinal;
 SELECT TOP (100) [SCLINUE], [SCODAGR], [SCODMOD], [SCODSEC], [SFECPRO], [SINTMESMN], [SMDNUEMN], [SMONDESMN], [SNUMCLI], [SNUMOPE], [SNUMSEC], [SOPENUE], [SSUBTIP], [SSUCCLI], [STIPOPE]
 FROM [storage].[com_act].[SDAF002] WITH (NOLOCK);
 
+-- storage.com_seg.retp003 · lee · 5 columna(s)
+SELECT TOP (100) [HCODMOD], [HCODSEG], [HDESSEG], [HSUBTIP], [HTIPOPE]
+FROM [storage].[com_seg].[retp003] WITH (NOLOCK);
+
 -- storage.com_seg.SDSF001 · lee · 11 columna(s)
 SELECT TOP (100) [SCODMOD], [SCODSEC], [SFECEMI], [SFECPRO], [SINDPGO], [SNUMPLZ], [SSUBTIP], [SSUCCLI], [STIPOPE], [scodagr], [scodseg]
 FROM [storage].[com_seg].[SDSF001] WITH (NOLOCK);
+
+-- storage.com.VDMCOM01 · lee · 6 columna(s)
+SELECT TOP (100) [HCODREL], [HCODVAR], [HFECPRO], [HTIPCOD], [HTIPMETA], [HVALVAR]
+FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
 
 -- storage.ref.WJERCOR03 · lee · 14 columna(s)
 SELECT TOP (100) [RCODCOR], [RCODGRU], [RCODSEC], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESGRU], [RDESSEC], [RDESTER], [RDESUCO], [RDESUNI], [RFECPRO], [RINDFEC]

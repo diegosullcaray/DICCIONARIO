@@ -32,12 +32,13 @@
 | 8 | `@tdcr` | varchar(50) | — |  | `tdcr` |
 | 9 | `@pagen` | int | — |  | `pagen` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (4)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [storage.com_act.WCED001](../../../tablas/storage/com_act/WCED001.md) | lee | `HCODMON`, `HCODOPE`, `HCODSEC`, `HCTACLI`, `HDCODSEC`, `HDESCLI`, `HDIAATR`, `HESTC`, `HFCCOM`, `HFCFGEST`, `HFCFVPP`, `HFCMPP`, `HFCRES`, `HFCRSPB`, `HFDGPR`, `HFECDES`, `HFGPR`, `HFTVEN`, `HINDUCUO`, `HINDZCUO`, `HMONDES`, `HNIVSOB`, `HPROBR`, `HREGG`, `HREGN`, `HSALCAPMN`, `HTRAM`, `RDESPROD` | estatico + motor |
-| [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`, `HNUMDOC` | estatico + motor |
+| [storage.gpr.HPPC001](../../../tablas/storage/gpr/HPPC001.md) | lee | `HCODBT`, `HFECPRO`, `HNUMDOC` | motor |
+| [storage.gpr.VPPH001](../../../tablas/storage/gpr/VPPH001.md) | lee | `HCODBT`≈, `HNUMDOC`≈ | estatico |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.

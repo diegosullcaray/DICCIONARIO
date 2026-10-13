@@ -34,7 +34,7 @@
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [storage.com_pas.WJAS004](../../../tablas/storage/com_pas/WJAS004.md) | lee | `HCODREL`, `hfecpro`, `htipcod`, `RDESCPROD02` | estatico + motor |
-| [storage.com_pas.wjas007](../../../tablas/storage/com_pas/wjas007.md) | lee | `HCODPERFEME`, `HCODPERRUR`, `HCODPERURB`, `HCODREL`, `HFECPRO`, `HNUMCLI`, `HTIPCOD`, `RDESCPROD` | estatico + motor |
+| [storage.com_pas.wjas007](../../../tablas/storage/com_pas/wjas007.md) | lee | `HCODPERFEME`, `HCODPERMIG`, `HCODPERRUR`, `HCODPERURB`, `HCODREL`, `HFECPRO`, `HNUMCLI`, `HTIPCOD`, `RDESCPROD` | estatico + motor |
 | [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODVAR`, `hfecpro` | estatico + motor |
 | [storage.ref.VJERCOR04](../../../tablas/storage/ref/VJERCOR04.md) | lee | `RCODAGE`, `RCODAGEH`, `RCODFC`, `RCODMAC`, `RCODMAT`, `RCODTER`, `RDESAGE`, `RDESAGEH`, `RDESFC`, `RDESMAC`, `RDESMAT`, `RDESTER` | estatico + motor |
 

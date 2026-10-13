@@ -9,6 +9,7 @@
 | Estado | ✅ validado |
 | Cuerpo | [extraccion/procedimientos/mod_rep/com/GRVGENCORO02.sql](../../../../extraccion/procedimientos/mod_rep/com/GRVGENCORO02.sql) |
 | Extracción | [extraccion/sql/01-extraccion/mod_rep/com/GRVGENCORO02.sql](../../../../extraccion/sql/01-extraccion/mod_rep/com/GRVGENCORO02.sql) |
+| Consultar sus tablas | [extraccion/sql/05-por-procedimiento/mod_rep/com/GRVGENCORO02.sql](../../../../extraccion/sql/05-por-procedimiento/mod_rep/com/GRVGENCORO02.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)
@@ -26,9 +27,13 @@
 | 3 | `@fec` | date | — |  | `fec` |
 | 4 | `@tip_age` | VARCHAR(250) | — |  | `tip_age` |
 
-### Tablas y columnas (0)
+### Tablas y columnas (1)
 
-No se detectaron tablas.
+| Tabla | Operación | Columnas usadas | Fuente |
+|---|---|---|---|
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | motor |
+
+`≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
 ### Procedimientos y funciones invocados
 

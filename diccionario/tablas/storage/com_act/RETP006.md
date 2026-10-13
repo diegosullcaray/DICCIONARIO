@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 4 columna(s) usadas · 4 procedimiento(s) · tabla con 7 columna(s) en la base
+Base `storage` · esquema `com_act` · 4 columna(s) usadas · 5 procedimiento(s) · tabla con 7 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/RETP006.sql](../../../../extraccion/sql/03-tablas/storage/com_act/RETP006.sql)
 
@@ -11,15 +11,16 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/RETP006.sql](../../.
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `RCODMOD` | int | 🎯 exacta | [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
-| `RDESSUBP` | varchar(250) | 🎯 exacta | [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
-| `RSUBTIP` | int | 🎯 exacta | [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
-| `RTIPOPE` | int | 🎯 exacta | [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
+| `RCODMOD` | int | 🎯 exacta | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md), [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
+| `RDESSUBP` | varchar(250) | 🎯 exacta | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md), [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
+| `RSUBTIP` | int | 🎯 exacta | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md), [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
+| `RTIPOPE` | int | 🎯 exacta | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md), [RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md), [RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md), [RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md), [RSRTOPMIS004](../../../procedimientos/mod_rep/com/RSRTOPMIS004.md) | — |
 
 ### Procedimientos que la usan
 
 | Procedimiento | Operación | Reportes |
 |---|---|---|
+| [mod_rep.com.RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | lee | `Monitor_Dese_misi_01` |
 | [mod_rep.com.RSRTOPMIS001](../../../procedimientos/mod_rep/com/RSRTOPMIS001.md) | lee | `prod_misi_01` |
 | [mod_rep.com.RSRTOPMIS002](../../../procedimientos/mod_rep/com/RSRTOPMIS002.md) | lee | `prod_misi_02` |
 | [mod_rep.com.RSRTOPMIS003](../../../procedimientos/mod_rep/com/RSRTOPMIS003.md) | lee | `prod_misi_03` |

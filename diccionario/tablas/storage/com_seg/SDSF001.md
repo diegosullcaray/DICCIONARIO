@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_seg` · 12 columna(s) usadas · 8 procedimiento(s) · tabla con 11 columna(s) en la base
+Base `storage` · esquema `com_seg` · 12 columna(s) usadas · 9 procedimiento(s) · tabla con 11 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/SDSF001.sql](../../../../extraccion/sql/03-tablas/storage/com_seg/SDSF001.sql)
 
@@ -12,12 +12,12 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/SDSF001.sql](../../.
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `*` | ⚠️ no existe | 🎯 exacta | [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG06](../../../procedimientos/mod_rep/com/GRESREPSEG06.md) | — |
-| `scodagr` | tinyint | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
+| `scodagr` | tinyint | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [RSEGASE01](../../../procedimientos/mod_rep/com/RSEGASE01.md) | — |
 | `SCODMOD` | smallint | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md) | — |
-| `SCODSEC` | varchar(10) | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
-| `scodseg` | smallint | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG06](../../../procedimientos/mod_rep/com/GRESREPSEG06.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
+| `SCODSEC` | varchar(10) | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [RSEGASE01](../../../procedimientos/mod_rep/com/RSEGASE01.md) | — |
+| `scodseg` | smallint | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG06](../../../procedimientos/mod_rep/com/GRESREPSEG06.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [RSEGASE01](../../../procedimientos/mod_rep/com/RSEGASE01.md) | — |
 | `SFECEMI` | date | 🗄️ motor | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md) | — |
-| `sfecpro` | date | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG03](../../../procedimientos/mod_rep/com/GRESREPSEG03.md), [GRESREPSEG04](../../../procedimientos/mod_rep/com/GRESREPSEG04.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG06](../../../procedimientos/mod_rep/com/GRESREPSEG06.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
+| `sfecpro` | date | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG03](../../../procedimientos/mod_rep/com/GRESREPSEG03.md), [GRESREPSEG04](../../../procedimientos/mod_rep/com/GRESREPSEG04.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRESREPSEG06](../../../procedimientos/mod_rep/com/GRESREPSEG06.md), [GRESREPSEG_01](../../../procedimientos/mod_rep/com/GRESREPSEG_01.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md), [RSEGASE01](../../../procedimientos/mod_rep/com/RSEGASE01.md) | — |
 | `SINDPGO` | int | 🗄️ motor | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md) | — |
 | `SNUMPLZ` | int | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md), [GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | — |
 | `SSUBTIP` | int | ✅ confirmada | [GRESREPSEG01](../../../procedimientos/mod_rep/com/GRESREPSEG01.md), [GRESREPSEG02](../../../procedimientos/mod_rep/com/GRESREPSEG02.md), [GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md) | — |
@@ -36,6 +36,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/SDSF001.sql](../../.
 | [mod_rep.com.GRESREPSEG05](../../../procedimientos/mod_rep/com/GRESREPSEG05.md) | lee | `GRSCMIS_04` |
 | [mod_rep.com.GRESREPSEG06](../../../procedimientos/mod_rep/com/GRESREPSEG06.md) | lee | `GRSCMIS_05` |
 | [mod_rep.com.GRMENTOR001](../../../procedimientos/mod_rep/com/GRMENTOR001.md) | lee | `RMENTORIN_01` |
+| [mod_rep.com.RSEGASE01](../../../procedimientos/mod_rep/com/RSEGASE01.md) | lee | `SEGUROS_ASESOR_01` |
 <!-- generado:fin -->
 
 ## Descripción

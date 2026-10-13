@@ -12,7 +12,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/HBPDR001.sql](../../
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
 | `HFECPRO` | date not null | ✅ confirmada | [RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md), [RSPROYCOLDES010](../../../procedimientos/mod_rep/com/RSPROYCOLDES010.md) | — |
-| `hfecreg` | date | ✅ confirmada | [RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md) | — |
+| `hfecreg` | date | ✅ confirmada | [RSPROYCOLDES009](../../../procedimientos/mod_rep/com/RSPROYCOLDES009.md), [RSPROYCOLDES010](../../../procedimientos/mod_rep/com/RSPROYCOLDES010.md) | — |
 
 ### Procedimientos que la usan
 

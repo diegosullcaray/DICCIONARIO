@@ -1,6 +1,6 @@
 -- storage.ref.VJERCOR04
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GRGCTABDIGO02, mod_rep.com.GSEGCAPBP01, mod_rep.com.RSRDFCA036, mod_rep.com.RSSEGPAS01, mod_rep.com.RSSEGPAS02
+-- Usada por: mod_rep.com.GRGCTABDIGO02, mod_rep.com.GRTABDIGO01, mod_rep.com.GSEGCAPBP01, mod_rep.com.RSRDFCA036, mod_rep.com.RSROPERA001, mod_rep.com.RSROPERA002, mod_rep.com.RSSEGPAS01, mod_rep.com.RSSEGPAS02, mod_rep.com.RSSEGPAS03, mod_rep.com.RSSEGPAS04
 
 USE storage;
 GO

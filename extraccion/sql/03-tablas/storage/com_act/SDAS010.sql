@@ -1,6 +1,6 @@
 -- storage.com_act.SDAS010
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.RSRDFCA027, mod_rep.com.RSRDFCA028, mod_rep.com.RSRDFCA030, mod_rep.com.RSRDFCA037
+-- Usada por: mod_rep.com.RSRDFCA027, mod_rep.com.RSRDFCA028, mod_rep.com.RSRDFCA030, mod_rep.com.RSRDFCA037, mod_rep.com.RSRDFCA038, mod_rep.com.RSRDFCA050, mod_rep.com.RSRDFCA050_3, mod_rep.com.RSRDFCA050_4
 
 USE storage;
 GO

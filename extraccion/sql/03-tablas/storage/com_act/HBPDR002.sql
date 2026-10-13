@@ -1,6 +1,6 @@
 -- storage.com_act.HBPDR002
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.RSPROYCOLDES001, mod_rep.com.RSPROYCOLDES003
+-- Usada por: mod_rep.com.RSPROYCOLDES001, mod_rep.com.RSPROYCOLDES003, mod_rep.com.RSPROYCOLDES009
 
 USE storage;
 GO

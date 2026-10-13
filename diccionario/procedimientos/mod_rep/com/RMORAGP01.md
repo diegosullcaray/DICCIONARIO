@@ -63,6 +63,7 @@ Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alia
 
 - `mod_rep.dbo.a`
 - `mod_rep.rep.FFTHCOLDEF`
+- `storage.ref.FJERCOR02`
 - `mod_rep.piv.TPIVCONF` (tipo de tabla)
 - `mod_rep.piv.TPIVFIL` (tipo de tabla)
 - `mod_rep.piv.TPIVVAR` (tipo de tabla)

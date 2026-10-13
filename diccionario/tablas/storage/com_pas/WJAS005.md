@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_pas` · 14 columna(s) usadas · 1 procedimiento(s) · tabla con 18 columna(s) en la base
+Base `storage` · esquema `com_pas` · 18 columna(s) usadas · 1 procedimiento(s) · tabla con 18 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_pas/WJAS005.sql](../../../../extraccion/sql/03-tablas/storage/com_pas/WJAS005.sql)
 
@@ -20,6 +20,10 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_pas/WJAS005.sql](../../.
 | `HCODREL` | varchar(50) | ✅ confirmada | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
 | `HFECPRO` | varchar(10) not null | ✅ confirmada | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
 | `HTIPCOD` | int not null | ✅ confirmada | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
+| `ING_X_MONREC_ANIO_ACT` | numeric(17,2) | 🗄️ motor | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
+| `ING_X_MONREC_MES_ACT` | numeric(17,2) | 🗄️ motor | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
+| `ING_X_MONREC_MES_ANT` | numeric(17,2) | 🗄️ motor | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
+| `ING_X_MONREC_ULT_DIA` | numeric(17,2) | 🗄️ motor | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
 | `MON_TX_ANIO_ACT` | numeric(38,2) | ✅ confirmada | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
 | `MON_TX_MES_ACT` | numeric(38,2) | ✅ confirmada | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |
 | `MON_TX_MES_ANT` | numeric(38,2) | ✅ confirmada | [RSRSRV001](../../../procedimientos/mod_rep/com/RSRSRV001.md) | — |

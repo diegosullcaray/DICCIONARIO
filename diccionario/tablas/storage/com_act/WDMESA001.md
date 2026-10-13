@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 19 columna(s) usadas · 1 procedimiento(s) · tabla con 34 columna(s) en la base
+Base `storage` · esquema `com_act` · 20 columna(s) usadas · 1 procedimiento(s) · tabla con 34 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WDMESA001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WDMESA001.sql)
 
@@ -24,6 +24,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WDMESA001.sql](../..
 | `RCODCOR` | int | ✅ confirmada | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |
 | `RCODGRU` | int | ✅ confirmada | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |
 | `RCODTER` | varchar(255) | ✅ confirmada | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |
+| `RCODUCO` | int | 🗄️ motor | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |
 | `RCODUNI` | int | ✅ confirmada | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |
 | `RDESCOR` | varchar(255) | ✅ confirmada | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |
 | `RDESSEC` | varchar(255) | ✅ confirmada | [RMESA01](../../../procedimientos/mod_rep/com/RMESA01.md) | — |

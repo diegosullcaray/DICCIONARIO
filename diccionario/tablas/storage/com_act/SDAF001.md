@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 1 columna(s) usadas · 9 procedimiento(s) · tabla con 16 columna(s) en la base
+Base `storage` · esquema `com_act` · 1 columna(s) usadas · 13 procedimiento(s) · tabla con 16 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/SDAF001.sql)
 
@@ -11,7 +11,7 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF001.sql](../../.
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `SFECPRO` | date | ✅ confirmada | [RSRDFCA021](../../../procedimientos/mod_rep/com/RSRDFCA021.md), [RSRDFCA022](../../../procedimientos/mod_rep/com/RSRDFCA022.md), [RSRDFCA023](../../../procedimientos/mod_rep/com/RSRDFCA023.md), [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA031](../../../procedimientos/mod_rep/com/RSRDFCA031.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [GDDESEMDIA](../../../procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.md) | — |
+| `SFECPRO` | date | ✅ confirmada | [RSRDFCA021](../../../procedimientos/mod_rep/com/RSRDFCA021.md), [RSRDFCA022](../../../procedimientos/mod_rep/com/RSRDFCA022.md), [RSRDFCA023](../../../procedimientos/mod_rep/com/RSRDFCA023.md), [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA031](../../../procedimientos/mod_rep/com/RSRDFCA031.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md), [RSRDFCA050_3](../../../procedimientos/mod_rep/com/RSRDFCA050_3.md), [RSRDFCA050_4](../../../procedimientos/mod_rep/com/RSRDFCA050_4.md), [GDDESEMDIA](../../../procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.md) | — |
 
 ### Procedimientos que la usan
 
@@ -25,6 +25,10 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF001.sql](../../.
 | [mod_rep.com.RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md) | lee | `Monitor_Dese_02` |
 | [mod_rep.com.RSRDFCA031](../../../procedimientos/mod_rep/com/RSRDFCA031.md) | lee | `DesemDiario_05` |
 | [mod_rep.com.RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | lee | `CMG_CARTERA_02` |
+| [mod_rep.com.RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md) | lee | `CMG_CARTERA_03` |
+| [mod_rep.com.RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | lee | `Monitor_Dese_misi_01` |
+| [mod_rep.com.RSRDFCA050_3](../../../procedimientos/mod_rep/com/RSRDFCA050_3.md) | lee | `Monitor_Dese_misi_02` |
+| [mod_rep.com.RSRDFCA050_4](../../../procedimientos/mod_rep/com/RSRDFCA050_4.md) | lee | `prod_misi_05` |
 | [strategos.mod_rep_com_act.GDDESEMDIA](../../../procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.md) | lee | `DesemDiario_01` |
 <!-- generado:fin -->
 

@@ -14,8 +14,8 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_act.HBPDR001 · lee · 1 columna(s)
-SELECT TOP (100) [HFECPRO]
+-- storage.com_act.HBPDR001 · lee · 2 columna(s)
+SELECT TOP (100) [HFECPRO], [HFECREG]
 FROM [storage].[com_act].[HBPDR001] WITH (NOLOCK);
 
 -- storage.ref.RCALEN001 · lee · 2 columna(s)

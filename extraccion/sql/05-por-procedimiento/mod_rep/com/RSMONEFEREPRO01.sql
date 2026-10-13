@@ -17,3 +17,7 @@ ORDER BY column_ordinal;
 -- storage.com_act.HMMEF001 · lee · 11 columna(s)
 SELECT TOP (100) [HFECPRO], [HTR121TO150], [HTR151TO180], [HTR180TO], [HTR1TO30], [HTR30TO0], [HTR31TO60], [HTR61TO90], [HTR91TO120], [HTRJUDI], [RCODGRU]
 FROM [storage].[com_act].[HMMEF001] WITH (NOLOCK);
+
+-- storage.ref.RCALEN001 · lee · 3 columna(s)
+SELECT TOP (100) [RDIAFER], [RFEC], [RFECTXT]
+FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);

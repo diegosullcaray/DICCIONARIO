@@ -29,13 +29,15 @@
 | 4 | `@fec` | date | — |  | `fec` |
 | 5 | `@diario` | int | 0 |  | `diario` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (5)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
+| [storage.com_act.VCAH002](../../../tablas/storage/com_act/VCAH002.md) | — | — | motor |
 | [storage.com_act.WACLI001](../../../tablas/storage/com_act/WACLI001.md) | lee | `hfecpro` | estatico + motor |
 | [storage.com_act.WGATH002](../../../tablas/storage/com_act/WGATH002.md) | lee | `HFECPRO`, `HGESTTAS`, `HMDES`, `HTDES`, `HTMIN`, `HUCAP_FIN`, `ORD`, `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUCO`, `RDESUNI`, `RFEC` | estatico + motor |
 | [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RANI`, `RDIAFER`, `rfec`, `RMESNOM` | estatico + motor |
+| [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | — | — | motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -60,6 +62,7 @@
 
 Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
 
+- `storage.com_act.HGAT001`
 - `mod_rep.piv.TPIVCONF` (tipo de tabla)
 - `mod_rep.piv.TPIVFIL` (tipo de tabla)
 - `mod_rep.piv.TPIVVAR` (tipo de tabla)

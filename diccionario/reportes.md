@@ -40,8 +40,8 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `CMCUONUEV_02` | Tipo Cero Cuotas Nuevas | [mod_rep.com.GCMCNUE002](procedimientos/mod_rep/com/GCMCNUE002.md) | `tip_cod`, `cod_rel`, `fec`, `prod`, `tipcuota` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `CMG_CARTERA_01` | CMG CARTERA | [mod_rep.com.RSCMGFCA002](procedimientos/mod_rep/com/RSCMGFCA002.md) | `codrel`, `Fecha`, `tipcod`, `met`, `prod` | ✅ validado | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
 | `CMG_CARTERA_02` | CMG CARTERA | [mod_rep.com.RSRDFCA037](procedimientos/mod_rep/com/RSRDFCA037.md) | `tipcod`, `cod_rel`, `tipmet`, `prod`, `fec` | ✅ validado | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
-| `CMG_CARTERA_03` | CMG CARTERA | `mod_rep.com.RSRDFCA038` | `tipcod`, `cod_rel`, `tipmet`, `prod` | ❌ no existe en la base | — |
-| `CMG_CARTERA_ASESOR_01` | Cartera Asesor | `mod_rep.com.GCMGCARTAS001` | `cod_rel`, `Fecha`, `tip_cod`, `met` | ❌ no existe en la base | — |
+| `CMG_CARTERA_03` | CMG CARTERA | [mod_rep.com.RSRDFCA038](procedimientos/mod_rep/com/RSRDFCA038.md) | `tipcod`, `cod_rel`, `tipmet`, `prod` | ✅ validado | — |
+| `CMG_CARTERA_ASESOR_01` | Cartera Asesor | [mod_rep.com.GCMGCARTAS001](procedimientos/mod_rep/com/GCMGCARTAS001.md) | `cod_rel`, `Fecha`, `tip_cod`, `met` | ✅ validado | — |
 | `CMG_CLI_PAS_01` | CMG Clientes Pasivos | [mod_rep.com.RSCMGCLIPAS01](procedimientos/mod_rep/com/RSCMGCLIPAS01.md) | `tip_cod`, `cod_rel`, `fec`, `agru` | ✅ validado | reportes / actividad-diaria / Captaciones |
 | `CMG_CLI_PAS_DETA_01` | CMG Clientes Pasivos Detalle | [mod_rep.com.RSCMGCLIPAS03](procedimientos/mod_rep/com/RSCMGCLIPAS03.md) | `tip_cod`, `cod_rel`, `fec`, `agru`, `grupo` | ✅ validado | — |
 | `CMG_CLI_PAS_STOCK_02` | CMG Clientes Pasivos Stock | [mod_rep.com.RSCMGCLIPAS02](procedimientos/mod_rep/com/RSCMGCLIPAS02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
@@ -80,7 +80,7 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `enrolamiento_pasivo_pas_02` | Enrolamiento Pasivo | [mod_rep.com.RENRPAS02](procedimientos/mod_rep/com/RENRPAS02.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | — |
 | `GCMGCAP_01` | CMG Pasivas | [mod_rep.com.GCMGCAP01](procedimientos/mod_rep/com/GCMGCAP01.md) | `fec`, `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Captaciones<br>reportes / actividad-mensual |
 | `GCOMCRE_02` | Comite de Créditos Diario | [mod_rep.com.GCOMCRE02](procedimientos/mod_rep/com/GCOMCRE02.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Cartera |
-| `GCTABDIG_VR2_COM_03` | GC TABLERO DIGITAL - Comercial | `mod_rep.com.GRGCTABDIGO03` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | — |
+| `GCTABDIG_VR2_COM_03` | GC TABLERO DIGITAL - Comercial | [mod_rep.com.GRGCTABDIGO03](procedimientos/mod_rep/com/GRGCTABDIGO03.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `GCTABDIG_VR2_OPE_02` | GC TABLERO DIGITAL - Operacional | [mod_rep.com.GRGCTABDIGO02](procedimientos/mod_rep/com/GRGCTABDIGO02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `GLISAUTRO_04` | Listado Autonomias | [mod_rep.com.GLISAUTRO05](procedimientos/mod_rep/com/GLISAUTRO05.md) | `tip_cod`, `cod_rel`, `cargo` | ✅ validado | — |
 | `GRAF_GEST_COM_01` | GRAF Gestión Comercial | [mod_rep.com.RGRAFGESTCOM01](procedimientos/mod_rep/com/RGRAFGESTCOM01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
@@ -97,7 +97,7 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `GRAF_ZCUO_04` | Graf Zero Cuotas | [mod_rep.com.RGRAFZCUO04](procedimientos/mod_rep/com/RGRAFZCUO04.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `GRAFSEGPAS_01` | GRAFICO SEGURO PASIVOS ONCOLOGICO | [mod_rep.com.RGRAFSEGPAS01](procedimientos/mod_rep/com/RGRAFSEGPAS01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `GRAFSEGPAS_02` | GRAFICO SEGURO PASIVOS MULTIPLE AHORRO | [mod_rep.com.RGRAFSEGPAS02](procedimientos/mod_rep/com/RGRAFSEGPAS02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
-| `GRBSOLI_01` | Reporte Grupo Solidario | `mod_rep.com.RSDEPGSOLID01` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes / actividad-diaria / Reportes PDM |
+| `GRBSOLI_01` | Reporte Grupo Solidario | [mod_rep.com.RSDEPGSOLID01](procedimientos/mod_rep/com/RSDEPGSOLID01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Reportes PDM |
 | `GREPORCORRE_01` | Corresponsales | [mod_rep.com.RCORRES01](procedimientos/mod_rep/com/RCORRES01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | — |
 | `GREPORCORRE_05` | Grafico Mapa Corresponsales | [mod_rep.com.RCORRES05](procedimientos/mod_rep/com/RCORRES05.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | — |
 | `GREPORCORRE_06` | Corresponsales Metas | [mod_rep.com.RCORRES06](procedimientos/mod_rep/com/RCORRES06.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | — |
@@ -146,7 +146,7 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `GST_PASIVA_M_03` | GESTION TASAS PASIVAS | [mod_rep.com.GDCGEST_PASIVAST01](procedimientos/mod_rep/com/GDCGEST_PASIVAST01.md) | `tip_cod`, `cod_rel`, `var`, `agr`, `calc`, `fec` | ✅ validado | — |
 | `HCARBONO_01` | Huella de carbono | [mod_rep.com.RSHHCARB001](procedimientos/mod_rep/com/RSHHCARB001.md) | `tip_cod`, `cod_rel`, `fec`, `cargambiental` | ✅ validado | reportes / actividad-mensual |
 | `HTTPTRACE_01` | Servicio Reporte de Uso | [strategos.mod_rep_com_act.HTTPTRACE](procedimientos/strategos/mod_rep_com_act/HTTPTRACE.md) | `tip_cod`, `cod_rel` | ✅ validado | — |
-| `INCEN_PDM_01` | INCENTIVOS PDM | `mod_rep.com.RINCEPDM01` | `tip_cod`, `cod_rel`, `fecha` | ❌ no existe en la base | — |
+| `INCEN_PDM_01` | INCENTIVOS PDM | [mod_rep.com.RINCEPDM01](procedimientos/mod_rep/com/RINCEPDM01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | — |
 | `LCCUOTANUEVA_01` | BASE DE GESTION CERO CUOTAS NUEVAS | [mod_rep.com.RSLISTCCN01](procedimientos/mod_rep/com/RSLISTCCN01.md) | `tip_cod`, `cod_rel`, `pagen`, `tipcuota` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `LIS_CAPRET_01` | List Capacity Retailer | [mod_rep.com.GLISCAPRET01](procedimientos/mod_rep/com/GLISCAPRET01.md) | `cod_rel` | ✅ validado | — |
 | `LIS_PROSPE_01` | Lista de Prospectos | [mod_rep.com.GLISPROSP01](procedimientos/mod_rep/com/GLISPROSP01.md) | `cod_rel` | ✅ validado | — |
@@ -156,8 +156,8 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `Monitor_Dese_02` | Monitor desembolsos Monto | [mod_rep.com.RSRDFCA030](procedimientos/mod_rep/com/RSRDFCA030.md) | `tipmet`, `tip_cod`, `cod_rel` | ✅ validado | reportes / avance-comercial |
 | `Monitor_Dese_03` | Monitor desembolsos Cumplimiento | [mod_rep.com.RSRDFCA028](procedimientos/mod_rep/com/RSRDFCA028.md) | `tipmet`, `tip_cod`, `cod_rel` | ✅ validado | reportes / avance-comercial |
 | `Monitor_Dese_04` | Monitor desembolsos Promedio | [mod_rep.com.RSRDFCA029](procedimientos/mod_rep/com/RSRDFCA029.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / avance-comercial |
-| `Monitor_Dese_misi_01` | Monitor desembolsos Operación | `mod_rep.com.RSRDFCA050` | `tipmet`, `tip_cod`, `cod_rel`, `prod` | ❌ no existe en la base | reportes / desarrollo-sostenible |
-| `Monitor_Dese_misi_02` | Monitor desembolsos Operación  | `mod_rep.com.RSRDFCA050_3` | `tipmet`, `tip_cod`, `cod_rel`, `prod` | ❌ no existe en la base | reportes / desarrollo-sostenible |
+| `Monitor_Dese_misi_01` | Monitor desembolsos Operación | [mod_rep.com.RSRDFCA050](procedimientos/mod_rep/com/RSRDFCA050.md) | `tipmet`, `tip_cod`, `cod_rel`, `prod` | ✅ validado | reportes / desarrollo-sostenible |
+| `Monitor_Dese_misi_02` | Monitor desembolsos Operación  | [mod_rep.com.RSRDFCA050_3](procedimientos/mod_rep/com/RSRDFCA050_3.md) | `tipmet`, `tip_cod`, `cod_rel`, `prod` | ✅ validado | reportes / desarrollo-sostenible |
 | `MOVIMIENTO_CLIENTES_01` | Movimiento Clientes | [mod_rep.com.GMOVCLI01](procedimientos/mod_rep/com/GMOVCLI01.md) | — | ✅ validado | reportes / actividad-diaria / Clientes |
 | `P_Datos_01` | Plan de Datos | [mod_rep.com.GRESPDATOS01](procedimientos/mod_rep/com/GRESPDATOS01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-mensual |
 | `P_Datos_02` | Plan de Datos | [mod_rep.com.GRESPDATOS02](procedimientos/mod_rep/com/GRESPDATOS02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
@@ -178,10 +178,10 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `PLANMOVR_01` | Planilla Movilidad Recuperador | [mod_rep.com.GLIMOVRO01](procedimientos/mod_rep/com/GLIMOVRO01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `PLANMOVR_03` | Planilla Movilidad Recuperador | [mod_rep.com.GLIMOVRO05](procedimientos/mod_rep/com/GLIMOVRO05.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `PLANMOVR_04` | Detalle Dep Recuperador | [mod_rep.com.GLIMOVRO06](procedimientos/mod_rep/com/GLIMOVRO06.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
-| `pob_misi_01` | Productos Top Territorio | `mod_rep.com.RSRTOPPOMIS001` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | — |
-| `pob_misi_02` | Productos Top corredor | `mod_rep.com.RSRTOPPOMIS002` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | — |
-| `pob_misi_03` | Productos Top Unidad | `mod_rep.com.RSRTOPPOMIS003` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | — |
-| `pob_misi_04` | Productos Top Asesores | `mod_rep.com.RSRTOPPOMIS004` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | — |
+| `pob_misi_01` | Productos Top Territorio | [mod_rep.com.RSRTOPPOMIS001](procedimientos/mod_rep/com/RSRTOPPOMIS001.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | — |
+| `pob_misi_02` | Productos Top corredor | [mod_rep.com.RSRTOPPOMIS002](procedimientos/mod_rep/com/RSRTOPPOMIS002.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | — |
+| `pob_misi_03` | Productos Top Unidad | [mod_rep.com.RSRTOPPOMIS003](procedimientos/mod_rep/com/RSRTOPPOMIS003.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | — |
+| `pob_misi_04` | Productos Top Asesores | [mod_rep.com.RSRTOPPOMIS004](procedimientos/mod_rep/com/RSRTOPPOMIS004.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | — |
 | `PortafolioAgro_01` | Portafolio Agro | [strategos.mod_rep_com_act.GDPORTAGRO01](procedimientos/strategos/mod_rep_com_act/GDPORTAGRO01.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `PORTSUPE_01` | Portafolio y Supervision | [strategos.mod_rep_com_act.GDPSUPERV01](procedimientos/strategos/mod_rep_com_act/GDPSUPERV01.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `PORTSUPE_02` | Portafolio y Supervision | [strategos.mod_rep_com_act.GDPSUPERV02](procedimientos/strategos/mod_rep_com_act/GDPSUPERV02.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
@@ -191,7 +191,7 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `prod_misi_02` | Productos Top Unidad | [mod_rep.com.RSRTOPMIS002](procedimientos/mod_rep/com/RSRTOPMIS002.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | reportes / desarrollo-sostenible |
 | `prod_misi_03` | Productos Top Asesores | [mod_rep.com.RSRTOPMIS003](procedimientos/mod_rep/com/RSRTOPMIS003.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | reportes / desarrollo-sostenible |
 | `prod_misi_04` | Productos Top Territorio | [mod_rep.com.RSRTOPMIS004](procedimientos/mod_rep/com/RSRTOPMIS004.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | reportes / desarrollo-sostenible |
-| `prod_misi_05` | Monitor desembolsos Operación  | `mod_rep.com.RSRDFCA050_4` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | reportes / desarrollo-sostenible |
+| `prod_misi_05` | Monitor desembolsos Operación  | [mod_rep.com.RSRDFCA050_4](procedimientos/mod_rep/com/RSRDFCA050_4.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | reportes / desarrollo-sostenible |
 | `PROYEC_COLREC_01` | proyeccion de colocaciones | [mod_rep.com.RSPROYCOLDES001](procedimientos/mod_rep/com/RSPROYCOLDES001.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Proyecciones |
 | `PROYEC_COLREC_02` | proyeccion de recuperaciones | [mod_rep.com.RSPROYCOLDES002](procedimientos/mod_rep/com/RSPROYCOLDES002.md) | `tip_cod`, `cod_rel` | ✅ validado | — |
 | `PROYEC_COLREC_03` | proyeccion diaria colocacion detalle | [mod_rep.com.RSPROYCOLDES009](procedimientos/mod_rep/com/RSPROYCOLDES009.md) | `tip_cod`, `cod_rel`, `pagen` | ✅ validado | reportes / actividad-diaria / Proyecciones |
@@ -215,7 +215,7 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `REP_CERCUOT_02` | Reporte cero cuota | [mod_rep.com.GDCEROCN004](procedimientos/mod_rep/com/GDCEROCN004.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `reporte_autonomia_new_01` | Lista... | [mod_rep.com.GDCGEST_ACTIVAST02](procedimientos/mod_rep/com/GDCGEST_ACTIVAST02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-mensual |
 | `reporte_autonomia_newdiaria_01` | Lista... | [mod_rep.com.GDCGEST_ACTIVAST02](procedimientos/mod_rep/com/GDCGEST_ACTIVAST02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Cartera |
-| `reporte-demo` | Reporte Demo | `mod_rep.dbo.REPORTE_DEMO` | `fecha`, `cod_user_bt` | ❌ no existe en la base | — |
+| `reporte-demo` | Reporte Demo | [mod_rep.dbo.REPORTE_DEMO](procedimientos/mod_rep/dbo/REPORTE_DEMO.md) | `fecha`, `cod_user_bt` | 🔎 extraído | — |
 | `RES_SEC_REP_01` | Lista Clientes Reprogramados | [mod_rep.com.GRESCLIREP01](procedimientos/mod_rep/com/GRESCLIREP01.md) | `cod_rel` | ✅ validado | — |
 | `RESINCGRUP_01` | Incentivos Meta Grupos PDM | [mod_rep.com.RINCEGP01](procedimientos/mod_rep/com/RINCEGP01.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RESMORAGP_01` | Mora Grupos PDM | [mod_rep.com.RMORAGP01](procedimientos/mod_rep/com/RMORAGP01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Cartera |
@@ -247,17 +247,17 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `RS_AGE_COM_CRM_F_03` | DetalleAgendamiento Comercial Reasignado Flujo | [mod_rep.com.RS_AGE_COM_CR_M_02](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_02.md) | `tip_cod`, `cod_rel`, `pagen`, `fecha` | ✅ validado | — |
 | `RS_AGE_COM_CRM_S_01` | Agendamiento Comercial Reasignado Stock | [mod_rep.com.RS_AGE_COM_CR_M_03](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_03.md) | `tip_cod`, `cod_rel`, `ver`, `fecha`, `tipo_ase` | ✅ validado | — |
 | `RS_AGE_COM_CRM_S_03` | DetalleAgendamiento Comercial Reasignado Stock | [mod_rep.com.RS_AGE_COM_CR_M_04](procedimientos/mod_rep/com/RS_AGE_COM_CR_M_04.md) | `tip_cod`, `cod_rel`, `ver`, `fecha`, `tipo_ase` | ✅ validado | — |
-| `RS_AGROMIX_01` | REPORTE AGROMIX | `mod_rep.com.RAGROMIX` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
-| `RS_AGROMIX_02` | Graf Vencido AGROMIX | `mod_rep.com.RS_AGROMIX_CHART` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes |
-| `RS_AGROMIX_03` | Graf Capital AGROMIX | `mod_rep.com.RS_AGROMIX_CHART2` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes |
-| `RS_AGROMIX_04` | Graf Clientes AGROMIX | `mod_rep.com.RS_AGROMIX_CHART3` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes |
-| `RS_AGROMIX_05` | Graf Resumen AGROMIX | `mod_rep.com.RS_AGROMIX_CHART4` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes |
+| `RS_AGROMIX_01` | REPORTE AGROMIX | [mod_rep.com.RAGROMIX](procedimientos/mod_rep/com/RAGROMIX.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
+| `RS_AGROMIX_02` | Graf Vencido AGROMIX | [mod_rep.com.RS_AGROMIX_CHART](procedimientos/mod_rep/com/RS_AGROMIX_CHART.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes |
+| `RS_AGROMIX_03` | Graf Capital AGROMIX | [mod_rep.com.RS_AGROMIX_CHART2](procedimientos/mod_rep/com/RS_AGROMIX_CHART2.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes |
+| `RS_AGROMIX_04` | Graf Clientes AGROMIX | [mod_rep.com.RS_AGROMIX_CHART3](procedimientos/mod_rep/com/RS_AGROMIX_CHART3.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes |
+| `RS_AGROMIX_05` | Graf Resumen AGROMIX | [mod_rep.com.RS_AGROMIX_CHART4](procedimientos/mod_rep/com/RS_AGROMIX_CHART4.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes |
 | `RS_AVA_POR_01` | Avance de Portafolio | [mod_rep.com.RSAVAPOR01](procedimientos/mod_rep/com/RSAVAPOR01.md) | `tip_cod`, `cod_rel`, `mode`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `RS_BASE_NEG_01` | Base Negativa Riesgos | [mod_rep.com.RSBASENEG01](procedimientos/mod_rep/com/RSBASENEG01.md) | `nom` | 🔎 extraído | core / winder<br>herramientas |
 | `RS_CAL_CAR_01` | Calidad de Cartera 1 | [mod_rep.com.RSCALCAR01](procedimientos/mod_rep/com/RSCALCAR01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `RS_CAL_CAR_02` | Calidad de Cartera 2 | [mod_rep.com.RSCALCAR02](procedimientos/mod_rep/com/RSCALCAR02.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `RS_CARD_ZCUO_01` | Card reporte cero cuotas | [mod_rep.com.RCARDZCUO01](procedimientos/mod_rep/com/RCARDZCUO01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
-| `RS_CARTEPAS_01` | Reporte Carterización Pasivo | `mod_rep.com.RSCOMPAS01` | `tipcod`, `codrel`, `fecha` | ❌ no existe en la base | reportes / actividad-diaria / Captaciones |
+| `RS_CARTEPAS_01` | Reporte Carterización Pasivo | [mod_rep.com.RSCOMPAS01](procedimientos/mod_rep/com/RSCOMPAS01.md) | `tipcod`, `codrel`, `fecha` | ✅ validado | reportes / actividad-diaria / Captaciones |
 | `RS_DAT_PRO_01` | Datos por Producto 1 | [mod_rep.com.RSDATPRO01](procedimientos/mod_rep/com/RSDATPRO01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
 | `RS_DAT_PRO_02` | Datos por Producto 2 | [mod_rep.com.RSDATPRO02](procedimientos/mod_rep/com/RSDATPRO02.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
 | `RS_DAT_PRO_03` | Datos por Producto 3 | [mod_rep.com.RSDATPRO03](procedimientos/mod_rep/com/RSDATPRO03.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera<br>reportes / actividad-mensual |
@@ -267,8 +267,8 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `RS_FECH` | Fechas Reporte Mensual | [mod_rep.com.RFECREPMEN](procedimientos/mod_rep/com/RFECREPMEN.md) | `fec` | ✅ validado | reportes<br>reportes / actividad-diaria / Cartera<br>reportes / actividad-diaria / Cartera en Mora<br>reportes / actividad-diaria / Seguros<br>reportes / actividad-mensual<br>reportes / actividad-mensual / Cartera<br>reportes / actividad-mensual / Tablero Digital |
 | `RS_FECH02` | Fecha Reporte Hoy Mensual | [mod_rep.com.RFECREPMEN02](procedimientos/mod_rep/com/RFECREPMEN02.md) | `fec` | ✅ validado | reportes<br>reportes / actividad-diaria / Cartera<br>reportes / actividad-diaria / Seguros |
 | `RS_GEST_COM_01` | Reporte Gestión Comercial | [mod_rep.com.RSGETCOM01](procedimientos/mod_rep/com/RSGETCOM01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
-| `RS_GEST_COM_02` | Reporte Evolutivo Var Vigente | `mod_rep.com.RREPGESTCOM02` | `tip_cod`, `cod_rel`, `fecha` | ❌ no existe en la base | reportes / actividad-diaria / Cartera |
-| `RS_GEST_COM_03` | Reporte Evolutivo Var Cliente Stock | `mod_rep.com.RREPGESTCOM03` | `tip_cod`, `cod_rel`, `fecha` | ❌ no existe en la base | reportes / actividad-diaria / Cartera |
+| `RS_GEST_COM_02` | Reporte Evolutivo Var Vigente | [mod_rep.com.RREPGESTCOM02](procedimientos/mod_rep/com/RREPGESTCOM02.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
+| `RS_GEST_COM_03` | Reporte Evolutivo Var Cliente Stock | [mod_rep.com.RREPGESTCOM03](procedimientos/mod_rep/com/RREPGESTCOM03.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_MON_CAR_01` | Control Cargas Prod | [mod_rep.com.RSRPD001](procedimientos/mod_rep/com/RSRPD001.md) | `opt` | ✅ validado | reportes / control-cargas |
 | `RS_MON_EFEC_01` | Monitor de Efectividades | [mod_rep.com.RSMONEFE01](procedimientos/mod_rep/com/RSMONEFE01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `RS_MON_EFEC_02` | Detalle de Efectividades | [mod_rep.com.RSMONEFE02](procedimientos/mod_rep/com/RSMONEFE02.md) | `tip_cod`, `cod_rel`, `tramof`, `prod`, `comp_r`, `zcuo`, `ucuo`, `nom`, `resp`, `tdcr`, `pagen`, `fcompro`, `precosechaf` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
@@ -283,25 +283,25 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `RS_MON_EFECREASIGM_01` | Monitor de Efectividades Reasignados Mensual | [mod_rep.com.RSMONEFER01](procedimientos/mod_rep/com/RSMONEFER01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-mensual |
 | `RS_MON_EFECREPRO_01` | Monitor de Efectividades Reprogramados | [mod_rep.com.RSMONEFEREPRO01](procedimientos/mod_rep/com/RSMONEFEREPRO01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `RS_MON_EFECTRAMOSC_01` | Seguimiento PDM | [mod_rep.com.RSMONEFETRC01](procedimientos/mod_rep/com/RSMONEFETRC01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
-| `RS_MON_INT_COM_01` | Reporte Monitor Inteligencia Comercial | `mod_rep.com.RMONINTCOM01` | `tip_cod`, `cod_rel`, `fecha` | ❌ no existe en la base | reportes / actividad-diaria / Cartera |
+| `RS_MON_INT_COM_01` | Reporte Monitor Inteligencia Comercial | [mod_rep.com.RMONINTCOM01](procedimientos/mod_rep/com/RMONINTCOM01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_MON_REP_01` | Monitor de reprogramados | [mod_rep.com.GDMREP001](procedimientos/mod_rep/com/GDMREP001.md) | `cod_rel`, `fec`, `tip_cod`, `car` | ✅ validado | reportes / avance-comercial |
 | `RS_MON_REP_SEC_01` | Monitor de reprogramados | [mod_rep.com.GDMREP001](procedimientos/mod_rep/com/GDMREP001.md) | `cod_rel`, `fec`, `tip_cod`, `car` | ✅ validado | — |
-| `RS_MON_SALCAP_COM_01` | Reporte Saldo Captacion Cartera | `mod_rep.com.RSCAPCOME01` | `codrel`, `fecha`, `tipcod` | ❌ no existe en la base | reportes<br>reportes / actividad-diaria / Captaciones |
-| `RS_RANK_COM_01` | Ranking Comercial | `mod_rep.com.RSRANKCOM01` | `territorio`, `corredor`, `fecha` | ❌ no existe en la base | reportes / actividad-diaria / Cartera |
+| `RS_MON_SALCAP_COM_01` | Reporte Saldo Captacion Cartera | [mod_rep.com.RSCAPCOME01](procedimientos/mod_rep/com/RSCAPCOME01.md) | `codrel`, `fecha`, `tipcod` | ✅ validado | reportes<br>reportes / actividad-diaria / Captaciones |
+| `RS_RANK_COM_01` | Ranking Comercial | [mod_rep.com.RSRANKCOM01](procedimientos/mod_rep/com/RSRANKCOM01.md) | `territorio`, `corredor`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_RANK_MUJ_01` | RANKING MUJER | [mod_rep.com.RRANKM01](procedimientos/mod_rep/com/RRANKM01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
-| `RS_RANK_MUJ_02` | RANKING MUJER CARTERA | `mod_rep.com.RRANKM02` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | — |
+| `RS_RANK_MUJ_02` | RANKING MUJER CARTERA | [mod_rep.com.RRANKM02](procedimientos/mod_rep/com/RRANKM02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `RS_RETE_01` | Modulo Retención | [mod_rep.com.RSMONRENT01](procedimientos/mod_rep/com/RSMONRENT01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `RS_SAL_CAR_01` | Saldo Puntual de Cartera | [mod_rep.com.RSSALCAR01](procedimientos/mod_rep/com/RSSALCAR01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_SAL_CAR_02` | Cartera por Producto | [mod_rep.com.RSSALCAR02](procedimientos/mod_rep/com/RSSALCAR02.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_SAL_CAR_03` | Productividad | [mod_rep.com.RSSALCAR03](procedimientos/mod_rep/com/RSSALCAR03.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_SAL_CAR_04` | Saldo Puntual de Cartera Vigente | [mod_rep.com.RSSALCARVIGE01](procedimientos/mod_rep/com/RSSALCARVIGE01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera<br>shared / ui |
-| `RS_SAL_CAR_05` | Cartera por Producto Vigente | `mod_rep.com.RSSALCARVIGE02` | `tip_cod`, `cod_rel`, `fecha` | ❌ no existe en la base | reportes / actividad-diaria / Cartera |
+| `RS_SAL_CAR_05` | Cartera por Producto Vigente | [mod_rep.com.RSSALCARVIGE02](procedimientos/mod_rep/com/RSSALCARVIGE02.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera |
 | `RS_SEG_PAS_01` | Seguros Pasivos Oncologico | [mod_rep.com.RSSEGPAS01](procedimientos/mod_rep/com/RSSEGPAS01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Seguros |
 | `RS_SEG_PAS_02` | Seguros Pasivos Multiple Ahorro | [mod_rep.com.RSSEGPAS02](procedimientos/mod_rep/com/RSSEGPAS02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Seguros |
 | `RS_SEG_PAS_03` | Seguros Pasivos Resumen | [mod_rep.com.RSSEGPAS03](procedimientos/mod_rep/com/RSSEGPAS03.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Seguros |
-| `RS_SEG_PAS_04` | Seguros Pasivos Protección Total | `mod_rep.com.RSSEGPAS04` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes / actividad-diaria / Seguros |
+| `RS_SEG_PAS_04` | Seguros Pasivos Protección Total | [mod_rep.com.RSSEGPAS04](procedimientos/mod_rep/com/RSSEGPAS04.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Seguros |
 | `RS_TAB_COM_01` | TABLERO DIGITAL COMERCIAL | [mod_rep.com.RSTABCOMER](procedimientos/mod_rep/com/RSTABCOMER.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes<br>reportes / actividad-diaria / Tablero Digital<br>reportes / actividad-mensual |
-| `RS_TAB_COM_02` | TABLERO DIGITAL COMERCIAL DETALLE | `mod_rep.com.RSTABCOMER02` | `usuariobt`, `fecha` | ❌ no existe en la base | — |
+| `RS_TAB_COM_02` | TABLERO DIGITAL COMERCIAL DETALLE | [mod_rep.com.RSTABCOMER02](procedimientos/mod_rep/com/RSTABCOMER02.md) | `usuariobt`, `fecha` | ✅ validado | — |
 | `RS_TOP_ZCUO_01` | top 10 asesores Zcuo | [mod_rep.com.RTOPZCUO01](procedimientos/mod_rep/com/RTOPZCUO01.md) | `tip_cod`, `cod_rel`, `fecha` | ✅ validado | reportes / actividad-diaria / Cartera en Mora |
 | `RSIMR_01` | IMR | [mod_rep.com.RSIMR01](procedimientos/mod_rep/com/RSIMR01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `RSRTOP01` | Monitor de Efectividades TOP | [mod_rep.com.RSRTOP001](procedimientos/mod_rep/com/RSRTOP001.md) | `tip_cod`, `level` | ✅ validado | — |
@@ -313,7 +313,7 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `SEG_PDM_01` | Seguimiento PDM | [mod_rep.com.RSSEGPDM01](procedimientos/mod_rep/com/RSSEGPDM01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Reportes PDM |
 | `SEGUI_COMITE_01` | SEGUIMIENTO COMITE | [mod_rep.com.GCOMCRE01](procedimientos/mod_rep/com/GCOMCRE01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `SEGUI_INC_SEC_01` | Seguimiento Incentivos Asesores | [mod_rep.com.GSEGUIINC001](procedimientos/mod_rep/com/GSEGUIINC001.md) | `tip_cod`, `cod_rel` | ✅ validado | — |
-| `SEGUROS_ASESOR_01` | Tablero Seguros Asesor | `mod_rep.com.RSEGASE01` | `cod_rel`, `Fecha`, `tip_cod` | ❌ no existe en la base | — |
+| `SEGUROS_ASESOR_01` | Tablero Seguros Asesor | [mod_rep.com.RSEGASE01](procedimientos/mod_rep/com/RSEGASE01.md) | `cod_rel`, `Fecha`, `tip_cod` | ✅ validado | — |
 | `SEL_CIU_01` | Filtro CIIU | [mod_rep.com.GSELCIUT001](procedimientos/mod_rep/com/GSELCIUT001.md) | — | ✅ validado | — |
 | `SEL_CIU_02` | Filtro CIIU Sector Eco | [mod_rep.com.GSELCIUT002](procedimientos/mod_rep/com/GSELCIUT002.md) | — | ✅ validado | — |
 | `SEL_EFEC_01` | Filtro Detalle Efectividad | [mod_rep.com.GSELREP001](procedimientos/mod_rep/com/GSELREP001.md) | — | ✅ validado | reportes / actividad-diaria / Cartera en Mora<br>reportes / actividad-diaria / Portafolio Reasignado<br>reportes / actividad-mensual |
@@ -321,14 +321,14 @@ Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecuta
 | `SEL_JER_01` | Filtro Territorio,Corred,agencia | [mod_rep.com.GSELJERAR001](procedimientos/mod_rep/com/GSELJERAR001.md) | — | ✅ validado | — |
 | `SEL_JER_MENTORING_01` | FILTRO ASESORES | [mod_rep.com.GSELJERAR002](procedimientos/mod_rep/com/GSELJERAR002.md) | `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-diaria / Campañas |
 | `TAB_CUE_RES_01` | Cuenta de Resultados | [mod_rep.rep.RTABCUERES01](procedimientos/mod_rep/rep/RTABCUERES01.md) | `fecha`, `tip_cod`, `cod_rel` | ✅ validado | reportes / actividad-mensual<br>reportes / actividad-mensual / Rentabilidad |
-| `Tab_Dig_Com_A_01` | Tablero Digital Comercial Asesor | `mod_rep.com.RSTABCOMER02` | `usuariobt`, `Fecha` | ❌ no existe en la base | — |
+| `Tab_Dig_Com_A_01` | Tablero Digital Comercial Asesor | [mod_rep.com.RSTABCOMER02](procedimientos/mod_rep/com/RSTABCOMER02.md) | `usuariobt`, `Fecha` | ✅ validado | — |
 | `TABDIG_01` | APP CLIENTES | [mod_rep.com.GRTABAPPO01](procedimientos/mod_rep/com/GRTABAPPO01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Tablero Digital |
 | `TABDIG_02` | Tablero digital Corresponsal | [mod_rep.com.GRTABCORRO01](procedimientos/mod_rep/com/GRTABCORRO01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Tablero Digital |
-| `TABDIG_VR2_01` | TABLERO DIGITAL | `mod_rep.com.GRTABDIGO01` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | reportes / actividad-diaria / Tablero Digital |
-| `TABDIG_VR2_COM_02` | TABLERO DIGITAL - COMERCIAL | `mod_rep.com.GRTABDIGO02` | `tip_cod`, `cod_rel`, `fec` | ❌ no existe en la base | — |
+| `TABDIG_VR2_01` | TABLERO DIGITAL | [mod_rep.com.GRTABDIGO01](procedimientos/mod_rep/com/GRTABDIGO01.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | reportes / actividad-diaria / Tablero Digital |
+| `TABDIG_VR2_COM_02` | TABLERO DIGITAL - COMERCIAL | [mod_rep.com.GRTABDIGO02](procedimientos/mod_rep/com/GRTABDIGO02.md) | `tip_cod`, `cod_rel`, `fec` | ✅ validado | — |
 | `TABDIGITAL_COMERCIAL_01` | TABLERO DIGITAL COMERCIAL | [mod_rep.com.RTABDIGCOM01](procedimientos/mod_rep/com/RTABDIGCOM01.md) | `tip_cod`, `cod_rel` | ✅ validado | — |
-| `TB_PANEL_OPE_01` | PANEL OPERACIONES PASIVO | `mod_rep.com.RSROPERA001` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | reportes / actividad-diaria / Captaciones |
-| `TB_PANEL_OPE_02` | PANEL OPERACIONES PASIVO REGULA | `mod_rep.com.RSROPERA002` | `tip_cod`, `cod_rel`, `fec`, `prod` | ❌ no existe en la base | reportes / actividad-diaria / Captaciones |
+| `TB_PANEL_OPE_01` | PANEL OPERACIONES PASIVO | [mod_rep.com.RSROPERA001](procedimientos/mod_rep/com/RSROPERA001.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | reportes / actividad-diaria / Captaciones |
+| `TB_PANEL_OPE_02` | PANEL OPERACIONES PASIVO REGULA | [mod_rep.com.RSROPERA002](procedimientos/mod_rep/com/RSROPERA002.md) | `tip_cod`, `cod_rel`, `fec`, `prod` | ✅ validado | reportes / actividad-diaria / Captaciones |
 | `VAC_RES_EJE_01` | Resumen ejecutivo | `mod_gpa.vac.GRESEJE01` | `tip_cod`, `cod_rel` | ⏳ pendiente | — |
 | `VAC_RES_EJE_02` | Resumen Ejecutivo por Meses | `mod_gpa.vac.GRESEJE02` | `tip_cod`, `cod_rel` | ⏳ pendiente | — |
 <!-- generado:fin -->

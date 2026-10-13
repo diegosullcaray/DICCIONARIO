@@ -11,18 +11,18 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAS013.sql](../../.
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `SCODAGR` | tinyint | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SCODMOD` | int | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SCODSEC` | varchar(10) | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SCOSECHA` | int not null | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `sfecbas` | date not null | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SCODAGR` | tinyint | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SCODMOD` | int | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SCODSEC` | varchar(10) | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SCOSECHA` | int not null | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `sfecbas` | date not null | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
 | `SFECPRO` | ⚠️ no existe | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SNUMOPEBAS` | int | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SNUMOPEMORH` | int | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SSALCAPBAS` | numeric(19,2) | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SSALCAPMORH` | numeric(19,2) | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `SSUBTIP` | int | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
-| `STIPOPE` | int | 🎯 exacta | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SNUMOPEBAS` | int | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SNUMOPEMORH` | int | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SSALCAPBAS` | numeric(19,2) | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SSALCAPMORH` | numeric(19,2) | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `SSUBTIP` | int | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
+| `STIPOPE` | int | ✅ confirmada | [GCOSEMAF002](../../../procedimientos/mod_rep/com/GCOSEMAF002.md) | — |
 
 ### Procedimientos que la usan
 

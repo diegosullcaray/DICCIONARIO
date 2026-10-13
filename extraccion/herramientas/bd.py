@@ -10,7 +10,7 @@
     python extraccion/herramientas/bd.py estado                              # avance, sin conectarse
     python extraccion/herramientas/bd.py mapa --reporte SEL_EFEC_01 | --sp GSELREP001 | --tabla WCED001 | --columna HFCRES
 
-Opciones globales: --env <ruta al .env> (p. ej. el de REPORTES-AUTOMATIZADOS/backend/.env).
+Opciones globales: --env <ruta al .env> (por defecto, el de la raíz de DICCIONARIO).
 Todo es de solo lectura contra SQL Server.
 """
 

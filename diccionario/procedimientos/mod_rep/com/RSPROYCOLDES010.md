@@ -29,8 +29,8 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.HBPDR001](../../../tablas/storage/com_act/HBPDR001.md) | lee | `HFECPRO` | estatico + motor |
-| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC` | estatico + motor |
+| [storage.com_act.HBPDR001](../../../tablas/storage/com_act/HBPDR001.md) | lee | `HFECPRO`, `HFECREG` | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`≈, `RFEC`≈ | estatico |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

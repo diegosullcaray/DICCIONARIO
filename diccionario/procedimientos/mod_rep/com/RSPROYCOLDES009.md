@@ -26,12 +26,13 @@
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 | 3 | `@pagen` | int | — |  | `pagen` |
 
-### Tablas y columnas (2)
+### Tablas y columnas (3)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [mod_rep.com.Datos_PD](../../../tablas/mod_rep/com/Datos_PD.md) ⚠️ esquema implícito | elimina-objeto, lee | — | estatico + motor |
-| [storage.com_act.HBPDR001](../../../tablas/storage/com_act/HBPDR001.md) | lee | `HFECPRO`, `hfecreg` | estatico + motor |
+| [storage.com_act.HBPDR001](../../../tablas/storage/com_act/HBPDR001.md) | lee | `HFECPRO`≈, `hfecreg`≈ | estatico |
+| [storage.com_act.HBPDR002](../../../tablas/storage/com_act/HBPDR002.md) | lee | `HFECPRO`, `HFECREG`, `HHORPRO` | motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

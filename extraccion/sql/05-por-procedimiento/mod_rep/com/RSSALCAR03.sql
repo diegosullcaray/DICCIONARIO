@@ -14,6 +14,18 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
+-- storage.com_act.WJAS001 · lee · 5 columna(s)
+SELECT TOP (100) [HCODREL], [HFECPRO], [HNUMSECGMES], [HNUMSECIMES], [HTIPCOD]
+FROM [storage].[com_act].[WJAS001] WITH (NOLOCK);
+
+-- storage.com.VDMCOM01 · lee · 5 columna(s)
+SELECT TOP (100) [HCODREL], [HCODVAR], [HFECPRO], [HTIPCOD], [HVALVAR]
+FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
+
 -- storage.ref.RCALEN001 · lee · 3 columna(s)
 SELECT TOP (100) [RDIAFER], [RFEC], [RFECTXT]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
+
+-- storage.ref.WJERCOR03 · lee · 16 columna(s)
+SELECT TOP (100) [RCODCOR], [RCODFC], [RCODGRU], [RCODSEC], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESFC], [RDESGRU], [RDESSEC], [RDESTER], [RDESUCO], [RDESUNI], [RFECPRO], [RINDFEC]
+FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

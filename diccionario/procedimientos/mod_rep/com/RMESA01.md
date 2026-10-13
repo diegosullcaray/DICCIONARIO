@@ -30,7 +30,7 @@
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.WDMESA001](../../../tablas/storage/com_act/WDMESA001.md) | lee | `HCODOPE`, `HCODSEC`, `HCODSEC2`, `HDCODSEC`, `HFCRES`, `HFNUM`, `HSALCAPMN`, `HSALCAPMN2`, `HTRAM01`, `HTRAM02`, `RCODCOR`, `RCODGRU`, `RCODTER`, `RCODUNI`, `RDESCOR`, `RDESSEC`, `RDESTER`, `RDESUNI`, `SITUACION` | estatico + motor |
+| [storage.com_act.WDMESA001](../../../tablas/storage/com_act/WDMESA001.md) | lee | `HCODOPE`, `HCODSEC`, `HCODSEC2`, `HDCODSEC`, `HFCRES`, `HFNUM`, `HSALCAPMN`, `HSALCAPMN2`, `HTRAM01`, `HTRAM02`, `RCODCOR`, `RCODGRU`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESSEC`, `RDESTER`, `RDESUNI`, `SITUACION` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 

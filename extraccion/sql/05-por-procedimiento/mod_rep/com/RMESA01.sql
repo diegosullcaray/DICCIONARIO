@@ -14,6 +14,6 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
--- storage.com_act.WDMESA001 · lee · 19 columna(s)
-SELECT TOP (100) [HCODOPE], [HCODSEC], [HCODSEC2], [HDCODSEC], [HFCRES], [HFNUM], [HSALCAPMN], [HSALCAPMN2], [HTRAM01], [HTRAM02], [RCODCOR], [RCODGRU], [RCODTER], [RCODUNI], [RDESCOR], [RDESSEC], [RDESTER], [RDESUNI], [SITUACION]
+-- storage.com_act.WDMESA001 · lee · 20 columna(s)
+SELECT TOP (100) [HCODOPE], [HCODSEC], [HCODSEC2], [HDCODSEC], [HFCRES], [HFNUM], [HSALCAPMN], [HSALCAPMN2], [HTRAM01], [HTRAM02], [RCODCOR], [RCODGRU], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESSEC], [RDESTER], [RDESUNI], [SITUACION]
 FROM [storage].[com_act].[WDMESA001] WITH (NOLOCK);

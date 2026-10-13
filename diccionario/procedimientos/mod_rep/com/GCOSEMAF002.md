@@ -36,9 +36,9 @@
 | [storage.com_act.RETP001](../../../tablas/storage/com_act/RETP001.md) | lee | `RCODMOD`, `RCODPROD`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.RETP002](../../../tablas/storage/com_act/RETP002.md) | lee | `RCODMOD`, `RCODPROD`, `RSUBTIP`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.RETP003](../../../tablas/storage/com_act/RETP003.md) | lee | `RCODPROD`, `RDESPROD` | estatico + motor |
-| [storage.com_act.RETP009](../../../tablas/storage/com_act/RETP009.md) | lee | `RCODMOD`≈, `RDESSUBPROD`≈, `RTIPOPE`≈ | estatico + motor |
+| [storage.com_act.RETP009](../../../tablas/storage/com_act/RETP009.md) | lee | `RCODMOD`, `RDESSUBPROD`, `RTIPOPE` | estatico + motor |
 | [storage.com_act.SDAS013](../../../tablas/storage/com_act/SDAS013.md) | lee | `SCODAGR`, `SCODMOD`, `SCODSEC`, `SCOSECHA`, `sfecbas`, `SFECPRO`, `SNUMOPEBAS`, `SNUMOPEMORH`, `SSALCAPBAS`, `SSALCAPMORH`, `SSUBTIP`, `STIPOPE` | estatico + motor |
-| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`≈, `RFEC`≈, `RFECTXT`≈ | estatico + motor |
+| [storage.ref.RCALEN001](../../../tablas/storage/ref/RCALEN001.md) | lee | `RDIAFER`, `RFEC`, `RFECTXT` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -79,6 +79,7 @@ Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alia
 
 - `mod_rep.dbo.a`
 - `mod_rep.rep.FFTHCOLDEF`
+- `storage.ref.FJERCOR02`
 - `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor

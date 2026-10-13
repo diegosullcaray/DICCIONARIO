@@ -1,6 +1,6 @@
 -- storage.com_act.WACLI001
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GDCGEST_ACTIVAST01, mod_rep.com.GDCGEST_ACTIVAST03, mod_rep.com.GDCGEST_ACTIVAST04, mod_rep.com.GDCLIOPE01, mod_rep.com.GRMENTOR001, mod_rep.com.RSRDFCA011, mod_rep.com.RTABDIGCOM01
+-- Usada por: mod_rep.com.GDCGEST_ACTIVAST01, mod_rep.com.GDCGEST_ACTIVAST03, mod_rep.com.GDCGEST_ACTIVAST04, mod_rep.com.GDCLIOPE01, mod_rep.com.GRESREAGRO01, mod_rep.com.GRMENTOR001, mod_rep.com.RSRDFCA007, mod_rep.com.RSRDFCA011, mod_rep.com.RTABDIGCOM01
 
 USE storage;
 GO

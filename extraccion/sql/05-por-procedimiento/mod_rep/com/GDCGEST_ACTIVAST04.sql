@@ -14,6 +14,10 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
+-- storage.com_act.VCAH002 · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [storage].[com_act].[VCAH002] WITH (NOLOCK);
+
 -- storage.com_act.WACLI001 · lee · 1 columna(s)
 SELECT TOP (100) [hfecpro]
 FROM [storage].[com_act].[WACLI001] WITH (NOLOCK);
@@ -25,3 +29,7 @@ FROM [storage].[com_act].[WGATH002] WITH (NOLOCK);
 -- storage.ref.RCALEN001 · lee · 4 columna(s)
 SELECT TOP (100) [RANI], [RDIAFER], [RMESNOM], [rfec]
 FROM [storage].[ref].[RCALEN001] WITH (NOLOCK);
+
+-- storage.ref.WJERCOR03 · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);

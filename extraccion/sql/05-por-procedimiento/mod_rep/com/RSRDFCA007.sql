@@ -14,6 +14,10 @@ ORDER BY column_ordinal;
 
 -- 2. Muestra de cada tabla con las columnas que usa este SP.
 
+-- storage.com_act.WACLI001 · lee · 1 columna(s)
+SELECT TOP (100) [HFECPRO]
+FROM [storage].[com_act].[WACLI001] WITH (NOLOCK);
+
 -- storage.com.VDMCOM01 · lee · 4 columna(s)
 SELECT TOP (100) [HCODVAR], [HFECPRO], [HTIPCOD], [HVALVAR]
 FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);

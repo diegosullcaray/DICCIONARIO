@@ -71,6 +71,7 @@
 Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
 
 - `mod_rep.rep.FFTHCOLDEF`
+- `storage.ref.FJERCOR02`
 - `mod_rep.rep.TTHCOLDEF` (tipo de tabla)
 
 ### Validación con el motor

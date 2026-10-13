@@ -1,6 +1,6 @@
 -- storage.com_seg.retp003
 -- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
--- Usada por: mod_rep.com.GRESREPSEG_01
+-- Usada por: mod_rep.com.GRESREPSEG02, mod_rep.com.GRESREPSEG_01
 
 USE storage;
 GO

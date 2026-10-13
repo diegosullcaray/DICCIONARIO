@@ -25,12 +25,14 @@
 | 1 | `@tip_cod` | int | — |  | `tip_cod` |
 | 2 | `@cod_rel` | varchar(10) | — |  | `cod_rel` |
 
-### Tablas y columnas (3)
+### Tablas y columnas (5)
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
 | [storage.com_act.SDAF002](../../../tablas/storage/com_act/SDAF002.md) | lee | `SCLINUE`, `SCODAGR`, `SCODMOD`, `SCODSEC`, `SFECPRO`, `SINTMESMN`, `SMDNUEMN`, `SMONDESMN`, `SNUMCLI`, `SNUMOPE`, `SNUMSEC`, `SOPENUE`, `SSUBTIP`, `SSUCCLI`, `STIPOPE` | estatico + motor |
+| [storage.com_seg.retp003](../../../tablas/storage/com_seg/retp003.md) | lee | `HCODMOD`, `HCODSEG`, `HDESSEG`, `HSUBTIP`, `HTIPOPE` | motor |
 | [storage.com_seg.SDSF001](../../../tablas/storage/com_seg/SDSF001.md) | lee | `scodagr`, `SCODMOD`, `SCODSEC`, `scodseg`, `SFECEMI`, `SFECPRO`, `SINDPGO`, `SNUMPLZ`, `SSUBTIP`, `SSUCCLI`, `STIPOPE` | estatico + motor |
+| [storage.com.VDMCOM01](../../../tablas/storage/com/VDMCOM01.md) | lee | `HCODREL`, `HCODVAR`, `HFECPRO`, `HTIPCOD`, `HTIPMETA`, `HVALVAR` | motor |
 | [storage.ref.WJERCOR03](../../../tablas/storage/ref/WJERCOR03.md) | lee | `RCODCOR`, `RCODGRU`, `RCODSEC`, `RCODTER`, `RCODUCO`, `RCODUNI`, `RDESCOR`, `RDESGRU`, `RDESSEC`, `RDESTER`, `RDESUCO`, `RDESUNI`, `RFECPRO`, `RINDFEC` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
@@ -53,6 +55,16 @@
 - ⚠️ Columna sin resolver `RINDFEC` (¿storage.ref.WJERCOR03?)
 - ⚠️ Columna sin resolver `pvt.SCODDESCRIP`
 - ⚠️ PIVOT/UNPIVOT presente: las columnas pivotadas no se resuelven.
+
+### Otros objetos que referencia
+
+Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alias que SQL Server no resolvió.
+
+- `mod_rep.piv.GPIVLEV01`
+- `mod_rep.piv.GPIVRES01`
+- `mod_rep.piv.TPIVCONF` (tipo de tabla)
+- `mod_rep.piv.TPIVFIL` (tipo de tabla)
+- `mod_rep.piv.TPIVVAR` (tipo de tabla)
 
 ### Validación con el motor
 

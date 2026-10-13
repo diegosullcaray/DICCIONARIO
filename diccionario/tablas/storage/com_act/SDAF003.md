@@ -3,7 +3,7 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `storage` · esquema `com_act` · 8 columna(s) usadas · 4 procedimiento(s) · tabla con 17 columna(s) en la base
+Base `storage` · esquema `com_act` · 11 columna(s) usadas · 6 procedimiento(s) · tabla con 17 columna(s) en la base
 
 Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF003.sql](../../../../extraccion/sql/03-tablas/storage/com_act/SDAF003.sql)
 
@@ -11,14 +11,17 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF003.sql](../../.
 
 | Columna | Tipo | Confianza | Usada por | Descripción |
 |---|---|---|---|---|
-| `SCODAGR` | int | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SCODSEC` | varchar(10) | 🗄️ motor | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SFECDES` | date | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SFECPRO` | date | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SHORPRO` | tinyint | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SMONDESMN` | numeric(32,2) | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SNUMOPE` | int | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
-| `SSUCCLI` | smallint | 🗄️ motor | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | — |
+| `SCODAGR` | int | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SCODMOD` | smallint | ≈ inferida | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SCODSEC` | varchar(10) | 🗄️ motor | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md) | — |
+| `SFECDES` | date | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SFECPRO` | date | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SHORPRO` | tinyint | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SMONDESMN` | numeric(32,2) | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SNUMOPE` | int | ✅ confirmada | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md), [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SSUBTIP` | int | ≈ inferida | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
+| `SSUCCLI` | smallint | 🗄️ motor | [RSRDFCA027](../../../procedimientos/mod_rep/com/RSRDFCA027.md), [RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md), [RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md), [RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md), [RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md) | — |
+| `STIPOPE` | smallint | ≈ inferida | [RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | — |
 
 ### Procedimientos que la usan
 
@@ -28,6 +31,8 @@ Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF003.sql](../../.
 | [mod_rep.com.RSRDFCA028](../../../procedimientos/mod_rep/com/RSRDFCA028.md) | lee | `Monitor_Dese_03` |
 | [mod_rep.com.RSRDFCA030](../../../procedimientos/mod_rep/com/RSRDFCA030.md) | lee | `Monitor_Dese_02` |
 | [mod_rep.com.RSRDFCA037](../../../procedimientos/mod_rep/com/RSRDFCA037.md) | lee | `CMG_CARTERA_02` |
+| [mod_rep.com.RSRDFCA038](../../../procedimientos/mod_rep/com/RSRDFCA038.md) | lee | `CMG_CARTERA_03` |
+| [mod_rep.com.RSRDFCA050](../../../procedimientos/mod_rep/com/RSRDFCA050.md) | lee | `Monitor_Dese_misi_01` |
 <!-- generado:fin -->
 
 ## Descripción
