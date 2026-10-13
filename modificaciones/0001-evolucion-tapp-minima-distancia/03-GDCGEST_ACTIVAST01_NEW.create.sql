@@ -1,14 +1,20 @@
--- MOD-0001 · ROLLBACK: deja mod_rep.com.GDCGEST_ACTIVAST01 como estaba al 2024-07-04 (versión extraída el 2026-10-13).
--- Solo sirve si 04-verificacion.sql (paso 1) confirmó que esa era la versión de producción.
--- Lo más seguro igual es guardar, ANTES de modificar, el script que da SSMS (clic derecho › Modificar) como respaldo.
+-- MOD-0001 · Evolución de TAPP Mes (@var=6) con "TAPP Mínima" y "Distancia (en pbs)"
+-- Crea mod_rep.com.GDCGEST_ACTIVAST01_NEW: copia de GDCGEST_ACTIVAST01 con los 2 cambios marcados "MOD-0001".
+-- NO modifica el SP original: el reporte sigue usando el original hasta que se lo apunte al nuevo.
+-- Base: cuerpo extraído el 2026-10-13 (modificado en la base: 2024-07-04 04:29:22).
+-- Análisis: 02-analisis.md · Pruebas antes de usarlo: 04-verificacion.sql
+--
+-- Cambios respecto del original (buscar "MOD-0001"):
+--   1. Cabecera JSON de @var=6: columnas TM "TAPP Mínima" (isdata 11) y DT "Distancia (en pbs)" (isdata 12).
+--   2. SELECT final: TM y DT vacíos en la fila "Var Abs (pbs)" (en @var=3 esa fila no existe: no cambia).
 
 USE mod_rep;
 GO
---EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01] '7','231','1','20240319','1'
---EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01] '7', '231', 4, '20230327', 0
---EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01] '14','16','0','2','20210809','1'
---EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01] '15','9999','0','1','20210810','1'
-ALTER PROCEDURE [com].[GDCGEST_ACTIVAST01]  
+--EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01_NEW] '7','231','1','20240319','1'
+--EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01_NEW] '7', '231', 4, '20230327', 0
+--EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01_NEW] '14','16','0','2','20210809','1'
+--EXEC [mod_rep].[com].[GDCGEST_ACTIVAST01_NEW] '15','9999','0','1','20210810','1'
+CREATE PROCEDURE [com].[GDCGEST_ACTIVAST01_NEW]  
 	@tip_cod varchar(10),
 	@cod_rel varchar(10),
 	@var int,
@@ -648,6 +654,24 @@ DECLARE @fecha date, @fecs_2 varchar(max)
               "type":"number"
             },
             "rows":2
+         },
+         {
+            "columnDef":"TM",
+            "header":"TAPP M nima",
+            "isdata":11,
+            "format":{
+              "type":"number"
+            },
+            "rows":2
+         },
+         {
+            "columnDef":"DT",
+            "header":"Distancia (en pbs)",
+            "isdata":12,
+            "format":{
+              "type":"number"
+            },
+            "rows":2
          }]
         },
         {
@@ -941,8 +965,9 @@ exec [piv].[GPIVLEV01] @tip_cod, @cod_rel, @jerar output
 				, format(isnull(B.[10],0)/iif(@var=2,iif(B.[10]=0,null,B.[10]),1.0),A.DFORMAT) A10
         , format(isnull(B.[3],0)/(iif(B.[10]=0,null,B.[10])*1.0),'P') PO
         , format(D.[10],'N0') TP
-        , format(isnull(E.[10],0),'P') TM
-        , format(isnull(F.[10],0),'N0') DT
+        -- MOD-0001: en la fila de variación ("Var Abs (pbs)") TM y DT quedan vacíos, igual que Ticket Promedio.
+        , case when A.RVAR in('HVARTAPPMESHIST','HVARPARTNROHIST','HVARPARTMDESHIST') then null else format(isnull(E.[10],0),'P') end TM
+        , case when A.RVAR in('HVARTAPPMESHIST','HVARPARTNROHIST','HVARPARTMDESHIST') then null else format(isnull(F.[10],0),'N0') end DT
   into #FIN      
 	from #res A
 		left join #C B

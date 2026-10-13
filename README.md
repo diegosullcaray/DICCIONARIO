@@ -17,7 +17,7 @@ DICCIONARIO/
 ├── diccionario/   el producto: fichas por SP y por tabla, índices y diccionario.json
 ├── governance/    cómo se trabaja: docs, agentes, skills, scripts Node y línea base
 ├── extraccion/    el proceso que trae los datos de SQL Server: herramientas, sql, procedimientos y fuentes
-├── modificaciones/ cambios pedidos a los SP: petición, análisis y scripts ALTER, verificación y rollback
+├── modificaciones/ cambios pedidos a los SP: petición, análisis, SP _NEW, verificación y rollback
 └── .claude/       copia de agentes y skills para Claude Code (generada)
 ```
 

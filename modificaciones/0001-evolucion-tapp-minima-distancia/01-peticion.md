@@ -2,6 +2,8 @@
 
 **Fecha**: 2026-10-13 · **Solicita**: Diego Sullcaray · **Estado**: propuesto (script listo, sin ejecutar)
 
+**Enfoque**: SP nuevo `GDCGEST_ACTIVAST01_NEW` en lugar de modificar el original (decisión del solicitante, 2026-10-13).
+
 ## Pedido, tal como llegó
 
 > En base a la documentación que se tiene de los reportes, dentro de reportes diaria de autonomía de tasas:
@@ -30,6 +32,6 @@ Las dos tablas salen de **un solo SP** (`GDCGEST_ACTIVAST01`); no existe un `GDC
 | Archivo | Para qué |
 |---|---|
 | [02-analisis.md](./02-analisis.md) | cómo calcula hoy el SP, qué cambia y por qué, riesgos |
-| [03-GDCGEST_ACTIVAST01.alter.sql](./03-GDCGEST_ACTIVAST01.alter.sql) | el SP modificado (ALTER PROCEDURE) |
-| [04-verificacion.sql](./04-verificacion.sql) | chequeo previo, prueba antes/después y cuadre |
-| [05-GDCGEST_ACTIVAST01.rollback.sql](./05-GDCGEST_ACTIVAST01.rollback.sql) | volver a la versión anterior |
+| [03-GDCGEST_ACTIVAST01_NEW.create.sql](./03-GDCGEST_ACTIVAST01_NEW.create.sql) | crea el SP nuevo: copia del original con los 2 cambios |
+| [04-verificacion.sql](./04-verificacion.sql) | chequeo previo, original y nuevo lado a lado, cuadre |
+| [05-rollback.sql](./05-rollback.sql) | volver al original y borrar el nuevo |

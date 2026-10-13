@@ -48,7 +48,18 @@ La diferencia está **solo en la cabecera JSON**: la de `@var=3` declara `TM` ("
 ("Distancia (en pbs)", isdata 11); la de `@var=6` termina en `TP` ("Ticket Promedio", isdata 10). Como el front
 dibuja únicamente lo declarado, TM y DT llegan pero no se ven.
 
-## 2. Cambios
+## 2. Enfoque: SP nuevo, el original no se toca
+
+Se crea **`mod_rep.com.GDCGEST_ACTIVAST01_NEW`**, copia exacta del original con los dos cambios de abajo.
+
+| | Modificar el original (`ALTER`) | **SP nuevo `_NEW`** (elegido) |
+|---|---|---|
+| Riesgo para el reporte en producción | lo cambia al instante | ninguno hasta apuntar el reporte |
+| Prueba | antes/después, sobre el mismo objeto | original y nuevo lado a lado, mismos parámetros |
+| Vuelta atrás | volver a ejecutar la versión anterior | reapuntar el reporte; el original sigue intacto |
+| Costo | — | un paso más: apuntar `GST_ACTIVAS_06` al nuevo SP; y dos SP casi iguales hasta retirar uno |
+
+## 3. Cambios
 
 **Cambio 1 — cabecera de `@var=6`.** Agregar después de `TP`:
 
@@ -65,8 +76,8 @@ en pbs contra el período base (dic-2020 a jun-2021). Sin ajuste, `TM` y `DT` re
 última fecha, lo que confunde. Se dejan **vacíos**, igual que ya pasa con *Ticket Promedio*. En `@var=3` esa
 fila no existe, así que no cambia nada.
 
-**Lo que no cambia**: los cálculos, las tablas que lee, los parámetros y las variantes 1 a 5. **El front no
-necesita cambios**: las columnas salen de la cabecera.
+**Lo que no cambia**: los cálculos, las tablas que lee, los parámetros y las variantes 1 a 5 (el SP nuevo es
+una copia exacta salvo estos dos cambios). **El front no necesita cambios**: las columnas salen de la cabecera.
 
 ### Resultado esperado de la tabla *Evolución de TAPP Mes*
 
@@ -79,40 +90,53 @@ necesita cambios**: las columnas salen de la cabecera.
 
 (Los números son ilustrativos.)
 
-## 3. Riesgos y cómo se cubren
+## 4. Riesgos y cómo se cubren
 
 ### Riesgo de tildes
 
 En la copia extraída, los textos con tilde aparecen con un espacio: `"TAPP M nima"`, `"Autonom as"`,
-`[Gte. Divisi n Comercial]`. No hay forma de saber desde acá si **producción** está así o si las tildes se
-perdieron al extraer. Importa porque `[Gte. Divisi n Comercial]` no es solo un texto: es nombre de columna
-del `PIVOT` sobre `HUCAP_FIN` y tiene que coincidir con los datos.
+`[Gte. Divisi n Comercial]`. No hay forma de saber desde acá si el original en producción está así o si las
+tildes se perdieron al extraer. Importa porque `[Gte. Divisi n Comercial]` no es solo un texto: es nombre
+de columna del `PIVOT` sobre `HUCAP_FIN` y tiene que coincidir con los datos.
 
-- Si producción **tiene las tildes** y se ejecuta el script completo, se reemplazarían por espacios: los
-  títulos se verían mal y la columna *Gte. División Comercial* podría quedar en cero.
-- Por eso `04-verificacion.sql` (paso 1) compara el SP de producción con la copia **antes** de ejecutar.
-  Si no coinciden, se aplican a mano solo los dos cambios marcados `MOD-0001` sobre el script que da SSMS
-  (clic derecho › Modificar), sin tocar el resto.
+Con el SP nuevo este riesgo **ya no puede romper el reporte vigente**, pero sí el nuevo:
+
+- `04-verificacion.sql` paso 1 lo detecta antes de crearlo (`con_tilde > 0`): en ese caso se corrigen esos
+  textos en `03-…_NEW.create.sql` antes de ejecutarlo.
+- El paso 2 lo detectaría igual después: la columna *Gte. División Comercial* saldría en cero solo en el nuevo.
 - Hallazgo para el repositorio: revisar por qué la extracción dejó espacios en lugar de tildes antes de usar
-  cualquier cuerpo de `extraccion/procedimientos/` para generar un `ALTER`.
+  cualquier cuerpo de `extraccion/procedimientos/` como base de un SP.
 
 ### Versión vigente
 
-El script parte de la versión modificada en la base el **2024-07-04 04:29:22**. Si el paso 1 muestra una fecha
-posterior, alguien cambió el SP después: aplicar los cambios a mano sobre la versión actual.
+El SP nuevo parte de la versión del original modificada el **2024-07-04 04:29:22**. Si el paso 1 muestra una
+fecha posterior, alguien cambió el original después: volver a extraerlo y rehacer el `_NEW` desde esa versión,
+para que el nuevo no pierda ese cambio.
 
-### Otros consumidores
+### Qué reportes pasan al nuevo
 
-El mismo SP atiende `GST_ACTIVAS_M_06` (por el nombre, la versión mensual del reporte): también mostrará las
-dos columnas, que es lo coherente. Ningún otro reporte del catálogo ejecuta este SP.
+Solo `GST_ACTIVAS_06` y `GST_ACTIVAS_M_06` (por el nombre, la versión mensual): los dos piden `@var = 6`. Los
+`GST_ACTIVAS_01…05` y `_M_01…05` siguen con el original, que no cambia.
 
-## 4. Pasos
+## 5. Pasos
 
-1. Respaldar el SP actual (SSMS › clic derecho › *Generar script como › ALTER*) o usar `05-…rollback.sql`.
-2. `04-verificacion.sql` paso 1 → decidir si se ejecuta `03-…alter.sql` completo o los cambios a mano.
-3. `04-verificacion.sql` paso 2 antes del cambio (guardar resultado).
-4. Ejecutar el cambio.
-5. `04-verificacion.sql` pasos 2 y 3: `@var=6` trae TM y DT y cuadran con el recálculo; `@var=3` idéntico al de antes.
-6. Revisar en el front la pestaña *Evolutivo* de Autonomía de Tasas.
-7. Volver a extraer el SP (`python extraccion/herramientas/bd.py extraer --sp GDCGEST_ACTIVAST01 --sobrescribir`)
-   y `npm run generar`, para que el diccionario refleje la versión nueva. Marcar esta modificación como *aplicada*.
+1. `04-verificacion.sql` **paso 1**: confirmar fecha de modificación y tildes del original.
+2. Ejecutar `03-GDCGEST_ACTIVAST01_NEW.create.sql` (crea el SP nuevo; el original no cambia).
+3. `04-verificacion.sql` **paso 2**: original y nuevo lado a lado — `@var=6` igual más TM y DT; `@var=1…5` idénticos.
+4. `04-verificacion.sql` **paso 3**: TM y DT de la última fecha cuadran con el recálculo desde `WGATH002`.
+5. Apuntar los reportes **`GST_ACTIVAS_06`** y **`GST_ACTIVAS_M_06`** a `mod_rep.com.GDCGEST_ACTIVAST01_NEW` en la
+   tabla de reportes del backend (campo `RTPREP.name`; los parámetros no cambian). Solo esos dos: el resto
+   de `GST_ACTIVAS_*` sigue con el original.
+6. Revisar en el front la pestaña *Evolutivo* de Autonomía de Tasas: la tabla *Evolución de TAPP Mes* muestra
+   *TAPP Mínima* y *Distancia (en pbs)*. El front no se modifica.
+7. Reexportar `extraccion/fuente/reportes.json`, extraer el SP nuevo
+   (`python extraccion/herramientas/bd.py extraer --sp GDCGEST_ACTIVAST01_NEW`) y `npm run generar`, para que
+   el diccionario lo documente. Marcar esta modificación como *aplicada*.
+
+Para volver atrás: `05-rollback.sql` (reapuntar los dos reportes al original y borrar el nuevo).
+
+### Después: no dejar dos SP para siempre
+
+Mientras convivan, un arreglo futuro en uno no llega al otro. Cuando el nuevo esté validado en producción,
+conviene decidir entre: (a) apuntar también `GST_ACTIVAS_01…05` y `_M_01…05` al nuevo y retirar el original,
+o (b) pasar los dos cambios al original y retirar el nuevo.
