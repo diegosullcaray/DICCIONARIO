@@ -13,18 +13,28 @@ GO
 ------------------------------------------------------------------------------------------------
 -- PASO 1 (ANTES de crear el nuevo): ¿la copia usada para el _NEW sigue siendo la de producción?
 ------------------------------------------------------------------------------------------------
--- modificado esperado: 2024-07-04 04:29:22. Si es posterior, el original cambió: volver a extraerlo y rehacer
---   03-…_NEW.create.sql desde esa versión.
--- con_tilde > 0: el original tiene "División"/"Mínima" y la copia los perdió. Corregir esos textos en
---   03-…_NEW.create.sql antes de crearlo; si no, la columna "Gte. División Comercial" del nuevo sale en cero.
-SELECT  o.modify_date                                                         AS modificado,
-        CHARINDEX(N'Gte. Divisi n Comercial', OBJECT_DEFINITION(o.object_id)) AS sin_tilde,
-        CHARINDEX(N'Gte. División Comercial', OBJECT_DEFINITION(o.object_id)) AS con_tilde,
-        CASE WHEN o.modify_date > '2024-07-04T04:29:23' THEN 'NO: el original cambió, rehacer el _NEW'
-             WHEN CHARINDEX(N'Gte. División Comercial', OBJECT_DEFINITION(o.object_id)) > 0 THEN 'NO: corregir tildes en el _NEW'
-             ELSE 'OK: se puede crear el _NEW tal cual' END                    AS veredicto
-FROM    sys.objects o
-WHERE   o.object_id = OBJECT_ID(N'com.GDCGEST_ACTIVAST01');
+-- modificado esperado: 2024-07-04 04:29:22 (la copia de extraccion/procedimientos de la que sale el _NEW).
+-- Si es posterior, alguien cambió el original y el veredicto dice cuál de los dos casos es:
+--   · veces_distancia = 3 y marca_mod_0001 > 0: se ejecutó sobre el original el ALTER de la primera versión
+--     de esta modificación (commit 0a5be24). El original YA trae TAPP Mínima y Distancia: el _NEW sobra.
+--   · cualquier otro valor: el cambio es de otra persona. Volver a extraer el original
+--     (bd.py extraer --sp GDCGEST_ACTIVAST01) y rehacer 03-…_NEW.create.sql desde esa versión.
+-- Tildes: la base guarda "Divisi n" sin tilde (sin_tilde > 0, con_tilde = 0), igual que la copia: está bien.
+WITH d AS (SELECT o.modify_date, OBJECT_DEFINITION(o.object_id) AS def
+           FROM sys.objects o WHERE o.object_id = OBJECT_ID(N'com.GDCGEST_ACTIVAST01'))
+SELECT  modify_date                                                                           AS modificado,
+        CHARINDEX(N'Gte. Divisi n Comercial', def)                                            AS sin_tilde,
+        CHARINDEX(N'Gte. División Comercial', def)                                            AS con_tilde,
+        (LEN(def) - LEN(REPLACE(def, N'Distancia (en pbs)', N''))) / LEN(N'Distancia (en pbs)') AS veces_distancia,
+        CHARINDEX(N'MOD-0001', def)                                                           AS marca_mod_0001,
+        CASE WHEN modify_date <= '2024-07-04T04:29:23'
+                  THEN CASE WHEN CHARINDEX(N'Gte. División Comercial', def) > 0
+                            THEN 'NO: corregir tildes en el _NEW' ELSE 'OK: se puede crear el _NEW tal cual' END
+             WHEN CHARINDEX(N'MOD-0001', def) > 0
+              AND (LEN(def) - LEN(REPLACE(def, N'Distancia (en pbs)', N''))) / LEN(N'Distancia (en pbs)') = 3
+                  THEN 'YA APLICADO: el original tiene MOD-0001; no crear el _NEW, ir directo al front'
+             ELSE 'NO: el original cambió por otra causa; volver a extraerlo y rehacer el _NEW' END AS veredicto
+FROM    d;
 
 -- Los valores reales de nivel de autonomía: deben coincidir con los nombres de columna del PIVOT del SP
 -- ([Administrador], [Gerente Corredor / R. Negocio Grupal], [Gerente Territorial], [Gte. Divisi n Comercial]).
