@@ -7,8 +7,8 @@
 |---|---|
 | Base · esquema | `mod_rep` · `com` |
 | Estado | 🔎 extraído |
-| Cuerpo | [procedimientos/mod_rep/com/RSBASENEG01.sql](../../../../procedimientos/mod_rep/com/RSBASENEG01.sql) |
-| Extracción | [sql/01-extraccion/mod_rep/com/RSBASENEG01.sql](../../../../sql/01-extraccion/mod_rep/com/RSBASENEG01.sql) |
+| Cuerpo | [extraccion/procedimientos/mod_rep/com/RSBASENEG01.sql](../../../../extraccion/procedimientos/mod_rep/com/RSBASENEG01.sql) |
+| Extracción | [extraccion/sql/01-extraccion/mod_rep/com/RSBASENEG01.sql](../../../../extraccion/sql/01-extraccion/mod_rep/com/RSBASENEG01.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)

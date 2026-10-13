@@ -8,7 +8,7 @@ el mismo nombre significa lo mismo en los dos repositorios.
 
 | Término | Qué es |
 |---|---|
-| `RCODREP` | código de reporte en `fuente/reportes.json`. Es el `cod_rep` que pide el front |
+| `RCODREP` | código de reporte en `extraccion/fuente/reportes.json`. Es el `cod_rep` que pide el front |
 | `RDESREP` | descripción del reporte, tal como figura en el backend |
 | `RTPREP.name` | procedimiento que ejecuta el reporte, en la forma `base.esquema.SP` |
 | `RTPREP.params` | parámetros que el backend envía, con su `order` |
@@ -36,7 +36,7 @@ agrupa variantes de mayúsculas o guion bajo de un mismo nombre (regla `parametr
 |---|---|
 | ⏳ pendiente | solo se conoce por `reportes.json`: falta extraer su cuerpo |
 | ❌ no existe en la base | el motor confirma que el SP del catálogo no existe: el reporte falla (`sp-inexistente`) |
-| 🔎 extraído | su cuerpo está en `procedimientos/` y fue analizado |
+| 🔎 extraído | su cuerpo está en `extraccion/procedimientos/` y fue analizado |
 | ✅ validado | además, el motor resolvió sus dependencias sin error |
 
 ## Confianza de una columna
@@ -72,7 +72,7 @@ Si varias la tienen, queda como hallazgo `columna-sin-resolver`.
 | Base | base de datos de SQL Server (`mod_rep`, `strategos`, `mod_gpa`, `mod_sec`, `storage`) |
 | Esquema implícito | tabla nombrada sin esquema (`FROM TABLA`): se asume el del SP, pero SQL Server la resuelve según el usuario que ejecuta. Confirmar con el motor |
 | Analizador estático | `governance/scripts/lib/tsql.mjs`: lee el texto del SP sin ejecutarlo |
-| Estructura | columnas reales de las tablas, de `INFORMATION_SCHEMA` (`fuente/estructura/`) |
+| Estructura | columnas reales de las tablas, de `INFORMATION_SCHEMA` (`extraccion/fuente/estructura/`) |
 | Línea base | hallazgos conocidos que no bloquean `npm run verificar` (`governance/linea-base.json`) |
 | Motor | lo que SQL Server registra en `sys.dm_sql_referenced_entities` y `sys.sql_expression_dependencies` |
 | `FTHEACOLS01` | SP `mod_rep.rep.FTHEACOLS01`. `GSELREP001` lo invoca con su propio RCODREP (`SEL_EFEC_01`) antes del SELECT principal. Su función está **por confirmar** (el nombre sugiere cabecera de columnas); no figura en `reportes.json` |

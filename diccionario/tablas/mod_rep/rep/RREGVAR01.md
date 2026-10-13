@@ -5,7 +5,7 @@
 
 Base `mod_rep` · esquema `rep` · 6 columna(s) usadas · 1 procedimiento(s) · tabla con 10 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/mod_rep/rep/RREGVAR01.sql](../../../../sql/03-tablas/mod_rep/rep/RREGVAR01.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_rep/rep/RREGVAR01.sql](../../../../extraccion/sql/03-tablas/mod_rep/rep/RREGVAR01.sql)
 
 ### Columnas usadas
 

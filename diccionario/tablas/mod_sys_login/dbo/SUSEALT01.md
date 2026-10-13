@@ -5,7 +5,7 @@
 
 Base `mod_sys_login` · esquema `dbo` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/mod_sys_login/dbo/SUSEALT01.sql](../../../../sql/03-tablas/mod_sys_login/dbo/SUSEALT01.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_sys_login/dbo/SUSEALT01.sql](../../../../extraccion/sql/03-tablas/mod_sys_login/dbo/SUSEALT01.sql)
 
 ### Columnas usadas
 

@@ -7,9 +7,9 @@
 |---|---|
 | Base · esquema | `mod_rep` · `com` |
 | Estado | ✅ validado |
-| Cuerpo | [procedimientos/mod_rep/com/RFECREPMEN02.sql](../../../../procedimientos/mod_rep/com/RFECREPMEN02.sql) |
-| Extracción | [sql/01-extraccion/mod_rep/com/RFECREPMEN02.sql](../../../../sql/01-extraccion/mod_rep/com/RFECREPMEN02.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/mod_rep/com/RFECREPMEN02.sql](../../../../sql/05-por-procedimiento/mod_rep/com/RFECREPMEN02.sql) |
+| Cuerpo | [extraccion/procedimientos/mod_rep/com/RFECREPMEN02.sql](../../../../extraccion/procedimientos/mod_rep/com/RFECREPMEN02.sql) |
+| Extracción | [extraccion/sql/01-extraccion/mod_rep/com/RFECREPMEN02.sql](../../../../extraccion/sql/01-extraccion/mod_rep/com/RFECREPMEN02.sql) |
+| Consultar sus tablas | [extraccion/sql/05-por-procedimiento/mod_rep/com/RFECREPMEN02.sql](../../../../extraccion/sql/05-por-procedimiento/mod_rep/com/RFECREPMEN02.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)
@@ -44,7 +44,7 @@
 
 ### Validación con el motor
 
-Fuente: `fuente/dependencias/mod_rep.csv`.
+Fuente: `extraccion/fuente/dependencias/mod_rep.csv`.
 <!-- generado:fin -->
 
 ## Propósito

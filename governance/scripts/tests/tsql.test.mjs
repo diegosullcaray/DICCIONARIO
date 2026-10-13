@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { test } from 'node:test';
-import { RAIZ } from '../lib/catalogo.mjs';
+import { RUTAS } from '../lib/catalogo.mjs';
 import { analizarProcedimiento, tokenizar } from '../lib/tsql.mjs';
 
 const ctx = { base: 'mod_rep', esquema: 'rep' };
@@ -13,7 +13,7 @@ const tabla = (r, nombre) => r.tablas.find((t) => t.completo === nombre);
 const columnas = (r, nombre) => tabla(r, nombre)?.columnas.map((c) => `${c.nombre}:${c.confianza}`) ?? [];
 
 test('GSELREP001 real: CTE encadenadas, tabla de otra base, EXEC de cabecera y salida', () => {
-  const texto = readFileSync(join(RAIZ, 'procedimientos', 'mod_rep', 'com', 'GSELREP001.sql'), 'utf8');
+  const texto = readFileSync(join(RUTAS.procedimientos, 'mod_rep', 'com', 'GSELREP001.sql'), 'utf8');
   const r = analizarProcedimiento(texto, { base: 'mod_rep', esquema: 'com' });
   assert.equal(r.procedimiento.nombre, 'GSELREP001');
   assert.deepEqual(r.procedimiento.parametros, []);

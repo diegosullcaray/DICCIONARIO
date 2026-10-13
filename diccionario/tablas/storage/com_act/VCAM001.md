@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 104 columna(s) usadas · 4 procedimiento(s) · vista con 104 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/VCAM001.sql](../../../../sql/03-tablas/storage/com_act/VCAM001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VCAM001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/VCAM001.sql)
 
 ### Columnas usadas
 

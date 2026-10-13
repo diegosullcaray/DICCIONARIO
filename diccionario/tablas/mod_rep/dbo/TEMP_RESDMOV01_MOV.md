@@ -5,7 +5,7 @@
 
 Base `mod_rep` · esquema `dbo` · 2 columna(s) usadas · 1 procedimiento(s) · tabla de trabajo: la crea y borra un SP en cada ejecución
 
-Consultas listas: [sql/03-tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.sql](../../../../sql/03-tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.sql](../../../../extraccion/sql/03-tablas/mod_rep/dbo/TEMP_RESDMOV01_MOV.sql)
 
 ### Columnas usadas
 

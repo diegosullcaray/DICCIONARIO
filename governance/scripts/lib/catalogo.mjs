@@ -1,4 +1,4 @@
-// Catálogo de reportes: lee fuente/reportes.json, normaliza el nombre de cada
+// Catálogo de reportes: lee extraccion/fuente/reportes.json, normaliza el nombre de cada
 // procedimiento y agrupa los reportes (RCODREP) por el SP que ejecutan.
 // Lo comparten todos los scripts: un solo lugar decide qué es "el mismo SP".
 
@@ -8,12 +8,15 @@ import { fileURLToPath } from 'node:url';
 
 export const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
+// Todo lo del proceso de extracción vive bajo extraccion/; la raíz solo tiene diccionario/ y governance/.
+export const EXTRACCION = join(RAIZ, 'extraccion');
+
 export const RUTAS = {
-  fuente: join(RAIZ, 'fuente', 'reportes.json'),
-  consumoFront: join(RAIZ, 'fuente', 'consumo-front.json'),
-  dependenciasMotor: join(RAIZ, 'fuente', 'dependencias'),
-  procedimientos: join(RAIZ, 'procedimientos'),
-  sql: join(RAIZ, 'sql'),
+  fuente: join(EXTRACCION, 'fuente', 'reportes.json'),
+  consumoFront: join(EXTRACCION, 'fuente', 'consumo-front.json'),
+  dependenciasMotor: join(EXTRACCION, 'fuente', 'dependencias'),
+  procedimientos: join(EXTRACCION, 'procedimientos'),
+  sql: join(EXTRACCION, 'sql'),
   diccionario: join(RAIZ, 'diccionario'),
   docs: join(RAIZ, 'governance', 'docs'),
 };
@@ -96,7 +99,7 @@ export function cargarCatalogo(ruta = RUTAS.fuente) {
   return { reportes, sps: new Map([...sps].sort(([a], [b]) => a.localeCompare(b))) };
 }
 
-/** Un archivo de procedimientos/ solo cuenta si ya trae el CREATE/ALTER pegado. */
+/** Un archivo de extraccion/procedimientos/ solo cuenta si ya trae el CREATE/ALTER pegado. */
 export const esCuerpoReal = (texto) => /\b(create|alter)\s+(or\s+alter\s+)?proc(edure)?\b/i.test(texto);
 
 export function leerCuerpo(sp) {

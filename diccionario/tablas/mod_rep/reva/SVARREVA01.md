@@ -5,7 +5,7 @@
 
 Base `mod_rep` · esquema `reva` · 6 columna(s) usadas · 1 procedimiento(s) · tabla con 6 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/mod_rep/reva/SVARREVA01.sql](../../../../sql/03-tablas/mod_rep/reva/SVARREVA01.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_rep/reva/SVARREVA01.sql](../../../../extraccion/sql/03-tablas/mod_rep/reva/SVARREVA01.sql)
 
 ### Columnas usadas
 

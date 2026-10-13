@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 2 columna(s) usadas · 1 procedimiento(s) · tabla con 8 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/RECUC001.sql](../../../../sql/03-tablas/storage/ref/RECUC001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/RECUC001.sql](../../../../extraccion/sql/03-tablas/storage/ref/RECUC001.sql)
 
 ### Columnas usadas
 

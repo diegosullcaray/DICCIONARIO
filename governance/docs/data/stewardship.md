@@ -4,7 +4,7 @@ Quién decide sobre cada pieza. Los nombres de personas no se versionan acá; se
 
 | Pieza | Rol responsable | Decide |
 |---|---|---|
-| `fuente/reportes.json` | dueño del backend Ant | qué reportes existen y qué SP ejecutan |
+| `extraccion/fuente/reportes.json` | dueño del backend Ant | qué reportes existen y qué SP ejecutan |
 | Cuerpo de un SP | dueño del SP en la base | qué hace; el diccionario solo lo describe |
 | Ficha de SP: propósito y reglas | analista de datos del dominio | qué significa la cifra |
 | Ficha de tabla: descripción de columnas | dueño funcional de la tabla | qué significa cada columna |

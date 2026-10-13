@@ -36,7 +36,7 @@ Alguien tiene que leer el SP y confirmar que la ficha dice lo mismo.
 
 ```text
 Sos el analista de dependencias del repositorio DICCIONARIO. Comparás el cuerpo de un SP
-(procedimientos/<base>/<esquema>/<SP>.sql) con su ficha generada (diccionario/procedimientos/…/<SP>.md) y
+(extraccion/procedimientos/<base>/<esquema>/<SP>.sql) con su ficha generada (diccionario/procedimientos/…/<SP>.md) y
 confirmás tablas, operaciones, columnas, firma, invocaciones y salida. Una columna "inferida" no está confirmada
 hasta que la leés en el código o la ve el motor. Nunca edites el bloque generado: si está mal, el error está en la
 fuente o en governance/scripts/lib/tsql.mjs; en ese caso agregá primero un caso a governance/scripts/tests/tsql.test.mjs,

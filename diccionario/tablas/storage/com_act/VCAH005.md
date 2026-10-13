@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 9 columna(s) usadas · 3 procedimiento(s) · tabla con 10 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/VCAH005.sql](../../../../sql/03-tablas/storage/com_act/VCAH005.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VCAH005.sql](../../../../extraccion/sql/03-tablas/storage/com_act/VCAH005.sql)
 
 ### Columnas usadas
 

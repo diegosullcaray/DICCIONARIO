@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_pas` · 2 columna(s) usadas · 1 procedimiento(s) · ⚠️ no existe en la base
 
-Consultas listas: [sql/03-tablas/storage/com_pas/SDPF007.sql](../../../../sql/03-tablas/storage/com_pas/SDPF007.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_pas/SDPF007.sql](../../../../extraccion/sql/03-tablas/storage/com_pas/SDPF007.sql)
 
 ### Columnas usadas
 

@@ -9,7 +9,7 @@
     {
       "name": "dic-conexiones-bd",
       "path": "governance/skills/dic-conexiones-bd/SKILL.md",
-      "description": "Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y cómo diagnosticar un error de conexión. Usar al configurar el entorno, al bajar SP o dependencias de la base o cuando herramientas/bd.py falla al conectar."
+      "description": "Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y cómo diagnosticar un error de conexión. Usar al configurar el entorno, al bajar SP o dependencias de la base o cuando extraccion/herramientas/bd.py falla al conectar."
     },
     {
       "name": "dic-extraccion-sp",

@@ -8,7 +8,7 @@ Ruta de lectura para el primer día, en orden:
 4. [Glosario](./data/glossary.md) — `RCODREP`, `tip_cod`, estados de un SP y confianza de una columna.
 5. [Flujo de trabajo](./development/workflow.md) — de la base a la ficha.
 6. Una ficha real: [mod_rep.com.GSELREP001](../../diccionario/procedimientos/mod_rep/com/GSELREP001.md) y su
-   [cuerpo](../../procedimientos/mod_rep/com/GSELREP001.sql). Compararlos es la mejor forma de entender qué
+   [cuerpo](../../extraccion/procedimientos/mod_rep/com/GSELREP001.sql). Compararlos es la mejor forma de entender qué
    hace el analizador.
 
 ## Primer ejercicio

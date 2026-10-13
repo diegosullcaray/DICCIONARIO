@@ -3,8 +3,8 @@
 Qué consultan los reportes, agrupado por base de datos. Es la vista resumida; el detalle
 navegable (una ficha por SP y por tabla) vive en [`diccionario/`](../../../diccionario/README.md).
 
-`fuente/reportes.json` es la **fuente de verdad del inventario**: un SP que no figura ahí no se documenta,
-y un archivo de `procedimientos/` sin entrada en el catálogo es un hallazgo (`cuerpo-huerfano`). De dónde
+`extraccion/fuente/reportes.json` es la **fuente de verdad del inventario**: un SP que no figura ahí no se documenta,
+y un archivo de `extraccion/procedimientos/` sin entrada en el catálogo es un hallazgo (`cuerpo-huerfano`). De dónde
 sale cada fuente y cómo se actualiza: [visión general](../architecture/system-overview.md).
 
 ## Procedimientos por base

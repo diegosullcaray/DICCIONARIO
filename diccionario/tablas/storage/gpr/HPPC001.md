@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `gpr` · 7 columna(s) usadas · 7 procedimiento(s) · tabla con 16 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/gpr/HPPC001.sql](../../../../sql/03-tablas/storage/gpr/HPPC001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/gpr/HPPC001.sql](../../../../extraccion/sql/03-tablas/storage/gpr/HPPC001.sql)
 
 ### Columnas usadas
 

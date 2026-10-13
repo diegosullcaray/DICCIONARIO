@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s) · ⚠️ no existe en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/WHBECA001.sql](../../../../sql/03-tablas/storage/com_act/WHBECA001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WHBECA001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WHBECA001.sql)
 
 ### Columnas usadas
 

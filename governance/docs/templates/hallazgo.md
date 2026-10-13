@@ -5,7 +5,7 @@ Se agrega en *Notas del analista* de la ficha afectada:
 
 ```markdown
 > **Hallazgo** (2026-10-12 · <rol>): <qué pasa>.
-> Evidencia: <consulta de sql/03-tablas o línea del SP>.
+> Evidencia: <consulta de extraccion/sql/03-tablas o línea del SP>.
 > Impacto: <reportes afectados>. Estado: abierto | resuelto en <commit>.
 ```
 

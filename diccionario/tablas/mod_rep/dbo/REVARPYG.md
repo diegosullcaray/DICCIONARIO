@@ -5,7 +5,7 @@
 
 Base `mod_rep` · esquema `dbo` · 4 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/mod_rep/dbo/REVARPYG.sql](../../../../sql/03-tablas/mod_rep/dbo/REVARPYG.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_rep/dbo/REVARPYG.sql](../../../../extraccion/sql/03-tablas/mod_rep/dbo/REVARPYG.sql)
 
 ### Columnas usadas
 

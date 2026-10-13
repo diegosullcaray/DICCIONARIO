@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 4 columna(s) usadas · 7 procedimiento(s) · tabla con 4 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/RETP002.sql](../../../../sql/03-tablas/storage/com_act/RETP002.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/RETP002.sql](../../../../extraccion/sql/03-tablas/storage/com_act/RETP002.sql)
 
 ### Columnas usadas
 

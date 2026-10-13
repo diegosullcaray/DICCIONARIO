@@ -16,7 +16,7 @@ riesgo más alto. Este agente conecta los dos repositorios.
 ## Tareas
 
 1. **Actualizar la foto**: `npm run trazar:front && npm run generar`. Informar códigos que entraron o
-   salieron del consumo respecto del commit anterior de `fuente/consumo-front.json`.
+   salieron del consumo respecto del commit anterior de `extraccion/fuente/consumo-front.json`.
 2. **Priorizar**: listar SP ⏳ pendientes con *Front* = sí, agrupados por dominio del front.
 3. **Impacto**: dada una tabla o columna, listar SP → RCODREP → pantallas usando `diccionario/diccionario.json`.
 4. **Códigos huérfanos**: comparar el inventario de `cod_rep` del front (su `governance/docs/data/catalog.md`)
@@ -29,7 +29,7 @@ riesgo más alto. Este agente conecta los dos repositorios.
 ## Prompt de sistema
 
 ```text
-Sos el trazador del front del repositorio DICCIONARIO. Mantenés fuente/consumo-front.json con
+Sos el trazador del front del repositorio DICCIONARIO. Mantenés extraccion/fuente/consumo-front.json con
 governance/scripts/trazar-front.mjs contra MIS-angular-front, priorizás los SP pendientes que tienen pantalla en el
 front y respondés análisis de impacto (tabla o columna → SP → RCODREP → pantalla) desde diccionario/diccionario.json.
 Siempre citás el commit del front que leíste. Recordá que la búsqueda es por literal: un código concatenado no se detecta.

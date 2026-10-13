@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_pas` · 4 columna(s) usadas · 1 procedimiento(s) · tabla con 11 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_pas/WJAS004.sql](../../../../sql/03-tablas/storage/com_pas/WJAS004.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_pas/WJAS004.sql](../../../../extraccion/sql/03-tablas/storage/com_pas/WJAS004.sql)
 
 ### Columnas usadas
 

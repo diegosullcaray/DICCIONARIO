@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `gpr` · 5 columna(s) usadas · 23 procedimiento(s) · vista con 5 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/gpr/VPPH001.sql](../../../../sql/03-tablas/storage/gpr/VPPH001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/gpr/VPPH001.sql](../../../../extraccion/sql/03-tablas/storage/gpr/VPPH001.sql)
 
 ### Columnas usadas
 

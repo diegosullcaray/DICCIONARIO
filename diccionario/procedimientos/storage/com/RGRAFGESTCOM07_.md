@@ -7,9 +7,9 @@
 |---|---|
 | Base · esquema | `storage` · `com` |
 | Estado | ✅ validado |
-| Cuerpo | [procedimientos/storage/com/RGRAFGESTCOM07_.sql](../../../../procedimientos/storage/com/RGRAFGESTCOM07_.sql) |
-| Extracción | [sql/01-extraccion/storage/com/RGRAFGESTCOM07_.sql](../../../../sql/01-extraccion/storage/com/RGRAFGESTCOM07_.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/storage/com/RGRAFGESTCOM07_.sql](../../../../sql/05-por-procedimiento/storage/com/RGRAFGESTCOM07_.sql) |
+| Cuerpo | [extraccion/procedimientos/storage/com/RGRAFGESTCOM07_.sql](../../../../extraccion/procedimientos/storage/com/RGRAFGESTCOM07_.sql) |
+| Extracción | [extraccion/sql/01-extraccion/storage/com/RGRAFGESTCOM07_.sql](../../../../extraccion/sql/01-extraccion/storage/com/RGRAFGESTCOM07_.sql) |
+| Consultar sus tablas | [extraccion/sql/05-por-procedimiento/storage/com/RGRAFGESTCOM07_.sql](../../../../extraccion/sql/05-por-procedimiento/storage/com/RGRAFGESTCOM07_.sql) |
 | Consumido por el front MIS | no (según la última traza) |
 
 ### Reportes que lo ejecutan (1)
@@ -45,7 +45,7 @@
 
 ### Validación con el motor
 
-Fuente: `fuente/dependencias/storage.csv`.
+Fuente: `extraccion/fuente/dependencias/storage.csv`.
 <!-- generado:fin -->
 
 ## Propósito

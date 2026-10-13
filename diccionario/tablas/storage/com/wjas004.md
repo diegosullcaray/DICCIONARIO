@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com` · 13 columna(s) usadas · 1 procedimiento(s) · tabla con 19 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com/wjas004.sql](../../../../sql/03-tablas/storage/com/wjas004.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com/wjas004.sql](../../../../extraccion/sql/03-tablas/storage/com/wjas004.sql)
 
 ### Columnas usadas
 

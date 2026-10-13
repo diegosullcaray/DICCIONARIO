@@ -5,7 +5,7 @@
 
 Base `strategos` · esquema `etl` · 5 columna(s) usadas · 1 procedimiento(s) · tabla con 9 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/strategos/etl/ABPCONF01.sql](../../../../sql/03-tablas/strategos/etl/ABPCONF01.sql)
+Consultas listas: [extraccion/sql/03-tablas/strategos/etl/ABPCONF01.sql](../../../../extraccion/sql/03-tablas/strategos/etl/ABPCONF01.sql)
 
 ### Columnas usadas
 

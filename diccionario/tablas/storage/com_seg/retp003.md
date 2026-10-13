@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_seg` · 5 columna(s) usadas · 1 procedimiento(s) · tabla con 5 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_seg/retp003.sql](../../../../sql/03-tablas/storage/com_seg/retp003.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/retp003.sql](../../../../extraccion/sql/03-tablas/storage/com_seg/retp003.sql)
 
 ### Columnas usadas
 

@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 20 columna(s) usadas · 1 procedimiento(s) · vista con 28 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/VRPDM001.sql](../../../../sql/03-tablas/storage/com_act/VRPDM001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VRPDM001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/VRPDM001.sql)
 
 ### Columnas usadas
 

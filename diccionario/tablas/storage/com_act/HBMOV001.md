@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 19 columna(s) usadas · 2 procedimiento(s) · tabla con 19 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/HBMOV001.sql](../../../../sql/03-tablas/storage/com_act/HBMOV001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/HBMOV001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/HBMOV001.sql)
 
 ### Columnas usadas
 

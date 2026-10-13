@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `gpr` · 54 columna(s) usadas · 1 procedimiento(s) · tabla con 59 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/gpr/HBASCAT001.sql](../../../../sql/03-tablas/storage/gpr/HBASCAT001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/gpr/HBASCAT001.sql](../../../../extraccion/sql/03-tablas/storage/gpr/HBASCAT001.sql)
 
 ### Columnas usadas
 

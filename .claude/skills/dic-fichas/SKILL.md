@@ -46,7 +46,7 @@ Cuando aparece una columna nueva, su línea **no** se agrega sola en fichas exis
 ## 4. Fuentes válidas para una descripción
 
 1. El código del SP (un `CASE` que define tramos, un `WHERE` que excluye).
-2. El dato perfilado con `sql/03-tablas/<base>/<esquema>/<tabla>.sql`.
+2. El dato perfilado con `extraccion/sql/03-tablas/<base>/<esquema>/<tabla>.sql`.
 3. El dueño funcional (ver [responsabilidades](../../../governance/docs/data/stewardship.md)).
 
 **No** son fuentes: el nombre de la columna, ni lo que "suele significar" en otro sistema.

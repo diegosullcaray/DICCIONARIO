@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com` · 20 columna(s) usadas · 1 procedimiento(s) · tabla con 20 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com/HBDK005.sql](../../../../sql/03-tablas/storage/com/HBDK005.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com/HBDK005.sql](../../../../extraccion/sql/03-tablas/storage/com/HBDK005.sql)
 
 ### Columnas usadas
 

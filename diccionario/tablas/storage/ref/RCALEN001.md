@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 17 columna(s) usadas · 121 procedimiento(s) · tabla con 17 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/RCALEN001.sql](../../../../sql/03-tablas/storage/ref/RCALEN001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/RCALEN001.sql](../../../../extraccion/sql/03-tablas/storage/ref/RCALEN001.sql)
 
 ### Columnas usadas
 

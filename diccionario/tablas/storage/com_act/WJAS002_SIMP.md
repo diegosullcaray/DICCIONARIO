@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 12 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/WJAS002_SIMP.sql](../../../../sql/03-tablas/storage/com_act/WJAS002_SIMP.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WJAS002_SIMP.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WJAS002_SIMP.sql)
 
 ### Columnas usadas
 

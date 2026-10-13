@@ -7,9 +7,9 @@
 |---|---|
 | Base · esquema | `strategos` · `mod_rep_com_act` |
 | Estado | ✅ validado |
-| Cuerpo | [procedimientos/strategos/mod_rep_com_act/HTTPTRACE.sql](../../../../procedimientos/strategos/mod_rep_com_act/HTTPTRACE.sql) |
-| Extracción | [sql/01-extraccion/strategos/mod_rep_com_act/HTTPTRACE.sql](../../../../sql/01-extraccion/strategos/mod_rep_com_act/HTTPTRACE.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/strategos/mod_rep_com_act/HTTPTRACE.sql](../../../../sql/05-por-procedimiento/strategos/mod_rep_com_act/HTTPTRACE.sql) |
+| Cuerpo | [extraccion/procedimientos/strategos/mod_rep_com_act/HTTPTRACE.sql](../../../../extraccion/procedimientos/strategos/mod_rep_com_act/HTTPTRACE.sql) |
+| Extracción | [extraccion/sql/01-extraccion/strategos/mod_rep_com_act/HTTPTRACE.sql](../../../../extraccion/sql/01-extraccion/strategos/mod_rep_com_act/HTTPTRACE.sql) |
+| Consultar sus tablas | [extraccion/sql/05-por-procedimiento/strategos/mod_rep_com_act/HTTPTRACE.sql](../../../../extraccion/sql/05-por-procedimiento/strategos/mod_rep_com_act/HTTPTRACE.sql) |
 | Consumido por el front MIS | no (según la última traza) |
 
 ### Reportes que lo ejecutan (1)
@@ -36,7 +36,7 @@ Sin parámetros.
 
 ### Validación con el motor
 
-Fuente: `fuente/dependencias/strategos.csv`.
+Fuente: `extraccion/fuente/dependencias/strategos.csv`.
 <!-- generado:fin -->
 
 ## Propósito

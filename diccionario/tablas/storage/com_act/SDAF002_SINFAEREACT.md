@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 1 columna(s) usadas · 1 procedimiento(s) · ⚠️ no existe en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/SDAF002_SINFAEREACT.sql](../../../../sql/03-tablas/storage/com_act/SDAF002_SINFAEREACT.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/SDAF002_SINFAEREACT.sql](../../../../extraccion/sql/03-tablas/storage/com_act/SDAF002_SINFAEREACT.sql)
 
 ### Columnas usadas
 

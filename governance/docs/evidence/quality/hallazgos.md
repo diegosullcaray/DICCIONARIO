@@ -17,7 +17,7 @@ Qué significa cada regla y cómo se resuelve: [calidad del dato](../../data/qua
 
 ### Catálogo
 
-Catálogo (`fuente/reportes.json`): corregir en la tabla de reportes del backend y reexportar.
+Catálogo (`extraccion/fuente/reportes.json`): corregir en la tabla de reportes del backend y reexportar.
 
 | Nivel | Regla | Objeto | Detalle | Línea base |
 |---|---|---|---|---|

@@ -84,7 +84,7 @@ else {
   };
   bloque('Generados al día', resultado.generados, 'npm run generar');
   bloque('Enlaces internos', resultado.enlaces);
-  bloque('Rutas sin choque de mayúsculas', resultado.rutas, 'unificar la grafía (los generados usan la de fuente/estructura)');
+  bloque('Rutas sin choque de mayúsculas', resultado.rutas, 'unificar la grafía (los generados usan la de extraccion/fuente/estructura)');
   bloque('Línea base vigente', resultado.lineaBaseVencida, 'ya corregidos: npm run verificar -- --guardar-linea-base');
 }
 

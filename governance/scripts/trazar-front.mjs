@@ -2,7 +2,7 @@
 // Traza qué RCODREP del catálogo consume el frontend MIS Host.
 //
 // Busca cada código como literal ('COD', "COD" o `COD`) en src/app del repositorio
-// MIS-angular-front y guarda una foto en fuente/consumo-front.json, con el commit
+// MIS-angular-front y guarda una foto en extraccion/fuente/consumo-front.json, con el commit
 // del front que se leyó. Es una foto: se vuelve a tomar cuando el front cambia.
 //
 // Uso: node governance/scripts/trazar-front.mjs --front=../MIS-angular-front [--check]

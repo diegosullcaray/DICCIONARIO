@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_seg` · 2 columna(s) usadas · 1 procedimiento(s) · vista con 9 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_seg/VCSH006.sql](../../../../sql/03-tablas/storage/com_seg/VCSH006.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/VCSH006.sql](../../../../extraccion/sql/03-tablas/storage/com_seg/VCSH006.sql)
 
 ### Columnas usadas
 

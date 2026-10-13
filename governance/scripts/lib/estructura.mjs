@@ -1,5 +1,5 @@
-// Importa la estructura real de las tablas: fuente/estructura/<base>.csv, que escribe
-// `python herramientas/bd.py estructura` (INFORMATION_SCHEMA.TABLES + COLUMNS).
+// Importa la estructura real de las tablas: extraccion/fuente/estructura/<base>.csv, que escribe
+// `python extraccion/herramientas/bd.py estructura` (INFORMATION_SCHEMA.TABLES + COLUMNS).
 // Con ella el diccionario muestra el tipo de cada columna y detecta tablas o columnas que no existen.
 
 import { readFileSync } from 'node:fs';

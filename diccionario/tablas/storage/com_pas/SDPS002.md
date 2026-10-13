@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_pas` · 1 columna(s) usadas · 2 procedimiento(s) · tabla con 10 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_pas/SDPS002.sql](../../../../sql/03-tablas/storage/com_pas/SDPS002.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_pas/SDPS002.sql](../../../../extraccion/sql/03-tablas/storage/com_pas/SDPS002.sql)
 
 ### Columnas usadas
 

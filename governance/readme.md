@@ -4,7 +4,7 @@
 Misma organización que la gobernanza de MIS-angular-front, con el dato como eje.
 
 **Regla que gobierna todo lo demás: cuando el documento y la fuente discrepan, gana la fuente**
-(el cuerpo del SP en la base; después `fuente/reportes.json`). El documento se corrige.
+(el cuerpo del SP en la base; después `extraccion/fuente/reportes.json`). El documento se corrige.
 
 ```text
 governance/
@@ -73,5 +73,5 @@ Pipeline de cinco fases y dos transversales; detalle y criterios de rechazo en [
 ## Scripts
 
 Node en [`scripts/`](./scripts/README.md) (generar, validar, trazar el front) y Python en
-[`herramientas/`](../herramientas/README.md) (conexión a SQL Server). Los comandos de uso diario están
+[`extraccion/herramientas/`](../extraccion/herramientas/README.md) (conexión a SQL Server). Los comandos de uso diario están
 en el [README](../README.md#comandos).

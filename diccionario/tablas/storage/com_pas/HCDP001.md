@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_pas` · 9 columna(s) usadas · 2 procedimiento(s) · tabla con 64 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_pas/HCDP001.sql](../../../../sql/03-tablas/storage/com_pas/HCDP001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_pas/HCDP001.sql](../../../../extraccion/sql/03-tablas/storage/com_pas/HCDP001.sql)
 
 ### Columnas usadas
 

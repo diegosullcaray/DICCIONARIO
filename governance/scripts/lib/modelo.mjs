@@ -1,10 +1,10 @@
 // Modelo del diccionario: une las fuentes en una sola estructura y deriva los hallazgos.
 //
-//   fuente/reportes.json         qué reporte ejecuta qué SP y con qué parámetros
-//   procedimientos/**.sql        el cuerpo de cada SP → analizador estático
-//   fuente/dependencias/*.csv    lo que SQL Server registra de cada SP
-//   fuente/estructura/*.csv      columnas y tipos reales de cada tabla
-//   fuente/consumo-front.json    qué códigos usa el frontend MIS
+//   extraccion/fuente/reportes.json         qué reporte ejecuta qué SP y con qué parámetros
+//   extraccion/procedimientos/**.sql        el cuerpo de cada SP → analizador estático
+//   extraccion/fuente/dependencias/*.csv    lo que SQL Server registra de cada SP
+//   extraccion/fuente/estructura/*.csv      columnas y tipos reales de cada tabla
+//   extraccion/fuente/consumo-front.json    qué códigos usa el frontend MIS
 //
 // Lo usan generar-diccionario y validar.
 
@@ -19,7 +19,7 @@ export const NIVELES = { error: 'error', aviso: 'aviso', info: 'info' };
 
 // Dónde se corrige cada hallazgo. Ordena el informe y dice a quién escalarlo.
 export const ORIGENES = {
-  catalogo: 'Catálogo (`fuente/reportes.json`): corregir en la tabla de reportes del backend y reexportar',
+  catalogo: 'Catálogo (`extraccion/fuente/reportes.json`): corregir en la tabla de reportes del backend y reexportar',
   produccion: 'Producción (código del SP o la base): reportar al dueño del SP; acá no se corrige',
   repositorio: 'Repositorio: corregir en este repo',
   analisis: 'Límite del análisis: revisar a mano y anotar en la ficha',
@@ -42,8 +42,8 @@ export const REGLAS = {
   'columna-inexistente': { nivel: 'error', origen: 'produccion', que: 'el SP usa, calificada, una columna que la tabla real no tiene' },
   'motor-con-error': { nivel: 'aviso', origen: 'produccion', que: 'SQL Server no pudo resolver las dependencias del SP (no compila contra el esquema actual)' },
   'esquema-distinto': { nivel: 'aviso', origen: 'produccion', que: 'el CREATE declara otro esquema que el catálogo' },
-  'cuerpo-de-otro-sp': { nivel: 'error', origen: 'repositorio', que: 'el archivo de `procedimientos/` contiene el CREATE de otro SP' },
-  'cuerpo-huerfano': { nivel: 'aviso', origen: 'repositorio', que: 'archivo en `procedimientos/` sin SP en el catálogo' },
+  'cuerpo-de-otro-sp': { nivel: 'error', origen: 'repositorio', que: 'el archivo de `extraccion/procedimientos/` contiene el CREATE de otro SP' },
+  'cuerpo-huerfano': { nivel: 'aviso', origen: 'repositorio', que: 'archivo en `extraccion/procedimientos/` sin SP en el catálogo' },
   'cuerpo-incompleto': { nivel: 'aviso', origen: 'repositorio', que: 'archivo sin CREATE/ALTER PROCEDURE: no se analiza' },
   'sql-dinamico': { nivel: 'aviso', origen: 'analisis', que: '`EXEC(@sql)` o `sp_executesql`: sus tablas no las ve ni el análisis ni el motor' },
   'columna-sin-resolver': { nivel: 'aviso', origen: 'analisis', que: 'columna sin calificar con varias tablas posibles que la estructura real no pudo desempatar' },
@@ -294,7 +294,7 @@ export function construirModelo() {
     }
   }
 
-  // ── 5. Contra la estructura real (solo en bases con fuente/estructura/<base>.csv)
+  // ── 5. Contra la estructura real (solo en bases con extraccion/fuente/estructura/<base>.csv)
   // Tabla de trabajo: algún SP la crea o la borra (a veces el SELECT INTO va dentro de SQL dinámico y solo se ve el DROP).
   const creadas = new Set([...tablas.values()]
     .filter((t) => [...t.sps.values()].some(({ usos }) => usos.has('crea') || usos.has('elimina-objeto')))

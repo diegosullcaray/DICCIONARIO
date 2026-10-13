@@ -5,7 +5,7 @@
 
 Base `mod_rep` · esquema `rep` · 3 columna(s) usadas · 2 procedimiento(s) · tabla con 9 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/mod_rep/rep/SDECCOM01.sql](../../../../sql/03-tablas/mod_rep/rep/SDECCOM01.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_rep/rep/SDECCOM01.sql](../../../../extraccion/sql/03-tablas/mod_rep/rep/SDECCOM01.sql)
 
 ### Columnas usadas
 

@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 7 columna(s) usadas · 2 procedimiento(s) · tabla con 7 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/WTIPCLI001.sql](../../../../sql/03-tablas/storage/com_act/WTIPCLI001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WTIPCLI001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WTIPCLI001.sql)
 
 ### Columnas usadas
 

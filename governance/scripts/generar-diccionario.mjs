@@ -8,8 +8,8 @@
 //   diccionario/tablas.md                          índice de tablas
 //   diccionario/tablas/<b>/<e>/<tabla>.md          ficha de la tabla: columnas y quién las usa
 //   diccionario/diccionario.json                   todo lo anterior, para herramientas y agentes
-//   sql/03-tablas/<b>/<e>/<tabla>.sql              consultas listas para cada tabla descubierta
-//   sql/05-por-procedimiento/<b>/<e>/<SP>.sql      las tablas de un SP con las columnas que usa
+//   extraccion/sql/03-tablas/<b>/<e>/<tabla>.sql              consultas listas para cada tabla descubierta
+//   extraccion/sql/05-por-procedimiento/<b>/<e>/<SP>.sql      las tablas de un SP con las columnas que usa
 //   governance/docs/data/catalog.md                bloque de resumen
 //   governance/docs/evidence/quality/hallazgos.md  bloque de hallazgos
 //
@@ -150,7 +150,7 @@ for (const t of tablas) {
   const l = [cabeceraGenerado(SCRIPT), ''];
   const real = t.real ? `${t.real.tipoObjeto === 'VIEW' ? 'vista' : 'tabla'} con ${t.real.columnas.size} columna(s) en la base`
     : t.trabajo ? 'tabla de trabajo: la crea y borra un SP en cada ejecución'
-      : m.estructura.bases.has(String(t.base).toLowerCase()) ? '⚠️ no existe en la base' : 'estructura real sin consultar (`python herramientas/bd.py estructura`)';
+      : m.estructura.bases.has(String(t.base).toLowerCase()) ? '⚠️ no existe en la base' : 'estructura real sin consultar (`python extraccion/herramientas/bd.py estructura`)';
   l.push(`Base \`${t.base}\` · esquema \`${t.esquema}\` · ${cols.length} columna(s) usadas · ${t.sps.size} procedimiento(s) · ${real}`, '');
   l.push(`Consultas listas: [${rel(archivoSqlTabla(t))}](${enlace(ruta, archivoSqlTabla(t))})`, '');
   l.push('### Columnas usadas', '');
@@ -323,7 +323,7 @@ const nuevos = m.hallazgos.filter((h) => h.nivel === 'error' && !h.enLineaBase).
   }
   salida.inyectar(ruta, 'reportes', l.join('\n'), (bloque) => [
     '# Reportes → procedimientos', '',
-    'Un renglón por entrada de `fuente/reportes.json`. Varios RCODREP pueden ejecutar el mismo SP con parámetros distintos.', '',
+    'Un renglón por entrada de `extraccion/fuente/reportes.json`. Varios RCODREP pueden ejecutar el mismo SP con parámetros distintos.', '',
     bloque, '',
   ].join('\n'));
 }

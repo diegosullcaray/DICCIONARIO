@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com` · 10 columna(s) usadas · 4 procedimiento(s) · ⚠️ no existe en la base
 
-Consultas listas: [sql/03-tablas/storage/com/metas_saldos.sql](../../../../sql/03-tablas/storage/com/metas_saldos.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com/metas_saldos.sql](../../../../extraccion/sql/03-tablas/storage/com/metas_saldos.sql)
 
 ### Columnas usadas
 

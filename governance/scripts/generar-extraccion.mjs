@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // Genera los SQL para consultar los procedimientos del catálogo en SQL Server.
 //
-//   sql/01-extraccion/<base>/<esquema>/<SP>.sql   un sp_helptext por SP (el patrón original)
-//   sql/01-extraccion/_lotes/<base>.sql           inventario + definición de todos los SP de una base
-//   sql/01-extraccion/manifiesto.json             lo que lee extraer-definiciones.ps1
-//   sql/02-dependencias/<base>.sql                tablas y columnas según el motor (dm_sql_referenced_entities)
+//   extraccion/sql/01-extraccion/<base>/<esquema>/<SP>.sql   un sp_helptext por SP (el patrón original)
+//   extraccion/sql/01-extraccion/_lotes/<base>.sql           inventario + definición de todos los SP de una base
+//   extraccion/sql/01-extraccion/manifiesto.json             lo que lee extraer-definiciones.ps1
+//   extraccion/sql/02-dependencias/<base>.sql                tablas y columnas según el motor (dm_sql_referenced_entities)
 //
 // Uso: node governance/scripts/generar-extraccion.mjs [--check]
 
@@ -38,7 +38,7 @@ for (const sp of sps.values()) {
   const grafias = [...sp.grafias].filter((g) => g !== sp.completo);
   salida.escribir(archivo, [
     `-- ${sp.completo}`,
-    '-- Generado por governance/scripts/generar-extraccion.mjs. No editar: se regenera desde fuente/reportes.json.',
+    '-- Generado por governance/scripts/generar-extraccion.mjs. No editar: se regenera desde extraccion/fuente/reportes.json.',
     '--',
     `-- Reportes (RCODREP) que ejecutan este SP: ${sp.reportes.length}`,
     ...lineasReportes,
@@ -76,7 +76,7 @@ for (const [base, lista] of porBase) {
     '-- 2. `existe = 0` → el SP del catálogo ya no está en la base: registrarlo como hallazgo.',
     '-- 3. Copiar `definicion` de cada fila a su `destino` (activar en SSMS:',
     '--    Herramientas > Opciones > Resultados > Cuadrícula > "Conservar CR/LF al copiar").',
-    '--    Para automatizarlo: governance/scripts/extraer-definiciones.ps1',
+    '--    Para automatizarlo: extraccion/herramientas/extraer-definiciones.ps1',
     '',
     `USE ${base};`,
     'GO',
@@ -115,7 +115,7 @@ for (const [base, lista] of porBase) {
     '--',
     '-- Qué devuelve: una fila por (SP, tabla, columna) que SQL Server tiene registrada.',
     '-- Cómo se usa: ejecutar, "Guardar resultados como…" CSV CON encabezados en',
-    `--   fuente/dependencias/${base}.csv  y correr  npm run generar.`,
+    `--   extraccion/fuente/dependencias/${base}.csv  y correr  npm run generar.`,
     '--',
     '-- Límites del motor (ver skill dic-analisis-dependencias):',
     '--   · Las columnas de tablas de OTRA base no se resuelven (ref_columna queda vacía):',

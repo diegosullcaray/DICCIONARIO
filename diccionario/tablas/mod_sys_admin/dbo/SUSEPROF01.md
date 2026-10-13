@@ -5,7 +5,7 @@
 
 Base `mod_sys_admin` · esquema `dbo` · 2 columna(s) usadas · 3 procedimiento(s) · tabla con 2 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/mod_sys_admin/dbo/SUSEPROF01.sql](../../../../sql/03-tablas/mod_sys_admin/dbo/SUSEPROF01.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_sys_admin/dbo/SUSEPROF01.sql](../../../../extraccion/sql/03-tablas/mod_sys_admin/dbo/SUSEPROF01.sql)
 
 ### Columnas usadas
 

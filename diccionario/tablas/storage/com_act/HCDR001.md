@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 3 columna(s) usadas · 3 procedimiento(s) · tabla con 24 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/HCDR001.sql](../../../../sql/03-tablas/storage/com_act/HCDR001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/HCDR001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/HCDR001.sql)
 
 ### Columnas usadas
 

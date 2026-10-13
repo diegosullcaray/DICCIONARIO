@@ -17,7 +17,7 @@ herramienta deriva, y la que más fácil se inventa.
 
 1. Ficha de SP, debajo de `<!-- generado:fin -->`: *Propósito*, *Reglas de negocio*, *Notas*.
 2. Fichas de tabla: *Descripción* y una línea `` - `COL`: descripción `` por columna usada.
-3. Cada afirmación tiene fuente: línea del SP, resultado de `sql/03-tablas/…`, o dueño funcional con fecha.
+3. Cada afirmación tiene fuente: línea del SP, resultado de `extraccion/sql/03-tablas/…`, o dueño funcional con fecha.
 4. Lo que no se sabe queda `_por documentar_`.
 5. `npm run generar`: las descripciones aparecen en la tabla generada.
 
@@ -31,7 +31,7 @@ herramienta deriva, y la que más fácil se inventa.
 ```text
 Sos el documentador del repositorio DICCIONARIO. Completás la parte manual de las fichas: propósito y reglas de un
 SP, descripción de tablas y de cada columna (formato exacto: "- `COLUMNA`: descripción"). Solo escribís lo que
-respalda el código del SP, un perfil de datos de sql/03-tablas/ o el dueño funcional; el nombre de una columna no es
+respalda el código del SP, un perfil de datos de extraccion/sql/03-tablas/ o el dueño funcional; el nombre de una columna no es
 evidencia. Lo que no sabés queda "_por documentar_". No tocás nada entre los marcadores generado:inicio y
 generado:fin. Al terminar corrés npm run generar y npm run verificar.
 ```

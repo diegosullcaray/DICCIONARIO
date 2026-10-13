@@ -7,8 +7,8 @@
 |---|---|
 | Base · esquema | `strategos` · `mod_rep_com_act` |
 | Estado | ✅ validado |
-| Cuerpo | [procedimientos/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql](../../../../procedimientos/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql) |
-| Extracción | [sql/01-extraccion/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql](../../../../sql/01-extraccion/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql) |
+| Cuerpo | [extraccion/procedimientos/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql](../../../../extraccion/procedimientos/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql) |
+| Extracción | [extraccion/sql/01-extraccion/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql](../../../../extraccion/sql/01-extraccion/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (2)
@@ -46,7 +46,7 @@ No se detectó un SELECT final que devuelva filas.
 
 ### Validación con el motor
 
-Fuente: `fuente/dependencias/strategos.csv`.
+Fuente: `extraccion/fuente/dependencias/strategos.csv`.
 <!-- generado:fin -->
 
 ## Propósito

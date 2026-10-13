@@ -23,11 +23,11 @@ es la prosa debajo del bloque generado de cada ficha.
 
 | Base | SP | Extraídos | Validados | No existen | Tablas usadas | Lote de extracción | Dependencias |
 |---|---:|---:|---:|---:|---:|---|---|
-| `mod_gpa` | 2 | 0 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/mod_gpa.sql) | [dependencias](../sql/02-dependencias/mod_gpa.sql) |
-| `mod_rep` | 258 | 225 | 222 | 33 | 188 | [lote](../sql/01-extraccion/_lotes/mod_rep.sql) | [dependencias](../sql/02-dependencias/mod_rep.sql) |
-| `mod_sec` | 1 | 1 | 1 | 0 | 2 | [lote](../sql/01-extraccion/_lotes/mod_sec.sql) | [dependencias](../sql/02-dependencias/mod_sec.sql) |
-| `storage` | 1 | 1 | 1 | 0 | 2 | [lote](../sql/01-extraccion/_lotes/storage.sql) | [dependencias](../sql/02-dependencias/storage.sql) |
-| `strategos` | 9 | 9 | 9 | 0 | 4 | [lote](../sql/01-extraccion/_lotes/strategos.sql) | [dependencias](../sql/02-dependencias/strategos.sql) |
+| `mod_gpa` | 2 | 0 | 0 | 0 | 0 | [lote](../extraccion/sql/01-extraccion/_lotes/mod_gpa.sql) | [dependencias](../extraccion/sql/02-dependencias/mod_gpa.sql) |
+| `mod_rep` | 258 | 225 | 222 | 33 | 188 | [lote](../extraccion/sql/01-extraccion/_lotes/mod_rep.sql) | [dependencias](../extraccion/sql/02-dependencias/mod_rep.sql) |
+| `mod_sec` | 1 | 1 | 1 | 0 | 2 | [lote](../extraccion/sql/01-extraccion/_lotes/mod_sec.sql) | [dependencias](../extraccion/sql/02-dependencias/mod_sec.sql) |
+| `storage` | 1 | 1 | 1 | 0 | 2 | [lote](../extraccion/sql/01-extraccion/_lotes/storage.sql) | [dependencias](../extraccion/sql/02-dependencias/storage.sql) |
+| `strategos` | 9 | 9 | 9 | 0 | 4 | [lote](../extraccion/sql/01-extraccion/_lotes/strategos.sql) | [dependencias](../extraccion/sql/02-dependencias/strategos.sql) |
 <!-- generado:fin -->
 
 ## Cómo navegar

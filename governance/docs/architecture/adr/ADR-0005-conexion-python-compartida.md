@@ -10,14 +10,14 @@ del MIS: `.env` con `MISH_*`, `SLC_*`, `RCC_*`, un mapa base → servidor y un �
 
 ## Decisión
 
-`herramientas/` replica ese contrato en Python (`config.py`, `db.py`) y acepta el mismo `.env` (`--env`).
+`extraccion/herramientas/` replica ese contrato en Python (`config.py`, `db.py`) y acepta el mismo `.env` (`--env`).
 Dos diferencias deliberadas: **sin hosts por defecto en el código** (este repositorio no versiona servidores)
-y conexiones con `ApplicationIntent=ReadOnly`. Python solo **lee de la base y escribe en `fuente/` y
-`procedimientos/`**; el análisis y la generación siguen en Node, para tener un único analizador.
+y conexiones con `ApplicationIntent=ReadOnly`. Python solo **lee de la base y escribe en `extraccion/fuente/` y
+`extraccion/procedimientos/`**; el análisis y la generación siguen en Node, para tener un único analizador.
 
 ## Consecuencias
 
-- `python herramientas/bd.py todo` reemplaza los pasos manuales de SSMS; los SQL generados siguen sirviendo
+- `python extraccion/herramientas/bd.py todo` reemplaza los pasos manuales de SSMS; los SQL generados siguen sirviendo
   para quien no tenga Python o el driver.
 - `BASES_DE` está duplicado con REPORTES-AUTOMATIZADOS: si cambia allá, actualizarlo acá.
 - La estructura real de las tablas habilita las reglas `tabla-inexistente` y `columna-inexistente`.

@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 4 columna(s) usadas · 1 procedimiento(s) · ⚠️ no existe en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/ResGridCiiu2.sql](../../../../sql/03-tablas/storage/ref/ResGridCiiu2.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/ResGridCiiu2.sql](../../../../extraccion/sql/03-tablas/storage/ref/ResGridCiiu2.sql)
 
 ### Columnas usadas
 

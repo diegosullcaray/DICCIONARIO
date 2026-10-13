@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com` · 17 columna(s) usadas · 1 procedimiento(s) · vista con 39 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com/VLDRD01.sql](../../../../sql/03-tablas/storage/com/VLDRD01.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com/VLDRD01.sql](../../../../extraccion/sql/03-tablas/storage/com/VLDRD01.sql)
 
 ### Columnas usadas
 

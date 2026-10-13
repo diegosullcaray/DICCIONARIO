@@ -24,9 +24,9 @@ git diff --cached --stat
 1. **Credenciales y servidores**: ninguna cadena de conexión, usuario, contraseña ni nombre de host.
    Viven solo en `.env` (ignorado por git); `.env.example` va con valores vacíos. Las cabeceras de los cuerpos
    extraídos nombran la conexión (`mish`), nunca el host.
-2. **Datos**: ningún resultado de `sql/03-tablas` (muestras) pegado en fichas o CSV. Los CSV de
-   `fuente/dependencias/` solo contienen metadatos (nombres de objetos y columnas).
-3. **SQL que escribe**: los archivos de `sql/` solo leen (`SELECT`, metadatos, `sp_helptext`). Ninguno
+2. **Datos**: ningún resultado de `extraccion/sql/03-tablas` (muestras) pegado en fichas o CSV. Los CSV de
+   `extraccion/fuente/dependencias/` solo contienen metadatos (nombres de objetos y columnas).
+3. **SQL que escribe**: los archivos de `extraccion/sql/` solo leen (`SELECT`, metadatos, `sp_helptext`). Ninguno
    hace `ALTER`, `DROP`, `INSERT`, `UPDATE`, `DELETE` ni ejecuta un SP de reporte.
    Excepción: las variables de tabla (`@catalogo`, `@resultado`) de los lotes generados.
 4. **Cuerpos de SP**: pueden contener credenciales embebidas (linked servers, `OPENROWSET`). Si aparece

@@ -10,7 +10,7 @@ base sería ilegible y cada extracción generaría conflictos de merge.
 ## Decisión
 
 Cada SP y cada tabla tiene su propio archivo, en carpetas `<base>/<esquema>/` que se repiten en
-`procedimientos/`, `sql/01-extraccion/`, `sql/03-tablas/` y `diccionario/`.
+`extraccion/procedimientos/`, `extraccion/sql/01-extraccion/`, `extraccion/sql/03-tablas/` y `diccionario/`.
 
 ## Consecuencias
 

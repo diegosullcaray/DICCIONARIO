@@ -5,7 +5,7 @@
 
 Base `mod_rep` · esquema `com` · 0 columna(s) usadas · 3 procedimiento(s) · tabla de trabajo: la crea y borra un SP en cada ejecución
 
-Consultas listas: [sql/03-tablas/mod_rep/com/Datos_AGR.sql](../../../../sql/03-tablas/mod_rep/com/Datos_AGR.sql)
+Consultas listas: [extraccion/sql/03-tablas/mod_rep/com/Datos_AGR.sql](../../../../extraccion/sql/03-tablas/mod_rep/com/Datos_AGR.sql)
 
 ### Columnas usadas
 

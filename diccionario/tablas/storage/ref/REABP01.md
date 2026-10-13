@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 1 columna(s) usadas · 1 procedimiento(s) · ⚠️ no existe en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/REABP01.sql](../../../../sql/03-tablas/storage/ref/REABP01.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/REABP01.sql](../../../../extraccion/sql/03-tablas/storage/ref/REABP01.sql)
 
 ### Columnas usadas
 

@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 10 columna(s) usadas · 13 procedimiento(s) · vista con 10 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/VJERCOR03.sql](../../../../sql/03-tablas/storage/ref/VJERCOR03.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/VJERCOR03.sql](../../../../extraccion/sql/03-tablas/storage/ref/VJERCOR03.sql)
 
 ### Columnas usadas
 

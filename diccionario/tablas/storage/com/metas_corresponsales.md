@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com` · 7 columna(s) usadas · 1 procedimiento(s) · tabla con 7 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com/metas_corresponsales.sql](../../../../sql/03-tablas/storage/com/metas_corresponsales.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com/metas_corresponsales.sql](../../../../extraccion/sql/03-tablas/storage/com/metas_corresponsales.sql)
 
 ### Columnas usadas
 

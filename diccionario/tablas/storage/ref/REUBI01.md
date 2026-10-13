@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 3 columna(s) usadas · 1 procedimiento(s) · tabla con 7 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/REUBI01.sql](../../../../sql/03-tablas/storage/ref/REUBI01.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/REUBI01.sql](../../../../extraccion/sql/03-tablas/storage/ref/REUBI01.sql)
 
 ### Columnas usadas
 

@@ -15,7 +15,7 @@ es fuente, qué es derivado y qué se edita a mano.
 
 ## Reglas que no se negocian
 
-1. **Gana la fuente.** Cuando un documento y la fuente (el SP en la base, luego `fuente/reportes.json`)
+1. **Gana la fuente.** Cuando un documento y la fuente (el SP en la base, luego `extraccion/fuente/reportes.json`)
    discrepan, se corrige el documento.
 2. **Lo que se deriva no se escribe.** Si un dato del diccionario está mal, se corrige su fuente o el
    analizador y se corre `npm run generar`. Editar dentro de `<!-- generado:… -->` o en `.claude/` es trabajo perdido.

@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `ref` · 3 columna(s) usadas · 1 procedimiento(s) · tabla con 14 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/ref/RERT001.sql](../../../../sql/03-tablas/storage/ref/RERT001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/ref/RERT001.sql](../../../../extraccion/sql/03-tablas/storage/ref/RERT001.sql)
 
 ### Columnas usadas
 

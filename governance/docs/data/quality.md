@@ -15,7 +15,7 @@ Cada hallazgo tiene un **nivel** (qué tan grave) y un **origen** (dónde se cor
 
 | Origen | Dónde se corrige |
 |---|---|
-| `catalogo` | en la tabla de reportes del backend; luego se reexporta `fuente/reportes.json` |
+| `catalogo` | en la tabla de reportes del backend; luego se reexporta `extraccion/fuente/reportes.json` |
 | `produccion` | en el SP o en la base, por su dueño. Este repositorio lo **detecta y documenta**, no lo corrige |
 | `repositorio` | acá: archivos mal ubicados o incompletos |
 | `analisis` | límite del analizador: se revisa a mano y se anota en la ficha, o se mejora el analizador con un caso de prueba |
@@ -56,8 +56,8 @@ Se derivan de `REGLAS` en `governance/scripts/lib/modelo.mjs`: para cambiar una 
 | `columna-inexistente` | error | produccion | el SP usa, calificada, una columna que la tabla real no tiene |
 | `motor-con-error` | aviso | produccion | SQL Server no pudo resolver las dependencias del SP (no compila contra el esquema actual) |
 | `esquema-distinto` | aviso | produccion | el CREATE declara otro esquema que el catálogo |
-| `cuerpo-de-otro-sp` | error | repositorio | el archivo de `procedimientos/` contiene el CREATE de otro SP |
-| `cuerpo-huerfano` | aviso | repositorio | archivo en `procedimientos/` sin SP en el catálogo |
+| `cuerpo-de-otro-sp` | error | repositorio | el archivo de `extraccion/procedimientos/` contiene el CREATE de otro SP |
+| `cuerpo-huerfano` | aviso | repositorio | archivo en `extraccion/procedimientos/` sin SP en el catálogo |
 | `cuerpo-incompleto` | aviso | repositorio | archivo sin CREATE/ALTER PROCEDURE: no se analiza |
 | `sql-dinamico` | aviso | analisis | `EXEC(@sql)` o `sp_executesql`: sus tablas no las ve ni el análisis ni el motor |
 | `columna-sin-resolver` | aviso | analisis | columna sin calificar con varias tablas posibles que la estructura real no pudo desempatar |

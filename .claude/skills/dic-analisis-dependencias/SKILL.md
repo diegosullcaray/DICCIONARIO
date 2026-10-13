@@ -15,7 +15,7 @@ Se ejecuta solo con `npm run generar`. Para un SP puntual:
 ```bash
 node -e "import('./governance/scripts/lib/tsql.mjs').then(async ({analizarProcedimiento}) => {
   const fs = await import('node:fs');
-  const r = analizarProcedimiento(fs.readFileSync('procedimientos/mod_rep/com/GSELREP001.sql','utf8'), {base:'mod_rep', esquema:'com'});
+  const r = analizarProcedimiento(fs.readFileSync('extraccion/procedimientos/mod_rep/com/GSELREP001.sql','utf8'), {base:'mod_rep', esquema:'com'});
   console.dir(r, {depth: 5});
 })"
 ```
@@ -34,11 +34,11 @@ node -e "import('./governance/scripts/lib/tsql.mjs').then(async ({analizarProced
 Base y esquema implícitos: `TABLA` → base y esquema del SP (marcado ⚠️ esquema implícito);
 `esquema.TABLA` → base del SP; `base..TABLA` → esquema `dbo`.
 
-## 2. Motor (`sql/02-dependencias/<base>.sql`)
+## 2. Motor (`extraccion/sql/02-dependencias/<base>.sql`)
 
 Por cada SP: `sys.dm_sql_referenced_entities` (columnas, misma base) dentro de `TRY/CATCH`, y
 `sys.sql_expression_dependencies` (tablas, incluidas otras bases). Guardar el resultado como
-`fuente/dependencias/<base>.csv` con encabezados y regenerar.
+`extraccion/fuente/dependencias/<base>.csv` con encabezados y regenerar.
 
 Límites: **no da columnas de tablas de otra base**, no ve SQL dinámico ni `#temporales`, y falla si el
 SP no compila contra el esquema actual (queda `motor-con-error`).
@@ -46,7 +46,7 @@ SP no compila contra el esquema actual (queda `motor-con-error`).
 ## 3. Cómo se combinan
 
 - Una referencia del motor es **tabla** si `ref_objeto_tipo` lo dice, si el análisis también la ve o si
-  existe en `fuente/estructura`. Funciones, tipos de tabla, SP y alias sin resolver van a *Otros objetos*.
+  existe en `extraccion/fuente/estructura`. Funciones, tipos de tabla, SP y alias sin resolver van a *Otros objetos*.
 - Un nombre sin esquema (`FROM TABLA`) toma el esquema con el que el mismo SP la nombra, o el que tiene en
   la estructura real; si no hay ninguno, queda ⚠️ esquema implícito.
 - Una columna sin calificar entre varias tablas se atribuye a la única que la tiene en la estructura

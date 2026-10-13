@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 2 columna(s) usadas · 1 procedimiento(s) · vista con 2 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/VABRE001.sql](../../../../sql/03-tablas/storage/com_act/VABRE001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/VABRE001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/VABRE001.sql)
 
 ### Columnas usadas
 

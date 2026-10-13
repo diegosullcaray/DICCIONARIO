@@ -3,9 +3,9 @@
 <!-- generado:inicio ficha -->
 <!-- Generado por governance/scripts/generar-diccionario.mjs. No editar dentro de este bloque: se regenera. -->
 
-Base `FCMIS_REP` · esquema `dbo` · 6 columna(s) usadas · 1 procedimiento(s) · estructura real sin consultar (`python herramientas/bd.py estructura`)
+Base `FCMIS_REP` · esquema `dbo` · 6 columna(s) usadas · 1 procedimiento(s) · estructura real sin consultar (`python extraccion/herramientas/bd.py estructura`)
 
-Consultas listas: [sql/03-tablas/FCMIS_REP/dbo/ControlCargaData.sql](../../../../sql/03-tablas/FCMIS_REP/dbo/ControlCargaData.sql)
+Consultas listas: [extraccion/sql/03-tablas/FCMIS_REP/dbo/ControlCargaData.sql](../../../../extraccion/sql/03-tablas/FCMIS_REP/dbo/ControlCargaData.sql)
 
 ### Columnas usadas
 

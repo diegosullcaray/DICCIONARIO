@@ -7,8 +7,8 @@
 |---|---|
 | Base · esquema | `mod_rep` · `com` |
 | Estado | 🔎 extraído |
-| Cuerpo | [procedimientos/mod_rep/com/GDASHCLI01.sql](../../../../procedimientos/mod_rep/com/GDASHCLI01.sql) |
-| Extracción | [sql/01-extraccion/mod_rep/com/GDASHCLI01.sql](../../../../sql/01-extraccion/mod_rep/com/GDASHCLI01.sql) |
+| Cuerpo | [extraccion/procedimientos/mod_rep/com/GDASHCLI01.sql](../../../../extraccion/procedimientos/mod_rep/com/GDASHCLI01.sql) |
+| Extracción | [extraccion/sql/01-extraccion/mod_rep/com/GDASHCLI01.sql](../../../../extraccion/sql/01-extraccion/mod_rep/com/GDASHCLI01.sql) |
 | Consumido por el front MIS | no (según la última traza) |
 
 ### Reportes que lo ejecutan (1)

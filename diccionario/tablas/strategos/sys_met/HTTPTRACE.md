@@ -5,7 +5,7 @@
 
 Base `strategos` · esquema `sys_met` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 6 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/strategos/sys_met/HTTPTRACE.sql](../../../../sql/03-tablas/strategos/sys_met/HTTPTRACE.sql)
+Consultas listas: [extraccion/sql/03-tablas/strategos/sys_met/HTTPTRACE.sql](../../../../extraccion/sql/03-tablas/strategos/sys_met/HTTPTRACE.sql)
 
 ### Columnas usadas
 

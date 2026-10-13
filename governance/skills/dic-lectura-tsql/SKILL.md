@@ -48,4 +48,4 @@ Hipótesis a confirmar al extraerlos: los otros RCODREP `SEL_*` (`SEL_JEFE_01`, 
 ## 4. Regla de oro
 
 El nombre de una columna no es su significado. `HFCRES` puede sugerir algo; se escribe solo lo que
-confirma el código, el dato perfilado (`sql/03-tablas`) o el dueño funcional.
+confirma el código, el dato perfilado (`extraccion/sql/03-tablas`) o el dueño funcional.

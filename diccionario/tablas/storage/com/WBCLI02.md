@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com` · 1 columna(s) usadas · 1 procedimiento(s) · tabla con 4 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com/WBCLI02.sql](../../../../sql/03-tablas/storage/com/WBCLI02.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com/WBCLI02.sql](../../../../extraccion/sql/03-tablas/storage/com/WBCLI02.sql)
 
 ### Columnas usadas
 

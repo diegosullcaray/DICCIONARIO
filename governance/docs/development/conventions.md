@@ -4,14 +4,14 @@
 
 | Qué | Ruta |
 |---|---|
-| Cuerpo de SP | `procedimientos/<base>/<esquema>/<SP>.sql` |
-| SQL de extracción | `sql/01-extraccion/<base>/<esquema>/<SP>.sql` |
-| SQL de dependencias | `sql/02-dependencias/<base>.sql` |
-| SQL de tabla | `sql/03-tablas/<base>/<esquema>/<tabla>.sql` |
-| Resultado del motor | `fuente/dependencias/<base>.csv` |
+| Cuerpo de SP | `extraccion/procedimientos/<base>/<esquema>/<SP>.sql` |
+| SQL de extracción | `extraccion/sql/01-extraccion/<base>/<esquema>/<SP>.sql` |
+| SQL de dependencias | `extraccion/sql/02-dependencias/<base>.sql` |
+| SQL de tabla | `extraccion/sql/03-tablas/<base>/<esquema>/<tabla>.sql` |
+| Resultado del motor | `extraccion/fuente/dependencias/<base>.csv` |
 | Ficha de SP | `diccionario/procedimientos/<base>/<esquema>/<SP>.md` |
 | Ficha de tabla | `diccionario/tablas/<base>/<esquema>/<tabla>.md` |
-| Consulta utilitaria | `sql/04-consultas/NN-<verbo>-<objeto>.sql` |
+| Consulta utilitaria | `extraccion/sql/04-consultas/NN-<verbo>-<objeto>.sql` |
 
 - `<base>`, `<esquema>` y `<SP>` **sin corchetes ni espacios**, con la grafía del catálogo.
 - Scripts en español, `kebab-case.mjs`. Funciones y variables en español, `camelCase`.

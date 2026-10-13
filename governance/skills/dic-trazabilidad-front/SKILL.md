@@ -13,7 +13,7 @@ node governance/scripts/trazar-front.mjs --front=<ruta>
 npm run generar
 ```
 
-Busca cada RCODREP como literal en `src/app/**/*.ts` y guarda `fuente/consumo-front.json` con el commit
+Busca cada RCODREP como literal en `src/app/**/*.ts` y guarda `extraccion/fuente/consumo-front.json` con el commit
 del front leído. En el front, los códigos viven en `constantes/*.constantes.ts` de cada módulo
 (ver su `governance/docs/data/catalog.md`).
 

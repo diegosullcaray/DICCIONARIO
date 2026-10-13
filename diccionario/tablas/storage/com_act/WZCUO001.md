@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_act` · 24 columna(s) usadas · 6 procedimiento(s) · tabla con 34 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_act/WZCUO001.sql](../../../../sql/03-tablas/storage/com_act/WZCUO001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_act/WZCUO001.sql](../../../../extraccion/sql/03-tablas/storage/com_act/WZCUO001.sql)
 
 ### Columnas usadas
 

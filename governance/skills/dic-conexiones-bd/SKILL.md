@@ -1,12 +1,12 @@
 ---
 name: dic-conexiones-bd
-description: Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y cómo diagnosticar un error de conexión. Usar al configurar el entorno, al bajar SP o dependencias de la base o cuando herramientas/bd.py falla al conectar.
+description: Cómo se conecta el DICCIONARIO a SQL Server desde Python — los 3 servidores (mish, slc, rcc) del .env compartido con REPORTES-AUTOMATIZADOS, qué base vive en cada uno y cómo diagnosticar un error de conexión. Usar al configurar el entorno, al bajar SP o dependencias de la base o cuando extraccion/herramientas/bd.py falla al conectar.
 ---
 
 # Conexiones a la base
 
 Mismo contrato que la skill `reportes-conexiones-bd` de REPORTES-AUTOMATIZADOS. Instalación y todos los
-comandos: [herramientas/README.md](../../../herramientas/README.md).
+comandos: [extraccion/herramientas/README.md](../../../extraccion/herramientas/README.md).
 
 ## Servidores
 
@@ -25,9 +25,9 @@ REPORTES-AUTOMATIZADOS con `--env`.
 | Error | Causa |
 |---|---|
 | `Define MISH_SERVER en el .env` | falta el `.env` o el `--env` |
-| `Falta pyodbc` / `driver ODBC` | `pip install -r herramientas/requirements.txt` + «ODBC Driver 17 for SQL Server» |
+| `Falta pyodbc` / `driver ODBC` | `pip install -r extraccion/herramientas/requirements.txt` + «ODBC Driver 17 for SQL Server» |
 | `Login failed` | la cuenta no tiene acceso a esa base |
-| `No sé en qué servidor vive la base` | agregarla a `BASES_DE` en `herramientas/diccionario_bd/config.py` (y en REPORTES-AUTOMATIZADOS) |
+| `No sé en qué servidor vive la base` | agregarla a `BASES_DE` en `extraccion/herramientas/diccionario_bd/config.py` (y en REPORTES-AUTOMATIZADOS) |
 
 ## Prohibido
 

@@ -13,7 +13,7 @@
     "hallazgos": "node governance/scripts/validar.mjs --detalle",
     "test": "node --test governance/scripts/tests/*.test.mjs",
     "trazar:front": "node governance/scripts/trazar-front.mjs --front=../MIS-angular-front",
-    "test:py": "python -m unittest discover -s herramientas/tests -t herramientas",
-    "bd": "python herramientas/bd.py"
+    "test:py": "python -m unittest discover -s extraccion/herramientas/tests -t extraccion/herramientas",
+    "bd": "python extraccion/herramientas/bd.py"
   }
 }

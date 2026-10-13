@@ -5,7 +5,7 @@
 
 Base `storage` · esquema `com_seg` · 12 columna(s) usadas · 8 procedimiento(s) · tabla con 11 columna(s) en la base
 
-Consultas listas: [sql/03-tablas/storage/com_seg/SDSF001.sql](../../../../sql/03-tablas/storage/com_seg/SDSF001.sql)
+Consultas listas: [extraccion/sql/03-tablas/storage/com_seg/SDSF001.sql](../../../../extraccion/sql/03-tablas/storage/com_seg/SDSF001.sql)
 
 ### Columnas usadas
 

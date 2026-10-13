@@ -6,7 +6,7 @@ description: Cómo sacar el cuerpo de un procedimiento almacenado de SQL Server 
 
 # Extracción de procedimientos
 
-Un SP sin cuerpo en `procedimientos/<base>/<esquema>/<SP>.sql` queda ⏳ pendiente: el diccionario solo
+Un SP sin cuerpo en `extraccion/procedimientos/<base>/<esquema>/<SP>.sql` queda ⏳ pendiente: el diccionario solo
 describe lo que tiene. Los comandos están en el [flujo de trabajo](../../../governance/docs/development/workflow.md);
 acá va lo que hay que verificar.
 
@@ -14,10 +14,10 @@ acá va lo que hay que verificar.
 
 | Situación | Usar |
 |---|---|
-| Hay `.env` y driver ODBC | `python herramientas/bd.py extraer [--base] [--sp] [--reporte]` |
-| Un SP suelto, solo SSMS | `sql/01-extraccion/<base>/<esquema>/<SP>.sql` |
-| Una base entera, solo SSMS | `sql/01-extraccion/_lotes/<base>.sql` |
-| `sqlcmd` sin Python | `governance/scripts/extraer-definiciones.ps1` |
+| Hay `.env` y driver ODBC | `python extraccion/herramientas/bd.py extraer [--base] [--sp] [--reporte]` |
+| Un SP suelto, solo SSMS | `extraccion/sql/01-extraccion/<base>/<esquema>/<SP>.sql` |
+| Una base entera, solo SSMS | `extraccion/sql/01-extraccion/_lotes/<base>.sql` |
+| `sqlcmd` sin Python | `extraccion/herramientas/extraer-definiciones.ps1` |
 
 ## Verificar el cuerpo
 

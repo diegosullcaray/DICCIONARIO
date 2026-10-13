@@ -7,9 +7,9 @@
 |---|---|
 | Base · esquema | `strategos` · `mod_rep_com_act` |
 | Estado | ✅ validado |
-| Cuerpo | [procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.sql](../../../../procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.sql) |
-| Extracción | [sql/01-extraccion/strategos/mod_rep_com_act/GDDESEMDIA.sql](../../../../sql/01-extraccion/strategos/mod_rep_com_act/GDDESEMDIA.sql) |
-| Consultar sus tablas | [sql/05-por-procedimiento/strategos/mod_rep_com_act/GDDESEMDIA.sql](../../../../sql/05-por-procedimiento/strategos/mod_rep_com_act/GDDESEMDIA.sql) |
+| Cuerpo | [extraccion/procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.sql](../../../../extraccion/procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.sql) |
+| Extracción | [extraccion/sql/01-extraccion/strategos/mod_rep_com_act/GDDESEMDIA.sql](../../../../extraccion/sql/01-extraccion/strategos/mod_rep_com_act/GDDESEMDIA.sql) |
+| Consultar sus tablas | [extraccion/sql/05-por-procedimiento/strategos/mod_rep_com_act/GDDESEMDIA.sql](../../../../extraccion/sql/05-por-procedimiento/strategos/mod_rep_com_act/GDDESEMDIA.sql) |
 | Consumido por el front MIS | sí |
 
 ### Reportes que lo ejecutan (1)
@@ -45,7 +45,7 @@ No se detectó un SELECT final que devuelva filas.
 
 ### Validación con el motor
 
-Fuente: `fuente/dependencias/strategos.csv`.
+Fuente: `extraccion/fuente/dependencias/strategos.csv`.
 <!-- generado:fin -->
 
 ## Propósito

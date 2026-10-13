@@ -9,10 +9,10 @@ tabla (storage, strategos, …)            diccionario/tablas/<base>/<esquema>/<
 procedimiento (mod_rep.com.GSELREP001)   diccionario/procedimientos/<base>/<esquema>/<SP>.md
    │ parámetros en orden                  ▲ firma, tablas, salida
    ▼                                      │
-reporte (RCODREP = SEL_EFEC_01)          fuente/reportes.json → diccionario/reportes.md
+reporte (RCODREP = SEL_EFEC_01)          extraccion/fuente/reportes.json → diccionario/reportes.md
    │ cod_rep por Winder/Ant               ▲
    ▼                                      │
-pantalla de MIS-angular-front            fuente/consumo-front.json (npm run trazar:front)
+pantalla de MIS-angular-front            extraccion/fuente/consumo-front.json (npm run trazar:front)
 ```
 
 ## Cómo rastrear una cifra

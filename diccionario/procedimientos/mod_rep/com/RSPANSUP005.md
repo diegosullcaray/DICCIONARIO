@@ -7,8 +7,8 @@
 |---|---|
 | Base · esquema | `mod_rep` · `com` |
 | Estado | ✅ validado |
-| Cuerpo | [procedimientos/mod_rep/com/RSPANSUP005.sql](../../../../procedimientos/mod_rep/com/RSPANSUP005.sql) |
-| Extracción | [sql/01-extraccion/mod_rep/com/RSPANSUP005.sql](../../../../sql/01-extraccion/mod_rep/com/RSPANSUP005.sql) |
+| Cuerpo | [extraccion/procedimientos/mod_rep/com/RSPANSUP005.sql](../../../../extraccion/procedimientos/mod_rep/com/RSPANSUP005.sql) |
+| Extracción | [extraccion/sql/01-extraccion/mod_rep/com/RSPANSUP005.sql](../../../../extraccion/sql/01-extraccion/mod_rep/com/RSPANSUP005.sql) |
 | Consumido por el front MIS | no (según la última traza) |
 
 ### Reportes que lo ejecutan (1)
@@ -46,7 +46,7 @@ Según el motor; no son tablas: funciones, SP, sinónimos, tipos de tabla o alia
 
 ### Validación con el motor
 
-Fuente: `fuente/dependencias/mod_rep.csv`.
+Fuente: `extraccion/fuente/dependencias/mod_rep.csv`.
 <!-- generado:fin -->
 
 ## Propósito

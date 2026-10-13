@@ -1,5 +1,5 @@
-// Importa el resultado de sql/02-dependencias/<base>.sql guardado como CSV en
-// fuente/dependencias/<base>.csv (SSMS: "Guardar resultados como…", con encabezados).
+// Importa el resultado de extraccion/sql/02-dependencias/<base>.sql guardado como CSV en
+// extraccion/fuente/dependencias/<base>.csv (SSMS: "Guardar resultados como…", con encabezados).
 // Acepta coma, punto y coma o tabulador como separador.
 
 import { readFileSync } from 'node:fs';
