@@ -25,6 +25,7 @@ lo demás. Nada derivado se edita a mano, salvo la prosa marcada para eso.
 | Consumo del front | `extraccion/fuente/consumo-front.json` | `npm run trazar:front` | no |
 | SQL de extracción, dependencias, tablas y por SP | `extraccion/sql/01-*`, `02-*`, `03-*`, `05-*` | `npm run generar` | no |
 | Consultas utilitarias | `extraccion/sql/04-consultas/` | personas | sí |
+| Cambios pedidos a los SP | `modificaciones/NNNN-<tema>/` | personas: petición, análisis y scripts | sí (convención en su README) |
 | Fichas, índices y JSON | `diccionario/` | `npm run generar` | solo la prosa **debajo** de `<!-- generado:fin -->` |
 | Línea base de hallazgos | `governance/linea-base.json` | `validar.mjs --guardar-linea-base` | no: se regenera deliberadamente |
 | Agentes y skills | `governance/agents/`, `governance/skills/` | personas | sí (`.claude/` es copia) |
