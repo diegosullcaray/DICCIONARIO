@@ -6,7 +6,8 @@ Diccionario de datos de los reportes del MIS de Financiera Confianza: para cada 
 | Empezar por | |
 |---|---|
 | El diccionario: avance, reportes, procedimientos, tablas | [diccionario/README.md](diccionario/README.md) |
-| Qué está mal hoy, agrupado por quién lo corrige | [hallazgos](governance/docs/evidence/quality/hallazgos.md) |
+| Qué está mal y qué falta, al detalle | [errores/](errores/README.md) |
+| Todas las tablas: para qué sirven y qué columnas se usan | [diccionario/diccionario-tablas.xlsx](diccionario/diccionario-tablas.xlsx) |
 | Cómo se trabaja: docs, agentes, skills, scripts | [governance/readme.md](governance/readme.md) |
 | Reglas para personas y agentes | [AGENTS.md](AGENTS.md) |
 
@@ -17,6 +18,7 @@ DICCIONARIO/
 ├── diccionario/   el producto: fichas por SP y por tabla, índices y diccionario.json
 ├── governance/    cómo se trabaja: docs, agentes, skills, scripts Node y línea base
 ├── extraccion/    el proceso que trae los datos de SQL Server: herramientas, sql, procedimientos y fuentes
+├── errores/      qué está mal y qué falta: producción, catálogo, análisis y pendientes (generado)
 ├── modificaciones/ cambios pedidos a los SP: petición, análisis, SP _NEW, verificación y rollback
 └── .claude/       copia de agentes y skills para Claude Code (generada)
 ```
@@ -36,6 +38,7 @@ python extraccion/herramientas/bd.py mapa --reporte SEL_EFEC_01                 
 
 # Sin la base
 npm run generar      # regenera SQL, diccionario y copias de agentes
+npm run excel        # diccionario/diccionario-tablas.xlsx (requiere openpyxl)
 npm run verificar    # falla ante errores nuevos o algo viejo, roto o inconsistente
 npm run hallazgos    # todos los hallazgos, incluidos los conocidos
 npm test             # analizador T-SQL

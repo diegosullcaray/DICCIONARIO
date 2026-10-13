@@ -22,7 +22,7 @@ para siempre y deja de avisar cuando aparece un problema nuevo.
 
 ## Consecuencias
 
-- Los errores de producción siguen visibles en [hallazgos](../../evidence/quality/hallazgos.md), marcados
+- Los errores de producción siguen visibles en [errores/](../../../../errores/README.md), marcados
   como línea base, para entregarlos a sus dueños.
 - **Regenerar la línea base para destrabar un pipeline rojo es esconder deuda.** Se hace solo en un
   commit propio, con el porqué en el mensaje.

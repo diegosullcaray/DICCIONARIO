@@ -31,7 +31,7 @@ Cada tema vive en un solo documento; los demás enlazan.
 | Rastrear una cifra de la tabla a la pantalla | [Linaje](./docs/data/lineage.md) |
 | Saber qué controla `npm run verificar` y cada regla | [Calidad](./docs/data/quality.md) |
 | Saber quién decide sobre cada pieza | [Responsabilidades](./docs/data/stewardship.md) |
-| Ver qué está mal hoy, por origen | [Hallazgos](./docs/evidence/quality/hallazgos.md) |
+| Ver qué está mal y qué falta, al detalle | [errores/](../errores/README.md) |
 
 **Decisiones (ADR)**
 

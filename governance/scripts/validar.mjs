@@ -40,7 +40,7 @@ resultado.hallazgos = modelo.hallazgos.map((h) => ({ ...h, enLineaBase: !sinLine
 resultado.lineaBaseVencida = sinLineaBase ? [] : modelo.lineaBaseVencida;
 
 // ── 2. Generados al día
-for (const script of ['generar-extraccion.mjs', 'generar-diccionario.mjs', 'sincronizar-agentes.mjs']) {
+for (const script of ['generar-extraccion.mjs', 'generar-diccionario.mjs', 'generar-errores.mjs', 'sincronizar-agentes.mjs']) {
   try {
     execFileSync(process.execPath, [join(RAIZ, 'governance', 'scripts', script), '--check'], { stdio: 'pipe' });
   } catch (e) {
@@ -76,7 +76,7 @@ else {
   console.log(`  nuevos (fuera de la línea base): ${cuenta('error', nuevo)} error(es) · ${cuenta('aviso', nuevo)} aviso(s)`);
   const lista = flags.has('detalle') ? resultado.hallazgos : resultado.hallazgos.filter((h) => h.nivel !== 'info' && nuevo(h)).slice(0, 25);
   for (const h of lista) console.log(`  ${h.nivel.padEnd(5)} ${h.origen.padEnd(11)} ${h.regla.padEnd(28)} ${h.objeto} — ${h.detalle}${h.enLineaBase ? ' [línea base]' : ''}`);
-  if (!flags.has('detalle')) console.log('  … todos con --detalle, o por origen en governance/docs/evidence/quality/hallazgos.md');
+  if (!flags.has('detalle')) console.log('  … todos con --detalle, o por origen en errores/README.md');
   const bloque = (titulo, items, como) => {
     console.log(`${items.length ? '✗' : '✓'} ${titulo}${items.length ? `: ${items.length}` : ''}`);
     for (const i of items.slice(0, 15)) console.log(`  · ${i}`);

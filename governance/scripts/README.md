@@ -21,6 +21,8 @@ Comparten [`lib/`](./lib/):
 |---|---|---|
 | [`generar-extraccion.mjs`](./generar-extraccion.mjs) | SQL de extracción y de dependencias | `npm run generar` |
 | [`generar-diccionario.mjs`](./generar-diccionario.mjs) | fichas, índices, JSON, SQL por tabla | `npm run generar` |
+| [`generar-errores.mjs`](./generar-errores.mjs) | `errores/`: producción, catálogo, análisis y pendientes | `npm run generar` |
+| [`generar_excel.py`](./generar_excel.py) | `diccionario/diccionario-tablas.xlsx` desde `diccionario.json` (Python + openpyxl) | `npm run excel` |
 | [`sincronizar-agentes.mjs`](./sincronizar-agentes.mjs) | `governance/` → `.claude/` y `.agents/skills.json` | `npm run generar` |
 | [`validar.mjs`](./validar.mjs) | verificación única | `npm run verificar` |
 | [`trazar-front.mjs`](./trazar-front.mjs) | consumo de RCODREP en MIS-angular-front | `npm run trazar:front` |
@@ -51,7 +53,7 @@ node governance/scripts/generar-diccionario.mjs [--check]
 ```
 
 Construye el [modelo](./lib/modelo.mjs) y escribe `diccionario/`, `extraccion/sql/03-tablas/` y los bloques
-generados de `docs/data/catalog.md` y `docs/evidence/quality/hallazgos.md`.
+generados de `docs/data/catalog.md` y `docs/data/quality.md`. La carpeta `errores/` la genera `generar-errores.mjs`.
 
 Las fichas usan marcadores `<!-- generado:inicio ficha -->` / `<!-- generado:fin -->`: lo de adentro se
 reescribe, lo de afuera se conserva. En las fichas de tabla, las líneas `` - `COLUMNA`: descripción ``

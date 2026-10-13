@@ -27,6 +27,8 @@ lo demás. Nada derivado se edita a mano, salvo la prosa marcada para eso.
 | Consultas utilitarias | `extraccion/sql/04-consultas/` | personas | sí |
 | Cambios pedidos a los SP | `modificaciones/NNNN-<tema>/` | personas: petición, análisis y scripts | sí (convención en su README) |
 | Fichas, índices y JSON | `diccionario/` | `npm run generar` | solo la prosa **debajo** de `<!-- generado:fin -->` |
+| Errores y pendientes al detalle | `errores/` | `npm run generar` | no |
+| Excel de tablas y columnas | `diccionario/diccionario-tablas.xlsx` | `npm run excel` (desde `diccionario.json`) | no: la descripción se escribe en la ficha |
 | Línea base de hallazgos | `governance/linea-base.json` | `validar.mjs --guardar-linea-base` | no: se regenera deliberadamente |
 | Agentes y skills | `governance/agents/`, `governance/skills/` | personas | sí (`.claude/` es copia) |
 

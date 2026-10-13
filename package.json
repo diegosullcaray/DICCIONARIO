@@ -7,13 +7,14 @@
     "node": ">=20"
   },
   "scripts": {
-    "generar": "node governance/scripts/generar-extraccion.mjs && node governance/scripts/generar-diccionario.mjs && node governance/scripts/sincronizar-agentes.mjs",
+    "generar": "node governance/scripts/generar-extraccion.mjs && node governance/scripts/generar-diccionario.mjs && node governance/scripts/generar-errores.mjs && node governance/scripts/sincronizar-agentes.mjs",
     "verificar": "node governance/scripts/validar.mjs --check",
     "verificar:estricto": "node governance/scripts/validar.mjs --check --estricto",
     "hallazgos": "node governance/scripts/validar.mjs --detalle",
     "test": "node --test governance/scripts/tests/*.test.mjs",
     "trazar:front": "node governance/scripts/trazar-front.mjs --front=../MIS-angular-front",
     "test:py": "python -m unittest discover -s extraccion/herramientas/tests -t extraccion/herramientas",
-    "bd": "python extraccion/herramientas/bd.py"
+    "bd": "python extraccion/herramientas/bd.py",
+    "excel": "python governance/scripts/generar_excel.py"
   }
 }

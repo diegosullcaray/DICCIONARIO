@@ -11,7 +11,6 @@
 //   extraccion/sql/03-tablas/<b>/<e>/<tabla>.sql              consultas listas para cada tabla descubierta
 //   extraccion/sql/05-por-procedimiento/<b>/<e>/<SP>.sql      las tablas de un SP con las columnas que usa
 //   governance/docs/data/catalog.md                bloque de resumen
-//   governance/docs/evidence/quality/hallazgos.md  bloque de hallazgos
 //
 // Las fichas tienen un bloque generado y, debajo, prosa escrita a mano que no se pisa.
 // Uso: node governance/scripts/generar-diccionario.mjs [--check]
@@ -27,6 +26,12 @@ const m = construirModelo();
 const SCRIPT = 'generar-diccionario.mjs';
 const D = RUTAS.diccionario;
 
+/** Texto de la sección "## Descripción" de una ficha de tabla, sin los placeholders de la plantilla. */
+const descripcionTabla = (manual) => {
+  const m = manual.match(/## Descripción\s*\n([\s\S]*?)(\n## |$)/);
+  const texto = (m?.[1] ?? '').split('\n').map((l) => l.trim()).filter((l) => l && !/^_.*_$/.test(l)).join(' ');
+  return texto || null;
+};
 const enlace = (desde, hacia) => relative(dirname(desde), hacia).split(sep).join('/');
 const archivoFicha = (sp) => join(D, 'procedimientos', sp.base ?? '_sin_base', sp.esquema ?? 'dbo', `${sp.nombre}.md`);
 const archivoTabla = (t) => join(D, 'tablas', t.base ?? '_sin_base', t.esquema ?? 'dbo', `${t.nombre}.md`);
@@ -307,7 +312,8 @@ const nuevos = m.hallazgos.filter((h) => h.nivel === 'error' && !h.enLineaBase).
     '| El estado de cada SP | [procedimientos.md](./procedimientos.md) |',
     '| Qué reportes usan una tabla o columna | [tablas.md](./tablas.md) |',
     '| Todo en formato máquina | [diccionario.json](./diccionario.json) |',
-    '| Qué está mal en la fuente | [hallazgos](../governance/docs/evidence/quality/hallazgos.md) |',
+    '| Qué está mal y qué falta | [errores/](../errores/README.md) |',
+    '| Todas las tablas en Excel | [diccionario-tablas.xlsx](./diccionario-tablas.xlsx) (`npm run excel`) |',
     '',
   ].join('\n'));
 }
@@ -386,11 +392,36 @@ const json = {
       columnas: [...d.columnas.values()].map((c) => ({ nombre: c.nombre, confianza: confianza(c.fuentes) })),
     })),
   })),
-  tablas: tablas.map((t) => ({
-    nombre: t.completo,
-    columnas: [...t.columnas.values()].map((c) => ({ nombre: c.nombre, confianza: confianza(c.fuentes), procedimientos: [...c.sps].sort() })),
-    procedimientos: [...t.sps.values()].map(({ sp }) => sp.completo).sort(),
-  })),
+  tablas: tablas.map((t) => {
+    const manual = leerManual(archivoTabla(t));
+    const desc = leerDescripciones(manual);
+    const reportes = new Map();
+    for (const { sp } of t.sps.values()) for (const r of sp.reportes) reportes.set(r.codigo, r);
+    return {
+      nombre: t.completo,
+      base: t.base,
+      esquema: t.esquema,
+      tabla: t.nombre,
+      tipo: t.real ? (t.real.tipoObjeto === 'VIEW' ? 'vista' : 'tabla') : t.trabajo ? 'tabla de trabajo' : null,
+      existe: t.real ? true : m.estructura.bases.has(String(t.base).toLowerCase()) && !t.trabajo ? false : null,
+      columnasReales: t.real ? t.real.columnas.size : null,
+      descripcion: descripcionTabla(manual),
+      ficha: rel(archivoTabla(t)),
+      columnas: [...t.columnas.values()].sort((a, b) => a.nombre.localeCompare(b.nombre)).map((c) => ({
+        nombre: c.nombre,
+        tipo: c.real?.tipo ?? null,
+        aceptaNulos: c.real ? c.real.nulos : null,
+        existe: c.real ? true : t.real && c.nombre !== '*' ? false : null,
+        confianza: confianza(c.fuentes),
+        descripcion: desc.get(c.nombre.toLowerCase()) ?? null,
+        procedimientos: [...c.sps].sort(),
+      })),
+      procedimientos: [...t.sps.values()].sort((a, b) => a.sp.completo.localeCompare(b.sp.completo))
+        .map(({ sp, usos }) => ({ nombre: sp.completo, usos: [...usos].sort(), estado: sp.estado })),
+      reportes: [...reportes.values()].sort((a, b) => a.codigo.localeCompare(b.codigo))
+        .map((r) => ({ codigo: r.codigo, descripcion: r.descripcion, front: r.front?.dominios ?? [] })),
+    };
+  }),
   hallazgos: m.hallazgos,
 };
 salida.escribir(join(D, 'diccionario.json'), `${JSON.stringify(json, null, 2)}\n`);
@@ -406,27 +437,6 @@ salida.escribir(join(D, 'diccionario.json'), `${JSON.stringify(json, null, 2)}\n
     l.push(`| \`${b}\` | ${esquemas} | ${lista.length} | ${lista.reduce((n, s) => n + s.reportes.length, 0)} | ${lista.filter(tieneFicha).length} | ${lista.filter((s) => s.estado === 'validado').length} | ${lista.filter((s) => s.estado === 'inexistente').length} |`);
   }
   salida.inyectar(ruta, 'catalogo', l.join('\n'), () => { throw new Error(`${rel(ruta)} no existe`); });
-}
-{
-  const ruta = join(RUTAS.docs, 'evidence', 'quality', 'hallazgos.md');
-  const l = [cabeceraGenerado(SCRIPT), ''];
-  l.push('| Origen | Errores | Avisos | Info | En línea base |', '|---|---:|---:|---:|---:|');
-  for (const origen of Object.keys(ORIGENES)) {
-    const lista = m.hallazgos.filter((h) => h.origen === origen);
-    const n = (nivel) => lista.filter((h) => h.nivel === nivel).length;
-    l.push(`| ${origen} | ${n('error')} | ${n('aviso')} | ${n('info')} | ${lista.filter((h) => h.enLineaBase).length} |`);
-  }
-  for (const [origen, explicacion] of Object.entries(ORIGENES)) {
-    const lista = m.hallazgos.filter((h) => h.origen === origen && h.nivel !== 'info');
-    if (!lista.length) continue;
-    const titulo = { catalogo: 'Catálogo', produccion: 'Producción', repositorio: 'Repositorio', analisis: 'Análisis' }[origen];
-    l.push('', `### ${titulo}`, '', explicacion + '.', '');
-    l.push('| Nivel | Regla | Objeto | Detalle | Línea base |', '|---|---|---|---|---|');
-    for (const h of lista) l.push(`| ${h.nivel} | \`${h.regla}\` | \`${celda(h.objeto)}\` | ${celda(h.detalle)} | ${h.enLineaBase ? 'sí' : '**nuevo**'} |`);
-  }
-  const info = m.hallazgos.filter((h) => h.nivel === 'info').length;
-  l.push('', `Más ${info} hallazgo(s) informativo(s): \`npm run hallazgos\` o \`diccionario/diccionario.json\`.`);
-  salida.inyectar(ruta, 'hallazgos', l.join('\n'), () => { throw new Error(`${rel(ruta)} no existe`); });
 }
 {
   // Tabla de reglas: se deriva de REGLAS para que el documento no pueda quedar distinto del código.

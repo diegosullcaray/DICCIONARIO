@@ -47,7 +47,9 @@ Después de cualquiera de los dos caminos: `npm run generar`.
 - La ficha de cada SP (`diccionario/procedimientos/…`) contra su cuerpo: skill
   [dic-analisis-dependencias](../../skills/dic-analisis-dependencias/SKILL.md).
 - Los hallazgos nuevos: `npm run verificar` los lista; el informe completo por origen está en
-  [hallazgos](../evidence/quality/hallazgos.md). Qué hacer con cada regla: [calidad](../data/quality.md).
+  [errores/](../../../errores/README.md). Qué hacer con cada regla: [calidad](../data/quality.md).
+- Después de `npm run generar`, `npm run excel` actualiza el Excel de tablas y columnas
+  (`diccionario/diccionario-tablas.xlsx`): se commitea junto con el resto.
 - Para ver una tabla con datos reales: `extraccion/sql/03-tablas/<base>/<esquema>/<tabla>.sql`; para las tablas de un SP
   con solo las columnas que usa: `extraccion/sql/05-por-procedimiento/<base>/<esquema>/<SP>.sql`.
 
