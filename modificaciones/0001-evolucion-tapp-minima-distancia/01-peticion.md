@@ -35,3 +35,4 @@ Las dos tablas salen de **un solo SP** (`GDCGEST_ACTIVAST01`); no existe un `GDC
 | [03-GDCGEST_ACTIVAST01_NEW.create.sql](./03-GDCGEST_ACTIVAST01_NEW.create.sql) | crea el SP nuevo: copia del original con los 2 cambios |
 | [04-verificacion.sql](./04-verificacion.sql) | chequeo previo, original y nuevo lado a lado, cuadre |
 | [05-rollback.sql](./05-rollback.sql) | volver al original y borrar el nuevo |
+| [06-activacion.sql](./06-activacion.sql) | apuntar `GST_ACTIVAS_06` y `GST_ACTIVAS_M_06` al nuevo en `RREGREP01`: así el front muestra las columnas |

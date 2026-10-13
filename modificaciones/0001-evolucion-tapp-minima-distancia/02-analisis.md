@@ -124,16 +124,17 @@ Solo `GST_ACTIVAS_06` y `GST_ACTIVAS_M_06` (por el nombre, la versión mensual):
 2. Ejecutar `03-GDCGEST_ACTIVAST01_NEW.create.sql` (crea el SP nuevo; el original no cambia).
 3. `04-verificacion.sql` **paso 2**: original y nuevo lado a lado — `@var=6` igual más TM y DT; `@var=1…5` idénticos.
 4. `04-verificacion.sql` **paso 3**: TM y DT de la última fecha cuadran con el recálculo desde `WGATH002`.
-5. Apuntar los reportes **`GST_ACTIVAS_06`** y **`GST_ACTIVAS_M_06`** a `mod_rep.com.GDCGEST_ACTIVAST01_NEW` en la
-   tabla de reportes del backend (campo `RTPREP.name`; los parámetros no cambian). Solo esos dos: el resto
-   de `GST_ACTIVAS_*` sigue con el original.
+5. `06-activacion.sql`: apunta los reportes **`GST_ACTIVAS_06`** y **`GST_ACTIVAS_M_06`** a
+   `mod_rep.com.GDCGEST_ACTIVAST01_NEW` en el catálogo del backend, `[mod_rep].[rep].[RREGREP01]` (campo
+   `RTPREP`; los parámetros no cambian). Solo esos dos: el resto de `GST_ACTIVAS_*` sigue con el original.
+   Deja la transacción abierta para revisar antes del `COMMIT`.
 6. Revisar en el front la pestaña *Evolutivo* de Autonomía de Tasas: la tabla *Evolución de TAPP Mes* muestra
    *TAPP Mínima* y *Distancia (en pbs)*. El front no se modifica.
 7. Reexportar `extraccion/fuente/reportes.json`, extraer el SP nuevo
    (`python extraccion/herramientas/bd.py extraer --sp GDCGEST_ACTIVAST01_NEW`) y `npm run generar`, para que
    el diccionario lo documente. Marcar esta modificación como *aplicada*.
 
-Para volver atrás: `05-rollback.sql` (reapuntar los dos reportes al original y borrar el nuevo).
+Para volver atrás: `05-rollback.sql` (reapuntar en `RREGREP01` los dos reportes al original y borrar el nuevo).
 
 ### Después: no dejar dos SP para siempre
 
