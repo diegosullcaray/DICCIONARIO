@@ -1,0 +1,21 @@
+base,esquema,tabla,tipo_objeto,orden,columna,tipo,largo,precision,escala,acepta_nulos
+strategos,etl,ABPCONF01,BASE TABLE,1,HTIPPRO,varchar,10,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,2,HCODPRO,varchar,10,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,3,HID,int,,10,0,YES
+strategos,etl,ABPCONF01,BASE TABLE,4,HDESPRO,varchar,255,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,5,HCONFIG,varchar,-1,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,6,HSTATUS,bit,,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,7,HULTEJEC,datetime,,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,8,HCODPROPRE,varchar,255,,,YES
+strategos,etl,ABPCONF01,BASE TABLE,9,HDESLOG,varchar,255,,,YES
+strategos,etl,ABPEVLOG01,BASE TABLE,1,HFECPRO,date,,,,NO
+strategos,etl,ABPEVLOG01,BASE TABLE,2,HCODPRO,varchar,10,,,YES
+strategos,etl,ABPEVLOG01,BASE TABLE,3,HDESPRO,varchar,100,,,YES
+strategos,etl,ABPEVLOG01,BASE TABLE,4,HDESTAD,varchar,10,,,YES
+strategos,etl,ABPEVLOG01,BASE TABLE,5,HFECLOG,datetime,,,,NO
+strategos,sys_met,HTTPTRACE,BASE TABLE,1,timestamp,datetime,,,,YES
+strategos,sys_met,HTTPTRACE,BASE TABLE,2,principal,varchar,50,,,YES
+strategos,sys_met,HTTPTRACE,BASE TABLE,3,session,varchar,50,,,YES
+strategos,sys_met,HTTPTRACE,BASE TABLE,4,request,varchar,-1,,,YES
+strategos,sys_met,HTTPTRACE,BASE TABLE,5,response,varchar,-1,,,YES
+strategos,sys_met,HTTPTRACE,BASE TABLE,6,timetaken,int,,10,0,YES

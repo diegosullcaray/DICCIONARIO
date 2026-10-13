@@ -11,22 +11,22 @@ es la prosa debajo del bloque generado de cada ficha.
 |---|---:|
 | Reportes (RCODREP) en el catálogo | 324 |
 | Procedimientos distintos | 271 |
-| Procedimientos extraídos (cuerpo analizado) | 1 (0 %) |
-| Procedimientos validados con el motor | 0 (0 %) |
-| Tablas descubiertas | 1 |
-| Columnas descubiertas | 1 |
+| Procedimientos extraídos (cuerpo analizado) | 236 (87 %) |
+| Procedimientos validados con el motor | 233 (86 %) |
+| Tablas descubiertas | 212 |
+| Columnas descubiertas | 1910 |
 | Reportes consumidos por el front MIS | 176 (commit `d67bf84`) |
-| Hallazgos de calidad | 0 error(es) · 3 aviso(s) |
+| Hallazgos de calidad | 45 error(es) · 447 aviso(s) |
 
 ### Avance por base
 
 | Base | SP | Extraídos | Validados | Tablas usadas | Lote de extracción | Dependencias |
 |---|---:|---:|---:|---:|---|---|
 | `mod_gpa` | 2 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/mod_gpa.sql) | [dependencias](../sql/02-dependencias/mod_gpa.sql) |
-| `mod_rep` | 258 | 1 | 0 | 1 | [lote](../sql/01-extraccion/_lotes/mod_rep.sql) | [dependencias](../sql/02-dependencias/mod_rep.sql) |
-| `mod_sec` | 1 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/mod_sec.sql) | [dependencias](../sql/02-dependencias/mod_sec.sql) |
-| `storage` | 1 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/storage.sql) | [dependencias](../sql/02-dependencias/storage.sql) |
-| `strategos` | 9 | 0 | 0 | 0 | [lote](../sql/01-extraccion/_lotes/strategos.sql) | [dependencias](../sql/02-dependencias/strategos.sql) |
+| `mod_rep` | 258 | 225 | 222 | 210 | [lote](../sql/01-extraccion/_lotes/mod_rep.sql) | [dependencias](../sql/02-dependencias/mod_rep.sql) |
+| `mod_sec` | 1 | 1 | 1 | 2 | [lote](../sql/01-extraccion/_lotes/mod_sec.sql) | [dependencias](../sql/02-dependencias/mod_sec.sql) |
+| `storage` | 1 | 1 | 1 | 2 | [lote](../sql/01-extraccion/_lotes/storage.sql) | [dependencias](../sql/02-dependencias/storage.sql) |
+| `strategos` | 9 | 9 | 9 | 4 | [lote](../sql/01-extraccion/_lotes/strategos.sql) | [dependencias](../sql/02-dependencias/strategos.sql) |
 <!-- generado:fin -->
 
 ## Cómo navegar

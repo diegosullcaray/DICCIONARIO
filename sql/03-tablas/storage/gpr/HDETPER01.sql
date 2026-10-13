@@ -1,0 +1,39 @@
+-- storage.gpr.HDETPER01
+-- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
+-- Usada por: mod_rep.com.GLISDETCLI01, mod_rep.com.GRESCLIREP01
+
+USE storage;
+GO
+
+-- 1. Estructura real: tipo, largo y nulabilidad de cada columna.
+SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
+       c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
+       c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
+       CASE WHEN c.COLUMN_NAME IN (N'HCIIU', N'HCIUINFO', N'HEMAIL', N'HNUMDOC', N'HNUMTELE', N'HPAIS', N'HTELEINFO', N'HTIPDOC', N'HVERCIIU', N'HVERTEL') THEN 1 ELSE 0 END AS usada_por_reportes
+FROM INFORMATION_SCHEMA.COLUMNS c
+WHERE c.TABLE_SCHEMA = N'gpr' AND c.TABLE_NAME = N'HDETPER01'
+ORDER BY c.ORDINAL_POSITION;
+
+-- 2. Tamaño (sin recorrer la tabla).
+SELECT SUM(p.rows) AS filas
+FROM sys.partitions p
+WHERE p.object_id = OBJECT_ID(N'gpr.HDETPER01') AND p.index_id IN (0, 1);
+
+-- 3. Muestra de las columnas que usan los reportes.
+SELECT TOP (100) [HCIIU], [HCIUINFO], [HEMAIL], [HNUMDOC], [HNUMTELE], [HPAIS], [HTELEINFO], [HTIPDOC], [HVERCIIU], [HVERTEL]
+FROM [storage].[gpr].[HDETPER01] WITH (NOLOCK);
+
+-- 4. Perfil rápido: nulos y valores distintos por columna usada.
+SELECT
+    COUNT(*) AS filas,
+    SUM(CASE WHEN [HCIIU] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCIIU], COUNT(DISTINCT [HCIIU]) AS [distintos_HCIIU],
+    SUM(CASE WHEN [HCIUINFO] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCIUINFO], COUNT(DISTINCT [HCIUINFO]) AS [distintos_HCIUINFO],
+    SUM(CASE WHEN [HEMAIL] IS NULL THEN 1 ELSE 0 END) AS [nulos_HEMAIL], COUNT(DISTINCT [HEMAIL]) AS [distintos_HEMAIL],
+    SUM(CASE WHEN [HNUMDOC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HNUMDOC], COUNT(DISTINCT [HNUMDOC]) AS [distintos_HNUMDOC],
+    SUM(CASE WHEN [HNUMTELE] IS NULL THEN 1 ELSE 0 END) AS [nulos_HNUMTELE], COUNT(DISTINCT [HNUMTELE]) AS [distintos_HNUMTELE],
+    SUM(CASE WHEN [HPAIS] IS NULL THEN 1 ELSE 0 END) AS [nulos_HPAIS], COUNT(DISTINCT [HPAIS]) AS [distintos_HPAIS],
+    SUM(CASE WHEN [HTELEINFO] IS NULL THEN 1 ELSE 0 END) AS [nulos_HTELEINFO], COUNT(DISTINCT [HTELEINFO]) AS [distintos_HTELEINFO],
+    SUM(CASE WHEN [HTIPDOC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HTIPDOC], COUNT(DISTINCT [HTIPDOC]) AS [distintos_HTIPDOC],
+    SUM(CASE WHEN [HVERCIIU] IS NULL THEN 1 ELSE 0 END) AS [nulos_HVERCIIU], COUNT(DISTINCT [HVERCIIU]) AS [distintos_HVERCIIU],
+    SUM(CASE WHEN [HVERTEL] IS NULL THEN 1 ELSE 0 END) AS [nulos_HVERTEL], COUNT(DISTINCT [HVERTEL]) AS [distintos_HVERTEL]
+FROM [storage].[gpr].[HDETPER01] WITH (NOLOCK);

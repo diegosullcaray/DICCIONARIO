@@ -26,10 +26,10 @@ y un archivo de `procedimientos/` sin entrada en el catálogo se reporta como hu
 | Base | Esquemas | Procedimientos | Reportes | Extraídos | Validados |
 |---|---|---:|---:|---:|---:|
 | `mod_gpa` | `vac` | 2 | 2 | 0 | 0 |
-| `mod_rep` | `com`, `dbo`, `rep` | 258 | 310 | 1 | 0 |
-| `mod_sec` | `dbo` | 1 | 1 | 0 | 0 |
-| `storage` | `com` | 1 | 1 | 0 | 0 |
-| `strategos` | `mod_rep_com_act` | 9 | 10 | 0 | 0 |
+| `mod_rep` | `com`, `dbo`, `rep` | 258 | 310 | 225 | 222 |
+| `mod_sec` | `dbo` | 1 | 1 | 1 | 1 |
+| `storage` | `com` | 1 | 1 | 1 | 1 |
+| `strategos` | `mod_rep_com_act` | 9 | 10 | 9 | 9 |
 <!-- generado:fin -->
 
 ## Ver también

@@ -1,0 +1,5 @@
+base,esquema,tabla,tipo_objeto,orden,columna,tipo,largo,precision,escala,acepta_nulos
+mod_sys_admin,dbo,SUSEPROF01,BASE TABLE,1,SCODUSE,varchar,255,,,YES
+mod_sys_admin,dbo,SUSEPROF01,BASE TABLE,2,SCODPROFN,varchar,255,,,YES
+mod_sys_admin,dbo,VUSEPROF02,VIEW,1,SCODUSE,varchar,100,,,YES
+mod_sys_admin,dbo,VUSEPROF02,VIEW,2,SCODPROFN,varchar,100,,,YES

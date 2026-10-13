@@ -13,7 +13,7 @@ SET NOCOUNT ON;
 
 DECLARE @catalogo TABLE (esquema sysname, nombre sysname, destino nvarchar(400), extraido bit);
 INSERT INTO @catalogo (esquema, nombre, destino, extraido) VALUES
-     (N'dbo', N'GCATSEC01', N'procedimientos/mod_sec/dbo/GCATSEC01.sql', 0)
+     (N'dbo', N'GCATSEC01', N'procedimientos/mod_sec/dbo/GCATSEC01.sql', 1)
 ;
 
 SELECT

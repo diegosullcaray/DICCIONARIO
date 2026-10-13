@@ -1,0 +1,5 @@
+base,esquema,tabla,tipo_objeto,orden,columna,tipo,largo,precision,escala,acepta_nulos
+mod_sys_login,dbo,SUSEALT01,BASE TABLE,1,SCODUSE,varchar,255,,,YES
+mod_sys_login,dbo,SUSEALT01,BASE TABLE,2,SCODALT,varchar,255,,,YES
+mod_sys_login,dbo,SUSEALT01,BASE TABLE,3,SFECCRE,varchar,255,,,YES
+mod_sys_login,dbo,SUSEALT01,BASE TABLE,4,SFECEXP,varchar,255,,,YES

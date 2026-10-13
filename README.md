@@ -45,8 +45,8 @@ Mismo patrón de conexión que REPORTES-AUTOMATIZADOS (`.env` con `MISH_*`, `SLC
 
 ```bash
 pip install -r herramientas/requirements.txt
-python herramientas/bd.py --env ../REPORTES-AUTOMATIZADOS/backend/.env probar
-python herramientas/bd.py --env ../REPORTES-AUTOMATIZADOS/backend/.env todo     # baja todos los SP y mapea tablas
+python herramientas/bd.py --env "../03 DICCIONARIO/.env" probar
+python herramientas/bd.py --env "../03 DICCIONARIO/.env" todo     # baja todos los SP y mapea tablas
 python herramientas/bd.py mapa --reporte SEL_EFEC_01                            # qué tablas y columnas usa
 ```
 

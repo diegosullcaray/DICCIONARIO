@@ -6,7 +6,7 @@
 | Campo | Valor |
 |---|---|
 | Base · esquema | `mod_rep` · `com` |
-| Estado | 🔎 extraído |
+| Estado | ✅ validado |
 | Cuerpo | [procedimientos/mod_rep/com/GSELREP001.sql](../../../../procedimientos/mod_rep/com/GSELREP001.sql) |
 | Extracción | [sql/01-extraccion/mod_rep/com/GSELREP001.sql](../../../../sql/01-extraccion/mod_rep/com/GSELREP001.sql) |
 | Consultar sus tablas | [sql/05-por-procedimiento/mod_rep/com/GSELREP001.sql](../../../../sql/05-por-procedimiento/mod_rep/com/GSELREP001.sql) |
@@ -26,7 +26,7 @@ Sin parámetros.
 
 | Tabla | Operación | Columnas usadas | Fuente |
 |---|---|---|---|
-| [storage.com_act.WCED001](../../../tablas/storage/com_act/WCED001.md) | lee | `HFCRES`≈ | estatico |
+| [storage.com_act.WCED001](../../../tablas/storage/com_act/WCED001.md) | lee | `HFCRES` | estatico + motor |
 
 `≈` columna inferida: sin calificar, en una consulta con una sola tabla de origen. Confirmar con el motor.
 
@@ -43,6 +43,10 @@ Sin parámetros.
 ### Observaciones del análisis
 
 - CTE: `cte_e`, `cte_f`, `cte_r`
+
+### Validación con el motor
+
+Fuente: `fuente/dependencias/mod_rep.csv`.
 <!-- generado:fin -->
 
 ## Propósito

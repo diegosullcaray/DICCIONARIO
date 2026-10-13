@@ -13,15 +13,15 @@ SET NOCOUNT ON;
 
 DECLARE @catalogo TABLE (esquema sysname, nombre sysname, destino nvarchar(400), extraido bit);
 INSERT INTO @catalogo (esquema, nombre, destino, extraido) VALUES
-     (N'mod_rep_com_act', N'CABGMRESULUNINEGB01', N'procedimientos/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql', 0)
-    ,(N'mod_rep_com_act', N'GDACTITASA01', N'procedimientos/strategos/mod_rep_com_act/GDACTITASA01.sql', 0)
-    ,(N'mod_rep_com_act', N'GDCCAP_BP01', N'procedimientos/strategos/mod_rep_com_act/GDCCAP_BP01.sql', 0)
-    ,(N'mod_rep_com_act', N'GDDESEMDIA', N'procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.sql', 0)
-    ,(N'mod_rep_com_act', N'GDEFECTMORA01', N'procedimientos/strategos/mod_rep_com_act/GDEFECTMORA01.sql', 0)
-    ,(N'mod_rep_com_act', N'GDPORTAGRO01', N'procedimientos/strategos/mod_rep_com_act/GDPORTAGRO01.sql', 0)
-    ,(N'mod_rep_com_act', N'GDPSUPERV01', N'procedimientos/strategos/mod_rep_com_act/GDPSUPERV01.sql', 0)
-    ,(N'mod_rep_com_act', N'GDPSUPERV02', N'procedimientos/strategos/mod_rep_com_act/GDPSUPERV02.sql', 0)
-    ,(N'mod_rep_com_act', N'HTTPTRACE', N'procedimientos/strategos/mod_rep_com_act/HTTPTRACE.sql', 0)
+     (N'mod_rep_com_act', N'CABGMRESULUNINEGB01', N'procedimientos/strategos/mod_rep_com_act/CABGMRESULUNINEGB01.sql', 1)
+    ,(N'mod_rep_com_act', N'GDACTITASA01', N'procedimientos/strategos/mod_rep_com_act/GDACTITASA01.sql', 1)
+    ,(N'mod_rep_com_act', N'GDCCAP_BP01', N'procedimientos/strategos/mod_rep_com_act/GDCCAP_BP01.sql', 1)
+    ,(N'mod_rep_com_act', N'GDDESEMDIA', N'procedimientos/strategos/mod_rep_com_act/GDDESEMDIA.sql', 1)
+    ,(N'mod_rep_com_act', N'GDEFECTMORA01', N'procedimientos/strategos/mod_rep_com_act/GDEFECTMORA01.sql', 1)
+    ,(N'mod_rep_com_act', N'GDPORTAGRO01', N'procedimientos/strategos/mod_rep_com_act/GDPORTAGRO01.sql', 1)
+    ,(N'mod_rep_com_act', N'GDPSUPERV01', N'procedimientos/strategos/mod_rep_com_act/GDPSUPERV01.sql', 1)
+    ,(N'mod_rep_com_act', N'GDPSUPERV02', N'procedimientos/strategos/mod_rep_com_act/GDPSUPERV02.sql', 1)
+    ,(N'mod_rep_com_act', N'HTTPTRACE', N'procedimientos/strategos/mod_rep_com_act/HTTPTRACE.sql', 1)
 ;
 
 SELECT

@@ -1,0 +1,37 @@
+-- storage.com.HBDK004
+-- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
+-- Usada por: mod_rep.com.GDASHKAY05
+
+USE storage;
+GO
+
+-- 1. Estructura real: tipo, largo y nulabilidad de cada columna.
+SELECT c.ORDINAL_POSITION AS orden, c.COLUMN_NAME AS columna, c.DATA_TYPE AS tipo,
+       c.CHARACTER_MAXIMUM_LENGTH AS largo, c.NUMERIC_PRECISION AS precision_num,
+       c.NUMERIC_SCALE AS escala, c.IS_NULLABLE AS acepta_nulos,
+       CASE WHEN c.COLUMN_NAME IN (N'HBLOACU', N'hcolbt', N'HCOLCAR', N'HCOLDOC', N'HCOLNOM', N'HCOLTIP', N'HDESTER', N'HFECPRO') THEN 1 ELSE 0 END AS usada_por_reportes
+FROM INFORMATION_SCHEMA.COLUMNS c
+WHERE c.TABLE_SCHEMA = N'com' AND c.TABLE_NAME = N'HBDK004'
+ORDER BY c.ORDINAL_POSITION;
+
+-- 2. Tamaño (sin recorrer la tabla).
+SELECT SUM(p.rows) AS filas
+FROM sys.partitions p
+WHERE p.object_id = OBJECT_ID(N'com.HBDK004') AND p.index_id IN (0, 1);
+
+-- 3. Muestra de las columnas que usan los reportes.
+SELECT TOP (100) [HBLOACU], [hcolbt], [HCOLCAR], [HCOLDOC], [HCOLNOM], [HCOLTIP], [HDESTER], [HFECPRO]
+FROM [storage].[com].[HBDK004] WITH (NOLOCK);
+
+-- 4. Perfil rápido: nulos y valores distintos por columna usada.
+SELECT
+    COUNT(*) AS filas,
+    SUM(CASE WHEN [HBLOACU] IS NULL THEN 1 ELSE 0 END) AS [nulos_HBLOACU], COUNT(DISTINCT [HBLOACU]) AS [distintos_HBLOACU],
+    SUM(CASE WHEN [hcolbt] IS NULL THEN 1 ELSE 0 END) AS [nulos_hcolbt], COUNT(DISTINCT [hcolbt]) AS [distintos_hcolbt],
+    SUM(CASE WHEN [HCOLCAR] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCOLCAR], COUNT(DISTINCT [HCOLCAR]) AS [distintos_HCOLCAR],
+    SUM(CASE WHEN [HCOLDOC] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCOLDOC], COUNT(DISTINCT [HCOLDOC]) AS [distintos_HCOLDOC],
+    SUM(CASE WHEN [HCOLNOM] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCOLNOM], COUNT(DISTINCT [HCOLNOM]) AS [distintos_HCOLNOM],
+    SUM(CASE WHEN [HCOLTIP] IS NULL THEN 1 ELSE 0 END) AS [nulos_HCOLTIP], COUNT(DISTINCT [HCOLTIP]) AS [distintos_HCOLTIP],
+    SUM(CASE WHEN [HDESTER] IS NULL THEN 1 ELSE 0 END) AS [nulos_HDESTER], COUNT(DISTINCT [HDESTER]) AS [distintos_HDESTER],
+    SUM(CASE WHEN [HFECPRO] IS NULL THEN 1 ELSE 0 END) AS [nulos_HFECPRO], COUNT(DISTINCT [HFECPRO]) AS [distintos_HFECPRO]
+FROM [storage].[com].[HBDK004] WITH (NOLOCK);

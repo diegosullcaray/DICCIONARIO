@@ -13,7 +13,7 @@ SET NOCOUNT ON;
 
 DECLARE @catalogo TABLE (esquema sysname, nombre sysname, destino nvarchar(400), extraido bit);
 INSERT INTO @catalogo (esquema, nombre, destino, extraido) VALUES
-     (N'com', N'RGRAFGESTCOM07_', N'procedimientos/storage/com/RGRAFGESTCOM07_.sql', 0)
+     (N'com', N'RGRAFGESTCOM07_', N'procedimientos/storage/com/RGRAFGESTCOM07_.sql', 1)
 ;
 
 SELECT

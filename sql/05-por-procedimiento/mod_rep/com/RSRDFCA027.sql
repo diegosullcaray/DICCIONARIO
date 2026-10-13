@@ -1,0 +1,75 @@
+-- mod_rep.com.RSRDFCA027: tablas y columnas que usa
+-- Generado por governance/scripts/generar-diccionario.mjs. No editar: se regenera.
+-- Reportes: Monitor_Dese_01
+-- Ficha: diccionario/procedimientos/mod_rep/com/RSRDFCA027.md
+
+USE mod_rep;
+GO
+
+-- 1. Columnas que devuelve el SP, sin ejecutarlo (falla con SQL dinámico o #temporales).
+SELECT column_ordinal AS orden, name AS columna, system_type_name AS tipo, source_database AS base_origen,
+       source_schema AS esquema_origen, source_table AS tabla_origen, source_column AS columna_origen
+FROM sys.dm_exec_describe_first_result_set_for_object(OBJECT_ID(N'com.RSRDFCA027'), 1)
+ORDER BY column_ordinal;
+
+-- 2. Muestra de cada tabla con las columnas que usa este SP.
+
+-- mod_rep.com.FLIMNEG · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[com].[FLIMNEG] WITH (NOLOCK);
+
+-- mod_rep.com.TDILMETA · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[com].[TDILMETA] WITH (NOLOCK);
+
+-- mod_rep.dbo.a · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[dbo].[a] WITH (NOLOCK);
+
+-- mod_rep.piv.TPIVCONF · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[piv].[TPIVCONF] WITH (NOLOCK);
+
+-- mod_rep.piv.TPIVFIL · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[piv].[TPIVFIL] WITH (NOLOCK);
+
+-- mod_rep.piv.TPIVVAR · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[piv].[TPIVVAR] WITH (NOLOCK);
+
+-- mod_rep.rep.FFTHCOLDEF · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[rep].[FFTHCOLDEF] WITH (NOLOCK);
+
+-- mod_rep.rep.TTHCOLDEF · — · 0 columna(s)
+SELECT TOP (100) *
+FROM [mod_rep].[rep].[TTHCOLDEF] WITH (NOLOCK);
+
+-- storage.com_act.HCDA001 · lee · 1 columna(s)
+SELECT TOP (100) [HFECPRO]
+FROM [storage].[com_act].[HCDA001] WITH (NOLOCK);
+
+-- storage.com_act.SDAF001 · lee · 1 columna(s)
+SELECT TOP (100) [SFECPRO]
+FROM [storage].[com_act].[SDAF001] WITH (NOLOCK);
+
+-- storage.com_act.SDAF003 · lee · 8 columna(s)
+SELECT TOP (100) [SCODAGR], [SCODSEC], [SFECDES], [SFECPRO], [SHORPRO], [SMONDESMN], [SNUMOPE], [SSUCCLI]
+FROM [storage].[com_act].[SDAF003] WITH (NOLOCK);
+
+-- storage.com_act.SDAS004 · lee · 8 columna(s)
+SELECT TOP (100) [SCODAGR], [SCODSEC], [SFECPRO], [SMDESMN], [SSCAPFMN], [SSCAPIMN], [SSCASMN], [SSUCCLI]
+FROM [storage].[com_act].[SDAS004] WITH (NOLOCK);
+
+-- storage.com_act.SDAS010 · lee · 2 columna(s)
+SELECT TOP (100) [SFECPRO], [SHORPRO]
+FROM [storage].[com_act].[SDAS010] WITH (NOLOCK);
+
+-- storage.com.VDMCOM01 · lee · 6 columna(s)
+SELECT TOP (100) [HCODREL], [HCODVAR], [HFECPRO], [HTIPMETA], [HVALVAR], [htipcod]
+FROM [storage].[com].[VDMCOM01] WITH (NOLOCK);
+
+-- storage.ref.WJERCOR03 · lee · 16 columna(s)
+SELECT TOP (100) [RCODCOR], [RCODFC], [RCODGRU], [RCODSEC], [RCODTER], [RCODUCO], [RCODUNI], [RDESCOR], [RDESFC], [RDESGRU], [RDESSEC], [RDESTER], [RDESUCO], [RDESUNI], [RFECPRO], [RINDFEC]
+FROM [storage].[ref].[WJERCOR03] WITH (NOLOCK);
