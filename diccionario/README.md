@@ -17,7 +17,7 @@ es la prosa debajo del bloque generado de cada ficha.
 | Tablas descubiertas | 202 |
 | Columnas descubiertas | 2041 |
 | Reportes consumidos por el front MIS | 176 (commit `d67bf84`) |
-| Hallazgos de calidad | 27 error(es) · 99 aviso(s) · 7 error(es) fuera de la línea base |
+| Hallazgos de calidad | 27 error(es) · 73 aviso(s) · 0 error(es) fuera de la línea base |
 
 ### Avance por base
 
@@ -38,4 +38,5 @@ es la prosa debajo del bloque generado de cada ficha.
 | El estado de cada SP | [procedimientos.md](./procedimientos.md) |
 | Qué reportes usan una tabla o columna | [tablas.md](./tablas.md) |
 | Todo en formato máquina | [diccionario.json](./diccionario.json) |
-| Qué está mal en la fuente | [hallazgos](../governance/docs/evidence/quality/hallazgos.md) |
+| Qué está mal y qué falta | [errores/](../errores/README.md) |
+| Todas las tablas en Excel | [diccionario-tablas.xlsx](./diccionario-tablas.xlsx) (`npm run excel`) |

@@ -238,7 +238,10 @@ export function construirModelo() {
           continue;
         }
       }
-      if (conEstructura.length === s.candidatas.length && tienen.length === 0) continue;
+      // Ninguna tabla existente la tiene: o es un alias/columna de CTE, o es de una candidata que no existe en la
+      // base (ya reportada como tabla-inexistente). En ambos casos no es un hallazgo aparte.
+      const inexistentes = s.candidatas.filter((c) => !esTablaReal(c.toLowerCase()) && basesConEstructura.has(c.split('.')[0].toLowerCase()));
+      if (tienen.length === 0 && conEstructura.length + inexistentes.length === s.candidatas.length) continue;
       hallazgo('columna-sin-resolver', sp.completo, `\`${s.columna}\`${s.candidatas.length ? ` podría ser de ${s.candidatas.join(' o ')}` : ''}`);
     }
     if (sp.estado === 'validado') {

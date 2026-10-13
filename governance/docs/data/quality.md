@@ -1,7 +1,7 @@
 # Calidad del dato
 
 Qué controla `npm run verificar`, cómo se lee un hallazgo y qué hacer con él. El estado actual, por
-origen, está en [hallazgos](../evidence/quality/hallazgos.md).
+origen y ubicado al detalle (SP, línea, reporte, pantalla), está en [errores/](../../../errores/README.md).
 
 ## Niveles y origen
 
