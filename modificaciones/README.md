@@ -14,11 +14,15 @@ Una carpeta por pedido, numerada: `NNNN-<tema-corto>/`, con los archivos en este
 | `03-<SP>_NEW.create.sql` | el SP nuevo (`CREATE PROCEDURE … _NEW`): copia del original con los cambios marcados `MOD-NNNN` |
 | `04-verificacion.sql` | chequeo previo, prueba antes/después y cuadre |
 | `05-rollback.sql` | volver atrás: reapuntar el reporte al original y borrar el `_NEW` |
+| `06-activacion.sql` | apuntar el reporte al `_NEW` en el catálogo del backend (`mod_rep.rep.RREGREP01`, campo `RTPREP`): así lo ve el front |
 
 Reglas:
 
 - **El original no se modifica**: se crea `<SP>_NEW` y se prueba lado a lado con el original. El reporte pasa
-  al nuevo cuando se lo apunta en la tabla de reportes del backend; volver atrás es reapuntarlo.
+  al nuevo cuando se lo apunta en el catálogo del backend (`06-activacion.sql`); volver atrás es reapuntarlo.
+- El front no se toca cuando el cambio son columnas: dibuja las que declara la cabecera del SP.
+- Los scripts que escriben en la base (`03`, `05`, `06`) los ejecuta una persona con permiso; ninguna
+  herramienta del repositorio los corre.
 - El `_NEW` parte de la copia en `extraccion/procedimientos/`, con la fecha de modificación anotada; la
   verificación previa confirma que producción no cambió desde entonces.
 - Dos SP casi iguales no se dejan para siempre: una vez validado, se decide cuál se retira.
