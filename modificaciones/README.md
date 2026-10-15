@@ -33,3 +33,4 @@ Reglas:
 | N.º | Tema | SP | Reporte | Estado |
 |---|---|---|---|---|
 | [0001](./0001-evolucion-tapp-minima-distancia/01-peticion.md) | TAPP Mínima y Distancia en Evolución de TAPP Mes | `mod_rep.com.GDCGEST_ACTIVAST01_NEW` | `GST_ACTIVAS_06` | propuesto |
+| [0002](./0002-cuenta-resultados-filtros/01-peticion.md) | Cuenta de Resultados con periodo, jerarquía y producto | `mod_rep.rep.RTABCUERES01_NEW` | `TAB_CUE_RES_01` | propuesto |
