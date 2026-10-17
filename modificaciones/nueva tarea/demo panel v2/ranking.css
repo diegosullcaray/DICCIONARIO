@@ -1,0 +1,123 @@
+/* Panel Ranking de productividad. Mismos tokens que las tarjetas del tablero:
+   tarjeta blanca, borde #E1E4E8, radio 14px, títulos 16px/600, rótulos 12px #505A69. */
+
+.rk-toolbar { display: flex; align-items: center; gap: 24px; flex-shrink: 0; }
+.rk-levels { display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid #E1E4E8; border-radius: 999px; background: #FFFFFF; }
+.rk-level { font: inherit; font-size: 12px; line-height: normal; padding: 6px 12px; border: 0; border-radius: 999px; background: transparent; color: #505A69; cursor: pointer; }
+.rk-level:hover { background: #F0F4F9; }
+.rk-level.is-active { background: #0B3D78; color: #FFFFFF; font-weight: 600; }
+
+.rk-card { background: #FFFFFF; border: 1px solid #E1E4E8; border-radius: 14px; padding: 12px 20px; box-sizing: border-box; min-width: 0; flex-shrink: 0; }
+.rk-icon { width: 36px; height: 36px; flex-shrink: 0; border-radius: 9px; background: #E7EEF7; color: #0B3D78; display: flex; align-items: center; justify-content: center; }
+.rk-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.rk-card-title { font-size: 16px; font-weight: 600; }
+.rk-card-meta { font-size: 12px; color: #505A69; margin-left: auto; }
+
+.rk-chip { font-style: normal; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.rk-chip.is-neutral { background: #EEF0EC; color: #505A69; }
+.rk-chip.is-bad { background: #FBE6E4; color: #A1231B; }
+.rk-marks { display: flex; flex-wrap: wrap; gap: 4px; }
+.rk-marks:empty { display: none; }
+
+/* Posición estadística */
+.rk-hero { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(0, 3fr); gap: 20px; align-items: center; }
+.rk-hero-id { display: flex; gap: 12px; align-items: flex-start; min-width: 0; }
+.rk-hero-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.rk-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #505A69; }
+.rk-hero-name { margin: 0; font-size: 18px; line-height: 1.2; font-weight: 700; color: #0B3D78; }
+.rk-hero-group { font-size: 12px; color: #505A69; }
+.rk-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 16px; }
+.rk-stat { display: flex; flex-direction: column; gap: 3px; padding-left: 12px; border-left: 1px solid #EEF0EC; min-width: 0; }
+.rk-lbl { font-size: 12px; color: #505A69; }
+.rk-val { font-size: 17px; font-weight: 600; }
+.rk-sub { font-size: 11px; color: #505A69; }
+.rk-val.is-good, .rk-tr b.is-good { color: #1B6B43; }
+.rk-val.is-warn, .rk-tr b.is-warn { color: #8A4B00; }
+.rk-val.is-bad, .rk-tr b.is-bad { color: #A1231B; }
+.rk-hero-note { grid-column: 1 / -1; margin: 0; font-size: 12px; color: #8A4B00; background: #FBEEDA; border-radius: 8px; padding: 6px 10px; }
+
+/* Tabla del ranking */
+.rk-table-wrap { overflow-x: auto; margin: 0 -8px; padding: 0 8px; }
+.rk-table { min-width: 1150px; display: flex; flex-direction: column; }
+.rk-tr { display: grid; grid-template-columns: 76px minmax(140px, 1.5fr) 72px 92px 86px 112px 86px 84px 96px 92px 160px; gap: 8px; align-items: center; padding: 7px 8px; border-top: 1px solid #EEF0EC; font-size: 12px; cursor: pointer; border-radius: 8px; }
+.rk-tr:hover { background: #F7F9FB; }
+.rk-tr.is-sel { background: #F0F4F9; box-shadow: inset 3px 0 0 #0B3D78; }
+.rk-th { cursor: default; border-top: 0; color: #505A69; font-weight: 600; font-size: 12px; padding-top: 2px; padding-bottom: 6px; }
+.rk-th:hover { background: transparent; }
+.rk-th span { cursor: help; }
+.rk-tr > span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.rk-tr b { font-weight: 600; font-size: 13px; }
+.rk-tr small { font-size: 11px; color: #505A69; }
+.rk-tr small.is-good { color: #1B6B43; }
+.rk-tr small.is-bad { color: #A1231B; }
+.rk-tr small.is-warn { color: #8A4B00; }
+.rk-tr .rk-dim { color: #8390a2; }
+.rk-tr .rk-strong { color: #16202E; font-weight: 600; }
+.rk-pos b { font-size: 20px; line-height: 1; color: #0B3D78; }
+.rk-ent b { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rk-big { font-size: 15px !important; }
+.rk-q { font-weight: 600; font-size: 13px; }
+.rk-q i { font-style: normal; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 999px; margin-left: 2px; }
+.rk-q.is-q1 i { background: #E4F1E9; color: #1B6B43; }
+.rk-q.is-q2 i { background: #E7EEF7; color: #0B3D78; }
+.rk-q.is-q3 i { background: #FBEEDA; color: #8A4B00; }
+.rk-q.is-q4 i { background: #FBE6E4; color: #A1231B; }
+.rk-q.is-none { color: #8390a2; }
+.rk-mov > span { flex-direction: row !important; display: flex; gap: 8px; }
+.rk-mov b { font-size: 12px !important; }
+.rk-mov .is-up { color: #1B6B43; }
+.rk-mov .is-down { color: #A1231B; }
+.rk-mov .is-flat { color: #8390a2; }
+.rk-av { flex-direction: row !important; display: flex; align-items: baseline; gap: 6px; }
+.rk-bar { position: relative; height: 6px; border-radius: 999px; background: #EEF0EC; }
+.rk-bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: #8390a2; }
+.rk-bar.is-good i { background: #1B6B43; }
+.rk-bar.is-warn i { background: #C77700; }
+.rk-bar.is-bad i { background: #A1231B; }
+.rk-bar em { position: absolute; left: 95.45%; top: -3px; width: 2px; height: 12px; background: #16202E; border-radius: 1px; } /* tiempo transcurrido: 21 de 22 días hábiles */
+.rk-bar.is-none em { display: none; }
+.rk-quality { display: grid !important; grid-template-columns: 1fr 1fr; gap: 3px 8px !important; }
+.rk-quality > span { display: flex; flex-direction: column; font-size: 12px; font-weight: 600; padding: 1px 6px; border-radius: 6px; cursor: help; }
+.rk-quality small { font-weight: 400; font-size: 10px !important; }
+.rk-quality .is-low { background: #FBE6E4; color: #A1231B; }
+.rk-quality .is-high { background: #E7EEF7; color: #0B3D78; }
+.rk-quality .is-low small, .rk-quality .is-high small { color: inherit; }
+.rk-foot { margin: 8px 0 0; font-size: 11px; color: #8390a2; }
+
+/* Analítica */
+.rk-charts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; flex-shrink: 0; }
+.rk-span2 { grid-column: span 2; }
+.rk-chart { display: flex; flex-direction: column; gap: 8px; }
+.rk-chart-head { display: flex; flex-direction: column; gap: 2px; }
+.rk-chart-head b { font-size: 14px; font-weight: 600; }
+.rk-chart-head small { font-size: 12px; color: #505A69; }
+.rk-chart-note { margin: auto 0; padding: 24px 12px; text-align: center; font-size: 12px; color: #8A4B00; background: #FBEEDA; border-radius: 10px; }
+.rk-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 11px; color: #505A69; }
+.rk-legend span { display: flex; align-items: center; gap: 5px; }
+.rk-legend i { display: inline-block; flex-shrink: 0; }
+.lg-dot { width: 9px; height: 9px; border-radius: 50%; background: #9DBBDD; border: 1px solid #4c83b5; }
+.lg-dot.is-sel { background: #0B3D78; border-color: #0B3D78; }
+.lg-out { width: 9px; height: 9px; border-radius: 50%; border: 2px solid #A1231B; box-sizing: border-box; }
+.lg-box { width: 14px; height: 9px; border-radius: 2px; background: #E7EEF7; }
+.lg-meta { width: 14px; height: 0; border-top: 2px dashed #C77700; }
+.lg-line { width: 14px; height: 0; border-top: 2.5px solid #0B3D78; }
+.lg-band { width: 14px; height: 9px; background: #E7EEF7; }
+.lg-band.is-wide { background: #F0F4F9; border: 1px solid #E7EEF7; box-sizing: border-box; }
+.lg-dots { width: 14px; height: 0; border-top: 2px dotted #8390a2; }
+.lg-proj { width: 14px; height: 9px; background: #0B3D7824; border-top: 1.5px dashed #0B3D78; box-sizing: border-box; }
+.lg-heat { width: 11px; height: 11px; border-radius: 2px; }
+.lg-heat.h0 { background: #F3F4F1; border: 1px solid #E1E4E8; box-sizing: border-box; }
+.lg-heat.h1 { background: #C9DAEE; }
+.lg-heat.h2 { background: #9DBBDD; }
+.lg-heat.h3 { background: #4c83b5; }
+.lg-heat.h5 { background: #0B3D78; }
+
+@media (max-width: 1100px) {
+  .rk-charts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rk-hero { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .rk-charts { grid-template-columns: 1fr; }
+  .rk-span2 { grid-column: auto; }
+  .rk-toolbar { flex-wrap: wrap; gap: 10px; }
+}
