@@ -11,7 +11,8 @@
 --   4. @producto (nuevo, opcional, 'TODOS' por defecto): nivel 4 en FC y nivel 5 por debajo.
 --   5. variacion_acumulado_pct calculada (antes 0), como fracción: el front la multiplica por 100.
 --   6. Columnas nuevas, que el front actual no usa: variación contra el mismo mes del año anterior y su %.
---   7. Filas ordenadas por REVARPYG.pos (el original no ordenaba).
+--   7. Se omiten columnas trimestrales: la tabla disponible no contiene esos valores.
+--   8. Filas ordenadas por REVARPYG.pos (el original no ordenaba).
 -- Supuestos que verifica el paso 1 de 04-verificacion.sql antes de crear el SP: ver 02-analisis.md, sección 4.
 
 USE mod_rep;
@@ -65,9 +66,8 @@ BEGIN
     ------------------------------------------------------------------------------------------------
     DROP TABLE IF EXISTS #pyg;
 
-    SELECT  P.WCODREL, P.WCODUNI, P.WCODVAR,
+    SELECT  P.WCODREL, P.WCODSEC, P.WCODVAR,
             P.WVALACT, P.WVALANT, P.WVALAA, P.WACUMACT, P.WACUMAA,
-            P.WACUMT1, P.WACUMT2, P.WACUMT3, P.WACUMT4,
             ISNULL(P3.RDESPROD, 'SIN ASIGNAR') AS RDESPROD
     INTO    #pyg
     FROM    mod_rep.dbo.WREPPYG001 P
@@ -95,7 +95,7 @@ BEGIN
 
     ------------------------------------------------------------------------------------------------
     -- 5. Asesores del nodo elegido (jerarquía vigente, como el selector del front)
-    --    Supuesto: en los niveles 3 y 5, WCODUNI es el código del asesor (= WJERCOR03.RCODSEC).
+    --    WREPPYG001.WCODSEC usa el mismo código de asesor que WJERCOR03.RCODSEC.
     ------------------------------------------------------------------------------------------------
     DROP TABLE IF EXISTS #asesores;
     CREATE TABLE #asesores (RCODSEC varchar(20) PRIMARY KEY);
@@ -115,7 +115,7 @@ BEGIN
                     WHEN @tip_cod = 21 THEN CAST(RCODGRU AS varchar(20))   -- grupo
                     WHEN @tip_cod = 18 THEN CAST(RCODUNI AS varchar(20))   -- unidad de negocio
                     WHEN @tip_cod = 17 THEN CAST(RCODUCO AS varchar(20))   -- coordinador
-                    WHEN @tip_cod = 2  THEN CAST(RCODSEC AS varchar(20))   -- asesor
+                    WHEN @tip_cod = 1  THEN CAST(RCODSEC AS varchar(20))   -- asesor (tip_cod que devuelve level_hier)
                END = @cod_rel;
     END;
 
@@ -129,20 +129,16 @@ BEGIN
             SUM(P.WVALANT)  AS WVALANT,
             SUM(P.WVALAA)   AS WVALAA,
             SUM(P.WACUMACT) AS WACUMACT,
-            SUM(P.WACUMAA)  AS WACUMAA,
-            SUM(P.WACUMT1)  AS WACUMT1,
-            SUM(P.WACUMT2)  AS WACUMT2,
-            SUM(P.WACUMT3)  AS WACUMT3,
-            SUM(P.WACUMT4)  AS WACUMT4
+            SUM(P.WACUMAA)  AS WACUMAA
     INTO    #val
     FROM    #pyg P
     WHERE   P.WCODREL = @nivel
       AND   (@producto = 'TODOS' OR P.RDESPROD = @producto)
-      AND   (@tip_cod = 7 OR EXISTS (SELECT 1 FROM #asesores A WHERE A.RCODSEC = CAST(P.WCODUNI AS varchar(20))))
+      AND   (@tip_cod = 7 OR EXISTS (SELECT 1 FROM #asesores A WHERE A.RCODSEC = CAST(P.WCODSEC AS varchar(20))))
     GROUP BY P.WCODVAR;
 
     ------------------------------------------------------------------------------------------------
-    -- 7. Resultado: mismas columnas que el original (contrato del front) + 2 nuevas al final
+    -- 7. Resultado: columnas del reporte sin los trimestres no disponibles + 2 nuevas al final
     ------------------------------------------------------------------------------------------------
     SELECT  A.style,
             A.codigo                                                   AS cuenta_codigo,
@@ -156,11 +152,6 @@ BEGIN
             B.WACUMACT                                                 AS acumulado_actual,
             B.WACUMACT - B.WACUMAA                                     AS variacion_acumulado,
             CAST((B.WACUMACT - B.WACUMAA) / NULLIF(B.WACUMAA, 0) AS float) AS variacion_acumulado_pct,
-            B.WACUMT1                                                  AS trimestre_1,
-            B.WACUMT2                                                  AS trimestre_2,
-            B.WACUMT3                                                  AS trimestre_3,
-            B.WACUMT4                                                  AS trimestre_4,
-            ISNULL(B.WACUMT1, 0) + ISNULL(B.WACUMT2, 0) + ISNULL(B.WACUMT3, 0) + ISNULL(B.WACUMT4, 0) AS total_anio,
             B.WVALACT - B.WVALAA                                       AS variacion_periodo_anio_anterior,
             CAST((B.WVALACT - B.WVALAA) / NULLIF(B.WVALAA, 0) AS float) AS variacion_periodo_anio_anterior_pct
     FROM    mod_rep.dbo.REVARPYG A

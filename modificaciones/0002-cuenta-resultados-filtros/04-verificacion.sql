@@ -12,23 +12,22 @@ GO
 
 -- 1a. Niveles cargados. Se esperan WCODREL 1, 3, 4 y 5. Si falta el 3, los nodos debajo de FC salen vacíos;
 --     si falta el 4 o el 5, el filtro de producto sale vacío.
-SELECT  WCODREL, COUNT(*) AS filas, COUNT(DISTINCT WCODUNI) AS codigos_wcoduni,
+SELECT  WCODREL, COUNT(*) AS filas, COUNT(DISTINCT WCODSEC) AS codigos_wcodsec,
         COUNT(DISTINCT WFECPRO) AS periodos, MIN(WFECPRO) AS desde, MAX(WFECPRO) AS hasta
 FROM    dbo.WREPPYG001
 GROUP BY WCODREL
 ORDER BY WCODREL;
 
--- 1b. ¿WCODUNI es el asesor en los niveles 3 y 5? "como_asesor" debe ser casi todo; si en cambio
---     coincide "como_unidad", WCODUNI es la unidad de negocio: avisar y se cambia el paso 5 del SP.
-DECLARE @ultimo date = (SELECT MAX(WFECPRO) FROM dbo.WREPPYG001 WHERE WCODREL = 3);
-DECLARE @jer date = (SELECT MAX(RFECPRO) FROM storage.ref.WJERCOR03 WHERE RINDFEC = 'actual');
-WITH c   AS (SELECT DISTINCT WCODUNI FROM dbo.WREPPYG001 WHERE WCODREL = 3 AND WFECPRO = @ultimo),
-     ase AS (SELECT DISTINCT CAST(RCODSEC AS varchar(20)) AS k FROM storage.ref.WJERCOR03 WHERE RFECPRO = @jer AND RINDFEC = 'actual'),
-     uni AS (SELECT DISTINCT RCODUNI AS k FROM storage.ref.WJERCOR03 WHERE RFECPRO = @jer AND RINDFEC = 'actual')
-SELECT  COUNT(*) AS codigos_nivel_3, COUNT(ase.k) AS como_asesor, COUNT(uni.k) AS como_unidad
-FROM    c
-        LEFT JOIN ase ON ase.k = CAST(c.WCODUNI AS varchar(20))
-        LEFT JOIN uni ON uni.k = c.WCODUNI;
+-- 1b. Confirmar si el asesor seleccionado tiene datos en los niveles de detalle del último periodo.
+--     La API de jerarquía devuelve el código (ej. ASESO272) con tip_cod = 1; WCODSEC usa ese mismo código.
+DECLARE @ultimo date = (SELECT MAX(WFECPRO) FROM dbo.WREPPYG001 WHERE WCODREL = 1);
+DECLARE @codigoAsesor varchar(10) = 'ASESO272';
+SELECT  WFECPRO, WCODREL, WCODSEC, COUNT(*) AS filas, COUNT(DISTINCT WCODVAR) AS cuentas
+FROM    dbo.WREPPYG001 WITH (NOLOCK)
+WHERE   WCODREL IN (3, 5)
+  AND   WCODSEC = @codigoAsesor
+GROUP BY WFECPRO, WCODREL, WCODSEC
+ORDER BY WFECPRO DESC, WCODREL;
 
 -- 1c. ¿La suma de los asesores da el total de FC? Por cuenta, para el último periodo. La diferencia es lo
 --     que no está asignado a ningún asesor: con el SP nuevo, se ve en FC pero en ningún nodo de abajo.
@@ -53,20 +52,16 @@ SELECT pos, codigo, descripcion, style FROM dbo.REVARPYG ORDER BY pos;
 GO
 
 ------------------------------------------------------------------------------------------------
--- PASO 2 (DESPUÉS de crear el nuevo): original y nuevo, lado a lado, en FC
+-- PASO 2 (DESPUÉS de crear el nuevo): validar ejecución del nuevo en FC
 ------------------------------------------------------------------------------------------------
--- Cada EXEC devuelve 2 resultados: la cabecera (columna "dummy") y los datos.
--- Con el último periodo (junio 2026) y FC, los importes deben ser IGUALES. Diferencias esperadas en el nuevo:
---   · cabecera con los periodos reales de la tabla y la lista de "productos";
---   · variacion_acumulado_pct calculada (en el original es 0) — fracción: 0.1291 = 12.91 %;
---   · filas ordenadas por "orden" y 2 columnas más al final.
+-- El SP original referencia WACUMT1–WACUMT4, columnas inexistentes en esta instancia; no ejecutarlo
+-- como comparación. El nuevo devuelve 2 resultados: cabecera (columna "dummy") y datos.
 IF OBJECT_ID(N'rep.RTABCUERES01_NEW', N'P') IS NULL
 BEGIN
     PRINT 'PASO 2 omitido: todavía no existe rep.RTABCUERES01_NEW (ejecutar 03-RTABCUERES01_NEW.create.sql).';
     RETURN;
 END;
 
-EXEC rep.RTABCUERES01     'NOW', 7, '1';
 EXEC rep.RTABCUERES01_NEW 'NOW', 7, '1';
 GO
 

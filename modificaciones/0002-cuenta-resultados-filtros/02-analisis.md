@@ -24,14 +24,16 @@ lee exactamente esas columnas; el diseño de la imagen ya está implementado ah�
 |---|---|---|
 | 1 | Periodo | `'NOW'` → último `WFECPRO`; si no, el mes de `@fecha` (el front manda el día 1, `WFECPRO` es el cierre). Mes sin datos → último, igual que el front con `NOW`. |
 | 2 | Cabecera | `fechas` = todos los meses de `WREPPYG001` (más reciente primero, formato `YYYY-MM-01`); `preliminar` = 1 solo si el mes mostrado es el último cargado; nuevo `productos` con la lista para un futuro filtro (el front actual ignora claves que no conoce). |
-| 3 | Jerarquía | `tip_cod = 7` → nivel 1 (FC). Cualquier otro nodo (20 territorio, 19 corredor, 21 grupo, 18 unidad, 17 coordinador, 2 asesor) → **suma de sus asesores** en el nivel 3, con `storage.ref.WJERCOR03` vigente (`RINDFEC = 'actual'`, último `RFECPRO`), el mismo patrón que `RRANKM02` o `RSRTOPMIS001`. |
+| 3 | Jerarquía | `tip_cod = 7` → nivel 1 (FC). Cualquier otro nodo (20 territorio, 19 corredor, 21 grupo, 18 unidad, 17 coordinador, 1 asesor) → **suma de sus asesores** en el nivel 3, con `storage.ref.WJERCOR03` vigente (`RINDFEC = 'actual'`, último `RFECPRO`), el mismo patrón que `RRANKM02` o `RSRTOPMIS001`. La respuesta de `level_hier` confirma que el asesor llega con `tip_cod = 1` y `cod_rel` como `ASESO272`; `WREPPYG001.WCODSEC` también contiene códigos tipo `ASESO010`. |
 | 4 | Producto | Parámetro nuevo `@producto` (por defecto `'TODOS'`): nivel 4 en FC y nivel 5 (asesor y producto) por debajo, con `RDESPROD` por `RETP002/001/003`. |
 | 5 | `variacion_acumulado_pct` | `(WACUMACT − WACUMAA) / WACUMAA`, como **fracción**: el front usa `formatPercent`, que multiplica por 100 (0.1291 → "12.91 %"). La fórmula "× 100" de la observación mostraría 1291 %. Signo como en la imagen: *Resto de ingresos* −2 790 vs −2 267 → +23.08 %. |
 | 6 | Columnas nuevas | `variacion_periodo_anio_anterior` (`WVALACT − WVALAA`) y su `%`, las fórmulas de la observación para el mes. Van al final; el front actual no las muestra. |
 | 7 | Orden | `ORDER BY REVARPYG.pos`. |
 
-Se mantienen sin cambio: nombres y orden de las columnas del contrato, trimestres y `total_anio`, el nombre
-`dummy` de la cabecera y los parámetros del catálogo (`@producto` tiene valor por defecto).
+Se mantienen las columnas base del reporte, el nombre `dummy` de la cabecera y los parámetros del catálogo
+(`@producto` tiene valor por defecto). Se omiten `trimestre_1`–`trimestre_4` y `total_anio`: la estructura
+consultada de `WREPPYG001` no contiene `WACUMT1`–`WACUMT4`, por lo que no se pueden calcular con esa fuente.
+Esto cambia el contrato de salida respecto del SP original; confirmar el consumo en el front antes de activar.
 
 ## 3. Cómo se comprobó contra la imagen
 
@@ -49,12 +51,15 @@ Se mantienen sin cambio: nombres y orden de las columnas del contrato, trimestre
 
 | # | Supuesto | Si no se cumple |
 |---|---|---|
-| S1 | En los niveles 3 y 5, `WCODUNI` es el código del asesor (`WJERCOR03.RCODSEC`). La tabla no tiene otra columna para el asesor. | Paso 1b muestra `como_unidad` alto: `WCODUNI` es la unidad; se cambia el paso 5 del SP para filtrar por `RCODUNI` (y coordinador/asesor quedan sin datos). |
+| S1 | En los niveles 3 y 5, `WCODSEC` corresponde al código del asesor (`WJERCOR03.RCODSEC`); la API devuelve el tipo de asesor como `tip_cod = 1`. | Si el asesor elegido no tiene filas en el periodo PYG consultado, el reporte no tendrá importes para ese nodo, aunque la jerarquía lo liste. |
 | S2 | Las cuentas de `REVARPYG` son importes que se pueden sumar entre asesores (márgenes incluidos). | Paso 1e muestra ratios o coeficientes: esas filas se calculan aparte. |
 | S3 | "Preliminar" = el último mes cargado. | Si el cierre se marca en otro lado, indicarlo y se lee de ahí. |
 | S4 | La suma de asesores puede no llegar al total FC (importes sin asesor). | Paso 1c muestra la diferencia; FC usa el nivel 1, así que FC siempre cuadra con lo que se ve hoy. |
 | S5 | Los importes están en miles, como titula el front. | Paso 1d: si salen en soles, se divide por 1000 en el SP o se cambia el título. |
 | S6 | Jerarquía vigente, como la del selector del front: un asesor que cambió de unidad suma en la nueva aun para meses pasados. | Si se quiere la jerarquía de cada mes, se usa el `RFECPRO` del periodo. |
+
+La instancia consultada no tiene `WACUMT1`–`WACUMT4` en `WREPPYG001`. Por pedido, el SP nuevo no devuelve
+las columnas trimestrales ni `total_anio` hasta identificar una fuente válida para esos importes.
 
 ## 5. Qué falta fuera del SP
 
@@ -69,7 +74,9 @@ Se mantienen sin cambio: nombres y orden de las columnas del contrato, trimestre
 
 1. `04-verificacion.sql` **paso 1**: confirmar S1 a S6. Si alguno falla, avisar antes de seguir.
 2. Ejecutar `03-RTABCUERES01_NEW.create.sql`.
-3. `04-verificacion.sql` **paso 2**: en FC y último mes, mismos importes que el original (más el % y el orden).
+3. `04-verificacion.sql` **paso 2**: comprobar que el nuevo SP devuelve cabecera y datos para FC y último mes.
+   No comparar ejecutándolo contra el original en esta instancia: el original referencia columnas trimestrales
+   inexistentes (`WACUMT1`–`WACUMT4`) y falla al compilar.
 4. `04-verificacion.sql` **paso 3**: otro mes, una unidad, un territorio y un producto.
 5. `06-activacion.sql`: apuntar `TAB_CUE_RES_01` al nuevo y hacer `COMMIT`.
 6. Revisar en el front: cambiar periodo y nivel de jerarquía; las cifras deben cambiar.

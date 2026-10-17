@@ -42,6 +42,6 @@ paginador).
 |---|---|
 | [02-analisis.md](./02-analisis.md) | qué hace hoy el SP, qué cambia, supuestos a confirmar y qué falta en el front para el filtro de producto |
 | [03-RTABCUERES01_NEW.create.sql](./03-RTABCUERES01_NEW.create.sql) | crea el SP nuevo |
-| [04-verificacion.sql](./04-verificacion.sql) | supuestos (antes de crear), original y nuevo lado a lado, prueba de cada filtro |
+| [04-verificacion.sql](./04-verificacion.sql) | supuestos (antes de crear), prueba del SP nuevo y de cada filtro |
 | [05-rollback.sql](./05-rollback.sql) | volver al original y borrar el nuevo |
 | [06-activacion.sql](./06-activacion.sql) | apuntar `TAB_CUE_RES_01` al nuevo en `RREGREP01` |
